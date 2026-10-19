@@ -1,0 +1,23 @@
+services:
+  workspace:
+    build:
+      context: .
+      dockerfile: Dockerfile.app
+    ports:
+      - "127.0.0.1:8017:8017"
+    environment:
+      ODDSPAPI_API_KEY: ${ODDSPAPI_API_KEY:-}
+    volumes:
+      - research-data:/app/data/app
+      - ./data/raw/oddspapi:/app/data/raw/oddspapi:ro
+      - ./data/raw/strandedpond:/app/data/raw/strandedpond:ro
+      - ./data/exports:/app/data/exports:ro
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8017/api/status',timeout=5).close()"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+volumes:
+  research-data:

@@ -1,0 +1,322 @@
+{
+  "experiment": "cs2-bookmaker-challenge-2026-10-09",
+  "full_suite": {
+    "command": "env OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 KEDRO_DISABLE_TELEMETRY=1 .venv/bin/python -m pytest -q",
+    "passed": 472,
+    "subtests_passed": 356,
+    "seconds": 72.63
+  },
+  "executed_workflow": [
+    "prepare",
+    "develop",
+    "confirm"
+  ],
+  "development_candidates": 128,
+  "hash_verified_counts": {
+    "frozen_inputs": 4,
+    "preparation_artifacts": 6,
+    "source_files": 16,
+    "selected_artifacts": 3
+  },
+  "selected_model_sha256": "e9db50f1ffd21a88dac8c5d4749eb5449da7c47f31cac38f3c94e7ef4086d76c",
+  "selection_freeze_sha256": "eec7431b7b6566dcff86a049889180ae00554a5b01cb2c584c567fc10343d9b8",
+  "development_rebuild_byte_identical": {
+    "selection.json": "069d75c425c44ae56d0f721acb4bb3c1f588c4d57198ecf2cc4e58083f7ba095",
+    "selected_model.pkl": "e9db50f1ffd21a88dac8c5d4749eb5449da7c47f31cac38f3c94e7ef4086d76c",
+    "validation_predictions.csv": "5a9b969318d1ea837eef4f4782f7bb1ac8f4d6da9695c18da865559769e86e89"
+  },
+  "model_selection_partition": "validation",
+  "test_used_for_selection": false,
+  "source_review_findings_fixed_before_this_selection": [
+    "consumed_input_hash_binding",
+    "pre_fit_source_freeze",
+    "empty_timed_cohort",
+    "lag_sensitivity_per_book_rules"
+  ],
+  "lint_or_typecheck_claim": false,
+  "inference_smoke": {
+    "forward": {
+      "team1": "Vitality",
+      "team2": "Natus Vincere",
+      "source_date": "2026-10-09",
+      "format": "bo3",
+      "prob_team1_win": 0.6544534689558225,
+      "prob_team2_win": 0.34554653104417754,
+      "model_selected": "ridge_C1_ratings_form_hnone",
+      "fit_through": "2026-04-30",
+      "history_through": "2026-10-07",
+      "competitiveness_qualified": false,
+      "scenario": "literal-organization historical-strength forecast; current starters not verified",
+      "support": {
+        "team1_prior_series": 188,
+        "team2_prior_series": 178,
+        "minimum_prior_series": 178,
+        "either_team_cold": 0,
+        "performance_available": 1,
+        "minimum_prior_measured_maps": 86.0,
+        "performance_age_days": 6,
+        "vrs_available": 1,
+        "vrs_age_days": 32
+      },
+      "availability_limits": [
+        "Literal historical organizations, not verified contemporary starting rosters or identity alias resolution.",
+        "2024+ is a game-era proxy; native source-calendar days and retrospectively collected provider state clocks are not certified publication timestamps.",
+        "Valve Git first-addition commit clock plus seven-day lag is conservative provenance, not independent proof of public release.",
+        "Historical benchmark does not establish access to limits, prices, bets or settlement at those clocks."
+      ],
+      "execution_or_profitability_claim": false
+    },
+    "reverse": {
+      "team1": "Natus Vincere",
+      "team2": "Vitality",
+      "source_date": "2026-10-09",
+      "format": "bo3",
+      "prob_team1_win": 0.34554653104417715,
+      "prob_team2_win": 0.6544534689558228,
+      "model_selected": "ridge_C1_ratings_form_hnone",
+      "fit_through": "2026-04-30",
+      "history_through": "2026-10-07",
+      "competitiveness_qualified": false,
+      "scenario": "literal-organization historical-strength forecast; current starters not verified",
+      "support": {
+        "team1_prior_series": 178,
+        "team2_prior_series": 188,
+        "minimum_prior_series": 178,
+        "either_team_cold": 0,
+        "performance_available": 1,
+        "minimum_prior_measured_maps": 86.0,
+        "performance_age_days": 6,
+        "vrs_available": 1,
+        "vrs_age_days": 32
+      },
+      "availability_limits": [
+        "Literal historical organizations, not verified contemporary starting rosters or identity alias resolution.",
+        "2024+ is a game-era proxy; native source-calendar days and retrospectively collected provider state clocks are not certified publication timestamps.",
+        "Valve Git first-addition commit clock plus seven-day lag is conservative provenance, not independent proof of public release.",
+        "Historical benchmark does not establish access to limits, prices, bets or settlement at those clocks."
+      ],
+      "execution_or_profitability_claim": false
+    },
+    "bo5": {
+      "team1": "Vitality",
+      "team2": "Natus Vincere",
+      "source_date": "2026-10-09",
+      "format": "bo5",
+      "prob_team1_win": 0.7362090974777943,
+      "prob_team2_win": 0.2637909025222057,
+      "model_selected": "ridge_C1_ratings_form_hnone",
+      "fit_through": "2026-04-30",
+      "history_through": "2026-10-07",
+      "competitiveness_qualified": false,
+      "scenario": "literal-organization historical-strength forecast; current starters not verified",
+      "support": {
+        "team1_prior_series": 188,
+        "team2_prior_series": 178,
+        "minimum_prior_series": 178,
+        "either_team_cold": 0,
+        "performance_available": 1,
+        "minimum_prior_measured_maps": 86.0,
+        "performance_age_days": 6,
+        "vrs_available": 1,
+        "vrs_age_days": 32
+      },
+      "availability_limits": [
+        "Literal historical organizations, not verified contemporary starting rosters or identity alias resolution.",
+        "2024+ is a game-era proxy; native source-calendar days and retrospectively collected provider state clocks are not certified publication timestamps.",
+        "Valve Git first-addition commit clock plus seven-day lag is conservative provenance, not independent proof of public release.",
+        "Historical benchmark does not establish access to limits, prices, bets or settlement at those clocks."
+      ],
+      "execution_or_profitability_claim": false
+    },
+    "cold_teams": {
+      "team1": "__unseen_cs_team_A__",
+      "team2": "__unseen_cs_team_B__",
+      "source_date": "2026-10-09",
+      "format": "bo3",
+      "prob_team1_win": 0.5,
+      "prob_team2_win": 0.5,
+      "model_selected": "ridge_C1_ratings_form_hnone",
+      "fit_through": "2026-04-30",
+      "history_through": "2026-10-07",
+      "competitiveness_qualified": false,
+      "scenario": "literal-organization historical-strength forecast; current starters not verified",
+      "support": {
+        "team1_prior_series": 0,
+        "team2_prior_series": 0,
+        "minimum_prior_series": 0,
+        "either_team_cold": 1,
+        "performance_available": 0,
+        "minimum_prior_measured_maps": 0.0,
+        "performance_age_days": 0,
+        "vrs_available": 0,
+        "vrs_age_days": 32
+      },
+      "availability_limits": [
+        "Literal historical organizations, not verified contemporary starting rosters or identity alias resolution.",
+        "2024+ is a game-era proxy; native source-calendar days and retrospectively collected provider state clocks are not certified publication timestamps.",
+        "Valve Git first-addition commit clock plus seven-day lag is conservative provenance, not independent proof of public release.",
+        "Historical benchmark does not establish access to limits, prices, bets or settlement at those clocks."
+      ],
+      "execution_or_profitability_claim": false
+    },
+    "reversed_probability_error": 4.440892098500626e-16,
+    "historical_query_rejected": {
+      "returncode": 2,
+      "day": "2026-10-07",
+      "reason": "Scenario must be after both coefficient fitting and every saved history day"
+    },
+    "saved_artifacts_unchanged": {
+      "artifacts/bookmaker_challenge_20261009/verified/selected_model.pkl": "e9db50f1ffd21a88dac8c5d4749eb5449da7c47f31cac38f3c94e7ef4086d76c",
+      "artifacts/bookmaker_challenge_20261009/verified/series_inference_state.pkl": "9766c26d044b4ed5f3d79e46c10a79c9cd9275bd19d993b85691113879c372b9"
+    },
+    "scope": "Actual CLI, saved model and state; hypothetical literal-organization scenarios, not observed live fixtures or verified current rosters"
+  },
+  "confirmation_sha256": "96c166558a5c7206a6ed94a2fd27ca98a19bf52ca9819c0ec8d9eb368360a87d",
+  "confirmation_artifact_hashes_verified": 3,
+  "reserved_ids_verified": 2728,
+  "prior_scored_test_overlap": 0,
+  "native_orientations_labels_dates_verified": 2728,
+  "full_test_independently_recomputed": {
+    "log_loss": 0.6124590477976796,
+    "brier": 0.21246923426334074,
+    "accuracy": 0.6543255131964809,
+    "n_samples": 2728
+  },
+  "market_comparisons_independently_recomputed": {
+    "one_hour_proportional": {
+      "model": {
+        "log_loss": 0.6320881367886789,
+        "brier": 0.22113028344161892,
+        "accuracy": 0.6205250596658711,
+        "n_samples": 419
+      },
+      "bookmaker": {
+        "log_loss": 0.6005284706424772,
+        "brier": 0.2069190100208129,
+        "accuracy": 0.6778042959427207,
+        "n_samples": 419
+      },
+      "paired_rows": 751,
+      "source_days": 72
+    },
+    "one_hour_power": {
+      "model": {
+        "log_loss": 0.6320881367886789,
+        "brier": 0.22113028344161892,
+        "accuracy": 0.6205250596658711,
+        "n_samples": 419
+      },
+      "bookmaker": {
+        "log_loss": 0.595653669666133,
+        "brier": 0.20537126930723726,
+        "accuracy": 0.6778042959427207,
+        "n_samples": 419
+      },
+      "paired_rows": 751,
+      "source_days": 72
+    },
+    "six_hour_proportional": {
+      "model": {
+        "log_loss": 0.632850076818826,
+        "brier": 0.22132268323162554,
+        "accuracy": 0.6307692307692307,
+        "n_samples": 325
+      },
+      "bookmaker": {
+        "log_loss": 0.6018244260749865,
+        "brier": 0.20782532267692957,
+        "accuracy": 0.6584615384615384,
+        "n_samples": 325
+      },
+      "paired_rows": 546,
+      "source_days": 70
+    },
+    "six_hour_power": {
+      "model": {
+        "log_loss": 0.632850076818826,
+        "brier": 0.22132268323162554,
+        "accuracy": 0.6307692307692307,
+        "n_samples": 325
+      },
+      "bookmaker": {
+        "log_loss": 0.5966119302776268,
+        "brier": 0.2063475459884388,
+        "accuracy": 0.6584615384615384,
+        "n_samples": 325
+      },
+      "paired_rows": 546,
+      "source_days": 70
+    },
+    "source_day_proportional": {
+      "model": {
+        "log_loss": 0.6462086324540711,
+        "brier": 0.2282437956061513,
+        "accuracy": 0.6,
+        "n_samples": 170
+      },
+      "bookmaker": {
+        "log_loss": 0.6132868347320346,
+        "brier": 0.2135869228757764,
+        "accuracy": 0.6411764705882353,
+        "n_samples": 170
+      },
+      "paired_rows": 271,
+      "source_days": 56
+    },
+    "source_day_power": {
+      "model": {
+        "log_loss": 0.6462086324540711,
+        "brier": 0.2282437956061513,
+        "accuracy": 0.6,
+        "n_samples": 170
+      },
+      "bookmaker": {
+        "log_loss": 0.6110625576858918,
+        "brier": 0.21337521594320466,
+        "accuracy": 0.6411764705882353,
+        "n_samples": 170
+      },
+      "paired_rows": 271,
+      "source_days": 56
+    }
+  },
+  "paired_clock_order_checks": 3136,
+  "raw_archive": {
+    "rows": 122038,
+    "latest_source_day": "2026-10-07",
+    "rows_after_reserved_end": 0,
+    "accepted_series_with_nonempty_measured_payload": 670,
+    "measured_source_years": {
+      "2025": 9,
+      "2026": 661
+    }
+  },
+  "qualified": false,
+  "verified_at_utc": "2026-10-09T23:57:33.399615+00:00",
+  "one_shot_cli_guards": {
+    "develop": {
+      "returncode": 2,
+      "message": "Error: This experiment already has a frozen selection; no reselection",
+      "no_retraining_or_rescoring": true
+    },
+    "confirm": {
+      "returncode": 2,
+      "message": "Error: Reserved TEST was already evaluated; do not reuse it for selection",
+      "no_retraining_or_rescoring": true
+    }
+  },
+  "comparison_artifact_sha256": {
+    "comparisons/one_hour_proportional.json": "7ffc45b8b65ddf2e6279334e6fee24634704f8856bd8dd4c8d6b91a0caf47fbb",
+    "comparisons/one_hour_proportional.csv": "6c1d7b358ebaad920b3c34e54fabdf9535cc8df5e7303e9af6efeac224fbc825",
+    "comparisons/one_hour_power.json": "63a97af5d8ab08ce5b19aef249ea079dc16ab397fbf116932defd7c6f10a8d0a",
+    "comparisons/one_hour_power.csv": "ab84a45209cec540c709e7dc3559afc1c5a8e197b56c3a5c30eda1375a5b1424",
+    "comparisons/six_hour_proportional.json": "d6521ae37a30db6599431cea981035f2962c6ffc7f2648ed8ad09eeb26e39918",
+    "comparisons/six_hour_proportional.csv": "0618147536690799286f349063ef4346480013e803a6b2456cd5046fbd95a586",
+    "comparisons/six_hour_power.json": "f7be6b04908fb80da81f0a14e1822330ce8d6550eba1f3ef7424f039a53ff100",
+    "comparisons/six_hour_power.csv": "45105475c13a70282be1f1a7f8488167bda8a837bdfbe539754907700108f2fa",
+    "comparisons/source_day_proportional.json": "61e0c0e9a14e9d524412d095e5dac1b487a606da107548e21e13a76788477241",
+    "comparisons/source_day_proportional.csv": "711f5b12181f399fc2dc34f5e4c8568efe5db23a682e4938fbff9cc52f3999ef",
+    "comparisons/source_day_power.json": "b010579f6c9c78d2313a00316b97e293d2ca133bf282cef0348e22b15fd3df75",
+    "comparisons/source_day_power.csv": "d3cba50730031ad7a03b23a3a7aab04e757a7b7f8037bbfd7277cc60ccea3346"
+  }
+}

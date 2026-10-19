@@ -1,0 +1,18 @@
+{
+  "new_or_updated_document_sections_checked": 8,
+  "relative_links_checked": 30,
+  "source_entries": 31,
+  "bibliography_sources_matched_to_ledger": 22,
+  "local_evidence_records_validated": 15,
+  "candidate_and_control_table_rows_checked": 18,
+  "market_commands_have_isolated_mapping_and_audit_outputs": 4,
+  "documented_cli_forecast_reproduced": true,
+  "scenario_team1_probability": 0.5738714544814625,
+  "citation_linkage": {
+    "passed": true,
+    "inline_markers": 38,
+    "referenced_sources": 22,
+    "bibliography_entries": 22
+  },
+  "citation_limits": "Linkage/URL syntax only; source inspections and access limits are in the source ledger, not implied by the automatic check."
+}

@@ -1,0 +1,1020 @@
+{
+  "schema_version": 1,
+  "research_date": "2026-10-09",
+  "report": "cs2-model-research-2026-10-09.md",
+  "results_report": "cs2-model-results-2026-10-09.md",
+  "methodology": {
+    "origin": "Three inspected-source research tracks plus parent primary-page corrections, saved local experiments and executed verification.",
+    "deduplication": "Exact URLs canonicalized for the alternate Clarke publisher URL and PMC host; one source entry with track-specific scope and claims.",
+    "quotation_policy": "Researcher excerpts retain ellipses marking omissions, not necessarily contiguous quotations. Parent-corrected excerpts are explicitly identified. Interpretation and corrections are separate from quotations.",
+    "exclusions": "Located/blocked texts are retained for discovery/access transparency, not counted as full-text verified or used for hidden results. Mutable public repositories are author claims, not independent replication.",
+    "citation_linkage": "Parent ran verify_citations.py: PASS, 38 inline markers, 22 unique referenced sources and 22 bibliography entries. This checks linkage and URL syntax, not factual truth or current network availability."
+  },
+  "sources": [
+    {
+      "url": "https://claytonthorrez.com/papers/esportsbench/EsportsBench_preprint.pdf",
+      "title": "EsportsBench: A Collection of Datasets for Benchmarking Rating Systems in Esports",
+      "tracks": [
+        "cs"
+      ],
+      "access_and_scope_evidence": [
+        {
+          "track": "cs",
+          "access_scope": "Research preprint with direct methodology/results and dataset documentation; not a CS2-only professional benchmark.",
+          "summary": "Large chronological online rating comparison across esports including mixed Counter-Strike; Glicko/Glicko-2 log loss 0.6375 and respective accuracies 64.17%/64.18% on 19,302 test records; discusses data integrity and date limitations."
+        }
+      ],
+      "claims": [
+        {
+          "track": "cs",
+          "claim": "EsportsBench evaluates Counter-Strike with 170,003 training and 19,302 test matches; Glicko/Glicko-2 log loss is 0.6375 for both and accuracies are 0.6417/0.6418, versus Elo 0.6473 and 0.6290.",
+          "quote_excerpt": "Counter-Strike | Accuracy |0.6290|0.6417|0.6418 ... Log Loss |0.6473|0.6375|0.6375",
+          "quote_status": "Parent rechecked Table 2. Table cells transcribed in order with separator formatting normalized; ellipsis omits other rating columns.",
+          "scope_note": "Source-author statement or research interpretation; not independently replicated. Numerical confidence supplied by researcher omitted as unsupported precision."
+        },
+        {
+          "track": "cs",
+          "claim": "EsportsBench uses seven-day experimental rating periods and a latest-year test; its separate minimum-period recommendation is one day. Mixed-level Counter-Strike and community-wiki provenance limit transfer to the 675 local lineup-eligible series.",
+          "quote_excerpt": "We use 7 day rating periods for all experiments in this work. ... We split all datasets into train and test sets based on date, with the test set being the most recent year of matches.",
+          "quote_status": "Parent rechecked PDF section 5.3; literal excerpts separated by an ellipsis. This replaces the researcher's inaccurate same-date paraphrase.",
+          "scope_note": "Source-author statement or research interpretation; not independently replicated. Numerical confidence supplied by researcher omitted as unsupported precision."
+        }
+      ],
+      "integration_corrections": {
+        "data_end": "March 2024, not March 2023",
+        "holdout": "latest year",
+        "actual_rating_period": "7 days",
+        "recommendation": "never shorter than a day",
+        "draw_handling": "Counter-Strike draw rate 0.0177; accuracy excludes draws, log loss accommodates fractional targets",
+        "cohort": "Mixed Counter-Strike since 2001, levels and formats, not local binary pro CS2."
+      },
+      "evidence_class": "inspected source content, with source-specific access limits below",
+      "source_id": "S01",
+      "report_bibliography_number": 2
+    },
+    {
+      "url": "https://arxiv.org/abs/2106.08888",
+      "title": "Bandit Modeling of Map Selection in Counter-Strike: Global Offensive",
+      "tracks": [
+        "cs"
+      ],
+      "access_and_scope_evidence": [
+        {
+          "track": "cs",
+          "access_scope": "Primary research preprint; directly inspected abstract; claims are author-reported and counterfactual.",
+          "summary": "Contextual bandit map pick/ban work on >3,500 matches and >25,000 choices; not a prospective prematch series predictor."
+        }
+      ],
+      "claims": [
+        {
+          "track": "cs",
+          "claim": "Petri et al. use contextual bandits on more than 3,500 CS:GO matches and 25,000 map-selection decisions; their up-to-11% map / 19.8% match win-probability improvement is counterfactual map-policy analysis, not a demonstrated forecast uplift.",
+          "quote_excerpt": "Using a data set of over 3,500 CSGO matches and over 25,000 map selection decisions ... usage of our model could improve teams' predicted map win probability by up to 11% and raise overall match win probabilities by 19.8% for evenly-matched teams.",
+          "quote_status": "Researcher-transcribed inspected excerpt; ellipses denote omissions, not a contiguous quotation. Metadata-only entries do not support technical or performance claims.",
+          "scope_note": "Source-author statement or research interpretation; not independently replicated. Numerical confidence supplied by researcher omitted as unsupported precision."
+        },
+        {
+          "track": "cs",
+          "claim": "Pre-veto and post-veto forecasts are distinct targets; final played maps or lineups do not establish pre-match availability without timestamps.",
+          "quote_excerpt": "teams first pick and ban maps ... before it starts",
+          "quote_status": "Researcher-transcribed inspected excerpt; ellipses denote omissions, not a contiguous quotation. Metadata-only entries do not support technical or performance claims.",
+          "scope_note": "Source-author statement or research interpretation; not independently replicated. Numerical confidence supplied by researcher omitted as unsupported precision."
+        }
+      ],
+      "evidence_class": "abstract/record inspected; claims bounded to visible abstract and source handoff",
+      "source_id": "S02",
+      "report_bibliography_number": 4
+    },
+    {
+      "url": "https://github.com/ValveSoftware/counter-strike_regional_standings",
+      "title": "Valve Regional Standings repository",
+      "tracks": [
+        "cs"
+      ],
+      "access_and_scope_evidence": [
+        {
+          "track": "cs",
+          "access_scope": "Primary official Valve repository; current pages are mutable; methodology self-reported.",
+          "summary": "Official VRS factors and probability-bin evaluation; Valve explicitly notes under/over-estimation at probability extremes."
+        }
+      ],
+      "claims": [
+        {
+          "track": "cs",
+          "claim": "Valve's VRS goals include future-result prediction, but its own evaluation describes calibration slope error rather than establishing high classification accuracy.",
+          "quote_excerpt": "The current model tends to underestimate win rates at the low end and overestimate at the high end.",
+          "quote_status": "Researcher-transcribed inspected excerpt; ellipses denote omissions, not a contiguous quotation. Metadata-only entries do not support technical or performance claims.",
+          "scope_note": "Source-author statement or research interpretation; not independently replicated. Numerical confidence supplied by researcher omitted as unsupported precision."
+        },
+        {
+          "track": "cs",
+          "claim": "Valve describes rank values based on team prize winnings, defeated opponents' prize money/network, and head-to-head; rank is a ranking-system input, not itself a verified probability without a separate mapping.",
+          "quote_excerpt": "The current model incorporates the following factors: Team’s Prize money earned; Beaten opponent’s Prize money earned; Number of teams beaten; Head-to-head results.",
+          "quote_status": "Researcher-transcribed inspected excerpt; ellipses denote omissions, not a contiguous quotation. Metadata-only entries do not support technical or performance claims.",
+          "scope_note": "Source-author statement or research interpretation; not independently replicated. Numerical confidence supplied by researcher omitted as unsupported precision."
+        }
+      ],
+      "evidence_class": "inspected source content, with source-specific access limits below",
+      "source_id": "S03",
+      "report_bibliography_number": 9
+    },
+    {
+      "url": "https://github.com/ValveSoftware/counter-strike_regional_standings/blob/main/invitation/2026/details/2026_09_07/0064--ww--ct0m-deko-kelien-m3wsu-strogo.md",
+      "title": "Valve VRS roster calculation report, WW, 2026-09-07",
+      "tracks": [
+        "cs"
+      ],
+      "access_and_scope_evidence": [
+        {
+          "track": "cs",
+          "access_scope": "Primary official dated roster calculation report.",
+          "summary": "Shows example transformation to rank value, age weighting, ten-best six-month factor rules, and head-to-head adjustment."
+        }
+      ],
+      "claims": [
+        {
+          "track": "cs",
+          "claim": "Valve roster calculation examples use age-weighted results and the ten best results over six months for selected factors.",
+          "quote_excerpt": "For Bounty Collected, Opponent Network, and LAN Wins, we consider only the ten best results over the past 6 months.",
+          "quote_status": "Researcher-transcribed inspected excerpt; ellipses denote omissions, not a contiguous quotation. Metadata-only entries do not support technical or performance claims.",
+          "scope_note": "Source-author statement or research interpretation; not independently replicated. Numerical confidence supplied by researcher omitted as unsupported precision."
+        }
+      ],
+      "evidence_class": "inspected source content, with source-specific access limits below",
+      "source_id": "S04",
+      "report_bibliography_number": 10
+    },
+    {
+      "url": "https://lup.lu.se/student-papers/record/9145457/file/9145459.pdf",
+      "title": "Predicting Counter-Strike Matches using Machine Learning Models",
+      "tracks": [
+        "cs"
+      ],
+      "access_and_scope_evidence": [
+        {
+          "track": "cs",
+          "access_scope": "University thesis, directly inspected PDF; limited sample and methodological constraints noted.",
+          "summary": "CS:GO 2016–2020 dataset of 3,788 records with random final-third split; separate nine-match BLAST 2023 bookmaker comparison where tested models performed worse on reported metrics."
+        }
+      ],
+      "claims": [
+        {
+          "track": "cs",
+          "claim": "Broms & Nordansjö's 2024 thesis uses 3,788 professional CS:GO matches from 2016–2020 and a random final-third test split, so its historical test accuracy is not an out-of-time CS2 benchmark.",
+          "quote_excerpt": "The final data set was randomly divided into thirds. Two thirds of the data was used to train the models ... final third ... test data.",
+          "quote_status": "Researcher-transcribed inspected excerpt; ellipses denote omissions, not a contiguous quotation. Metadata-only entries do not support technical or performance claims.",
+          "scope_note": "Source-author statement or research interpretation; not independently replicated. Numerical confidence supplied by researcher omitted as unsupported precision."
+        },
+        {
+          "track": "cs",
+          "claim": "The Lund thesis's BLAST application covers nine matches; models achieved 55.6% accuracy and bookmaker models 66.7–77.8%; its authors conclude their tested models did not surpass benchmarks.",
+          "quote_excerpt": "applied to 9 professional games ... all three models correctly predicted five matches ... Betway 0.322 / 0.778; Pinnacle 0.330 / 0.778 ... did not surpass the performance of the benchmarks.",
+          "quote_status": "Researcher-transcribed inspected excerpt; ellipses denote omissions, not a contiguous quotation. Metadata-only entries do not support technical or performance claims.",
+          "scope_note": "Source-author statement or research interpretation; not independently replicated. Numerical confidence supplied by researcher omitted as unsupported precision."
+        }
+      ],
+      "evidence_class": "inspected source content, with source-specific access limits below",
+      "source_id": "S05",
+      "report_bibliography_number": 3
+    },
+    {
+      "url": "https://arxiv.org/abs/2205.09693",
+      "title": "Individual and Collective Performance Deteriorate in a New Team: A Case Study of CS:GO Tournaments",
+      "tracks": [
+        "cs"
+      ],
+      "access_and_scope_evidence": [
+        {
+          "track": "cs",
+          "access_scope": "Primary observational research preprint; its causal interpretation is bounded by study design.",
+          "summary": "Two natural experiments examine player switching and performance changes; supports roster continuity as a candidate, not a fixed predictive penalty."
+        }
+      ],
+      "claims": [
+        {
+          "track": "cs",
+          "claim": "Zhang et al.'s observational CS:GO study reports performance drops after player switches followed by recovery; this does not establish a fixed forecasting penalty or decay constant.",
+          "quote_excerpt": "After a player switched to a new team, both the individual and the collective performance dropped initially, and then slowly recovered.",
+          "quote_status": "Researcher-transcribed inspected excerpt; ellipses denote omissions, not a contiguous quotation. Metadata-only entries do not support technical or performance claims.",
+          "scope_note": "Source-author statement or research interpretation; not independently replicated. Numerical confidence supplied by researcher omitted as unsupported precision."
+        }
+      ],
+      "evidence_class": "abstract/record inspected; claims bounded to visible abstract and source handoff",
+      "source_id": "S06",
+      "report_bibliography_number": 13
+    },
+    {
+      "url": "https://arxiv.org/abs/2011.01324",
+      "title": "Valuing Player Actions in Counter-Strike: Global Offensive",
+      "tracks": [
+        "cs"
+      ],
+      "access_and_scope_evidence": [
+        {
+          "track": "cs",
+          "access_scope": "Primary research preprint, directly inspected abstract.",
+          "summary": "Open event data/model for in-game action valuation using live win probability and 70M+ events; not prematch series forecasting."
+        }
+      ],
+      "claims": [
+        {
+          "track": "cs",
+          "claim": "Xenopoulos et al. analyze in-game action value from win-probability changes and over 70 million CSGO events, a different target from prematch series forecasting.",
+          "quote_excerpt": "Using over 70 million in-game CSGO events, we demonstrate our framework's consistency and independence compared to existing valuation frameworks.",
+          "quote_status": "Researcher-transcribed inspected excerpt; ellipses denote omissions, not a contiguous quotation. Metadata-only entries do not support technical or performance claims.",
+          "scope_note": "Source-author statement or research interpretation; not independently replicated. Numerical confidence supplied by researcher omitted as unsupported precision."
+        }
+      ],
+      "evidence_class": "abstract/record inspected; claims bounded to visible abstract and source handoff",
+      "source_id": "S07",
+      "report_bibliography_number": 5
+    },
+    {
+      "url": "https://link.springer.com/chapter/10.1007/978-3-319-73013-4_17",
+      "title": "Predicting Winning Team and Probabilistic Ratings in Dota 2 and Counter-Strike: Global Offensive Video Games",
+      "tracks": [
+        "cs"
+      ],
+      "access_and_scope_evidence": [
+        {
+          "track": "cs",
+          "access_scope": "Peer-reviewed conference chapter publisher page and abstract inspected; full text gated.",
+          "summary": "CS:GO and Dota winner prediction and TrueSkill player-impact ratings, but accessible content lacks comparable modern out-of-time CS2 details."
+        }
+      ],
+      "claims": [
+        {
+          "track": "cs",
+          "claim": "Makarov et al. is a genuine paired CS:GO/Dota winner-prediction and TrueSkill player-impact paper, but accessible publisher abstract does not provide enough result detail to establish a modern CS2 benchmark.",
+          "quote_excerpt": "we present novel winning team predicting models and compare the accuracy ... with TrueSkill model of ranking individual players impact ... for ... Dota 2 and Counter-Strike: Global Offensive.",
+          "quote_status": "Researcher-transcribed inspected excerpt; ellipses denote omissions, not a contiguous quotation. Metadata-only entries do not support technical or performance claims.",
+          "scope_note": "Source-author statement or research interpretation; not independently replicated. Numerical confidence supplied by researcher omitted as unsupported precision."
+        }
+      ],
+      "evidence_class": "publisher abstract inspected; full text gated",
+      "source_id": "S08",
+      "report_bibliography_number": 6
+    },
+    {
+      "url": "https://github.com/IlliaDol/cs2-match-analytics",
+      "title": "CS2 Match Analytics",
+      "tracks": [
+        "cs"
+      ],
+      "access_and_scope_evidence": [
+        {
+          "track": "cs",
+          "access_scope": "Open-source public implementation; project-authored benchmark metrics, not independently replicated; inspect license/data rights before reuse.",
+          "summary": "README claims chronological test results for 1,811 series and Elo/logistic/roster candidates; data docs flag label/schema corrections."
+        }
+      ],
+      "claims": [
+        {
+          "track": "cs",
+          "claim": "A public CS2 repository documents a chronological test and reports 0.6377 log loss for LR+roster on 1,811 series, but its results are repository-authored and were not independently reproduced here; its data documentation flags winner-label/data-contract problems.",
+          "quote_excerpt": "Time-split test set (train < 2026-01-01, n = 1,811 series) ... lr+roster ... 0.6377",
+          "quote_status": "Researcher-transcribed inspected excerpt; ellipses denote omissions, not a contiguous quotation. Metadata-only entries do not support technical or performance claims.",
+          "scope_note": "Source-author statement or research interpretation; not independently replicated. Numerical confidence supplied by researcher omitted as unsupported precision."
+        },
+        {
+          "track": "cs",
+          "claim": "A 0.630–0.650 theoretical pre-match CS2 log-loss floor is unsupported by the inspected primary literature; it is not a derived lower bound. The binary all-0.5 reference is ln(2), approximately 0.6931.",
+          "quote_excerpt": "constant_0.5 = always predict 0.5 (logloss ln 2 = 0.6931)",
+          "quote_status": "Researcher-transcribed inspected excerpt; ellipses denote omissions, not a contiguous quotation. Metadata-only entries do not support technical or performance claims.",
+          "scope_note": "Source-author statement or research interpretation; not independently replicated. Numerical confidence supplied by researcher omitted as unsupported precision."
+        }
+      ],
+      "evidence_class": "inspected source content, with source-specific access limits below",
+      "source_id": "S09",
+      "report_bibliography_number": 7
+    },
+    {
+      "url": "https://github.com/IlliaDol/cs2-match-analytics/blob/main/DATA.md",
+      "title": "CS2 Match Analytics DATA.md",
+      "tracks": [
+        "cs"
+      ],
+      "access_and_scope_evidence": [
+        {
+          "track": "cs",
+          "access_scope": "Repository-authored data audit; useful evidence of implementation/data pitfalls, not independently verified data provenance.",
+          "summary": "Documents 20,676 raw rows, 9,923 series summaries, label defects, mixed map/series data, roster data gaps and inconsistent ID/schema concerns."
+        }
+      ],
+      "claims": [],
+      "evidence_class": "inspected source content, with source-specific access limits below",
+      "source_id": "S10",
+      "report_bibliography_number": 8
+    },
+    {
+      "url": "https://arxiv.org/abs/1701.08055",
+      "title": "Modelling Competitive Sports: Bradley-Terry-Elo Models for Supervised and On-Line Learning of Paired Competition Outcomes",
+      "tracks": [
+        "cs"
+      ],
+      "access_and_scope_evidence": [
+        {
+          "track": "cs",
+          "access_scope": "Primary general paired-comparison methods preprint; not CS-specific.",
+          "summary": "Formal relation and feature-aware modeling for Elo/Bradley–Terry-style paired outcomes; foundation for simple logistic strength-gap baseline."
+        }
+      ],
+      "claims": [],
+      "evidence_class": "abstract/record inspected; claims bounded to visible abstract and source handoff",
+      "source_id": "S11",
+      "report_bibliography_number": 12
+    },
+    {
+      "url": "https://github.com/IlliaDol/cs2-match-analytics/blob/main/docs/SPEC_M7_calibrated_model.md",
+      "title": "CS2 Match Analytics M7 calibrated-model specification",
+      "tracks": [
+        "cs"
+      ],
+      "access_and_scope_evidence": [
+        {
+          "track": "cs",
+          "access_scope": "Repository-authored implementation contract; inspected directly, not independent empirical evidence.",
+          "summary": "Specifies Elo/form/rest/BO/tier features, strict temporal cutoff, forbidden post-outcome features, and train-only tuning. Useful as implementation detail, not measured benchmark evidence."
+        }
+      ],
+      "claims": [],
+      "evidence_class": "inspected source content, with source-specific access limits below",
+      "source_id": "S12"
+    },
+    {
+      "url": "https://sites.stat.washington.edu/people/raftery/Research/PDF/Gneiting2007jasa.pdf",
+      "title": "Strictly Proper Scoring Rules, Prediction, and Estimation",
+      "tracks": [
+        "sports",
+        "market"
+      ],
+      "access_and_scope_evidence": [
+        {
+          "track": "sports",
+          "access_scope": "Peer-reviewed JASA methodological review; author-hosted full text inspected.",
+          "summary": "Proper and strictly proper scoring rules; log and Brier scores; entropy/divergence; stresses same forecast situations for direct score comparison and distinction between calibration and sharpness."
+        },
+        {
+          "track": "market",
+          "access_scope": "Primary JASA methodological paper, full text inspected.",
+          "summary": "Establishes proper/strictly proper score theory, includes logarithmic and Brier scores, distinguishes calibration and sharpness, and directly notes average scores compare fairly on exactly the same forecast situations."
+        }
+      ],
+      "claims": [
+        {
+          "track": "sports",
+          "claim": "Log loss is a strictly proper scoring rule that evaluates probabilistic forecasts, not merely classification accuracy; it should be interpreted jointly with outcome distribution and forecast situations.",
+          "quote_excerpt": "The logarithmic scoring rule ... corresponds to ... negative Shannon entropy ... The logarithmic score ... associated ... divergence function becomes the classical Kullback–Leibler divergence.",
+          "quote_status": "Researcher-transcribed inspected excerpt; ellipses denote omissions, not a contiguous quotation. Metadata-only entries do not support technical or performance claims.",
+          "scope_note": "Source-author statement or research interpretation; not independently replicated. Numerical confidence supplied by researcher omitted as unsupported precision."
+        },
+        {
+          "track": "sports",
+          "claim": "Scores across different forecast cohorts are not directly comparable without accounting for intrinsic predictability; evaluation targets must match.",
+          "quote_excerpt": "Scores for competing forecast procedures are directly comparable if they refer to exactly the same set of forecast situations. If scores for distinct sets of situations are compared, then considerable care must be exercised to separate the confounding effects of intrinsic predictability and predictive performance.",
+          "quote_status": "Researcher-transcribed inspected excerpt; ellipses denote omissions, not a contiguous quotation. Metadata-only entries do not support technical or performance claims.",
+          "scope_note": "Source-author statement or research interpretation; not independently replicated. Numerical confidence supplied by researcher omitted as unsupported precision."
+        },
+        {
+          "track": "market",
+          "claim": "Log loss and Brier score are strictly proper probabilistic forecast metrics; using identical match situations is necessary to make average scores directly comparable.",
+          "quote_excerpt": "Scores for competing forecast procedures are directly comparable if they refer to exactly the same set of forecast situations.",
+          "quote_status": "Researcher-transcribed inspected excerpt; ellipses denote omissions, not a contiguous quotation. Metadata-only entries do not support technical or performance claims.",
+          "scope_note": "Source-author statement or research interpretation; not independently replicated. Numerical confidence supplied by researcher omitted as unsupported precision."
+        }
+      ],
+      "evidence_class": "inspected source content, with source-specific access limits below",
+      "source_id": "S13",
+      "report_bibliography_number": 1
+    },
+    {
+      "url": "https://kt.ijs.si/igor_mozetic/papers/CerTorMoz-TimeSer-MACH-20.pdf",
+      "title": "Evaluating time series forecasting models: an empirical study on performance estimation methods",
+      "tracks": [
+        "sports"
+      ],
+      "access_and_scope_evidence": [
+        {
+          "track": "sports",
+          "access_scope": "Peer-reviewed Machine Learning paper; author/institution-hosted full text inspected.",
+          "summary": "Empirical study of 174 real-world time series and synthetic data; compares CV, holdout and prequential methods; supports repeated OOS for nonstationary data and blocked CV in stationary settings."
+        }
+      ],
+      "claims": [
+        {
+          "track": "sports",
+          "claim": "Out-of-sample/chronological evaluation is particularly appropriate under nonstationarity, although blocked cross-validation can be appropriate for stationary time series; there is no single universally best estimator.",
+          "quote_excerpt": "Empirical experiments suggest that blocked cross-validation can be applied to stationary time series. However, when the time series are non-stationary, the most accurate estimates are produced by out-of-sample methods, particularly the holdout approach repeated in multiple testing periods.",
+          "quote_status": "Researcher-transcribed inspected excerpt; ellipses denote omissions, not a contiguous quotation. Metadata-only entries do not support technical or performance claims.",
+          "scope_note": "Source-author statement or research interpretation; not independently replicated. Numerical confidence supplied by researcher omitted as unsupported precision."
+        }
+      ],
+      "evidence_class": "inspected source content, with source-specific access limits below",
+      "source_id": "S14",
+      "report_bibliography_number": 16
+    },
+    {
+      "url": "https://cbergmeir.com/publications/2018-01-01_bergmeir2018note/",
+      "title": "A Note on the Validity of Cross-Validation for Evaluating Autoregressive Time Series Prediction",
+      "tracks": [
+        "sports"
+      ],
+      "access_and_scope_evidence": [
+        {
+          "track": "sports",
+          "access_scope": "Author publication page for peer-reviewed Computational Statistics & Data Analysis article; page inspected, full article not available from this URL.",
+          "summary": "Useful qualification against categorical condemnation of K-fold CV: validity depends on AR-specific assumptions."
+        }
+      ],
+      "claims": [
+        {
+          "track": "sports",
+          "claim": "Random K-fold is not categorically invalid in every time-series setting: a published result gives conditions for validity in purely autoregressive prediction, but that does not replace chronological deployment simulation when nonstationarity or availability matters.",
+          "quote_excerpt": "A Note on the Validity of Cross-Validation for Evaluating Autoregressive Time Series Prediction",
+          "quote_status": "Researcher-transcribed inspected excerpt; ellipses denote omissions, not a contiguous quotation. Metadata-only entries do not support technical or performance claims.",
+          "scope_note": "Source-author statement or research interpretation; not independently replicated. Numerical confidence supplied by researcher omitted as unsupported precision."
+        }
+      ],
+      "evidence_class": "metadata/publication-page only; no full-text empirical or detailed technical claim adopted",
+      "source_id": "S15"
+    },
+    {
+      "url": "https://otexts.com/fpp3/tscv.html",
+      "title": "Forecasting: Principles and Practice, 3rd ed., Time series cross-validation",
+      "tracks": [
+        "sports"
+      ],
+      "access_and_scope_evidence": [
+        {
+          "track": "sports",
+          "access_scope": "Established forecasting textbook by domain experts; implementation/method exposition inspected.",
+          "summary": "Explains rolling forecast origins, past-only training, horizon-matched evaluation and why training residual metrics are not true forecast accuracy."
+        }
+      ],
+      "claims": [
+        {
+          "track": "sports",
+          "claim": "For chronological data, rolling-origin evaluation fits using only observations earlier than each test forecast and supports repeated origin evaluation; ordinary residual/in-sample accuracy is optimistically biased.",
+          "quote_excerpt": "The corresponding training set consists only of observations that occurred prior to the observation that forms the test set. Thus, no future observations can be used in constructing the forecast.",
+          "quote_status": "Researcher-transcribed inspected excerpt; ellipses denote omissions, not a contiguous quotation. Metadata-only entries do not support technical or performance claims.",
+          "scope_note": "Source-author statement or research interpretation; not independently replicated. Numerical confidence supplied by researcher omitted as unsupported precision."
+        }
+      ],
+      "evidence_class": "inspected source content, with source-specific access limits below",
+      "source_id": "S16",
+      "report_bibliography_number": 15
+    },
+    {
+      "url": "https://scikit-learn.org/stable/modules/calibration.html",
+      "title": "scikit-learn Probability calibration documentation",
+      "tracks": [
+        "sports"
+      ],
+      "access_and_scope_evidence": [
+        {
+          "track": "sports",
+          "access_scope": "Official implementation documentation; inspected.",
+          "summary": "Practical calibration workflow and cautions: calibration data must be independent of model fit; sigmoid and isotonic trade-offs; calibration scores combine calibration, discrimination and uncertainty."
+        }
+      ],
+      "claims": [
+        {
+          "track": "sports",
+          "claim": "Calibration must be trained on predictions independent of the base model's training observations; calibrated predictions on training rows create biased calibration. Sigmoid is low-capacity; isotonic is more prone to overfit on small samples.",
+          "quote_excerpt": "Ideally, the calibrator is fit on a dataset independent of the training data used to fit the classifier in the first place. ... Using the classifier output of training data to fit the calibrator would thus result in a biased calibrator.",
+          "quote_status": "Researcher-transcribed inspected excerpt; ellipses denote omissions, not a contiguous quotation. Metadata-only entries do not support technical or performance claims.",
+          "scope_note": "Source-author statement or research interpretation; not independently replicated. Numerical confidence supplied by researcher omitted as unsupported precision."
+        }
+      ],
+      "evidence_class": "inspected source content, with source-specific access limits below",
+      "source_id": "S17",
+      "report_bibliography_number": 17
+    },
+    {
+      "url": "https://pure.hw.ac.uk/ws/portalfiles/portal/91472074/Schaffer_Stacking_paper_ECONVN2023.pdf",
+      "title": "Stacking Regression for Time-Series, with an Application to Forecasting Quarterly US GDP Growth",
+      "tracks": [
+        "sports"
+      ],
+      "access_and_scope_evidence": [
+        {
+          "track": "sports",
+          "access_scope": "Peer-reviewed accepted manuscript hosted by Heriot-Watt University; full text inspected. Published chapter is 2024; manuscript dated 2023.",
+          "summary": "Time series CV, two-stage stacking leakage avoidance, convex weights, small ensemble of learners; tests L1/L2 stacking on GDP crisis regimes. Numeric findings are not directly transferable to binary CS2 forecasts."
+        }
+      ],
+      "claims": [
+        {
+          "track": "sports",
+          "claim": "Temporal stacking must prevent leakage at both base learner and meta-learner stages; time-series OOF predictions require past-only origins. Convex/nonnegative weights summing to one make the ensemble constrained and interpretable.",
+          "quote_excerpt": "Tuning methods have to avoid data leakage ... This applies to stacking regression on two fronts: (1) the training of the different learners needs to avoid data leakage from the future into the individual learners; (2) the stacking procedure that combines the predictions of these learners has to avoid data leakage.",
+          "quote_status": "Researcher-transcribed inspected excerpt; ellipses denote omissions, not a contiguous quotation. Metadata-only entries do not support technical or performance claims.",
+          "scope_note": "Source-author statement or research interpretation; not independently replicated. Numerical confidence supplied by researcher omitted as unsupported precision."
+        }
+      ],
+      "evidence_class": "inspected source content, with source-specific access limits below",
+      "source_id": "S18",
+      "report_bibliography_number": 18
+    },
+    {
+      "url": "https://www.jstatsoft.org/article/view/v048i09",
+      "title": "Bradley-Terry Models in R: The BradleyTerry2 Package",
+      "tracks": [
+        "sports"
+      ],
+      "access_and_scope_evidence": [
+        {
+          "track": "sports",
+          "access_scope": "Peer-reviewed Journal of Statistical Software article; official journal page inspected.",
+          "summary": "Transparent Bradley–Terry extensions with covariates, home/contest effects, random effects, penalization, bias reduction, and diagnostics."
+        }
+      ],
+      "claims": [
+        {
+          "track": "sports",
+          "claim": "Bradley–Terry provides a transparent pairwise model with logit win odds as a difference of strengths; structured predictors can incorporate covariates and contest-specific/home effects, and penalization/bias reduction are documented options.",
+          "quote_excerpt": "Included are the standard ‘unstructured’ Bradley-Terry model, structured versions in which the parameters are related through a linear predictor to explanatory variables, and the possibility of an order or ‘home advantage’ effect or other ‘contest-specific’ effects.",
+          "quote_status": "Researcher-transcribed inspected excerpt; ellipses denote omissions, not a contiguous quotation. Metadata-only entries do not support technical or performance claims.",
+          "scope_note": "Source-author statement or research interpretation; not independently replicated. Numerical confidence supplied by researcher omitted as unsupported precision."
+        }
+      ],
+      "evidence_class": "inspected source content, with source-specific access limits below",
+      "source_id": "S19",
+      "report_bibliography_number": 11
+    },
+    {
+      "url": "https://raw.githubusercontent.com/fivethirtyeight/data/master/nba-elo/README.md",
+      "title": "FiveThirtyEight data: Historical NBA Elo README",
+      "tracks": [
+        "sports"
+      ],
+      "access_and_scope_evidence": [
+        {
+          "track": "sports",
+          "access_scope": "First-party FiveThirtyEight GitHub data repository; raw README inspected.",
+          "summary": "Defines data fields and pregame/aftergame Elo probabilities. Does not independently substantiate every older report claim or implementation detail."
+        }
+      ],
+      "claims": [
+        {
+          "track": "sports",
+          "claim": "FiveThirtyEight's historical NBA Elo data documentation distinguishes pre-game Elo and forecast probability by game location; the README is data documentation, not a complete independent reproduction of the forecasting algorithm.",
+          "quote_excerpt": "`elo_i` | Team elo entering the game ... `forecast` | Elo-based chances of winning for the team in the team_id column, based on elo ratings and game location",
+          "quote_status": "Researcher-transcribed inspected excerpt; ellipses denote omissions, not a contiguous quotation. Metadata-only entries do not support technical or performance claims.",
+          "scope_note": "Source-author statement or research interpretation; not independently replicated. Numerical confidence supplied by researcher omitted as unsupported precision."
+        }
+      ],
+      "evidence_class": "inspected source content, with source-specific access limits below",
+      "source_id": "S20",
+      "report_bibliography_number": 14
+    },
+    {
+      "url": "https://arxiv.org/abs/1710.02824",
+      "title": "Beating the bookies with their own numbers - and how the online sports betting market is rigged",
+      "tracks": [
+        "sports"
+      ],
+      "access_and_scope_evidence": [
+        {
+          "track": "sports",
+          "access_scope": "Research preprint; full abstract inspected; authors provide their own historical and real-staking claims, not an independently replicated result here.",
+          "summary": "Authors report profitable strategy exploiting price misalignment rather than model forecasting superiority; methodological scope limits sweeping bookmaker claims."
+        }
+      ],
+      "claims": [
+        {
+          "track": "sports",
+          "claim": "A published study reports a strategy claiming profitable bookmaker exploitation through odds information rather than a superior global forecast model; it directly contradicts blanket claims that bookmakers cannot be beaten, but does not establish universal market inefficiency or a lower global log-loss rate.",
+          "quote_excerpt": "Instead of building a forecasting model to compete with bookmakers predictions, we exploited the probability information implicit in the odds publicly available in the marketplace to find bets with mispriced odds.",
+          "quote_status": "Researcher-transcribed inspected excerpt; ellipses denote omissions, not a contiguous quotation. Metadata-only entries do not support technical or performance claims.",
+          "scope_note": "Source-author statement or research interpretation; not independently replicated. Numerical confidence supplied by researcher omitted as unsupported precision."
+        }
+      ],
+      "evidence_class": "abstract/record inspected; claims bounded to visible abstract and source handoff",
+      "source_id": "S21"
+    },
+    {
+      "url": "https://doi.org/10.1214/aos/1176347265",
+      "title": "The Jackknife and the Bootstrap for General Stationary Observations",
+      "tracks": [
+        "sports"
+      ],
+      "access_and_scope_evidence": [
+        {
+          "track": "sports",
+          "access_scope": "Primary journal DOI verified but publisher text page blocked during inspection; claim relies on paper identity and established citation, not quote-verified technical details.",
+          "summary": "Relevant foundational reference for dependent-data block resampling. No full text was successfully inspected in this research run."
+        }
+      ],
+      "claims": [
+        {
+          "track": "sports",
+          "claim": "For correlated observations, block bootstrap is an uncertainty technique with assumptions and cannot establish a universal best model; local application should resample paired chronological loss-difference blocks and report sensitivity.",
+          "quote_excerpt": "[The paper is] The Jackknife and the Bootstrap for General Stationary Observations.",
+          "quote_status": "Researcher-transcribed inspected excerpt; ellipses denote omissions, not a contiguous quotation. Metadata-only entries do not support technical or performance claims.",
+          "scope_note": "Source-author statement or research interpretation; not independently replicated. Numerical confidence supplied by researcher omitted as unsupported precision."
+        }
+      ],
+      "evidence_class": "metadata/publication-page only; no full-text empirical or detailed technical claim adopted",
+      "source_id": "S22"
+    },
+    {
+      "url": "https://doi.org/10.1080/07350015.1995.10524599",
+      "title": "Comparing Predictive Accuracy",
+      "tracks": [
+        "sports"
+      ],
+      "access_and_scope_evidence": [
+        {
+          "track": "sports",
+          "access_scope": "Primary journal DOI/Crossref record inspected; abstract unavailable from fetch.",
+          "summary": "Canonical paired predictive-accuracy comparison citation; exact assumptions and implementation should be checked from full text before making detailed inferential claims."
+        }
+      ],
+      "claims": [
+        {
+          "track": "sports",
+          "claim": "The canonical Diebold–Mariano source is a forecast-comparison reference; this session verified bibliographic metadata, not the paper's detailed assumptions or test derivation.",
+          "quote_excerpt": "# Comparing Predictive Accuracy\n\n**Authors:** Francis X. Diebold, Roberto S. Mariano\n**Journal:** Journal of Business & Economic Statistics\n**Published:** 1995-07",
+          "quote_status": "Researcher-transcribed inspected excerpt; ellipses denote omissions, not a contiguous quotation. Metadata-only entries do not support technical or performance claims.",
+          "scope_note": "Source-author statement or research interpretation; not independently replicated. Numerical confidence supplied by researcher omitted as unsupported precision."
+        }
+      ],
+      "evidence_class": "metadata/publication-page only; no full-text empirical or detailed technical claim adopted",
+      "source_id": "S23"
+    },
+    {
+      "url": "https://www.sciencepg.com/article/10.11648/j.ajss.20170506.12",
+      "title": "Adjusting Bookmaker’s Odds to Allow for Overround",
+      "tracks": [
+        "market"
+      ],
+      "access_and_scope_evidence": [
+        {
+          "track": "market",
+          "access_scope": "Open-access peer-reviewed journal article page; primary source for its own method definitions and dataset-specific findings.",
+          "summary": "Compares additive, normalization, Shin and power approaches. Reports power outperforms multiplicative normalization in three sports datasets and outperforms or compares with Shin; says Shin/additive are equivalent in two-outcome events. Those findings are not CS2-specific and not universal guarantees."
+        }
+      ],
+      "claims": [
+        {
+          "track": "market",
+          "claim": "The power de-vig method solves a single exponent for the outcome set so transformed implied probabilities sum to one; published comparisons report better performance than multiplicative normalization on the studied datasets, but this does not justify a universal method choice.",
+          "quote_excerpt": "the power method universally outperforms the multiplicative method and outperforms or is comparable to the Shin method.",
+          "quote_status": "Researcher-transcribed inspected excerpt; ellipses denote omissions, not a contiguous quotation. Metadata-only entries do not support technical or performance claims.",
+          "scope_note": "Source-author statement or research interpretation; not independently replicated. Numerical confidence supplied by researcher omitted as unsupported precision."
+        },
+        {
+          "track": "market",
+          "claim": "For two-outcome markets, Shin and additive adjustments are equivalent in the Clarke et al. study; therefore the repository's binary series-winner market does not warrant presenting Shin as a distinct independent de-vig competitor to additive margin removal.",
+          "quote_excerpt": "it is shown that the Shin and additive methods are equivalent for races with two competitors.",
+          "quote_status": "Researcher-transcribed inspected excerpt; ellipses denote omissions, not a contiguous quotation. Metadata-only entries do not support technical or performance claims.",
+          "scope_note": "Source-author statement or research interpretation; not independently replicated. Numerical confidence supplied by researcher omitted as unsupported precision."
+        }
+      ],
+      "integration_corrections": {
+        "power_exponent": "Solved per quote using its prices only; sum(q_i**a)=1. Not label-fitted and not globally fixed.",
+        "performance_scope": "Universal wording in author abstract concerns the three studied datasets, not all sports or CS2."
+      },
+      "evidence_class": "inspected source content, with source-specific access limits below",
+      "source_id": "S24",
+      "report_bibliography_number": 20
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7923594/",
+      "title": "Stable reliability diagrams for probabilistic classifiers",
+      "tracks": [
+        "market"
+      ],
+      "access_and_scope_evidence": [
+        {
+          "track": "market",
+          "access_scope": "Primary PNAS paper in PubMed Central, full text inspected.",
+          "summary": "Introduces CORP reliability diagrams with PAV isotonic regression, automated bins, uncertainty quantification and a proper-score decomposition; warns about instability of ad hoc binning and notes standard methods can assume independent/exchangeable forecast cases."
+        }
+      ],
+      "claims": [
+        {
+          "track": "market",
+          "claim": "Calibration should be diagnosed separately from aggregate proper scores; arbitrary-bin reliability diagrams can be unstable, and CORP uses isotonic regression/PAV to provide an automated reliability diagram and score decomposition.",
+          "quote_excerpt": "The classical binning and counting approach to plotting reliability diagrams has been hampered by a lack of stability under unavoidable, ad hoc implementation decisions. Here, we introduce the CORP approach... based on nonparametric isotonic regression and implemented via the pool-adjacent-violators (PAV) algorithm.",
+          "quote_status": "Researcher-transcribed inspected excerpt; ellipses denote omissions, not a contiguous quotation. Metadata-only entries do not support technical or performance claims.",
+          "scope_note": "Source-author statement or research interpretation; not independently replicated. Numerical confidence supplied by researcher omitted as unsupported precision."
+        }
+      ],
+      "evidence_class": "inspected source content, with source-specific access limits below",
+      "source_id": "S25",
+      "report_bibliography_number": 19
+    },
+    {
+      "url": "https://www.nber.org/papers/w15923",
+      "title": "Explaining the Favorite-Longshot Bias: Is it Risk-Love or Misperceptions?",
+      "tracks": [
+        "market"
+      ],
+      "access_and_scope_evidence": [
+        {
+          "track": "market",
+          "access_scope": "NBER working paper page by the authors; abstract and bibliographic record inspected. Horse-racing scope, not esports.",
+          "summary": "Frames favorite-longshot bias as longshots overbet/favorites underbet in horse-racing odds and studies behavioral explanations. Use as context for a hypothesis, not a CS2-specific margin correction."
+        }
+      ],
+      "claims": [
+        {
+          "track": "market",
+          "claim": "Favorite-longshot bias is a plausible market-specific distortion, not a universal law or a CS2 calibration result; it can make proportional normalization sensitive to how margin is allocated between favorite and underdog.",
+          "quote_excerpt": "The favorite-longshot bias describes the longstanding empirical regularity that betting odds provide biased estimates of the probability of a horse winning--longshots are overbet, while favorites are underbet.",
+          "quote_status": "Researcher-transcribed inspected excerpt; ellipses denote omissions, not a contiguous quotation. Metadata-only entries do not support technical or performance claims.",
+          "scope_note": "Source-author statement or research interpretation; not independently replicated. Numerical confidence supplied by researcher omitted as unsupported precision."
+        }
+      ],
+      "evidence_class": "inspected source content, with source-specific access limits below",
+      "source_id": "S26"
+    },
+    {
+      "url": "https://centaur.reading.ac.uk/86111/1/betting_efficiency_elaad_reade_singleton.pdf",
+      "title": "Information, prices and efficiency in an online betting market",
+      "tracks": [
+        "market"
+      ],
+      "access_and_scope_evidence": [
+        {
+          "track": "market",
+          "access_scope": "University institutional repository accepted manuscript of a peer-reviewed Finance Research Letters article; full text inspected.",
+          "summary": "Studies 16,407 English football matches and 51 bookmakers, defining inverse odds/overround, clustering uncertainty at match level, and separating overall calibration/market efficiency from whether each individual book incorporates competitors' prices. Population is soccer 2010–2018, unlike CS2."
+        }
+      ],
+      "claims": [
+        {
+          "track": "market",
+          "claim": "Raw decimal odds imply q_i=1/O_i; proportional de-vig divides each inverse price by the sum of inverse prices. Proportional normalization is a defensible baseline, not a uniquely correct reconstruction of bookmaker beliefs.",
+          "quote_excerpt": "For any match, summing z_ij over the three possible outcomes will give a value greater than one, which reflects the bookmaker’s expected rate of commission or profit margin... also known as the ‘overround’ or ‘vig’.",
+          "quote_status": "Researcher-transcribed inspected excerpt; ellipses denote omissions, not a contiguous quotation. Metadata-only entries do not support technical or performance claims.",
+          "scope_note": "Source-author statement or research interpretation; not independently replicated. Numerical confidence supplied by researcher omitted as unsupported precision."
+        },
+        {
+          "track": "market",
+          "claim": "Market calibration and bookmaker-level informational efficiency are distinct: a bookmaker may be broadly unbiased against outcomes while failing to incorporate information available in competing bookmakers' odds.",
+          "quote_excerpt": "We find odds are generally not biased when compared against actual match outcomes... But individual bookmakers are not efficient. Their own odds do not appear to use fully the information contained in their competitors’ odds.",
+          "quote_status": "Researcher-transcribed inspected excerpt; ellipses denote omissions, not a contiguous quotation. Metadata-only entries do not support technical or performance claims.",
+          "scope_note": "Source-author statement or research interpretation; not independently replicated. Numerical confidence supplied by researcher omitted as unsupported precision."
+        }
+      ],
+      "evidence_class": "inspected source content, with source-specific access limits below",
+      "source_id": "S27",
+      "report_bibliography_number": 21
+    },
+    {
+      "url": "https://doi.org/10.1080/01621459.1994.10476870",
+      "title": "The Stationary Bootstrap",
+      "tracks": [
+        "market"
+      ],
+      "access_and_scope_evidence": [
+        {
+          "track": "market",
+          "access_scope": "Primary JASA article landing record inspected via Crossref; full text/abstract were unavailable in reader.",
+          "summary": "Bibliographic primary-source record for a time-series bootstrap method. Its existence motivates preserving temporal dependence, but this research does not attribute additional technical guarantees beyond the source record."
+        }
+      ],
+      "claims": [
+        {
+          "track": "market",
+          "claim": "The stationary bootstrap is an established time-series resampling method, but applying a day-cluster bootstrap to forecast score differences is a task-specific adaptation; temporal or tournament dependence beyond the sampled source day should be examined in sensitivity analysis.",
+          "quote_excerpt": "The Stationary Bootstrap. Authors: Dimitris N. Politis, Joseph P. Romano. Journal of the American Statistical Association. Published: 1994-12.",
+          "quote_status": "Researcher-transcribed inspected excerpt; ellipses denote omissions, not a contiguous quotation. Metadata-only entries do not support technical or performance claims.",
+          "scope_note": "Source-author statement or research interpretation; not independently replicated. Numerical confidence supplied by researcher omitted as unsupported precision."
+        }
+      ],
+      "evidence_class": "metadata/publication-page only; no full-text empirical or detailed technical claim adopted",
+      "source_id": "S28"
+    },
+    {
+      "url": "https://oddspapi.io/en/docs/get-historical-odds",
+      "title": "OddsPapi v4 — GET historical-odds",
+      "tracks": [
+        "market"
+      ],
+      "access_and_scope_evidence": [
+        {
+          "track": "market",
+          "access_scope": "Provider's official API documentation, inspected directly; defines provider data fields, not semantics beyond what it explicitly states.",
+          "summary": "Documents history request parameters and entry fields including createdAt, price, limit and active. createdAt is described as entry-created time; no guarantee of bookmaker-publication or local receipt semantics."
+        }
+      ],
+      "claims": [
+        {
+          "track": "market",
+          "claim": "OddsPapi documents createdAt as the time its historical odds entry was created, but that wording does not by itself establish original bookmaker publication time, local receipt time, or price availability to a bettor.",
+          "quote_excerpt": "createdAt (string) — The timestamp when the historical odds entry was created.",
+          "quote_status": "Researcher-transcribed inspected excerpt; ellipses denote omissions, not a contiguous quotation. Metadata-only entries do not support technical or performance claims.",
+          "scope_note": "Source-author statement or research interpretation; not independently replicated. Numerical confidence supplied by researcher omitted as unsupported precision."
+        }
+      ],
+      "evidence_class": "inspected source content, with source-specific access limits below",
+      "source_id": "S29",
+      "report_bibliography_number": 22
+    },
+    {
+      "url": "https://oddspapi.io/en/docs/get-scores",
+      "title": "OddsPapi v4 — GET scores",
+      "tracks": [
+        "market"
+      ],
+      "access_and_scope_evidence": [
+        {
+          "track": "market",
+          "access_scope": "Provider's official API documentation, inspected directly.",
+          "summary": "Documents period score breakdown and per-period updatedAt timestamps. It does not prove a specific period number means series result absent a fixture-specific convention."
+        }
+      ],
+      "claims": [
+        {
+          "track": "market",
+          "claim": "The provider's scores endpoint documents per-period score updates and updatedAt; the endpoint contract alone does not guarantee that a given numeric period identifier is the series result without validating the game's market/result convention.",
+          "quote_excerpt": "Retrieves the score breakdown by period for a specified fixture.",
+          "quote_status": "Researcher-transcribed inspected excerpt; ellipses denote omissions, not a contiguous quotation. Metadata-only entries do not support technical or performance claims.",
+          "scope_note": "Source-author statement or research interpretation; not independently replicated. Numerical confidence supplied by researcher omitted as unsupported precision."
+        }
+      ],
+      "evidence_class": "inspected source content, with source-specific access limits below",
+      "source_id": "S30"
+    },
+    {
+      "url": "https://dagaev.com/publications",
+      "title": "Dmitry Dagaev — Publications",
+      "tracks": [
+        "market"
+      ],
+      "access_and_scope_evidence": [
+        {
+          "track": "market",
+          "access_scope": "Author-maintained publication list; used only to verify the CS:GO parimutuel paper citation and find its paper link. The linked full paper could not be fetched during this research.",
+          "summary": "Lists Dagaev and Stoyan's 2020 CS:GO esports parimutuel betting paper and DOI. It is a potentially relevant but distinct market structure; its abstract/results are not treated as independently verified here."
+        }
+      ],
+      "claims": [
+        {
+          "track": "market",
+          "claim": "The direct esports-market source located is about CS:GO parimutuel wagering and reverse favorite-longshot bias, not conventional fixed-odds bookmaker forecasts; direct full-paper retrieval failed during this research, so it is not evidence about the present OddsPapi sportsbook cohort.",
+          "quote_excerpt": "Dagaev, D. and Stoyan, E. (2020). Parimutuel betting on the eSports duels: evidence of the reverse favourite-longshot bias. Journal of Economic Psychology, 81, 102305.",
+          "quote_status": "Researcher-transcribed inspected excerpt; ellipses denote omissions, not a contiguous quotation. Metadata-only entries do not support technical or performance claims.",
+          "scope_note": "Source-author statement or research interpretation; not independently replicated. Numerical confidence supplied by researcher omitted as unsupported precision."
+        }
+      ],
+      "evidence_class": "metadata/publication-page only; no full-text empirical or detailed technical claim adopted",
+      "source_id": "S31"
+    }
+  ],
+  "cross_track_contradictions": [
+    {
+      "issue": "EsportsBench end year and rating period",
+      "resolution": "Parent inspected PDF supersedes CS narrative: March2024 data, latest-year holdout, actual7-day experiments and >=1-day recommendation."
+    },
+    {
+      "issue": "Power exponent fixed/fitted language",
+      "resolution": "Per-quote price root, not globally fixed or TEST-outcome fitted. Method sensitivity predeclared."
+    },
+    {
+      "issue": "Old floors and cross-sport ceiling",
+      "resolution": "Scores depend on target, cohort and information set. No inspected source establishes universal0.630–0.650 CS2 floor or accuracy-to-logloss threshold."
+    },
+    {
+      "issue": "In-game versus prematch",
+      "resolution": "Xenopoulos event/state action valuation cannot establish prematch series SOTA."
+    },
+    {
+      "issue": "VRS rho0.98",
+      "resolution": "Binned rank correlation, not classification accuracy; Valve notes slope/calibration problem."
+    },
+    {
+      "issue": "Veto policy gains versus predictive gains",
+      "resolution": "Petri estimates counterfactual policy value, not local forecast uplift or known future vetoes."
+    },
+    {
+      "issue": "Forecasting quality versus bookmaker inefficiency or profit",
+      "resolution": "Soccer/horse-racing/parimutuel/price-selection populations differ. No universal market dominance or local ROI inference."
+    },
+    {
+      "issue": "Track research had no model experiment",
+      "resolution": "Track prose pending/research-only statements are historical. Actual parent-executed evidence in saved after and market artifacts governs local result claims."
+    },
+    {
+      "issue": "Equal-information market cutoff",
+      "resolution": "Pre-start provider-created clocks and source-day convention do not certify release-time lineup knowledge, book publication, closing state or executable prices."
+    }
+  ],
+  "local_empirical_evidence": [
+    {
+      "claim": "Frozen target/cohort and candidate recipes; prior TEST observation, no refit, validation-only selection",
+      "path": "reports/cs2-model-experiment-protocol-2026-10-09.json",
+      "fields": [
+        "cohort",
+        "candidate_set",
+        "selection",
+        "bookmaker_protocol"
+      ]
+    },
+    {
+      "claim": "675eligible,621players,23568history results and1768literal names; modern-era/availability limits",
+      "path": "data/audits/modeling_data_audit.json",
+      "fields": [
+        "eligible_series",
+        "ranked_observed_players",
+        "archive_history"
+      ]
+    },
+    {
+      "claim": "Selected blend recipe and all16candidate/fold metrics",
+      "path": "artifacts/model_research_20261009/after/metrics.json"
+    },
+    {
+      "claim": "Before/after scores, paired deltas and interval, worsened ECE and chronological-block diagnostics, all675cohort validation",
+      "path": "artifacts/model_research_20261009/after/summary.json",
+      "fields": [
+        "selected_model_test_metrics",
+        "selected_model_validation_metrics",
+        "paired_after_minus_before",
+        "chronological_test_blocks",
+        "full_cohort_validation",
+        "limits"
+      ]
+    },
+    {
+      "claim": "Frozen original evidence preserved before candidate changes",
+      "path": "artifacts/model_research_20261009/before/reproduction.json"
+    },
+    {
+      "claim": "Original market comparison preserved",
+      "path": "artifacts/model_research_20261009/before/bookmaker_comparison.json"
+    },
+    {
+      "claim": "Evidence hashes; not independent pickle provenance certification",
+      "path": "artifacts/model_research_20261009/after/manifest.json"
+    },
+    {
+      "claim": "Identical original/new quote inputs and same de-vig cohorts; source-day subset",
+      "path": "artifacts/model_research_20261009/markets/validation.json"
+    },
+    {
+      "claim": "All164saved probabilities reproduced; maxabs error8.326672684688674e-17; explicit historical roster scenario not current starters",
+      "path": "artifacts/model_research_20261009/inference_smoke.json"
+    },
+    {
+      "claim": "Parent-executed engineering evidence: all11input/38source/7archived-output hashes valid; six original candidate scores/probabilities unchanged;398tests and218subtests passed. Not statistical confirmation or a synthesis rerun.",
+      "path": "artifacts/model_research_20261009/verification.json"
+    },
+    {
+      "claim": "Actual exercised Python3.12.3 and numerical package versions; requirement-pin agreement is recorded separately in verification.json.",
+      "path": "artifacts/model_research_20261009/environment.json"
+    },
+    {
+      "claim": "Actual stored quote comparison for proportional_pre_start; includes exclusions, paired cohorts, interval limitations and clock protocol",
+      "path": "artifacts/model_research_20261009/markets/proportional_pre_start/bookmaker_comparison.json",
+      "fields": [
+        "common_all_books",
+        "per_book_paired_cohorts",
+        "protocol",
+        "limits"
+      ]
+    },
+    {
+      "claim": "Actual stored quote comparison for power_pre_start; includes exclusions, paired cohorts, interval limitations and clock protocol",
+      "path": "artifacts/model_research_20261009/markets/power_pre_start/bookmaker_comparison.json",
+      "fields": [
+        "common_all_books",
+        "per_book_paired_cohorts",
+        "protocol",
+        "limits"
+      ]
+    },
+    {
+      "claim": "Actual stored quote comparison for proportional_source_day; includes exclusions, paired cohorts, interval limitations and clock protocol",
+      "path": "artifacts/model_research_20261009/markets/proportional_source_day/bookmaker_comparison.json",
+      "fields": [
+        "common_all_books",
+        "per_book_paired_cohorts",
+        "protocol",
+        "limits"
+      ]
+    },
+    {
+      "claim": "Actual stored quote comparison for power_source_day; includes exclusions, paired cohorts, interval limitations and clock protocol",
+      "path": "artifacts/model_research_20261009/markets/power_source_day/bookmaker_comparison.json",
+      "fields": [
+        "common_all_books",
+        "per_book_paired_cohorts",
+        "protocol",
+        "limits"
+      ]
+    }
+  ],
+  "limitations": [
+    "TEST previously observed: exploratory only;115validation cases and16candidates imply selection uncertainty.",
+    "All675 targets and31 original predictors preserved; archive only expands past history, not scored cohort.",
+    "Literal team names and>=2024 date proxy do not certify entity aliases or CS2 version.",
+    "No verified lineup/veto release clocks; retrospective played-lineup conditioning.",
+    "No provider requests, actionable ROI, CLV, market blending or live current-lineup forecast.",
+    "Opaque pickles trusted only; hashes do not independently prove training provenance."
+  ]
+}

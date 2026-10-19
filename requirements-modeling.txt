@@ -1,0 +1,10 @@
+kedro==1.7.0
+kedro-datasets==9.6.0
+pandas==3.0.6
+numpy==2.5.3
+scipy==1.18.1
+scikit-learn==1.9.1
+trueskill==0.4.5
+openskill==6.2.0
+nodriver==0.50.5
+pytest==9.1.1

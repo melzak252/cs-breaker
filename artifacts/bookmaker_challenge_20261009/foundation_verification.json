@@ -1,0 +1,42 @@
+{
+  "initial_red": {
+    "series_and_valve": "Missing new modules before implementation",
+    "market": "select_pair rejected the newly required cutoff keyword before implementation",
+    "learner": "Missing series_forecast module before implementation",
+    "serving": "Missing predict_series_scenario before implementation",
+    "uncertainty": "Missing challenge_evaluation module before implementation"
+  },
+  "runtime_bug_fixed": {
+    "official_valve_parser": "Actual collection failed because the parser required three alignment dashes, while official tables use single-dash alignment cells. The dedicated regression failed before allowing one-or-more dashes; the actual collector then passed.",
+    "selection_tolerance": "Dedicated regression failed when exact float equality rejected a declared 5e-13 numerical tie. Comparator now permits only explicitly declared tolerance bounded at1e-12; material differences remain rejected."
+  },
+  "targeted_gate": {
+    "command": "env OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 KEDRO_DISABLE_TELEMETRY=1 .venv/bin/python -m pytest -q tests/test_series_history.py tests/test_series_forecast.py tests/test_series_inference.py tests/test_market_history.py tests/test_valve_standings.py tests/test_bookmaker_challenge.py tests/test_bookmaker_comparison.py tests/test_oddspapi_cs.py",
+    "passed_tests": 123,
+    "passed_subtests": 235,
+    "test_seconds": 13.10
+  },
+  "actual_valve_collector": {
+    "command": ".venv/bin/python scripts/collect_valve_standings.py --output-dir data/raw/valve_standings_20261009 --timeout 600",
+    "snapshot_count": 27,
+    "row_count": 7828,
+    "availability_policy": "max(snapshot_date_midnight_utc_plus_7_days,first_addition_committer_utc)"
+  },
+  "actual_history_intake": {
+    "input_rows": 122038,
+    "accepted_games": 27988,
+    "accepted_series": 23568,
+    "accepted_maps": 4420,
+    "accepted_measured_games": 670,
+    "frozen_target_ids_and_dates_exact": true
+  },
+  "actual_prepare": {
+    "command": ".venv/bin/python scripts/evaluate_bookmaker_challenge.py prepare",
+    "development_series": 20593,
+    "one_hour_validation_market_matches": 545,
+    "one_hour_reserved_test_market_matches_coverage_only": 419,
+    "test_features_or_forecasting_quality_computed": false,
+    "saved_details": "prepared_manifest.json, history_audit.json, market_audit.json"
+  },
+  "remaining_verification": "Model development, reserved confirmation after review, persisted future CLI smoke and full regression suite."
+}

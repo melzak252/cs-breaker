@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>CS2 Research Desk</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <script src="/static/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="app-header">
+    <a class="brand" href="#dashboard"><span class="brand-mark" aria-hidden="true">CS</span><span>Research Desk<small>Counter-Strike · local evidence workspace</small></span></a>
+    <span class="local-badge">Local workspace · UTC</span>
+  </header>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <nav aria-label="Workspace">
+        <a href="#dashboard" data-page="dashboard">Overview</a>
+        <a href="#fixtures" data-page="fixtures">Provider fixtures</a>
+        <a href="#history" data-page="history">Historical matches</a>
+        <a href="#mappings" data-page="mappings">Mapping review</a>
+        <a href="#jobs" data-page="jobs">Collection jobs</a>
+        <a href="#settings" data-page="settings">Settings & schedule</a>
+        <a href="#research" data-page="research">Metrics & exports</a>
+      </nav>
+      <div class="sidebar-note">Research, not execution<p>Source odds and proportional no-vig probabilities are not certified executable prices or forecasts.</p></div>
+    </aside>
+    <main id="main" tabindex="-1">
+      <div id="global-error" class="notice error" role="alert" hidden></div>
+      <section id="page-dashboard" class="page" aria-labelledby="dashboard-title">
+        <div class="page-heading"><div><p class="eyebrow">Workspace health</p><h1 id="dashboard-title">Research overview</h1><p>Durable histories, current observations, and traceable match identities.</p></div><button id="refresh-dashboard" class="secondary">Refresh overview</button></div>
+        <div id="dashboard-state" role="status" class="load-state"></div>
+        <div id="dashboard-warnings" class="stack"></div>
+        <div id="dashboard-counts" class="stat-grid"></div>
+        <div class="two-column"><article class="card"><h2>Collection budget</h2><div id="dashboard-quota"></div><p class="muted">Local caps are application policy, not a provider entitlement. Shared-account consumption may change available quota.</p></article><article class="card"><h2>Provider account</h2><div id="dashboard-account"></div><p class="muted">Sanitized account snapshot only; credentials are never displayed.</p></article></div>
+        <article class="card"><div class="section-heading"><h2>Recent work</h2><a href="#jobs">All jobs</a></div><div id="dashboard-jobs"></div></article>
+      </section>
+      <section id="page-fixtures" class="page" aria-labelledby="fixtures-title" hidden>
+        <div class="page-heading"><div><p class="eyebrow">Provider-native identities</p><h1 id="fixtures-title">Fixtures & odds</h1><p>Latest observed availability is retained, including inactive and unusable quotes.</p></div><a class="button secondary" href="/api/export/fixtures.csv" download>Export fixtures CSV</a></div>
+        <form id="fixture-filters" class="filter-bar">
+          <label class="grow">Search<input name="q" type="search" placeholder="Team, tournament, fixture ID"></label>
+          <label>Status<select name="status"><option value="all">All statuses</option><option value="upcoming">Upcoming</option><option value="finished">Finished</option></select></label>
+          <label>Bookmaker<select name="bookmaker" class="book-select"><option value="">All bookmakers</option></select></label>
+          <label>Mapping<select name="mapping"><option value="all">All mappings</option><option value="mapped">Mapped</option><option value="unmapped">Unmapped</option></select></label>
+          <button type="submit">Apply filters</button>
+        </form>
+        <div id="fixtures-state" class="load-state" role="status"></div><div id="fixtures-table" class="table-wrap"></div><div id="fixtures-pager" class="pager"></div>
+      </section>
+      <section id="page-history" class="page" aria-labelledby="history-title" hidden>
+        <div class="page-heading"><div><p class="eyebrow">Independent results corpora</p><h1 id="history-title">Historical matches</h1><p>Naive source dates remain uncertain; imported scores are never guessed.</p></div><a class="button secondary" href="/api/export/history.csv" download>Export history CSV</a></div>
+        <details class="card">
+          <summary>Import a historical CSV</summary>
+          <p class="muted">Local evidence only; no provider calls. Choose the source schema, then upload a CSV up to 16 MiB. Existing identities are immutable: conflicting records are reported, not overwritten. Successful import triggers conservative remapping.</p>
+          <form id="history-import-form" class="form-grid">
+            <label>Source schema<select name="source" id="history-import-source"><option value="opencs2">OpenCS2 · maps.csv</option><option value="kaggle">Kaggle · results_only.csv</option><option value="strandedpond">StrandedPond · matches.csv</option><option value="ektarr">Kaggle (ektarr) · matches.csv</option></select></label>
+            <label>CSV file<input name="file" type="file" accept=".csv,text/csv" required><small>Maximum 16 MiB. Raw CSV evidence is preserved by the backend.</small></label>
+            <p id="history-import-hint" class="muted full"></p>
+            <div class="form-actions full"><button type="submit">Import CSV & remap</button><a href="#jobs">View import jobs</a><span id="history-import-state" role="status"></span></div>
+          </form>
+        </details>
+        <form id="history-filters" class="filter-bar"><label class="grow">Search<input type="search" name="q" placeholder="Team, event, source identity"></label><label>Source<input name="source" placeholder="All sources" list="history-sources"><datalist id="history-sources"></datalist></label><button type="submit">Apply filters</button></form>
+        <div id="history-state" class="load-state" role="status"></div><div id="history-table" class="table-wrap"></div><div id="history-pager" class="pager"></div>
+      </section>
+      <section id="page-mappings" class="page" aria-labelledby="mappings-title" hidden>
+        <div class="page-heading"><div><p class="eyebrow">Identity, not name similarity</p><h1 id="mappings-title">Mapping review</h1><p>Review candidates, verify team order, and preserve the reasoning behind each decision.</p></div><a class="button secondary" href="/api/export/mappings.csv" download>Export mappings CSV</a></div>
+        <div class="notice">Accepting a mapping requires an explicit historical identity and orientation. Manual and rejected decisions are protected from automatic rebuilds.</div>
+        <form id="mapping-filters" class="filter-bar"><label class="grow">Search<input name="q" type="search" placeholder="Provider team, event, fixture ID"></label><label>Queue<select name="mapping"><option value="unmapped">Unmapped / unresolved</option><option value="all">All decisions</option><option value="mapped">Mapped</option></select></label><button type="submit">Apply filters</button></form>
+        <div id="mappings-state" class="load-state" role="status"></div><div id="mappings-table" class="table-wrap"></div><div id="mappings-pager" class="pager"></div>
+      </section>
+      <section id="page-jobs" class="page" aria-labelledby="jobs-title" hidden>
+        <div class="page-heading"><div><p class="eyebrow">Explicit, bounded acquisition</p><h1 id="jobs-title">Collection jobs</h1><p>Nothing is submitted automatically when this page opens.</p></div><button id="refresh-jobs" class="secondary">Refresh jobs</button></div>
+        <div id="jobs-warning" class="notice"></div>
+        <form id="job-form" class="card form-grid">
+          <label>Action<select name="kind" id="job-kind"><option value="backfill">Historical odds backfill</option><option value="upcoming">Upcoming pre-match snapshots</option><option value="finished">Recent finished odds histories</option><option value="results">Refresh native series results</option><option value="import_existing">Import existing local archives & datasets</option><option value="remap">Rebuild conservative mappings</option></select></label>
+          <div id="job-description" class="muted field-description"></div>
+          <div id="backfill-fields" class="form-grid full"><label>From (UTC)<input name="from" type="datetime-local" step="1"></label><label>To (UTC)<input name="to" type="datetime-local" step="1"></label></div>
+          <fieldset id="collection-fields" class="full"><legend>Collection scope and caps</legend><div class="form-grid"><label class="full">Bookmaker slugs<input name="bookmakers" placeholder="Use saved bookmaker settings"><small>Comma-separated provider slugs; no substitute books.</small></label><label>Billable attempts per run<input name="billable_per_run" type="number" min="1" step="1" placeholder="Saved cap"></label><label>Total HTTP requests<input name="max_requests" type="number" min="1" step="1" placeholder="Saved cap"></label><label>Historical calls<input name="max_history" type="number" min="1" step="1" placeholder="Saved cap"></label></div></fieldset>
+          <label id="results-fields" class="check-label full" hidden><input name="refresh" type="checkbox" disabled>Reacquire existing native scores too (for explicit corrections; consumes provider quota)</label>
+          <div class="full form-actions"><button type="submit" id="submit-job">Review & queue job</button><span id="job-submit-state" role="status"></span></div>
+        </form>
+        <div id="jobs-state" class="load-state" role="status"></div><div id="jobs-list" class="stack"></div>
+      </section>
+      <section id="page-settings" class="page" aria-labelledby="settings-title" hidden>
+        <div class="page-heading"><div><p class="eyebrow">Operator-controlled automation</p><h1 id="settings-title">Settings & schedule</h1><p>Enabling the scheduler is an explicit authorization for future provider requests.</p></div></div>
+        <div id="settings-state" role="status" class="load-state"></div>
+        <form id="settings-form" class="card form-grid">
+          <label class="full">Requested bookmaker slugs<input name="bookmakers" required placeholder="pinnacle,bet365,unibet"><small>Comma-separated, distinct provider slugs. Availability still depends on account entitlement.</small></label>
+          <label>Billable attempts per run<input name="billable_per_run" type="number" required min="1" step="1"></label><label>Billable attempts per UTC day<input name="billable_per_day" type="number" required min="1" step="1"></label>
+          <label>HTTP requests per run<input name="max_requests" type="number" required min="1" step="1"></label><label>History calls per run<input name="max_history" type="number" required min="1" step="1"></label><label>Fixtures per snapshot run<input name="max_fixtures" type="number" required min="1" step="1"></label><label>Upcoming window (days)<input name="upcoming_days" type="number" required min="1" step="1"></label><label>Finished window (days)<input name="finished_days" type="number" required min="1" step="1"></label><label>Minimum snapshot gap (minutes)<input name="min_snapshot_minutes" type="number" required min="1" step="1"></label>
+          <fieldset class="full scheduler-settings"><legend>Optional scheduler</legend><label class="check-label"><input name="scheduler_enabled" type="checkbox">Enable scheduled collection</label><p class="muted">Off by default. When enabled, the worker may collect upcoming / finished fixtures and results within the saved request caps. Keeping this page open is not required.</p><label>Schedule interval (minutes)<input name="scheduler_interval_minutes" type="number" required min="1" step="1"></label></fieldset>
+          <div class="form-actions full"><button type="submit">Save settings</button><span id="settings-save-state" role="status"></span></div>
+        </form>
+      </section>
+      <section id="page-research" class="page" aria-labelledby="research-title" hidden>
+        <div class="page-heading"><div><p class="eyebrow">Transparent coverage & comparisons</p><h1 id="research-title">Metrics & exports</h1><p>Only observed, mapped and labeled research data contribute to scores.</p></div><button id="refresh-metrics" class="secondary">Refresh metrics</button></div>
+        <div class="notice">Own-cohort log loss describes each bookmaker's available matches, not a fair head-to-head ranking. Compare books on the exact common fixture intersection. Missing odds or labels are absent, never zero losses. Natural-log loss is not ROI or a forecast benchmark.</div>
+        <div id="metrics-state" role="status" class="load-state"></div><div id="metrics-content" class="stack"></div>
+        <article class="card"><h2>Complete research exports</h2><p class="muted">Exports contain the entire dataset, not just the current table page. Preserve IDs, source clocks, local observation clocks and raw provenance when analyzing them.</p><div id="export-links" class="export-grid"></div></article>
+      </section>
+      <footer>All displayed times are UTC. Source update clocks and local receipt times are separate evidence. No execution certification.</footer>
+    </main>
+  </div>
+  <dialog id="fixture-dialog" aria-labelledby="detail-title">
+    <div class="dialog-header"><div><p class="eyebrow">Fixture evidence</p><h2 id="detail-title">Fixture detail</h2></div><button id="close-detail" class="secondary" aria-label="Close fixture detail">Close</button></div>
+    <div id="detail-state" role="status" class="load-state"></div><div id="detail-content" class="stack"></div>
+  </dialog>
+  <dialog id="confirmation-dialog" aria-labelledby="confirmation-title">
+    <form method="dialog"><h2 id="confirmation-title">Authorize provider requests</h2><p id="confirmation-message"></p><div class="notice warning">Billable calls count when attempted, including failures. Historical calls may be free but still require positive account quota. Local caps do not guarantee provider allowance.</div><div class="form-actions"><button value="cancel" class="secondary">Go back</button><button value="confirm" id="confirm-action">Authorize & continue</button></div></form>
+  </dialog>
+</body>
+</html>

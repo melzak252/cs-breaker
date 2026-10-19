@@ -1,0 +1,927 @@
+{
+  "verified_at_utc": "2026-10-10T00:41:17.515290+00:00",
+  "scope": "Development-only research challenger and future-scenario inference; no new exposed TEST evaluation",
+  "tests": {
+    "focused_bayesian_tests_passed": 18,
+    "focused_series_tests_passed": 37,
+    "full_pytest_passed": 492,
+    "full_subtests_passed": 384,
+    "full_pytest_seconds": 92.84,
+    "lint_or_typecheck_run": false
+  },
+  "tdd_red_observed": [
+    "New engine/workflow imports failed before implementation",
+    "Schema2 inference rejected and schema1 accepted before migration"
+  ],
+  "commands_exercised": [
+    "scripts/develop_bayesian_series.py develop",
+    "scripts/develop_bayesian_series.py publish",
+    "pipeline.cli predict-series",
+    "repeat develop rejection",
+    "repeat publish rejection"
+  ],
+  "independent_export_audit": {
+    "selected": {
+      "n": 545,
+      "log_loss": 0.6247662877419422,
+      "brier": 0.2175212824756213,
+      "accuracy": 0.6568807339449542
+    },
+    "incumbent": {
+      "n": 545,
+      "log_loss": 0.6255853521274254,
+      "brier": 0.21783340531016382,
+      "accuracy": 0.6568807339449542
+    },
+    "consensus": {
+      "n": 545,
+      "log_loss": 0.6232129712343253,
+      "brier": 0.21690552270060975,
+      "accuracy": 0.6477064220183486
+    },
+    "validation_native_ids_verified": 1487,
+    "market_native_ids_verified": 545,
+    "candidate_csv_metrics_independently_verified": 49,
+    "source_hashes_verified": 18,
+    "consumed_input_hashes_verified": 34,
+    "development_artifact_hashes_verified": 11,
+    "test_overlap": 0,
+    "native_master_labels_dates_orientation_and_urls_verified": 1487
+  },
+  "cli_forward_bo3": {
+    "team1": "Vitality",
+    "team2": "Natus Vincere",
+    "day": "2026-10-10",
+    "probability": 0.6506235657525686,
+    "qualified": false
+  },
+  "cli_scenarios": {
+    "reverse_bo3": {
+      "returncode": 0,
+      "output": {
+        "team1": "Natus Vincere",
+        "team2": "Vitality",
+        "source_date": "2026-10-10",
+        "format": "bo3",
+        "prob_team1_win": 0.3493764342474304,
+        "prob_team2_win": 0.6506235657525696,
+        "model_selected": "ridge_C1_ratings_form_bayesian_hnone",
+        "fit_through": "2026-04-30",
+        "history_through": "2026-10-07",
+        "competitiveness_qualified": false,
+        "scenario": "literal-organization historical-strength forecast; current starters not verified",
+        "support": {
+          "team1_prior_series": 178,
+          "team2_prior_series": 188,
+          "minimum_prior_series": 178,
+          "either_team_cold": 0,
+          "performance_available": 1,
+          "minimum_prior_measured_maps": 86.0,
+          "performance_age_days": 7,
+          "vrs_available": 1,
+          "vrs_age_days": 33
+        },
+        "bayesian_channels_used": [
+          "bayes_score_s1_ou365_prob",
+          "bayes_score_s1_ou90_prob",
+          "bayes_score_s1_rw0025_prob",
+          "bayes_score_s1_rw01_prob",
+          "bayes_score_s2_ou365_prob",
+          "bayes_score_s2_ou90_prob",
+          "bayes_score_s2_rw0025_prob",
+          "bayes_score_s2_rw01_prob",
+          "bayes_winner_s1_ou365_prob",
+          "bayes_winner_s1_ou90_prob",
+          "bayes_winner_s1_rw0025_prob",
+          "bayes_winner_s1_rw01_prob",
+          "bayes_winner_s2_ou365_prob",
+          "bayes_winner_s2_ou90_prob",
+          "bayes_winner_s2_rw0025_prob",
+          "bayes_winner_s2_rw01_prob"
+        ],
+        "availability_limits": [
+          "Literal historical organizations, not verified contemporary starting rosters or identity alias resolution.",
+          "2024+ is a game-era proxy; native source-calendar days and retrospectively collected provider state clocks are not certified publication timestamps.",
+          "Valve Git first-addition commit clock plus seven-day lag is conservative provenance, not independent proof of public release.",
+          "Historical benchmark does not establish access to limits, prices, bets or settlement at those clocks.",
+          "Development-only model selection after a known previous TEST failure; no new independent bookmaker confirmation.",
+          "Latent common map strength is an exchangeability approximation, not an actual map/veto or prematch-roster model.",
+          "Gaussian day-site approximation omits posterior team covariance and does not certify calibrated probability intervals."
+        ],
+        "execution_or_profitability_claim": false
+      },
+      "stderr": ""
+    },
+    "forward_bo5": {
+      "returncode": 0,
+      "output": {
+        "team1": "Vitality",
+        "team2": "Natus Vincere",
+        "source_date": "2026-10-10",
+        "format": "bo5",
+        "prob_team1_win": 0.6941367027221905,
+        "prob_team2_win": 0.3058632972778095,
+        "model_selected": "ridge_C1_ratings_form_bayesian_hnone",
+        "fit_through": "2026-04-30",
+        "history_through": "2026-10-07",
+        "competitiveness_qualified": false,
+        "scenario": "literal-organization historical-strength forecast; current starters not verified",
+        "support": {
+          "team1_prior_series": 188,
+          "team2_prior_series": 178,
+          "minimum_prior_series": 178,
+          "either_team_cold": 0,
+          "performance_available": 1,
+          "minimum_prior_measured_maps": 86.0,
+          "performance_age_days": 7,
+          "vrs_available": 1,
+          "vrs_age_days": 33
+        },
+        "bayesian_channels_used": [
+          "bayes_score_s1_ou365_prob",
+          "bayes_score_s1_ou90_prob",
+          "bayes_score_s1_rw0025_prob",
+          "bayes_score_s1_rw01_prob",
+          "bayes_score_s2_ou365_prob",
+          "bayes_score_s2_ou90_prob",
+          "bayes_score_s2_rw0025_prob",
+          "bayes_score_s2_rw01_prob",
+          "bayes_winner_s1_ou365_prob",
+          "bayes_winner_s1_ou90_prob",
+          "bayes_winner_s1_rw0025_prob",
+          "bayes_winner_s1_rw01_prob",
+          "bayes_winner_s2_ou365_prob",
+          "bayes_winner_s2_ou90_prob",
+          "bayes_winner_s2_rw0025_prob",
+          "bayes_winner_s2_rw01_prob"
+        ],
+        "availability_limits": [
+          "Literal historical organizations, not verified contemporary starting rosters or identity alias resolution.",
+          "2024+ is a game-era proxy; native source-calendar days and retrospectively collected provider state clocks are not certified publication timestamps.",
+          "Valve Git first-addition commit clock plus seven-day lag is conservative provenance, not independent proof of public release.",
+          "Historical benchmark does not establish access to limits, prices, bets or settlement at those clocks.",
+          "Development-only model selection after a known previous TEST failure; no new independent bookmaker confirmation.",
+          "Latent common map strength is an exchangeability approximation, not an actual map/veto or prematch-roster model.",
+          "Gaussian day-site approximation omits posterior team covariance and does not certify calibrated probability intervals."
+        ],
+        "execution_or_profitability_claim": false
+      },
+      "stderr": ""
+    },
+    "cold_bo3": {
+      "returncode": 0,
+      "output": {
+        "team1": "UNSEEN_RESEARCH_TEAM_A",
+        "team2": "UNSEEN_RESEARCH_TEAM_B",
+        "source_date": "2026-10-10",
+        "format": "bo3",
+        "prob_team1_win": 0.5,
+        "prob_team2_win": 0.5,
+        "model_selected": "ridge_C1_ratings_form_bayesian_hnone",
+        "fit_through": "2026-04-30",
+        "history_through": "2026-10-07",
+        "competitiveness_qualified": false,
+        "scenario": "literal-organization historical-strength forecast; current starters not verified",
+        "support": {
+          "team1_prior_series": 0,
+          "team2_prior_series": 0,
+          "minimum_prior_series": 0,
+          "either_team_cold": 1,
+          "performance_available": 0,
+          "minimum_prior_measured_maps": 0.0,
+          "performance_age_days": 0,
+          "vrs_available": 0,
+          "vrs_age_days": 33
+        },
+        "bayesian_channels_used": [
+          "bayes_score_s1_ou365_prob",
+          "bayes_score_s1_ou90_prob",
+          "bayes_score_s1_rw0025_prob",
+          "bayes_score_s1_rw01_prob",
+          "bayes_score_s2_ou365_prob",
+          "bayes_score_s2_ou90_prob",
+          "bayes_score_s2_rw0025_prob",
+          "bayes_score_s2_rw01_prob",
+          "bayes_winner_s1_ou365_prob",
+          "bayes_winner_s1_ou90_prob",
+          "bayes_winner_s1_rw0025_prob",
+          "bayes_winner_s1_rw01_prob",
+          "bayes_winner_s2_ou365_prob",
+          "bayes_winner_s2_ou90_prob",
+          "bayes_winner_s2_rw0025_prob",
+          "bayes_winner_s2_rw01_prob"
+        ],
+        "availability_limits": [
+          "Literal historical organizations, not verified contemporary starting rosters or identity alias resolution.",
+          "2024+ is a game-era proxy; native source-calendar days and retrospectively collected provider state clocks are not certified publication timestamps.",
+          "Valve Git first-addition commit clock plus seven-day lag is conservative provenance, not independent proof of public release.",
+          "Historical benchmark does not establish access to limits, prices, bets or settlement at those clocks.",
+          "Development-only model selection after a known previous TEST failure; no new independent bookmaker confirmation.",
+          "Latent common map strength is an exchangeability approximation, not an actual map/veto or prematch-roster model.",
+          "Gaussian day-site approximation omits posterior team covariance and does not certify calibrated probability intervals."
+        ],
+        "execution_or_profitability_claim": false
+      },
+      "stderr": ""
+    },
+    "historical_rejection": {
+      "returncode": 2,
+      "output": null,
+      "stderr": "Error: Scenario must be after both coefficient fitting and every saved history day"
+    }
+  },
+  "overwrite_guards": {
+    "develop": {
+      "returncode": 2,
+      "stderr": "Error: Output already contains experiment artifacts; no reruns or overwrites"
+    },
+    "publish": {
+      "returncode": 2,
+      "stderr": "Error: This experiment was already published or publication started; no overwrites"
+    }
+  },
+  "published_state_sha256": "6b6cb1245e7e911b253efbf45a503ae05eaf4204f2338fd398a17c1e2441db15",
+  "state_unchanged_after_queries": true,
+  "protected_previous_artifact_sha256": {
+    "selected_model.pkl": "e9db50f1ffd21a88dac8c5d4749eb5449da7c47f31cac38f3c94e7ef4086d76c",
+    "selection.json": "069d75c425c44ae56d0f721acb4bb3c1f588c4d57198ecf2cc4e58083f7ba095",
+    "validation_predictions.csv": "5a9b969318d1ea837eef4f4782f7bb1ac8f4d6da9695c18da865559769e86e89",
+    "test_predictions.csv": "a3b979f7cdcf63fca4b4687a1312be1da5cb35cfea931821f139953f3e22d23c",
+    "test_metrics.json": "d13ce3375624e7ff1a39827b0f36ed0d83950a4768769b4253180bfbb62878ba",
+    "series_inference_state.pkl": "9766c26d044b4ed5f3d79e46c10a79c9cd9275bd19d993b85691113879c372b9"
+  },
+  "protected_previous_selection_freeze_sha256": "eec7431b7b6566dcff86a049889180ae00554a5b01cb2c584c567fc10343d9b8",
+  "numerical_quadrature_audit": {
+    "points": 108,
+    "maximum_error_up_to_variance32": {
+      "format": "bo5",
+      "mean": 5.0,
+      "variance": 32,
+      "error": 0.0022734735314831056
+    },
+    "maximum_error_up_to_variance128": {
+      "format": "bo5",
+      "mean": 1.0,
+      "variance": 128,
+      "error": 0.022513650933709828
+    },
+    "rows": [
+      {
+        "format": "bo3",
+        "mean": 0.0,
+        "variance": 0.1,
+        "error": 1.1102230246251565e-16
+      },
+      {
+        "format": "bo3",
+        "mean": 0.25,
+        "variance": 0.1,
+        "error": 1.1102230246251565e-16
+      },
+      {
+        "format": "bo3",
+        "mean": 1.0,
+        "variance": 0.1,
+        "error": 0.0
+      },
+      {
+        "format": "bo3",
+        "mean": 2.0,
+        "variance": 0.1,
+        "error": 0.0
+      },
+      {
+        "format": "bo3",
+        "mean": 5.0,
+        "variance": 0.1,
+        "error": 3.3306690738754696e-16
+      },
+      {
+        "format": "bo3",
+        "mean": 10.0,
+        "variance": 0.1,
+        "error": 1.1102230246251565e-16
+      },
+      {
+        "format": "bo3",
+        "mean": 0.0,
+        "variance": 1,
+        "error": 2.220446049250313e-16
+      },
+      {
+        "format": "bo3",
+        "mean": 0.25,
+        "variance": 1,
+        "error": 1.1102230246251565e-16
+      },
+      {
+        "format": "bo3",
+        "mean": 1.0,
+        "variance": 1,
+        "error": 1.1102230246251565e-16
+      },
+      {
+        "format": "bo3",
+        "mean": 2.0,
+        "variance": 1,
+        "error": 3.3306690738754696e-16
+      },
+      {
+        "format": "bo3",
+        "mean": 5.0,
+        "variance": 1,
+        "error": 0.0
+      },
+      {
+        "format": "bo3",
+        "mean": 10.0,
+        "variance": 1,
+        "error": 0.0
+      },
+      {
+        "format": "bo3",
+        "mean": 0.0,
+        "variance": 2.5,
+        "error": 0.0
+      },
+      {
+        "format": "bo3",
+        "mean": 0.25,
+        "variance": 2.5,
+        "error": 1.809485894455065e-11
+      },
+      {
+        "format": "bo3",
+        "mean": 1.0,
+        "variance": 2.5,
+        "error": 7.226885756494994e-12
+      },
+      {
+        "format": "bo3",
+        "mean": 2.0,
+        "variance": 2.5,
+        "error": 8.086753489067178e-12
+      },
+      {
+        "format": "bo3",
+        "mean": 5.0,
+        "variance": 2.5,
+        "error": 2.462474668618597e-13
+      },
+      {
+        "format": "bo3",
+        "mean": 10.0,
+        "variance": 2.5,
+        "error": 1.1102230246251565e-16
+      },
+      {
+        "format": "bo3",
+        "mean": 0.0,
+        "variance": 4,
+        "error": 1.6653345369377348e-16
+      },
+      {
+        "format": "bo3",
+        "mean": 0.25,
+        "variance": 4,
+        "error": 4.740775771949757e-09
+      },
+      {
+        "format": "bo3",
+        "mean": 1.0,
+        "variance": 4,
+        "error": 3.856080232900183e-09
+      },
+      {
+        "format": "bo3",
+        "mean": 2.0,
+        "variance": 4,
+        "error": 2.6968856037257183e-09
+      },
+      {
+        "format": "bo3",
+        "mean": 5.0,
+        "variance": 4,
+        "error": 2.665716536398577e-10
+      },
+      {
+        "format": "bo3",
+        "mean": 10.0,
+        "variance": 4,
+        "error": 6.106226635438361e-15
+      },
+      {
+        "format": "bo3",
+        "mean": 0.0,
+        "variance": 8,
+        "error": 1.1102230246251565e-16
+      },
+      {
+        "format": "bo3",
+        "mean": 0.25,
+        "variance": 8,
+        "error": 1.6359046083325168e-06
+      },
+      {
+        "format": "bo3",
+        "mean": 1.0,
+        "variance": 8,
+        "error": 1.2876693851193721e-06
+      },
+      {
+        "format": "bo3",
+        "mean": 2.0,
+        "variance": 8,
+        "error": 1.2717217277025128e-06
+      },
+      {
+        "format": "bo3",
+        "mean": 5.0,
+        "variance": 8,
+        "error": 3.93200191517451e-07
+      },
+      {
+        "format": "bo3",
+        "mean": 10.0,
+        "variance": 8,
+        "error": 2.1335679889489256e-09
+      },
+      {
+        "format": "bo3",
+        "mean": 0.0,
+        "variance": 16,
+        "error": 1.1102230246251565e-16
+      },
+      {
+        "format": "bo3",
+        "mean": 0.25,
+        "variance": 16,
+        "error": 7.243729519756936e-05
+      },
+      {
+        "format": "bo3",
+        "mean": 1.0,
+        "variance": 16,
+        "error": 5.6017325299695386e-05
+      },
+      {
+        "format": "bo3",
+        "mean": 2.0,
+        "variance": 16,
+        "error": 7.759888297054207e-05
+      },
+      {
+        "format": "bo3",
+        "mean": 5.0,
+        "variance": 16,
+        "error": 1.62078592440551e-05
+      },
+      {
+        "format": "bo3",
+        "mean": 10.0,
+        "variance": 16,
+        "error": 2.8066892820977074e-06
+      },
+      {
+        "format": "bo3",
+        "mean": 0.0,
+        "variance": 32,
+        "error": 1.1102230246251565e-16
+      },
+      {
+        "format": "bo3",
+        "mean": 0.25,
+        "variance": 32,
+        "error": 0.0007502091728865956
+      },
+      {
+        "format": "bo3",
+        "mean": 1.0,
+        "variance": 32,
+        "error": 0.00043058290584574443
+      },
+      {
+        "format": "bo3",
+        "mean": 2.0,
+        "variance": 32,
+        "error": 0.0007635809654367165
+      },
+      {
+        "format": "bo3",
+        "mean": 5.0,
+        "variance": 32,
+        "error": 0.0007641979975367974
+      },
+      {
+        "format": "bo3",
+        "mean": 10.0,
+        "variance": 32,
+        "error": 0.00016918181409630861
+      },
+      {
+        "format": "bo3",
+        "mean": 0.0,
+        "variance": 64,
+        "error": 1.6653345369377348e-16
+      },
+      {
+        "format": "bo3",
+        "mean": 0.25,
+        "variance": 64,
+        "error": 0.0027985487330787207
+      },
+      {
+        "format": "bo3",
+        "mean": 1.0,
+        "variance": 64,
+        "error": 0.0054945852179542065
+      },
+      {
+        "format": "bo3",
+        "mean": 2.0,
+        "variance": 64,
+        "error": 0.0042057222021464336
+      },
+      {
+        "format": "bo3",
+        "mean": 5.0,
+        "variance": 64,
+        "error": 0.002091921735908442
+      },
+      {
+        "format": "bo3",
+        "mean": 10.0,
+        "variance": 64,
+        "error": 0.0020717932555510687
+      },
+      {
+        "format": "bo3",
+        "mean": 0.0,
+        "variance": 128,
+        "error": 0.0
+      },
+      {
+        "format": "bo3",
+        "mean": 0.25,
+        "variance": 128,
+        "error": 0.005057503303230515
+      },
+      {
+        "format": "bo3",
+        "mean": 1.0,
+        "variance": 128,
+        "error": 0.015262933198349482
+      },
+      {
+        "format": "bo3",
+        "mean": 2.0,
+        "variance": 128,
+        "error": 0.00544673235712001
+      },
+      {
+        "format": "bo3",
+        "mean": 5.0,
+        "variance": 128,
+        "error": 0.009027989349822074
+      },
+      {
+        "format": "bo3",
+        "mean": 10.0,
+        "variance": 128,
+        "error": 0.010584122283555208
+      },
+      {
+        "format": "bo5",
+        "mean": 0.0,
+        "variance": 0.1,
+        "error": 1.1102230246251565e-16
+      },
+      {
+        "format": "bo5",
+        "mean": 0.25,
+        "variance": 0.1,
+        "error": 3.3306690738754696e-16
+      },
+      {
+        "format": "bo5",
+        "mean": 1.0,
+        "variance": 0.1,
+        "error": 1.1102230246251565e-16
+      },
+      {
+        "format": "bo5",
+        "mean": 2.0,
+        "variance": 0.1,
+        "error": 4.440892098500626e-16
+      },
+      {
+        "format": "bo5",
+        "mean": 5.0,
+        "variance": 0.1,
+        "error": 2.220446049250313e-16
+      },
+      {
+        "format": "bo5",
+        "mean": 10.0,
+        "variance": 0.1,
+        "error": 2.220446049250313e-16
+      },
+      {
+        "format": "bo5",
+        "mean": 0.0,
+        "variance": 1,
+        "error": 1.1102230246251565e-16
+      },
+      {
+        "format": "bo5",
+        "mean": 0.25,
+        "variance": 1,
+        "error": 1.1102230246251565e-16
+      },
+      {
+        "format": "bo5",
+        "mean": 1.0,
+        "variance": 1,
+        "error": 4.440892098500626e-16
+      },
+      {
+        "format": "bo5",
+        "mean": 2.0,
+        "variance": 1,
+        "error": 1.1102230246251565e-16
+      },
+      {
+        "format": "bo5",
+        "mean": 5.0,
+        "variance": 1,
+        "error": 2.220446049250313e-16
+      },
+      {
+        "format": "bo5",
+        "mean": 10.0,
+        "variance": 1,
+        "error": 2.220446049250313e-16
+      },
+      {
+        "format": "bo5",
+        "mean": 0.0,
+        "variance": 2.5,
+        "error": 1.1102230246251565e-16
+      },
+      {
+        "format": "bo5",
+        "mean": 0.25,
+        "variance": 2.5,
+        "error": 3.846699625498218e-10
+      },
+      {
+        "format": "bo5",
+        "mean": 1.0,
+        "variance": 2.5,
+        "error": 1.2595080534083536e-10
+      },
+      {
+        "format": "bo5",
+        "mean": 2.0,
+        "variance": 2.5,
+        "error": 1.4528356295784306e-10
+      },
+      {
+        "format": "bo5",
+        "mean": 5.0,
+        "variance": 2.5,
+        "error": 6.195932655828074e-12
+      },
+      {
+        "format": "bo5",
+        "mean": 10.0,
+        "variance": 2.5,
+        "error": 3.3306690738754696e-16
+      },
+      {
+        "format": "bo5",
+        "mean": 0.0,
+        "variance": 4,
+        "error": 1.1102230246251565e-16
+      },
+      {
+        "format": "bo5",
+        "mean": 0.25,
+        "variance": 4,
+        "error": 6.867142576805207e-08
+      },
+      {
+        "format": "bo5",
+        "mean": 1.0,
+        "variance": 4,
+        "error": 5.777164846509919e-08
+      },
+      {
+        "format": "bo5",
+        "mean": 2.0,
+        "variance": 4,
+        "error": 3.6235609512935696e-08
+      },
+      {
+        "format": "bo5",
+        "mean": 5.0,
+        "variance": 4,
+        "error": 3.1882831930118982e-09
+      },
+      {
+        "format": "bo5",
+        "mean": 10.0,
+        "variance": 4,
+        "error": 4.234390615920347e-13
+      },
+      {
+        "format": "bo5",
+        "mean": 0.0,
+        "variance": 8,
+        "error": 1.6653345369377348e-16
+      },
+      {
+        "format": "bo5",
+        "mean": 0.25,
+        "variance": 8,
+        "error": 1.3385159394863066e-05
+      },
+      {
+        "format": "bo5",
+        "mean": 1.0,
+        "variance": 8,
+        "error": 1.0211002676507874e-05
+      },
+      {
+        "format": "bo5",
+        "mean": 2.0,
+        "variance": 8,
+        "error": 1.0604526121005264e-05
+      },
+      {
+        "format": "bo5",
+        "mean": 5.0,
+        "variance": 8,
+        "error": 3.1710870734835694e-06
+      },
+      {
+        "format": "bo5",
+        "mean": 10.0,
+        "variance": 8,
+        "error": 2.174128654885976e-09
+      },
+      {
+        "format": "bo5",
+        "mean": 0.0,
+        "variance": 16,
+        "error": 1.1102230246251565e-16
+      },
+      {
+        "format": "bo5",
+        "mean": 0.25,
+        "variance": 16,
+        "error": 0.0003438070007747429
+      },
+      {
+        "format": "bo5",
+        "mean": 1.0,
+        "variance": 16,
+        "error": 0.00027214984870838066
+      },
+      {
+        "format": "bo5",
+        "mean": 2.0,
+        "variance": 16,
+        "error": 0.00036889092638514587
+      },
+      {
+        "format": "bo5",
+        "mean": 5.0,
+        "variance": 16,
+        "error": 9.806006376378296e-05
+      },
+      {
+        "format": "bo5",
+        "mean": 10.0,
+        "variance": 16,
+        "error": 1.6761712571589094e-05
+      },
+      {
+        "format": "bo5",
+        "mean": 0.0,
+        "variance": 32,
+        "error": 1.6653345369377348e-16
+      },
+      {
+        "format": "bo5",
+        "mean": 0.25,
+        "variance": 32,
+        "error": 0.002193100790565783
+      },
+      {
+        "format": "bo5",
+        "mean": 1.0,
+        "variance": 32,
+        "error": 0.0012120741172816363
+      },
+      {
+        "format": "bo5",
+        "mean": 2.0,
+        "variance": 32,
+        "error": 0.002154004030037293
+      },
+      {
+        "format": "bo5",
+        "mean": 5.0,
+        "variance": 32,
+        "error": 0.0022734735314831056
+      },
+      {
+        "format": "bo5",
+        "mean": 10.0,
+        "variance": 32,
+        "error": 0.0004035526083843166
+      },
+      {
+        "format": "bo5",
+        "mean": 0.0,
+        "variance": 64,
+        "error": 1.6653345369377348e-16
+      },
+      {
+        "format": "bo5",
+        "mean": 0.25,
+        "variance": 64,
+        "error": 0.005456148067600863
+      },
+      {
+        "format": "bo5",
+        "mean": 1.0,
+        "variance": 64,
+        "error": 0.010902640177685607
+      },
+      {
+        "format": "bo5",
+        "mean": 2.0,
+        "variance": 64,
+        "error": 0.008537728727432747
+      },
+      {
+        "format": "bo5",
+        "mean": 5.0,
+        "variance": 64,
+        "error": 0.0045480261306396486
+      },
+      {
+        "format": "bo5",
+        "mean": 10.0,
+        "variance": 64,
+        "error": 0.004300986970057652
+      },
+      {
+        "format": "bo5",
+        "mean": 0.0,
+        "variance": 128,
+        "error": 1.1102230246251565e-16
+      },
+      {
+        "format": "bo5",
+        "mean": 0.25,
+        "variance": 128,
+        "error": 0.0070860515428885495
+      },
+      {
+        "format": "bo5",
+        "mean": 1.0,
+        "variance": 128,
+        "error": 0.022513650933709828
+      },
+      {
+        "format": "bo5",
+        "mean": 2.0,
+        "variance": 128,
+        "error": 0.008498421282807755
+      },
+      {
+        "format": "bo5",
+        "mean": 5.0,
+        "variance": 128,
+        "error": 0.013054290642207311
+      },
+      {
+        "format": "bo5",
+        "mean": 10.0,
+        "variance": 128,
+        "error": 0.01580108293155369
+      }
+    ]
+  },
+  "citation_structure_check": {
+    "passed": true,
+    "unique_cited_sources": 14,
+    "bibliography_count": 14,
+    "does_not_verify_factual_entailment": true
+  },
+  "competitiveness_qualified": false,
+  "fresh_independent_confirmation_available": false
+}

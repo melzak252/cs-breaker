@@ -1,0 +1,55 @@
+{
+  "before_after_primary_quotes_and_cohorts_identical": true,
+  "devig_pairs_identical_at_each_cutoff": true,
+  "source_day_is_subset_not_reconstructed_history": true,
+  "cases": {
+    "proportional_pre_start": {
+      "selected_model": "blend_player_archive_elo",
+      "pairs": 203,
+      "unique_series": 92,
+      "all_books": 33,
+      "by_book": {
+        "pinnacle": 67,
+        "bet365": 74,
+        "unibet": 62
+      },
+      "report_sha256": "5b9793b2c9359e31f3cc4d74bb207ad8d87bec75623337ba24fe0bd8aa860923"
+    },
+    "power_pre_start": {
+      "selected_model": "blend_player_archive_elo",
+      "pairs": 203,
+      "unique_series": 92,
+      "all_books": 33,
+      "by_book": {
+        "pinnacle": 67,
+        "bet365": 74,
+        "unibet": 62
+      },
+      "report_sha256": "b5d51bd17d6b86588e1be39202bf93d5aeb8f945d20ed8e2cb02b94f52eeb657"
+    },
+    "proportional_source_day": {
+      "selected_model": "blend_player_archive_elo",
+      "pairs": 13,
+      "unique_series": 13,
+      "all_books": 0,
+      "by_book": {
+        "pinnacle": 1,
+        "bet365": 0,
+        "unibet": 12
+      },
+      "report_sha256": "55b3584eb31f1e06fe22982052ac161c8377d96c9f359a14ee768a49027dff2e"
+    },
+    "power_source_day": {
+      "selected_model": "blend_player_archive_elo",
+      "pairs": 13,
+      "unique_series": 13,
+      "all_books": 0,
+      "by_book": {
+        "pinnacle": 1,
+        "bet365": 0,
+        "unibet": 12
+      },
+      "report_sha256": "dbb59b2e074146593df26960cd7bba63490b49102ebdd014d0230be9ed2a95e1"
+    }
+  }
+}

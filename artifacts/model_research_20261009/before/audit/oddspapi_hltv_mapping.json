@@ -1,0 +1,2710 @@
+{
+  "version": 1,
+  "inputs": {
+    "hltv_results": {
+      "path": "data/raw/hltv/matches.csv",
+      "sha256": "7ff59a5d942210ce3be2e94c2ae4529f3a5326b8373ba7be4929818cf6b9b606"
+    },
+    "predictions": {
+      "path": "artifacts/model_research_20261009/before/test_predictions.csv",
+      "sha256": "4cd060554768e9b4e0a5f1a325f459616b9d12669b4fcc8b2b6a65b3037c60c8"
+    },
+    "model_metrics": {
+      "path": "artifacts/model_research_20261009/before/metrics.json",
+      "sha256": "066b7c5957eef464bb0c6def0f6ec2a91c2aaab967c853a435fb3042343efef6"
+    },
+    "odds_database_snapshot": {
+      "path": "/home/melzak/dev/cs-breaker/data/app/app.sqlite3",
+      "read_only": true,
+      "fixtures": 5465,
+      "latest_fixture_book_observations": 16350,
+      "maximum_selected_quote_id": 16350
+    }
+  },
+  "counts": {
+    "provider_fixtures": 5465,
+    "hltv_result_rows": 122038,
+    "matched_native_hltv_ids": 3467,
+    "matched_played_series": 3058,
+    "candidate_evidence_rows": 4102,
+    "model_test_predictions": 164,
+    "mapped_test_matches": 97,
+    "test_matches_with_usable_odds": 92
+  },
+  "mapping_statuses": {
+    "matched": 3467,
+    "unmatched": 1455,
+    "event_unconfirmed": 350,
+    "ambiguous_fixture": 97,
+    "ambiguous_hltv_match": 21,
+    "event_conflict": 59,
+    "not_finished": 16
+  },
+  "matched_label_statuses": {
+    "valid_explicit_series_result": 3058,
+    "invalid_series_result": 409
+  },
+  "matched_calendar_day_offsets": {
+    "0": 3276,
+    "-1": 18,
+    "1": 173
+  },
+  "native_id_anchor_checks": [
+    {
+      "fixture_id": "id1704956875072076",
+      "source": "hltv",
+      "source_match_id": "2397708",
+      "hltv_match_id": "2397708",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704956875093962",
+      "source": "hltv",
+      "source_match_id": "2397713",
+      "hltv_match_id": "2397713",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1705112275050378",
+      "source": "hltv",
+      "source_match_id": "2397849",
+      "hltv_match_id": "2397849",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1705112275050446",
+      "source": "hltv",
+      "source_match_id": "2397850",
+      "hltv_match_id": "2397850",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1705079674757780",
+      "source": "hltv",
+      "source_match_id": "2397938",
+      "hltv_match_id": "2397938",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1705079675209770",
+      "source": "hltv",
+      "source_match_id": "2398001",
+      "hltv_match_id": "2398001",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1705079675239892",
+      "source": "hltv",
+      "source_match_id": "2398004",
+      "hltv_match_id": "2398004",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1705079675266264",
+      "source": "hltv",
+      "source_match_id": "2398008",
+      "hltv_match_id": "2398008",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704852975091922",
+      "source": "hltv",
+      "source_match_id": "2398053",
+      "hltv_match_id": "2398053",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1705229075051138",
+      "source": "hltv",
+      "source_match_id": "2398072",
+      "hltv_match_id": "2398072",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1705293475052738",
+      "source": "hltv",
+      "source_match_id": "2398236",
+      "hltv_match_id": "2398236",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1705293475052952",
+      "source": "hltv",
+      "source_match_id": "2398237",
+      "hltv_match_id": "2398237",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1705293475072546",
+      "source": "hltv",
+      "source_match_id": "2398240",
+      "hltv_match_id": "2398240",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1705293475068964",
+      "source": "hltv",
+      "source_match_id": "2398241",
+      "hltv_match_id": "2398241",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1705293475093964",
+      "source": "hltv",
+      "source_match_id": "2398244",
+      "hltv_match_id": "2398244",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1705112275050908",
+      "source": "hltv",
+      "source_match_id": "2398358",
+      "hltv_match_id": "2398358",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1705112275050910",
+      "source": "hltv",
+      "source_match_id": "2398359",
+      "hltv_match_id": "2398359",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1705112275068924",
+      "source": "hltv",
+      "source_match_id": "2398362",
+      "hltv_match_id": "2398362",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1705112275090590",
+      "source": "hltv",
+      "source_match_id": "2398370",
+      "hltv_match_id": "2398370",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1705112275090592",
+      "source": "hltv",
+      "source_match_id": "2398371",
+      "hltv_match_id": "2398371",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1705112275150042",
+      "source": "hltv",
+      "source_match_id": "2398378",
+      "hltv_match_id": "2398378",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1705112275212832",
+      "source": "hltv",
+      "source_match_id": "2398383",
+      "hltv_match_id": "2398383",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1705112275266280",
+      "source": "hltv",
+      "source_match_id": "2398390",
+      "hltv_match_id": "2398390",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1705079675051004",
+      "source": "hltv",
+      "source_match_id": "2398679",
+      "hltv_match_id": "2398679",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1705079675072554",
+      "source": "hltv",
+      "source_match_id": "2398683",
+      "hltv_match_id": "2398683",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1700239275109092",
+      "source": "hltv",
+      "source_match_id": "2398717",
+      "hltv_match_id": "2398717",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1700239275109174",
+      "source": "hltv",
+      "source_match_id": "2398718",
+      "hltv_match_id": "2398718",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1700239275109090",
+      "source": "hltv",
+      "source_match_id": "2398719",
+      "hltv_match_id": "2398719",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1700239275109088",
+      "source": "hltv",
+      "source_match_id": "2398720",
+      "hltv_match_id": "2398720",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1700239275264782",
+      "source": "hltv",
+      "source_match_id": "2398725",
+      "hltv_match_id": "2398725",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1700239275264784",
+      "source": "hltv",
+      "source_match_id": "2398726",
+      "hltv_match_id": "2398726",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1700239275294742",
+      "source": "hltv",
+      "source_match_id": "2398733",
+      "hltv_match_id": "2398733",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1705103875161870",
+      "source": "hltv",
+      "source_match_id": "2398783",
+      "hltv_match_id": "2398783",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1705112275026468",
+      "source": "hltv",
+      "source_match_id": "2398801",
+      "hltv_match_id": "2398801",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1705121075089788",
+      "source": "hltv",
+      "source_match_id": "2398836",
+      "hltv_match_id": "2398836",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1705121075150018",
+      "source": "hltv",
+      "source_match_id": "2398900",
+      "hltv_match_id": "2398900",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704944275240384",
+      "source": "hltv",
+      "source_match_id": "2398968",
+      "hltv_match_id": "2398968",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1705121075177040",
+      "source": "hltv",
+      "source_match_id": "2399004",
+      "hltv_match_id": "2399004",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1705121075211766",
+      "source": "hltv",
+      "source_match_id": "2399058",
+      "hltv_match_id": "2399058",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1705121075214292",
+      "source": "hltv",
+      "source_match_id": "2399062",
+      "hltv_match_id": "2399062",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1705121075266276",
+      "source": "hltv",
+      "source_match_id": "2399064",
+      "hltv_match_id": "2399064",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704956870173558",
+      "source": "opencs2",
+      "source_match_id": "2391545",
+      "hltv_match_id": "2391545",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704956870173562",
+      "source": "opencs2",
+      "source_match_id": "2391547",
+      "hltv_match_id": "2391547",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704956870245212",
+      "source": "opencs2",
+      "source_match_id": "2391550",
+      "hltv_match_id": "2391550",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704956870363974",
+      "source": "opencs2",
+      "source_match_id": "2391552",
+      "hltv_match_id": "2391552",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704956870363984",
+      "source": "opencs2",
+      "source_match_id": "2391553",
+      "hltv_match_id": "2391553",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704956870363978",
+      "source": "opencs2",
+      "source_match_id": "2391555",
+      "hltv_match_id": "2391555",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704956870363980",
+      "source": "opencs2",
+      "source_match_id": "2391556",
+      "hltv_match_id": "2391556",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704956870363982",
+      "source": "opencs2",
+      "source_match_id": "2391557",
+      "hltv_match_id": "2391557",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704956870455582",
+      "source": "opencs2",
+      "source_match_id": "2391559",
+      "hltv_match_id": "2391559",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704956870455584",
+      "source": "opencs2",
+      "source_match_id": "2391560",
+      "hltv_match_id": "2391560",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704956870455586",
+      "source": "opencs2",
+      "source_match_id": "2391561",
+      "hltv_match_id": "2391561",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704956870455588",
+      "source": "opencs2",
+      "source_match_id": "2391562",
+      "hltv_match_id": "2391562",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704956870481492",
+      "source": "opencs2",
+      "source_match_id": "2391563",
+      "hltv_match_id": "2391563",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704956870481494",
+      "source": "opencs2",
+      "source_match_id": "2391564",
+      "hltv_match_id": "2391564",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704353370148906",
+      "source": "opencs2",
+      "source_match_id": "2391806",
+      "hltv_match_id": "2391806",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704353370196286",
+      "source": "opencs2",
+      "source_match_id": "2391808",
+      "hltv_match_id": "2391808",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704353370196516",
+      "source": "opencs2",
+      "source_match_id": "2391811",
+      "hltv_match_id": "2391811",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704353370196688",
+      "source": "opencs2",
+      "source_match_id": "2391813",
+      "hltv_match_id": "2391813",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704353370271266",
+      "source": "opencs2",
+      "source_match_id": "2391817",
+      "hltv_match_id": "2391817",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704353370271268",
+      "source": "opencs2",
+      "source_match_id": "2391818",
+      "hltv_match_id": "2391818",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704353370271272",
+      "source": "opencs2",
+      "source_match_id": "2391820",
+      "hltv_match_id": "2391820",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704353370271274",
+      "source": "opencs2",
+      "source_match_id": "2391821",
+      "hltv_match_id": "2391821",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704353370271276",
+      "source": "opencs2",
+      "source_match_id": "2391822",
+      "hltv_match_id": "2391822",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704353370352540",
+      "source": "opencs2",
+      "source_match_id": "2391824",
+      "hltv_match_id": "2391824",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704353370352242",
+      "source": "opencs2",
+      "source_match_id": "2391825",
+      "hltv_match_id": "2391825",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704353370432252",
+      "source": "opencs2",
+      "source_match_id": "2391833",
+      "hltv_match_id": "2391833",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704353370432254",
+      "source": "opencs2",
+      "source_match_id": "2391834",
+      "hltv_match_id": "2391834",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704353370432260",
+      "source": "opencs2",
+      "source_match_id": "2391836",
+      "hltv_match_id": "2391836",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704353370432262",
+      "source": "opencs2",
+      "source_match_id": "2391837",
+      "hltv_match_id": "2391837",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704353370432264",
+      "source": "opencs2",
+      "source_match_id": "2391838",
+      "hltv_match_id": "2391838",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704353370432266",
+      "source": "opencs2",
+      "source_match_id": "2391839",
+      "hltv_match_id": "2391839",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704353370481500",
+      "source": "opencs2",
+      "source_match_id": "2391841",
+      "hltv_match_id": "2391841",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704353370481568",
+      "source": "opencs2",
+      "source_match_id": "2391842",
+      "hltv_match_id": "2391842",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704353370481502",
+      "source": "opencs2",
+      "source_match_id": "2391843",
+      "hltv_match_id": "2391843",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704353370507958",
+      "source": "opencs2",
+      "source_match_id": "2391845",
+      "hltv_match_id": "2391845",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704353370507842",
+      "source": "opencs2",
+      "source_match_id": "2391846",
+      "hltv_match_id": "2391846",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704578170152006",
+      "source": "opencs2",
+      "source_match_id": "2391934",
+      "hltv_match_id": "2391934",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704578170152010",
+      "source": "opencs2",
+      "source_match_id": "2391935",
+      "hltv_match_id": "2391935",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704578170193858",
+      "source": "opencs2",
+      "source_match_id": "2391936",
+      "hltv_match_id": "2391936",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704578170192600",
+      "source": "opencs2",
+      "source_match_id": "2391937",
+      "hltv_match_id": "2391937",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704578170241786",
+      "source": "opencs2",
+      "source_match_id": "2391939",
+      "hltv_match_id": "2391939",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704578170271218",
+      "source": "opencs2",
+      "source_match_id": "2391940",
+      "hltv_match_id": "2391940",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704944270009688",
+      "source": "opencs2",
+      "source_match_id": "2391954",
+      "hltv_match_id": "2391954",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704944270315994",
+      "source": "opencs2",
+      "source_match_id": "2391955",
+      "hltv_match_id": "2391955",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704944270315996",
+      "source": "opencs2",
+      "source_match_id": "2391956",
+      "hltv_match_id": "2391956",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704944270318378",
+      "source": "opencs2",
+      "source_match_id": "2391957",
+      "hltv_match_id": "2391957",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704944270329256",
+      "source": "opencs2",
+      "source_match_id": "2391958",
+      "hltv_match_id": "2391958",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704944270329260",
+      "source": "opencs2",
+      "source_match_id": "2391960",
+      "hltv_match_id": "2391960",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704944270329262",
+      "source": "opencs2",
+      "source_match_id": "2391961",
+      "hltv_match_id": "2391961",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704944270352238",
+      "source": "opencs2",
+      "source_match_id": "2391962",
+      "hltv_match_id": "2391962",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704944270352222",
+      "source": "opencs2",
+      "source_match_id": "2391963",
+      "hltv_match_id": "2391963",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704944270371396",
+      "source": "opencs2",
+      "source_match_id": "2391964",
+      "hltv_match_id": "2391964",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704578770184454",
+      "source": "opencs2",
+      "source_match_id": "2392004",
+      "hltv_match_id": "2392004",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704578770184460",
+      "source": "opencs2",
+      "source_match_id": "2392006",
+      "hltv_match_id": "2392006",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704578770266720",
+      "source": "opencs2",
+      "source_match_id": "2392008",
+      "hltv_match_id": "2392008",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704578770316808",
+      "source": "opencs2",
+      "source_match_id": "2392009",
+      "hltv_match_id": "2392009",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704578970186676",
+      "source": "opencs2",
+      "source_match_id": "2392036",
+      "hltv_match_id": "2392036",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704578970238976",
+      "source": "opencs2",
+      "source_match_id": "2392037",
+      "hltv_match_id": "2392037",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704578970269330",
+      "source": "opencs2",
+      "source_match_id": "2392038",
+      "hltv_match_id": "2392038",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704578970320358",
+      "source": "opencs2",
+      "source_match_id": "2392039",
+      "hltv_match_id": "2392039",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704578370166562",
+      "source": "opencs2",
+      "source_match_id": "2392092",
+      "hltv_match_id": "2392092",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704578370178598",
+      "source": "opencs2",
+      "source_match_id": "2392093",
+      "hltv_match_id": "2392093",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704578370224378",
+      "source": "opencs2",
+      "source_match_id": "2392095",
+      "hltv_match_id": "2392095",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704578370224372",
+      "source": "opencs2",
+      "source_match_id": "2392096",
+      "hltv_match_id": "2392096",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704578370284376",
+      "source": "opencs2",
+      "source_match_id": "2392098",
+      "hltv_match_id": "2392098",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704578370329310",
+      "source": "opencs2",
+      "source_match_id": "2392099",
+      "hltv_match_id": "2392099",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704852970266616",
+      "source": "opencs2",
+      "source_match_id": "2392117",
+      "hltv_match_id": "2392117",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704852970266620",
+      "source": "opencs2",
+      "source_match_id": "2392118",
+      "hltv_match_id": "2392118",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704852970271322",
+      "source": "opencs2",
+      "source_match_id": "2392120",
+      "hltv_match_id": "2392120",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704852970352724",
+      "source": "opencs2",
+      "source_match_id": "2392125",
+      "hltv_match_id": "2392125",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704852970352728",
+      "source": "opencs2",
+      "source_match_id": "2392127",
+      "hltv_match_id": "2392127",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704852970352730",
+      "source": "opencs2",
+      "source_match_id": "2392128",
+      "hltv_match_id": "2392128",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704852970397684",
+      "source": "opencs2",
+      "source_match_id": "2392130",
+      "hltv_match_id": "2392130",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704852970396018",
+      "source": "opencs2",
+      "source_match_id": "2392131",
+      "hltv_match_id": "2392131",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704852970429588",
+      "source": "opencs2",
+      "source_match_id": "2392134",
+      "hltv_match_id": "2392134",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704852970452952",
+      "source": "opencs2",
+      "source_match_id": "2392135",
+      "hltv_match_id": "2392135",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704852970557252",
+      "source": "opencs2",
+      "source_match_id": "2392138",
+      "hltv_match_id": "2392138",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704852970616402",
+      "source": "opencs2",
+      "source_match_id": "2392146",
+      "hltv_match_id": "2392146",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704852970616404",
+      "source": "opencs2",
+      "source_match_id": "2392147",
+      "hltv_match_id": "2392147",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704852970616406",
+      "source": "opencs2",
+      "source_match_id": "2392148",
+      "hltv_match_id": "2392148",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704852970702662",
+      "source": "opencs2",
+      "source_match_id": "2392150",
+      "hltv_match_id": "2392150",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704852970722144",
+      "source": "opencs2",
+      "source_match_id": "2392151",
+      "hltv_match_id": "2392151",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704852970745714",
+      "source": "opencs2",
+      "source_match_id": "2392152",
+      "hltv_match_id": "2392152",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1705074270230838",
+      "source": "opencs2",
+      "source_match_id": "2392258",
+      "hltv_match_id": "2392258",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1705074270245224",
+      "source": "opencs2",
+      "source_match_id": "2392266",
+      "hltv_match_id": "2392266",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1705074270245226",
+      "source": "opencs2",
+      "source_match_id": "2392267",
+      "hltv_match_id": "2392267",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1705074270245240",
+      "source": "opencs2",
+      "source_match_id": "2392272",
+      "hltv_match_id": "2392272",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1705074270245242",
+      "source": "opencs2",
+      "source_match_id": "2392273",
+      "hltv_match_id": "2392273",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1705074270271232",
+      "source": "opencs2",
+      "source_match_id": "2392279",
+      "hltv_match_id": "2392279",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1705074270317116",
+      "source": "opencs2",
+      "source_match_id": "2392281",
+      "hltv_match_id": "2392281",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704610770431020",
+      "source": "opencs2",
+      "source_match_id": "2392283",
+      "hltv_match_id": "2392283",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704610770431012",
+      "source": "opencs2",
+      "source_match_id": "2392284",
+      "hltv_match_id": "2392284",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704610770452760",
+      "source": "opencs2",
+      "source_match_id": "2392288",
+      "hltv_match_id": "2392288",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704610770483652",
+      "source": "opencs2",
+      "source_match_id": "2392290",
+      "hltv_match_id": "2392290",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704610770423724",
+      "source": "opencs2",
+      "source_match_id": "2392297",
+      "hltv_match_id": "2392297",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704610770510460",
+      "source": "opencs2",
+      "source_match_id": "2392308",
+      "hltv_match_id": "2392308",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704610770431224",
+      "source": "opencs2",
+      "source_match_id": "2392310",
+      "hltv_match_id": "2392310",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704610770462476",
+      "source": "opencs2",
+      "source_match_id": "2392314",
+      "hltv_match_id": "2392314",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704610770490584",
+      "source": "opencs2",
+      "source_match_id": "2392318",
+      "hltv_match_id": "2392318",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704610770484318",
+      "source": "opencs2",
+      "source_match_id": "2392342",
+      "hltv_match_id": "2392342",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704353370153946",
+      "source": "opencs2",
+      "source_match_id": "2392347",
+      "hltv_match_id": "2392347",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704353370185004",
+      "source": "opencs2",
+      "source_match_id": "2392350",
+      "hltv_match_id": "2392350",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704353370190952",
+      "source": "opencs2",
+      "source_match_id": "2392351",
+      "hltv_match_id": "2392351",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704353370174204",
+      "source": "opencs2",
+      "source_match_id": "2392353",
+      "hltv_match_id": "2392353",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704353370174208",
+      "source": "opencs2",
+      "source_match_id": "2392354",
+      "hltv_match_id": "2392354",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704353370174212",
+      "source": "opencs2",
+      "source_match_id": "2392355",
+      "hltv_match_id": "2392355",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704353370271156",
+      "source": "opencs2",
+      "source_match_id": "2392358",
+      "hltv_match_id": "2392358",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704353370271158",
+      "source": "opencs2",
+      "source_match_id": "2392359",
+      "hltv_match_id": "2392359",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704353370239542",
+      "source": "opencs2",
+      "source_match_id": "2392360",
+      "hltv_match_id": "2392360",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704353370241500",
+      "source": "opencs2",
+      "source_match_id": "2392361",
+      "hltv_match_id": "2392361",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704353370323204",
+      "source": "opencs2",
+      "source_match_id": "2392362",
+      "hltv_match_id": "2392362",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704353370323854",
+      "source": "opencs2",
+      "source_match_id": "2392363",
+      "hltv_match_id": "2392363",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704353370352260",
+      "source": "opencs2",
+      "source_match_id": "2392364",
+      "hltv_match_id": "2392364",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704353370352262",
+      "source": "opencs2",
+      "source_match_id": "2392366",
+      "hltv_match_id": "2392366",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704353370376414",
+      "source": "opencs2",
+      "source_match_id": "2392368",
+      "hltv_match_id": "2392368",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704353370376520",
+      "source": "opencs2",
+      "source_match_id": "2392370",
+      "hltv_match_id": "2392370",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704353370376524",
+      "source": "opencs2",
+      "source_match_id": "2392371",
+      "hltv_match_id": "2392371",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704353370376416",
+      "source": "opencs2",
+      "source_match_id": "2392372",
+      "hltv_match_id": "2392372",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704353370376544",
+      "source": "opencs2",
+      "source_match_id": "2392373",
+      "hltv_match_id": "2392373",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704353370432404",
+      "source": "opencs2",
+      "source_match_id": "2392378",
+      "hltv_match_id": "2392378",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704353370432408",
+      "source": "opencs2",
+      "source_match_id": "2392380",
+      "hltv_match_id": "2392380",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704353370432410",
+      "source": "opencs2",
+      "source_match_id": "2392381",
+      "hltv_match_id": "2392381",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704353370481622",
+      "source": "opencs2",
+      "source_match_id": "2392386",
+      "hltv_match_id": "2392386",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704353370481626",
+      "source": "opencs2",
+      "source_match_id": "2392387",
+      "hltv_match_id": "2392387",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704353370481628",
+      "source": "opencs2",
+      "source_match_id": "2392388",
+      "hltv_match_id": "2392388",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704353370481630",
+      "source": "opencs2",
+      "source_match_id": "2392389",
+      "hltv_match_id": "2392389",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704353370481634",
+      "source": "opencs2",
+      "source_match_id": "2392391",
+      "hltv_match_id": "2392391",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704353370535394",
+      "source": "opencs2",
+      "source_match_id": "2392392",
+      "hltv_match_id": "2392392",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704353370535264",
+      "source": "opencs2",
+      "source_match_id": "2392394",
+      "hltv_match_id": "2392394",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704353370535398",
+      "source": "opencs2",
+      "source_match_id": "2392396",
+      "hltv_match_id": "2392396",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704353370535400",
+      "source": "opencs2",
+      "source_match_id": "2392397",
+      "hltv_match_id": "2392397",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704353370585842",
+      "source": "opencs2",
+      "source_match_id": "2392399",
+      "hltv_match_id": "2392399",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704353370614554",
+      "source": "opencs2",
+      "source_match_id": "2392401",
+      "hltv_match_id": "2392401",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704353370614556",
+      "source": "opencs2",
+      "source_match_id": "2392402",
+      "hltv_match_id": "2392402",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704353370614558",
+      "source": "opencs2",
+      "source_match_id": "2392403",
+      "hltv_match_id": "2392403",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704353370616408",
+      "source": "opencs2",
+      "source_match_id": "2392404",
+      "hltv_match_id": "2392404",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704353370616414",
+      "source": "opencs2",
+      "source_match_id": "2392407",
+      "hltv_match_id": "2392407",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704353370616416",
+      "source": "opencs2",
+      "source_match_id": "2392408",
+      "hltv_match_id": "2392408",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704353370671634",
+      "source": "opencs2",
+      "source_match_id": "2392409",
+      "hltv_match_id": "2392409",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704353370671640",
+      "source": "opencs2",
+      "source_match_id": "2392411",
+      "hltv_match_id": "2392411",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704353370671642",
+      "source": "opencs2",
+      "source_match_id": "2392412",
+      "hltv_match_id": "2392412",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704353370696790",
+      "source": "opencs2",
+      "source_match_id": "2392413",
+      "hltv_match_id": "2392413",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704353370696794",
+      "source": "opencs2",
+      "source_match_id": "2392414",
+      "hltv_match_id": "2392414",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704353370717266",
+      "source": "opencs2",
+      "source_match_id": "2392415",
+      "hltv_match_id": "2392415",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1705079670264052",
+      "source": "opencs2",
+      "source_match_id": "2392440",
+      "hltv_match_id": "2392440",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1705079670264056",
+      "source": "opencs2",
+      "source_match_id": "2392442",
+      "hltv_match_id": "2392442",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1705079670264058",
+      "source": "opencs2",
+      "source_match_id": "2392443",
+      "hltv_match_id": "2392443",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1705079670481686",
+      "source": "opencs2",
+      "source_match_id": "2392444",
+      "hltv_match_id": "2392444",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1705079670481690",
+      "source": "opencs2",
+      "source_match_id": "2392445",
+      "hltv_match_id": "2392445",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1705079670481696",
+      "source": "opencs2",
+      "source_match_id": "2392447",
+      "hltv_match_id": "2392447",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1705079670507296",
+      "source": "opencs2",
+      "source_match_id": "2392448",
+      "hltv_match_id": "2392448",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1705079670507298",
+      "source": "opencs2",
+      "source_match_id": "2392450",
+      "hltv_match_id": "2392450",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704460970240476",
+      "source": "opencs2",
+      "source_match_id": "2392455",
+      "hltv_match_id": "2392455",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704460970268724",
+      "source": "opencs2",
+      "source_match_id": "2392456",
+      "hltv_match_id": "2392456",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704460970316018",
+      "source": "opencs2",
+      "source_match_id": "2392457",
+      "hltv_match_id": "2392457",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1705061670399860",
+      "source": "opencs2",
+      "source_match_id": "2392535",
+      "hltv_match_id": "2392535",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1705061670399866",
+      "source": "opencs2",
+      "source_match_id": "2392536",
+      "hltv_match_id": "2392536",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1705061670399868",
+      "source": "opencs2",
+      "source_match_id": "2392537",
+      "hltv_match_id": "2392537",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704855570395466",
+      "source": "opencs2",
+      "source_match_id": "2392589",
+      "hltv_match_id": "2392589",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704855570399732",
+      "source": "opencs2",
+      "source_match_id": "2392595",
+      "hltv_match_id": "2392595",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704855570399734",
+      "source": "opencs2",
+      "source_match_id": "2392596",
+      "hltv_match_id": "2392596",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704855570399736",
+      "source": "opencs2",
+      "source_match_id": "2392597",
+      "hltv_match_id": "2392597",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704855570399738",
+      "source": "opencs2",
+      "source_match_id": "2392598",
+      "hltv_match_id": "2392598",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704855570399746",
+      "source": "opencs2",
+      "source_match_id": "2392600",
+      "hltv_match_id": "2392600",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704855570399638",
+      "source": "opencs2",
+      "source_match_id": "2392601",
+      "hltv_match_id": "2392601",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704855570431358",
+      "source": "opencs2",
+      "source_match_id": "2392607",
+      "hltv_match_id": "2392607",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704855570429770",
+      "source": "opencs2",
+      "source_match_id": "2392608",
+      "hltv_match_id": "2392608",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704855570452270",
+      "source": "opencs2",
+      "source_match_id": "2392614",
+      "hltv_match_id": "2392614",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704855570452956",
+      "source": "opencs2",
+      "source_match_id": "2392615",
+      "hltv_match_id": "2392615",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704855570456052",
+      "source": "opencs2",
+      "source_match_id": "2392618",
+      "hltv_match_id": "2392618",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704855570479766",
+      "source": "opencs2",
+      "source_match_id": "2392622",
+      "hltv_match_id": "2392622",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704578170369502",
+      "source": "opencs2",
+      "source_match_id": "2392722",
+      "hltv_match_id": "2392722",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704578170369508",
+      "source": "opencs2",
+      "source_match_id": "2392724",
+      "hltv_match_id": "2392724",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704578170369514",
+      "source": "opencs2",
+      "source_match_id": "2392726",
+      "hltv_match_id": "2392726",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704578170369520",
+      "source": "opencs2",
+      "source_match_id": "2392727",
+      "hltv_match_id": "2392727",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704578170369606",
+      "source": "opencs2",
+      "source_match_id": "2392730",
+      "hltv_match_id": "2392730",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704578170369492",
+      "source": "opencs2",
+      "source_match_id": "2392733",
+      "hltv_match_id": "2392733",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704578170399752",
+      "source": "opencs2",
+      "source_match_id": "2392734",
+      "hltv_match_id": "2392734",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704578170398944",
+      "source": "opencs2",
+      "source_match_id": "2392735",
+      "hltv_match_id": "2392735",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704578170399754",
+      "source": "opencs2",
+      "source_match_id": "2392736",
+      "hltv_match_id": "2392736",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704578170369510",
+      "source": "opencs2",
+      "source_match_id": "2392738",
+      "hltv_match_id": "2392738",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704578170399758",
+      "source": "opencs2",
+      "source_match_id": "2392739",
+      "hltv_match_id": "2392739",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704578170399760",
+      "source": "opencs2",
+      "source_match_id": "2392740",
+      "hltv_match_id": "2392740",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704578170369518",
+      "source": "opencs2",
+      "source_match_id": "2392741",
+      "hltv_match_id": "2392741",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704578170399762",
+      "source": "opencs2",
+      "source_match_id": "2392742",
+      "hltv_match_id": "2392742",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704578170399764",
+      "source": "opencs2",
+      "source_match_id": "2392743",
+      "hltv_match_id": "2392743",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704578170399766",
+      "source": "opencs2",
+      "source_match_id": "2392744",
+      "hltv_match_id": "2392744",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704578170369608",
+      "source": "opencs2",
+      "source_match_id": "2392746",
+      "hltv_match_id": "2392746",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704578170399770",
+      "source": "opencs2",
+      "source_match_id": "2392747",
+      "hltv_match_id": "2392747",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704578170456004",
+      "source": "opencs2",
+      "source_match_id": "2392760",
+      "hltv_match_id": "2392760",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704578170456010",
+      "source": "opencs2",
+      "source_match_id": "2392762",
+      "hltv_match_id": "2392762",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704578170456012",
+      "source": "opencs2",
+      "source_match_id": "2392765",
+      "hltv_match_id": "2392765",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704578170456002",
+      "source": "opencs2",
+      "source_match_id": "2392766",
+      "hltv_match_id": "2392766",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704578170430982",
+      "source": "opencs2",
+      "source_match_id": "2392768",
+      "hltv_match_id": "2392768",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704578170430990",
+      "source": "opencs2",
+      "source_match_id": "2392770",
+      "hltv_match_id": "2392770",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704578170430992",
+      "source": "opencs2",
+      "source_match_id": "2392771",
+      "hltv_match_id": "2392771",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704578170432314",
+      "source": "opencs2",
+      "source_match_id": "2392772",
+      "hltv_match_id": "2392772",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704578170431598",
+      "source": "opencs2",
+      "source_match_id": "2392773",
+      "hltv_match_id": "2392773",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704578170432316",
+      "source": "opencs2",
+      "source_match_id": "2392774",
+      "hltv_match_id": "2392774",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704578170432318",
+      "source": "opencs2",
+      "source_match_id": "2392775",
+      "hltv_match_id": "2392775",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704578170481698",
+      "source": "opencs2",
+      "source_match_id": "2392776",
+      "hltv_match_id": "2392776",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704578170481700",
+      "source": "opencs2",
+      "source_match_id": "2392777",
+      "hltv_match_id": "2392777",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704578170481706",
+      "source": "opencs2",
+      "source_match_id": "2392780",
+      "hltv_match_id": "2392780",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704578170481708",
+      "source": "opencs2",
+      "source_match_id": "2392781",
+      "hltv_match_id": "2392781",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704578170481724",
+      "source": "opencs2",
+      "source_match_id": "2392782",
+      "hltv_match_id": "2392782",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704578170481822",
+      "source": "opencs2",
+      "source_match_id": "2392784",
+      "hltv_match_id": "2392784",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704578170481838",
+      "source": "opencs2",
+      "source_match_id": "2392785",
+      "hltv_match_id": "2392785",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704578170481854",
+      "source": "opencs2",
+      "source_match_id": "2392786",
+      "hltv_match_id": "2392786",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704578170481872",
+      "source": "opencs2",
+      "source_match_id": "2392787",
+      "hltv_match_id": "2392787",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704578170507568",
+      "source": "opencs2",
+      "source_match_id": "2392790",
+      "hltv_match_id": "2392790",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704578170507598",
+      "source": "opencs2",
+      "source_match_id": "2392791",
+      "hltv_match_id": "2392791",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704578170534228",
+      "source": "opencs2",
+      "source_match_id": "2392793",
+      "hltv_match_id": "2392793",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704578170533714",
+      "source": "opencs2",
+      "source_match_id": "2392796",
+      "hltv_match_id": "2392796",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704578170533716",
+      "source": "opencs2",
+      "source_match_id": "2392797",
+      "hltv_match_id": "2392797",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704578170559710",
+      "source": "opencs2",
+      "source_match_id": "2392798",
+      "hltv_match_id": "2392798",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704578170558646",
+      "source": "opencs2",
+      "source_match_id": "2392799",
+      "hltv_match_id": "2392799",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704578170586060",
+      "source": "opencs2",
+      "source_match_id": "2392801",
+      "hltv_match_id": "2392801",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704578170643340",
+      "source": "opencs2",
+      "source_match_id": "2392804",
+      "hltv_match_id": "2392804",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704578170670554",
+      "source": "opencs2",
+      "source_match_id": "2392805",
+      "hltv_match_id": "2392805",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704742170434102",
+      "source": "opencs2",
+      "source_match_id": "2392866",
+      "hltv_match_id": "2392866",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704742170424156",
+      "source": "opencs2",
+      "source_match_id": "2392867",
+      "hltv_match_id": "2392867",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704578370431340",
+      "source": "opencs2",
+      "source_match_id": "2392976",
+      "hltv_match_id": "2392976",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704578370431348",
+      "source": "opencs2",
+      "source_match_id": "2392979",
+      "hltv_match_id": "2392979",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704578370511872",
+      "source": "opencs2",
+      "source_match_id": "2392982",
+      "hltv_match_id": "2392982",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704578370511874",
+      "source": "opencs2",
+      "source_match_id": "2392983",
+      "hltv_match_id": "2392983",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704578370511888",
+      "source": "opencs2",
+      "source_match_id": "2392988",
+      "hltv_match_id": "2392988",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704578370554382",
+      "source": "opencs2",
+      "source_match_id": "2392990",
+      "hltv_match_id": "2392990",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704578370554378",
+      "source": "opencs2",
+      "source_match_id": "2392994",
+      "hltv_match_id": "2392994",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704578370561772",
+      "source": "opencs2",
+      "source_match_id": "2392995",
+      "hltv_match_id": "2392995",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704578370591034",
+      "source": "opencs2",
+      "source_match_id": "2392999",
+      "hltv_match_id": "2392999",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704610570479324",
+      "source": "opencs2",
+      "source_match_id": "2393007",
+      "hltv_match_id": "2393007",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704610570479326",
+      "source": "opencs2",
+      "source_match_id": "2393008",
+      "hltv_match_id": "2393008",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704610570558852",
+      "source": "opencs2",
+      "source_match_id": "2393011",
+      "hltv_match_id": "2393011",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704610570557614",
+      "source": "opencs2",
+      "source_match_id": "2393012",
+      "hltv_match_id": "2393012",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704610570557620",
+      "source": "opencs2",
+      "source_match_id": "2393013",
+      "hltv_match_id": "2393013",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704610570557618",
+      "source": "opencs2",
+      "source_match_id": "2393014",
+      "hltv_match_id": "2393014",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704610570558854",
+      "source": "opencs2",
+      "source_match_id": "2393015",
+      "hltv_match_id": "2393015",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704610570558858",
+      "source": "opencs2",
+      "source_match_id": "2393017",
+      "hltv_match_id": "2393017",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704610570583650",
+      "source": "opencs2",
+      "source_match_id": "2393019",
+      "hltv_match_id": "2393019",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704610570583658",
+      "source": "opencs2",
+      "source_match_id": "2393020",
+      "hltv_match_id": "2393020",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704610570583666",
+      "source": "opencs2",
+      "source_match_id": "2393021",
+      "hltv_match_id": "2393021",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704610570583662",
+      "source": "opencs2",
+      "source_match_id": "2393022",
+      "hltv_match_id": "2393022",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704610570584380",
+      "source": "opencs2",
+      "source_match_id": "2393023",
+      "hltv_match_id": "2393023",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704610570584384",
+      "source": "opencs2",
+      "source_match_id": "2393025",
+      "hltv_match_id": "2393025",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704610570583682",
+      "source": "opencs2",
+      "source_match_id": "2393026",
+      "hltv_match_id": "2393026",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704610570613664",
+      "source": "opencs2",
+      "source_match_id": "2393027",
+      "hltv_match_id": "2393027",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704610570613658",
+      "source": "opencs2",
+      "source_match_id": "2393028",
+      "hltv_match_id": "2393028",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704610570613846",
+      "source": "opencs2",
+      "source_match_id": "2393029",
+      "hltv_match_id": "2393029",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704610570613848",
+      "source": "opencs2",
+      "source_match_id": "2393031",
+      "hltv_match_id": "2393031",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704610570639814",
+      "source": "opencs2",
+      "source_match_id": "2393033",
+      "hltv_match_id": "2393033",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704610570637786",
+      "source": "opencs2",
+      "source_match_id": "2393034",
+      "hltv_match_id": "2393034",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704610570639816",
+      "source": "opencs2",
+      "source_match_id": "2393035",
+      "hltv_match_id": "2393035",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704610570668956",
+      "source": "opencs2",
+      "source_match_id": "2393039",
+      "hltv_match_id": "2393039",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704610570668954",
+      "source": "opencs2",
+      "source_match_id": "2393040",
+      "hltv_match_id": "2393040",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704610570668960",
+      "source": "opencs2",
+      "source_match_id": "2393041",
+      "hltv_match_id": "2393041",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704610570668958",
+      "source": "opencs2",
+      "source_match_id": "2393042",
+      "hltv_match_id": "2393042",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704610570691296",
+      "source": "opencs2",
+      "source_match_id": "2393043",
+      "hltv_match_id": "2393043",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704610570695936",
+      "source": "opencs2",
+      "source_match_id": "2393044",
+      "hltv_match_id": "2393044",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704610570720010",
+      "source": "opencs2",
+      "source_match_id": "2393045",
+      "hltv_match_id": "2393045",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1705106470527150",
+      "source": "opencs2",
+      "source_match_id": "2393054",
+      "hltv_match_id": "2393054",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1705106470559724",
+      "source": "opencs2",
+      "source_match_id": "2393059",
+      "hltv_match_id": "2393059",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1705106470559726",
+      "source": "opencs2",
+      "source_match_id": "2393060",
+      "hltv_match_id": "2393060",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1705106470559730",
+      "source": "opencs2",
+      "source_match_id": "2393062",
+      "hltv_match_id": "2393062",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1705106470581802",
+      "source": "opencs2",
+      "source_match_id": "2393063",
+      "hltv_match_id": "2393063",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1705106470583640",
+      "source": "opencs2",
+      "source_match_id": "2393065",
+      "hltv_match_id": "2393065",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1705106470583642",
+      "source": "opencs2",
+      "source_match_id": "2393066",
+      "hltv_match_id": "2393066",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704742170490866",
+      "source": "opencs2",
+      "source_match_id": "2393073",
+      "hltv_match_id": "2393073",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704742170490878",
+      "source": "opencs2",
+      "source_match_id": "2393079",
+      "hltv_match_id": "2393079",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1703836370607988",
+      "source": "opencs2",
+      "source_match_id": "2393085",
+      "hltv_match_id": "2393085",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1703836370608002",
+      "source": "opencs2",
+      "source_match_id": "2393087",
+      "hltv_match_id": "2393087",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704742170565512",
+      "source": "opencs2",
+      "source_match_id": "2393109",
+      "hltv_match_id": "2393109",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704742170586318",
+      "source": "opencs2",
+      "source_match_id": "2393110",
+      "hltv_match_id": "2393110",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704742170565220",
+      "source": "opencs2",
+      "source_match_id": "2393113",
+      "hltv_match_id": "2393113",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704742170565294",
+      "source": "opencs2",
+      "source_match_id": "2393114",
+      "hltv_match_id": "2393114",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704956870559732",
+      "source": "opencs2",
+      "source_match_id": "2393134",
+      "hltv_match_id": "2393134",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704956870559734",
+      "source": "opencs2",
+      "source_match_id": "2393135",
+      "hltv_match_id": "2393135",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704956870643748",
+      "source": "opencs2",
+      "source_match_id": "2393142",
+      "hltv_match_id": "2393142",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704956870559742",
+      "source": "opencs2",
+      "source_match_id": "2393145",
+      "hltv_match_id": "2393145",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704956870559744",
+      "source": "opencs2",
+      "source_match_id": "2393146",
+      "hltv_match_id": "2393146",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704956870559746",
+      "source": "opencs2",
+      "source_match_id": "2393147",
+      "hltv_match_id": "2393147",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704956870697262",
+      "source": "opencs2",
+      "source_match_id": "2393150",
+      "hltv_match_id": "2393150",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704956870697032",
+      "source": "opencs2",
+      "source_match_id": "2393151",
+      "hltv_match_id": "2393151",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704956870719980",
+      "source": "opencs2",
+      "source_match_id": "2393152",
+      "hltv_match_id": "2393152",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704956870719368",
+      "source": "opencs2",
+      "source_match_id": "2393153",
+      "hltv_match_id": "2393153",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704956870748290",
+      "source": "opencs2",
+      "source_match_id": "2393157",
+      "hltv_match_id": "2393157",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704956870806400",
+      "source": "opencs2",
+      "source_match_id": "2393162",
+      "hltv_match_id": "2393162",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704956870833200",
+      "source": "opencs2",
+      "source_match_id": "2393164",
+      "hltv_match_id": "2393164",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704956870806404",
+      "source": "opencs2",
+      "source_match_id": "2393165",
+      "hltv_match_id": "2393165",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704956870855310",
+      "source": "opencs2",
+      "source_match_id": "2393167",
+      "hltv_match_id": "2393167",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704956870855320",
+      "source": "opencs2",
+      "source_match_id": "2393172",
+      "hltv_match_id": "2393172",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704956870855324",
+      "source": "opencs2",
+      "source_match_id": "2393173",
+      "hltv_match_id": "2393173",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704956870897982",
+      "source": "opencs2",
+      "source_match_id": "2393174",
+      "hltv_match_id": "2393174",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704956870897214",
+      "source": "opencs2",
+      "source_match_id": "2393175",
+      "hltv_match_id": "2393175",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704956870897358",
+      "source": "opencs2",
+      "source_match_id": "2393176",
+      "hltv_match_id": "2393176",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704956870897984",
+      "source": "opencs2",
+      "source_match_id": "2393178",
+      "hltv_match_id": "2393178",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704956870897986",
+      "source": "opencs2",
+      "source_match_id": "2393179",
+      "hltv_match_id": "2393179",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704956870897990",
+      "source": "opencs2",
+      "source_match_id": "2393181",
+      "hltv_match_id": "2393181",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704956870944270",
+      "source": "opencs2",
+      "source_match_id": "2393182",
+      "hltv_match_id": "2393182",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704956870944274",
+      "source": "opencs2",
+      "source_match_id": "2393183",
+      "hltv_match_id": "2393183",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704956870944278",
+      "source": "opencs2",
+      "source_match_id": "2393184",
+      "hltv_match_id": "2393184",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1703836370803898",
+      "source": "opencs2",
+      "source_match_id": "2393226",
+      "hltv_match_id": "2393226",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1703836370803900",
+      "source": "opencs2",
+      "source_match_id": "2393227",
+      "hltv_match_id": "2393227",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1703836370804392",
+      "source": "opencs2",
+      "source_match_id": "2393228",
+      "hltv_match_id": "2393228",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1703836370804394",
+      "source": "opencs2",
+      "source_match_id": "2393229",
+      "hltv_match_id": "2393229",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1703836370831852",
+      "source": "opencs2",
+      "source_match_id": "2393232",
+      "hltv_match_id": "2393232",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1703836370831854",
+      "source": "opencs2",
+      "source_match_id": "2393233",
+      "hltv_match_id": "2393233",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1703836370833228",
+      "source": "opencs2",
+      "source_match_id": "2393235",
+      "hltv_match_id": "2393235",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1703836370831856",
+      "source": "opencs2",
+      "source_match_id": "2393236",
+      "hltv_match_id": "2393236",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1703836370852008",
+      "source": "opencs2",
+      "source_match_id": "2393237",
+      "hltv_match_id": "2393237",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1703836370855656",
+      "source": "opencs2",
+      "source_match_id": "2393240",
+      "hltv_match_id": "2393240",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1703836370855666",
+      "source": "opencs2",
+      "source_match_id": "2393241",
+      "hltv_match_id": "2393241",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1703836370895054",
+      "source": "opencs2",
+      "source_match_id": "2393242",
+      "hltv_match_id": "2393242",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1703836370895062",
+      "source": "opencs2",
+      "source_match_id": "2393243",
+      "hltv_match_id": "2393243",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1703836370917016",
+      "source": "opencs2",
+      "source_match_id": "2393244",
+      "hltv_match_id": "2393244",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704742170698296",
+      "source": "opencs2",
+      "source_match_id": "2393248",
+      "hltv_match_id": "2393248",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704460970822978",
+      "source": "opencs2",
+      "source_match_id": "2393331",
+      "hltv_match_id": "2393331",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704460970849586",
+      "source": "opencs2",
+      "source_match_id": "2393332",
+      "hltv_match_id": "2393332",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704742170729334",
+      "source": "opencs2",
+      "source_match_id": "2393338",
+      "hltv_match_id": "2393338",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704742170802102",
+      "source": "opencs2",
+      "source_match_id": "2393340",
+      "hltv_match_id": "2393340",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704742170802104",
+      "source": "opencs2",
+      "source_match_id": "2393342",
+      "hltv_match_id": "2393342",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704742170802106",
+      "source": "opencs2",
+      "source_match_id": "2393343",
+      "hltv_match_id": "2393343",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1705085070919344",
+      "source": "opencs2",
+      "source_match_id": "2393398",
+      "hltv_match_id": "2393398",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704742170880224",
+      "source": "opencs2",
+      "source_match_id": "2393424",
+      "hltv_match_id": "2393424",
+      "agrees": true
+    },
+    {
+      "fixture_id": "id1704742170925304",
+      "source": "opencs2",
+      "source_match_id": "2393425",
+      "hltv_match_id": "2393425",
+      "agrees": true
+    }
+  ],
+  "native_provider_result_checks": [
+    {
+      "fixtureId": "id1700239275294682",
+      "hltv_match_id": "2398734",
+      "agrees": true
+    },
+    {
+      "fixtureId": "id1700239275294684",
+      "hltv_match_id": "2398739",
+      "agrees": true
+    },
+    {
+      "fixtureId": "id1700239275294686",
+      "hltv_match_id": "2398737",
+      "agrees": true
+    },
+    {
+      "fixtureId": "id1700239275294744",
+      "hltv_match_id": "2398735",
+      "agrees": true
+    },
+    {
+      "fixtureId": "id1700239275294746",
+      "hltv_match_id": "2398736",
+      "agrees": true
+    },
+    {
+      "fixtureId": "id1700239275294748",
+      "hltv_match_id": "2398738",
+      "agrees": true
+    },
+    {
+      "fixtureId": "id1700239275294754",
+      "hltv_match_id": "2398740",
+      "agrees": true
+    },
+    {
+      "fixtureId": "id1703836370803202",
+      "hltv_match_id": "2393224",
+      "agrees": true
+    },
+    {
+      "fixtureId": "id1703836370803204",
+      "hltv_match_id": "2393225",
+      "agrees": true
+    },
+    {
+      "fixtureId": "id1704460970767134",
+      "hltv_match_id": "2393329",
+      "agrees": true
+    },
+    {
+      "fixtureId": "id1704460970802144",
+      "hltv_match_id": "2393330",
+      "agrees": true
+    },
+    {
+      "fixtureId": "id1704852970767128",
+      "hltv_match_id": "2392153",
+      "agrees": true
+    },
+    {
+      "fixtureId": "id1704852970806146",
+      "hltv_match_id": "2392154",
+      "agrees": true
+    },
+    {
+      "fixtureId": "id1704956870806392",
+      "hltv_match_id": "2393158",
+      "agrees": true
+    },
+    {
+      "fixtureId": "id1704956870806394",
+      "hltv_match_id": "2393159",
+      "agrees": true
+    },
+    {
+      "fixtureId": "id1704956870806396",
+      "hltv_match_id": "2393160",
+      "agrees": true
+    },
+    {
+      "fixtureId": "id1705112275266284",
+      "hltv_match_id": "2398393",
+      "agrees": true
+    }
+  ],
+  "protocol": {
+    "calendar_window": "HLTV source calendar day within \u00b11 of provider scheduled UTC day",
+    "identity": "Mutually unique normalized full/short participant names plus compatible event; no score-based selection",
+    "source_time": "HLTV noon is synthetic; source calendar timezone and actual kickoff are not certified",
+    "network_requests": 0,
+    "database_read_only": true
+  },
+  "limits": [
+    "Audited natural-key links are not independently certified cross-provider entity identities.",
+    "Ambiguous names/dates, event conflicts, conflicting source metadata and unfinished provider fixtures are excluded.",
+    "Forfeit and nonseries identities may map, but do not receive played-series targets.",
+    "Native match-ID mapping does not supply missing historical player lineups or create held-out predictions.",
+    "Existing application links are cross-checked, not overwritten; the exported native crosswalk is used for this benchmark."
+  ]
+}

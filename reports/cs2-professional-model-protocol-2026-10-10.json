@@ -1,0 +1,163 @@
+{
+  "experiment": "professional-model-development-2026-10-10",
+  "schema_version": 1,
+  "frozen_at_utc": "2026-10-10T00:25:00.570335+00:00",
+  "stage": "frozen_before_new_candidate_forecasts_or_scores",
+  "objective": "Improve sports-only CS2 series probabilities using professional-methods research; independent bookmaker competitiveness remains unproved",
+  "paths": {
+    "master": "data/processed/master_matches_consolidated.csv",
+    "development_features": "artifacts/bookmaker_challenge_20261009/verified/development_features.csv",
+    "market_cases": "artifacts/bookmaker_challenge_20261009/verified/market_cases.json",
+    "cohorts": "artifacts/bookmaker_challenge_20261009/frozen_cohorts.json",
+    "baseline_selection": "artifacts/bookmaker_challenge_20261009/verified/selection.json",
+    "previous_protocol": "reports/cs2-bookmaker-challenge-protocol-2026-10-09.json",
+    "standings_directory": "data/raw/valve_standings_20261009"
+  },
+  "input_sha256": {
+    "data/processed/master_matches_consolidated.csv": "cbd32f49584dcf8528b5ea7b0169d5788cffb4602815b80f32ff8ad94ecbc0d8",
+    "artifacts/bookmaker_challenge_20261009/verified/development_features.csv": "274a5146b3f1ed3f45b725024080d72c112cb15995f1fece2e8ab51b1b3f9b88",
+    "artifacts/bookmaker_challenge_20261009/verified/market_cases.json": "49bbcf2adc669f2595989c572754b04f3510caa63a2a9393a6aee586d6615fe0",
+    "artifacts/bookmaker_challenge_20261009/frozen_cohorts.json": "6317a839f0d874814e033116adf26447fba476fd8500a1c598311f11f5a99fdc",
+    "artifacts/bookmaker_challenge_20261009/verified/selection.json": "069d75c425c44ae56d0f721acb4bb3c1f588c4d57198ecf2cc4e58083f7ba095",
+    "reports/cs2-bookmaker-challenge-protocol-2026-10-09.json": "a19a867ebe9774619e31e8b283db1cc494aa1143fafc476c0dde2a39d238472f",
+    "data/raw/valve_standings_20261009/manifest.json": "d6dcf2918bf1184127984cd9f44712cface07d3200b62768a8cf6677fccadd46"
+  },
+  "source_paths": [
+    "scripts/evaluate_bookmaker_challenge.py",
+    "scripts/collect_valve_standings.py",
+    "scripts/collect_cs_oddspapi.py",
+    "scripts/map_cs_oddspapi_history.py",
+    "pipeline/features/series_history.py",
+    "pipeline/features/valve_standings.py",
+    "pipeline/features/unified_player_ratings.py",
+    "pipeline/ratings/player_elo.py",
+    "pipeline/models/series_forecast.py",
+    "pipeline/models/player_baseline.py",
+    "pipeline/models/metrics.py",
+    "pipeline/models/bookmaker_comparison.py",
+    "pipeline/models/market_history.py",
+    "pipeline/models/challenge_evaluation.py",
+    "pipeline/cli.py",
+    "requirements-modeling.txt",
+    "pipeline/features/bayesian_series.py",
+    "scripts/develop_bayesian_series.py"
+  ],
+  "partitions": {
+    "history_start": "2024-01-01",
+    "training_fit_start": "2024-07-01",
+    "train_end": "2026-04-30",
+    "validation_start": "2026-05-01",
+    "validation_end": "2026-06-30",
+    "test_start": "2026-07-01",
+    "test_end": "2026-10-07"
+  },
+  "development_end": "2026-06-30",
+  "previously_observed_test": {
+    "start": "2026-07-01",
+    "end": "2026-10-07",
+    "new_forecasts_or_scores_prohibited": true,
+    "aggregate_failure_known_before_this_research": true
+  },
+  "history": {
+    "source_day_lag": 1,
+    "state_update": "source-day atomic Gaussian-site approximation; no backward smoothing",
+    "query_policy": "pure; only dates after every saved history day"
+  },
+  "bayesian_bank": {
+    "update_modes": [
+      "winner",
+      "score"
+    ],
+    "prior_standard_deviations": [
+      1,
+      2
+    ],
+    "dynamics": [
+      {
+        "name": "rw0025",
+        "variance_per_day": 0.0025,
+        "mean_half_life_days": null
+      },
+      {
+        "name": "rw01",
+        "variance_per_day": 0.01,
+        "mean_half_life_days": null
+      },
+      {
+        "name": "ou90",
+        "variance_per_day": 0,
+        "mean_half_life_days": 90
+      },
+      {
+        "name": "ou365",
+        "variance_per_day": 0,
+        "mean_half_life_days": 365
+      }
+    ],
+    "quadrature_points": 64,
+    "likelihood": "ordinary zero-start stopped BO3/BO5 series; conditional exchangeable maps given latent skill difference; map-coded history contributes one map Bernoulli, not a round-count binomial",
+    "approximation": "Gaussian marginal moment matching; common-opening per-game Gaussian sites added in natural parameters per day; cross-team covariance discarded"
+  },
+  "candidate_space": {
+    "incumbent": "ridge_C1_ratings_form_hnone",
+    "raw_bayesian_channels": 16,
+    "train_only_slope_calibrated_channels": 16,
+    "ridge_C": [
+      0.001,
+      0.01,
+      0.1,
+      1
+    ],
+    "ridge_groups": [
+      "bayesian",
+      "ratings_form_bayesian"
+    ],
+    "ridge_sample_recency_half_life_days": null,
+    "blend_right_channels": [
+      "bayes_score_s1_rw0025",
+      "bayes_score_s1_rw01",
+      "bayes_score_s1_ou90",
+      "bayes_score_s1_ou365"
+    ],
+    "blend_right_weights": [
+      0.25,
+      0.5
+    ],
+    "blend_right_uses_train_calibrated_channel": true,
+    "total_candidates": 49,
+    "train_only_diagnostic_cutoffs": [
+      "2025-06-30",
+      "2025-12-31",
+      "2026-02-28"
+    ]
+  },
+  "selection": {
+    "cohort": "same fixed545 one-hour validation available-book union",
+    "metric": "log_loss",
+    "tie_tolerance": 1e-12,
+    "tie_break": "recipe lexicographic order",
+    "train_plus_validation_refit": false,
+    "bookmaker_probabilities_as_predictors": false
+  },
+  "publishing": {
+    "qualification": false,
+    "state_schema": 2,
+    "after_selection": "advance base and Bayesian histories through frozen archive by updates only; no classifier forecasts on exposed TEST",
+    "artifact_overwrite_allowed": false
+  },
+  "limitations": [
+    "Literal historical organizations, not verified contemporary starting rosters or identity alias resolution.",
+    "2024+ is a game-era proxy; native source-calendar days and retrospectively collected provider state clocks are not certified publication timestamps.",
+    "Valve Git first-addition commit clock plus seven-day lag is conservative provenance, not independent proof of public release.",
+    "Historical benchmark does not establish access to limits, prices, bets or settlement at those clocks.",
+    "Development-only model selection after a known previous TEST failure; no new independent bookmaker confirmation.",
+    "Latent common map strength is an exchangeability approximation, not an actual map/veto or prematch-roster model.",
+    "Gaussian day-site approximation omits posterior team covariance and does not certify calibrated probability intervals."
+  ],
+  "research_sources": [
+    "https://www.pandascore.co/blog/cs-go-round-modeling",
+    "https://www.glicko.net/research/glicko.pdf",
+    "https://www.remi-coulom.fr/WHR/WHR.pdf",
+    "https://arxiv.org/pdf/1903.07746"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "all_input_hashes_valid": true,
+  "input_files_checked": 11,
+  "all_source_hashes_valid": true,
+  "source_files_checked": 38,
+  "all_archived_output_hashes_valid": true,
+  "output_files_checked": 7,
+  "original_six_candidate_scores_and_probabilities_unchanged": true,
+  "requirements_match_exercised_environment": true,
+  "full_suite": {
+    "passed": 398,
+    "subtests_passed": 218,
+    "seconds": 83.0,
+    "command": "env OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 .venv/bin/python -m pytest tests -q --tb=short"
+  },
+  "model_selection_frozen_before_test": true,
+  "old_test_already_seen": true,
+  "model_retrained_after_observing_new_test_results": false,
+  "saved_inference_evidence": "inference_smoke.json",
+  "market_cohort_evidence": "markets/validation.json"
+}

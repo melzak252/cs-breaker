@@ -1,0 +1,50 @@
+{
+  "input_rows": 122038,
+  "unique_native_ids": 122038,
+  "minimum_day": "2024-01-01",
+  "accepted_games": 27988,
+  "accepted_series": 23568,
+  "accepted_maps": 4420,
+  "accepted_measured_games": 670,
+  "accepted_unmeasured_games": 27318,
+  "exclusions": {
+    "before_minimum_day": 92406,
+    "incomplete_or_invalid_map_score": 5,
+    "incomplete_series_score": 253,
+    "unsupported_or_forfeit_format": 1386
+  },
+  "loaded_columns": [
+    "hltv_match_id",
+    "date",
+    "team1",
+    "team2",
+    "score1",
+    "score2",
+    "winner",
+    "format",
+    "match_url",
+    "tournament",
+    "has_lineup",
+    "lineup_source",
+    "lineup_status",
+    "identity_namespace",
+    "player_match_statistics",
+    "team1_player_1_key",
+    "team1_player_2_key",
+    "team1_player_3_key",
+    "team1_player_4_key",
+    "team1_player_5_key",
+    "team2_player_1_key",
+    "team2_player_2_key",
+    "team2_player_3_key",
+    "team2_player_4_key",
+    "team2_player_5_key"
+  ],
+  "limitations": [
+    "Source calendar dates are retrospective proxies; result publication and exact kickoff clocks are unknown.",
+    "The minimum source day is a modern-game proxy, not a certified game-version field.",
+    "Literal source team names are not organization IDs; aliases and roster changes are not merged.",
+    "Native map-coded history is history only, never an invented BO3/BO5 target.",
+    "Performance uses historical verified participants only, not current target rosters or Kaggle snapshots."
+  ]
+}

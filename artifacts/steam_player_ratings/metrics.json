@@ -1,0 +1,723 @@
+{
+  "cohorts": {
+    "test": {
+      "first": "2026-04-11T02:07:23+00:00",
+      "last": "2026-04-20T21:02:59+00:00",
+      "maps": 158,
+      "series": 109
+    },
+    "train": {
+      "first": "2026-03-23T18:04:09+00:00",
+      "last": "2026-03-31T21:49:18+00:00",
+      "maps": 317,
+      "series": 225
+    },
+    "validation": {
+      "first": "2026-04-01T00:34:08+00:00",
+      "last": "2026-04-10T23:21:59+00:00",
+      "maps": 432,
+      "series": 281
+    }
+  },
+  "comparison_entity_kind": "exact_lineup_fingerprint",
+  "identity_namespace": "opencs2:steamid:",
+  "limitations": [
+    "Organization attribution is unavailable; the comparator tracks exact lineup fingerprints.",
+    "As-played lineups are historical roster scenarios, not proven pre-match announcements.",
+    "Original result publication clocks are unavailable; chronology is retrospective.",
+    "Shared win/loss updates do not identify individual performance or impact.",
+    "Global map strength only: no map/veto specialization, Glicko uncertainty, neural history, or odds."
+  ],
+  "map_history_thresholds": {
+    "1": 1490,
+    "10": 278,
+    "100": 0,
+    "20": 25,
+    "5": 797,
+    "50": 0
+  },
+  "metrics": {
+    "test": {
+      "coin_flip": {
+        "accuracy": 0.46835443037974683,
+        "brier": 0.25,
+        "calibration_bins": [
+          {
+            "avg_prob": 0.5,
+            "bin_lower": 0.5,
+            "bin_upper": 0.6,
+            "count": 158,
+            "win_rate": 0.46835443037974683
+          }
+        ],
+        "ece": 0.03164556962025317,
+        "log_loss": 0.6931471805599464,
+        "n_samples": 158,
+        "roc_auc": 0.5
+      },
+      "lineup_elo": {
+        "accuracy": 0.46835443037974683,
+        "brier": 0.2546073475545315,
+        "calibration_bins": [
+          {
+            "avg_prob": 0.36903346809271703,
+            "bin_lower": 0.3,
+            "bin_upper": 0.4,
+            "count": 9,
+            "win_rate": 0.4444444444444444
+          },
+          {
+            "avg_prob": 0.46586729907971924,
+            "bin_lower": 0.4,
+            "bin_upper": 0.5,
+            "count": 57,
+            "win_rate": 0.5087719298245614
+          },
+          {
+            "avg_prob": 0.5242184524010921,
+            "bin_lower": 0.5,
+            "bin_upper": 0.6,
+            "count": 86,
+            "win_rate": 0.4418604651162791
+          },
+          {
+            "avg_prob": 0.623699163525609,
+            "bin_lower": 0.6,
+            "bin_upper": 0.7,
+            "count": 6,
+            "win_rate": 0.5
+          }
+        ],
+        "ece": 0.06929901662828561,
+        "log_loss": 0.7025520788475279,
+        "n_samples": 158,
+        "roc_auc": 0.4666988416988417
+      },
+      "player_elo": {
+        "accuracy": 0.5,
+        "brier": 0.2539173681149315,
+        "calibration_bins": [
+          {
+            "avg_prob": 0.38152388334304516,
+            "bin_lower": 0.3,
+            "bin_upper": 0.4,
+            "count": 7,
+            "win_rate": 0.42857142857142855
+          },
+          {
+            "avg_prob": 0.4683249663076171,
+            "bin_lower": 0.4,
+            "bin_upper": 0.5,
+            "count": 66,
+            "win_rate": 0.4696969696969697
+          },
+          {
+            "avg_prob": 0.523874995025874,
+            "bin_lower": 0.5,
+            "bin_upper": 0.6,
+            "count": 80,
+            "win_rate": 0.475
+          },
+          {
+            "avg_prob": 0.6090336431495478,
+            "bin_lower": 0.6,
+            "bin_upper": 0.7,
+            "count": 5,
+            "win_rate": 0.4
+          }
+        ],
+        "ece": 0.03401932188679503,
+        "log_loss": 0.701043937618306,
+        "n_samples": 158,
+        "roc_auc": 0.4716859716859717
+      },
+      "training_prior": {
+        "accuracy": 0.5316455696202531,
+        "brier": 0.2505455915509866,
+        "calibration_bins": [
+          {
+            "avg_prob": 0.4290220820189268,
+            "bin_lower": 0.4,
+            "bin_upper": 0.5,
+            "count": 158,
+            "win_rate": 0.46835443037974683
+          }
+        ],
+        "ece": 0.03933234836082006,
+        "log_loss": 0.6942801778595752,
+        "n_samples": 158,
+        "roc_auc": 0.5
+      }
+    },
+    "validation": {
+      "coin_flip": {
+        "accuracy": 0.4791666666666667,
+        "brier": 0.25,
+        "calibration_bins": [
+          {
+            "avg_prob": 0.5,
+            "bin_lower": 0.5,
+            "bin_upper": 0.6,
+            "count": 432,
+            "win_rate": 0.4791666666666667
+          }
+        ],
+        "ece": 0.020833333333333315,
+        "log_loss": 0.6931471805599467,
+        "n_samples": 432,
+        "roc_auc": 0.5
+      },
+      "lineup_elo": {
+        "accuracy": 0.5462962962962963,
+        "brier": 0.245733033788315,
+        "calibration_bins": [
+          {
+            "avg_prob": 0.36572333948744684,
+            "bin_lower": 0.3,
+            "bin_upper": 0.4,
+            "count": 27,
+            "win_rate": 0.2962962962962963
+          },
+          {
+            "avg_prob": 0.4593751365344805,
+            "bin_lower": 0.4,
+            "bin_upper": 0.5,
+            "count": 174,
+            "win_rate": 0.4482758620689655
+          },
+          {
+            "avg_prob": 0.5270881190305341,
+            "bin_lower": 0.5,
+            "bin_upper": 0.6,
+            "count": 207,
+            "win_rate": 0.5120772946859904
+          },
+          {
+            "avg_prob": 0.634053998067832,
+            "bin_lower": 0.6,
+            "bin_upper": 0.7,
+            "count": 23,
+            "win_rate": 0.6521739130434783
+          },
+          {
+            "avg_prob": 0.7080644609449637,
+            "bin_lower": 0.7,
+            "bin_upper": 0.8,
+            "count": 1,
+            "win_rate": 0.0
+          }
+        ],
+        "ece": 0.018606173768208428,
+        "log_loss": 0.6845050143108684,
+        "n_samples": 432,
+        "roc_auc": 0.5665378421900161
+      },
+      "player_elo": {
+        "accuracy": 0.5115740740740741,
+        "brier": 0.2470481207775297,
+        "calibration_bins": [
+          {
+            "avg_prob": 0.3761188973664853,
+            "bin_lower": 0.3,
+            "bin_upper": 0.4,
+            "count": 15,
+            "win_rate": 0.4
+          },
+          {
+            "avg_prob": 0.4655397873193315,
+            "bin_lower": 0.4,
+            "bin_upper": 0.5,
+            "count": 203,
+            "win_rate": 0.4729064039408867
+          },
+          {
+            "avg_prob": 0.5266719521044461,
+            "bin_lower": 0.5,
+            "bin_upper": 0.6,
+            "count": 200,
+            "win_rate": 0.48
+          },
+          {
+            "avg_prob": 0.6253397402786133,
+            "bin_lower": 0.6,
+            "bin_upper": 0.7,
+            "count": 14,
+            "win_rate": 0.6428571428571429
+          }
+        ],
+        "ece": 0.026465911506173737,
+        "log_loss": 0.6872106237657749,
+        "n_samples": 432,
+        "roc_auc": 0.5501449275362319
+      },
+      "training_prior": {
+        "accuracy": 0.5208333333333334,
+        "brier": 0.25208045159171655,
+        "calibration_bins": [
+          {
+            "avg_prob": 0.4290220820189256,
+            "bin_lower": 0.4,
+            "bin_upper": 0.5,
+            "count": 432,
+            "win_rate": 0.4791666666666667
+          }
+        ],
+        "ece": 0.050144584647741075,
+        "log_loss": 0.6973707706778086,
+        "n_samples": 432,
+        "roc_auc": 0.5
+      }
+    }
+  },
+  "players": 1490,
+  "players_observed_with_multiple_comparison_entities": 267,
+  "schema_version": 1,
+  "selected_k": {
+    "player": 24,
+    "team": 32
+  },
+  "series_history_thresholds": {
+    "1": 1490,
+    "10": 105,
+    "20": 0,
+    "5": 498,
+    "50": 0
+  },
+  "source_audit": {
+    "eligible_maps": 907,
+    "eligible_series": 615,
+    "excluded_maps": 1081,
+    "exclusion_reasons": {
+      "event_player_or_side_not_in_roster": 832,
+      "not_standard_complete_mr12_score": 3,
+      "not_two_disjoint_fives": 235,
+      "round_winner_or_side_evidence_missing": 11
+    },
+    "identity_namespace": "opencs2:steamid:",
+    "organization_attribution": "Not inferred; comparison entities are exact roster fingerprints",
+    "outcome_method": "For each round, map current CT/T winner to stable roster group using kill participant IDs and their current sides",
+    "raw_maps": 1988,
+    "source_manifest_sha256": "2cc1be2b63afc9944fa99cd63032ccdfe160d7931c0ab6614df34a5613c5ec72",
+    "source_repository": "blanchon/opencs2_dataset_demo",
+    "source_revision": "912a363098feec3f220e41d68634d2f71676c28b",
+    "verified_shards": 137
+  },
+  "support": {
+    "test": {
+      "all_ten_players_at_least_prior_maps": {
+        "1": 99,
+        "10": 8,
+        "20": 0,
+        "5": 38,
+        "50": 0
+      },
+      "cold_player_appearances": 337,
+      "has_cold_player": 59,
+      "maps": 158
+    },
+    "train": {
+      "all_ten_players_at_least_prior_maps": {
+        "1": 85,
+        "10": 0,
+        "20": 0,
+        "5": 1,
+        "50": 0
+      },
+      "cold_player_appearances": 1794,
+      "has_cold_player": 232,
+      "maps": 317
+    },
+    "validation": {
+      "all_ten_players_at_least_prior_maps": {
+        "1": 308,
+        "10": 15,
+        "20": 0,
+        "5": 78,
+        "50": 0
+      },
+      "cold_player_appearances": 682,
+      "has_cold_player": 124,
+      "maps": 432
+    }
+  },
+  "target": "map_winner",
+  "test_support_metrics": {
+    "1": {
+      "coin_flip": {
+        "accuracy": 0.4444444444444444,
+        "brier": 0.25,
+        "calibration_bins": [
+          {
+            "avg_prob": 0.5,
+            "bin_lower": 0.5,
+            "bin_upper": 0.6,
+            "count": 99,
+            "win_rate": 0.4444444444444444
+          }
+        ],
+        "ece": 0.05555555555555558,
+        "log_loss": 0.6931471805599458,
+        "n_samples": 99,
+        "roc_auc": 0.5
+      },
+      "lineup_elo": {
+        "accuracy": 0.4444444444444444,
+        "brier": 0.25561497783966736,
+        "calibration_bins": [
+          {
+            "avg_prob": 0.36903346809271703,
+            "bin_lower": 0.3,
+            "bin_upper": 0.4,
+            "count": 9,
+            "win_rate": 0.4444444444444444
+          },
+          {
+            "avg_prob": 0.46394890426411084,
+            "bin_lower": 0.4,
+            "bin_upper": 0.5,
+            "count": 39,
+            "win_rate": 0.5128205128205128
+          },
+          {
+            "avg_prob": 0.5309543251102922,
+            "bin_lower": 0.5,
+            "bin_upper": 0.6,
+            "count": 45,
+            "win_rate": 0.37777777777777777
+          },
+          {
+            "avg_prob": 0.623699163525609,
+            "bin_lower": 0.6,
+            "bin_upper": 0.7,
+            "count": 6,
+            "win_rate": 0.5
+          }
+        ],
+        "ece": 0.1032306174947679,
+        "log_loss": 0.7046637945441266,
+        "n_samples": 99,
+        "roc_auc": 0.4793388429752066
+      },
+      "player_elo": {
+        "accuracy": 0.46464646464646464,
+        "brier": 0.25592482717861986,
+        "calibration_bins": [
+          {
+            "avg_prob": 0.38152388334304516,
+            "bin_lower": 0.3,
+            "bin_upper": 0.4,
+            "count": 7,
+            "win_rate": 0.42857142857142855
+          },
+          {
+            "avg_prob": 0.4625300991571059,
+            "bin_lower": 0.4,
+            "bin_upper": 0.5,
+            "count": 43,
+            "win_rate": 0.4883720930232558
+          },
+          {
+            "avg_prob": 0.5271201948086434,
+            "bin_lower": 0.5,
+            "bin_upper": 0.6,
+            "count": 44,
+            "win_rate": 0.4090909090909091
+          },
+          {
+            "avg_prob": 0.6090336431495478,
+            "bin_lower": 0.6,
+            "bin_upper": 0.7,
+            "count": 5,
+            "win_rate": 0.4
+          }
+        ],
+        "ece": 0.07756560949667853,
+        "log_loss": 0.7050978991025123,
+        "n_samples": 99,
+        "roc_auc": 0.46115702479338844
+      },
+      "training_prior": {
+        "accuracy": 0.5555555555555556,
+        "brier": 0.24715142950969757,
+        "calibration_bins": [
+          {
+            "avg_prob": 0.4290220820189273,
+            "bin_lower": 0.4,
+            "bin_upper": 0.5,
+            "count": 99,
+            "win_rate": 0.4444444444444444
+          }
+        ],
+        "ece": 0.015422362425517144,
+        "log_loss": 0.6874456961802428,
+        "n_samples": 99,
+        "roc_auc": 0.5
+      }
+    },
+    "10": {
+      "coin_flip": {
+        "accuracy": 0.5,
+        "brier": 0.25,
+        "calibration_bins": [
+          {
+            "avg_prob": 0.5,
+            "bin_lower": 0.5,
+            "bin_upper": 0.6,
+            "count": 8,
+            "win_rate": 0.5
+          }
+        ],
+        "ece": 0.0,
+        "log_loss": 0.6931471805599453,
+        "n_samples": 8,
+        "roc_auc": 0.5
+      },
+      "lineup_elo": {
+        "accuracy": 0.125,
+        "brier": 0.351280377247938,
+        "calibration_bins": [
+          {
+            "avg_prob": 0.3646843762501974,
+            "bin_lower": 0.3,
+            "bin_upper": 0.4,
+            "count": 1,
+            "win_rate": 1.0
+          },
+          {
+            "avg_prob": 0.45383346091249166,
+            "bin_lower": 0.4,
+            "bin_upper": 0.5,
+            "count": 2,
+            "win_rate": 1.0
+          },
+          {
+            "avg_prob": 0.5598297006966952,
+            "bin_lower": 0.5,
+            "bin_upper": 0.6,
+            "count": 2,
+            "win_rate": 0.5
+          },
+          {
+            "avg_prob": 0.6409899228261874,
+            "bin_lower": 0.6,
+            "bin_upper": 0.7,
+            "count": 3,
+            "win_rate": 0.0
+          }
+        ],
+        "ece": 0.47128473397459647,
+        "log_loss": 0.900922936074225,
+        "n_samples": 8,
+        "roc_auc": 0.0
+      },
+      "player_elo": {
+        "accuracy": 0.25,
+        "brier": 0.32553111976127597,
+        "calibration_bins": [
+          {
+            "avg_prob": 0.3968294634323051,
+            "bin_lower": 0.3,
+            "bin_upper": 0.4,
+            "count": 1,
+            "win_rate": 1.0
+          },
+          {
+            "avg_prob": 0.42973100062488745,
+            "bin_lower": 0.4,
+            "bin_upper": 0.5,
+            "count": 1,
+            "win_rate": 1.0
+          },
+          {
+            "avg_prob": 0.5359849038793093,
+            "bin_lower": 0.5,
+            "bin_upper": 0.6,
+            "count": 3,
+            "win_rate": 0.6666666666666666
+          },
+          {
+            "avg_prob": 0.6128663921256216,
+            "bin_lower": 0.6,
+            "bin_upper": 0.7,
+            "count": 3,
+            "win_rate": 0.0
+          }
+        ],
+        "ece": 0.425510500085218,
+        "log_loss": 0.8466556831720174,
+        "n_samples": 8,
+        "roc_auc": 0.0
+      },
+      "training_prior": {
+        "accuracy": 0.5,
+        "brier": 0.2550378648409279,
+        "calibration_bins": [
+          {
+            "avg_prob": 0.42902208201892744,
+            "bin_lower": 0.4,
+            "bin_upper": 0.5,
+            "count": 8,
+            "win_rate": 0.5
+          }
+        ],
+        "ece": 0.07097791798107256,
+        "log_loss": 0.7033258153763419,
+        "n_samples": 8,
+        "roc_auc": 0.5
+      }
+    },
+    "20": null,
+    "5": {
+      "coin_flip": {
+        "accuracy": 0.42105263157894735,
+        "brier": 0.25,
+        "calibration_bins": [
+          {
+            "avg_prob": 0.5,
+            "bin_lower": 0.5,
+            "bin_upper": 0.6,
+            "count": 38,
+            "win_rate": 0.42105263157894735
+          }
+        ],
+        "ece": 0.07894736842105265,
+        "log_loss": 0.6931471805599446,
+        "n_samples": 38,
+        "roc_auc": 0.5
+      },
+      "lineup_elo": {
+        "accuracy": 0.42105263157894735,
+        "brier": 0.2682325842756442,
+        "calibration_bins": [
+          {
+            "avg_prob": 0.36453572368970333,
+            "bin_lower": 0.3,
+            "bin_upper": 0.4,
+            "count": 4,
+            "win_rate": 0.5
+          },
+          {
+            "avg_prob": 0.4595979982889877,
+            "bin_lower": 0.4,
+            "bin_upper": 0.5,
+            "count": 14,
+            "win_rate": 0.5
+          },
+          {
+            "avg_prob": 0.542253609806951,
+            "bin_lower": 0.5,
+            "bin_upper": 0.6,
+            "count": 16,
+            "win_rate": 0.375
+          },
+          {
+            "avg_prob": 0.6339025711868883,
+            "bin_lower": 0.6,
+            "bin_upper": 0.7,
+            "count": 4,
+            "win_rate": 0.25
+          }
+        ],
+        "ece": 0.13997771502247708,
+        "log_loss": 0.7306540502712284,
+        "n_samples": 38,
+        "roc_auc": 0.41761363636363635
+      },
+      "player_elo": {
+        "accuracy": 0.4473684210526316,
+        "brier": 0.2674962118349617,
+        "calibration_bins": [
+          {
+            "avg_prob": 0.38282236338949577,
+            "bin_lower": 0.3,
+            "bin_upper": 0.4,
+            "count": 3,
+            "win_rate": 0.6666666666666666
+          },
+          {
+            "avg_prob": 0.46127284809021946,
+            "bin_lower": 0.4,
+            "bin_upper": 0.5,
+            "count": 16,
+            "win_rate": 0.4375
+          },
+          {
+            "avg_prob": 0.5295355575569611,
+            "bin_lower": 0.5,
+            "bin_upper": 0.6,
+            "count": 16,
+            "win_rate": 0.4375
+          },
+          {
+            "avg_prob": 0.6128663921256216,
+            "bin_lower": 0.6,
+            "bin_upper": 0.7,
+            "count": 3,
+            "win_rate": 0.0
+          }
+        ],
+        "ece": 0.11955438359377017,
+        "log_loss": 0.7286923807043492,
+        "n_samples": 38,
+        "roc_auc": 0.3977272727272727
+      },
+      "training_prior": {
+        "accuracy": 0.5789473684210527,
+        "brier": 0.2438308251597059,
+        "calibration_bins": [
+          {
+            "avg_prob": 0.4290220820189279,
+            "bin_lower": 0.4,
+            "bin_upper": 0.5,
+            "count": 38,
+            "win_rate": 0.42105263157894735
+          }
+        ],
+        "ece": 0.007969450439980541,
+        "log_loss": 0.680759330202938,
+        "n_samples": 38,
+        "roc_auc": 0.5
+      }
+    }
+  },
+  "time_semantics": "UTC match-date batches; original result publication clocks unavailable",
+  "train_end_exclusive": "2026-04-01",
+  "validation_candidates": [
+    {
+      "k": 0,
+      "player_log_loss": 0.6931471805599467,
+      "team_log_loss": 0.6931471805599467
+    },
+    {
+      "k": 8,
+      "player_log_loss": 0.6898700432058793,
+      "team_log_loss": 0.6892575781275981
+    },
+    {
+      "k": 16,
+      "player_log_loss": 0.6879678448805149,
+      "team_log_loss": 0.6866491320911128
+    },
+    {
+      "k": 24,
+      "player_log_loss": 0.6872106237657749,
+      "team_log_loss": 0.685118073836306
+    },
+    {
+      "k": 32,
+      "player_log_loss": 0.6874212634727913,
+      "team_log_loss": 0.6845050143108684
+    },
+    {
+      "k": 48,
+      "player_log_loss": 0.690242219594157,
+      "team_log_loss": 0.6855697854600117
+    },
+    {
+      "k": 64,
+      "player_log_loss": 0.6957081725157055,
+      "team_log_loss": 0.6891644140247657
+    }
+  ],
+  "validation_end_exclusive": "2026-04-11"
+}

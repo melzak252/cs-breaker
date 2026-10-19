@@ -1,0 +1,702 @@
+{
+  "best_model": "calibrated_gradient_boosting",
+  "feature_count": 36,
+  "feature_columns": [
+    "elo_diff",
+    "elo_prob",
+    "win_rate_diff_5",
+    "win_rate_diff_10",
+    "round_diff",
+    "experience_diff",
+    "rest_days_diff",
+    "h2h_matches",
+    "h2h_win_rate_team1",
+    "adr_diff",
+    "entry_frag_rate_diff",
+    "utility_efficiency_diff",
+    "veto_pool_wr_diff",
+    "veto_hierarchical_bo3_prob",
+    "veto_map_depth_diff",
+    "player_lineup_elo_diff",
+    "player_lineup_prob",
+    "player_lineup_exp_diff",
+    "player_lineup_wr_diff",
+    "glicko2_rating_diff",
+    "glicko2_prob",
+    "glicko2_rd_diff",
+    "glicko2_team1_rd",
+    "glicko2_team2_rd",
+    "glicko2_team1_conservative",
+    "trueskill_mu_diff",
+    "trueskill_prob",
+    "trueskill_sigma_diff",
+    "trueskill_team1_conservative",
+    "trueskill_team2_conservative",
+    "openskill_mu_diff",
+    "openskill_prob",
+    "openskill_sigma_diff",
+    "openskill_ordinal_diff",
+    "prior_matches_team1",
+    "prior_matches_team2"
+  ],
+  "models": {
+    "elo": {
+      "train": {
+        "brier": 0.22745816321870424,
+        "log_loss": 0.6463559693249478,
+        "roc_auc": 0.6724500345182626,
+        "accuracy": 0.6208636775184033,
+        "ece": 0.01996595374019323,
+        "calibration_bins": [
+          {
+            "bin_lower": 0.0,
+            "bin_upper": 0.1,
+            "count": 862,
+            "avg_prob": 0.07683765758454707,
+            "win_rate": 0.12296983758700696
+          },
+          {
+            "bin_lower": 0.1,
+            "bin_upper": 0.2,
+            "count": 5038,
+            "avg_prob": 0.15785042458514326,
+            "win_rate": 0.20801905518062724
+          },
+          {
+            "bin_lower": 0.2,
+            "bin_upper": 0.3,
+            "count": 10806,
+            "avg_prob": 0.25491610066556325,
+            "win_rate": 0.27882657782713305
+          },
+          {
+            "bin_lower": 0.3,
+            "bin_upper": 0.4,
+            "count": 17796,
+            "avg_prob": 0.35333081254669785,
+            "win_rate": 0.3653068105192178
+          },
+          {
+            "bin_lower": 0.4,
+            "bin_upper": 0.5,
+            "count": 26737,
+            "avg_prob": 0.45299437564754624,
+            "win_rate": 0.45700714365860046
+          },
+          {
+            "bin_lower": 0.5,
+            "bin_upper": 0.6,
+            "count": 28843,
+            "avg_prob": 0.5443991815282797,
+            "win_rate": 0.5349304857331069
+          },
+          {
+            "bin_lower": 0.6,
+            "bin_upper": 0.7,
+            "count": 18498,
+            "avg_prob": 0.6469373631888761,
+            "win_rate": 0.6182830576278516
+          },
+          {
+            "bin_lower": 0.7,
+            "bin_upper": 0.8,
+            "count": 11579,
+            "avg_prob": 0.745871232567275,
+            "win_rate": 0.7003195440020727
+          },
+          {
+            "bin_lower": 0.8,
+            "bin_upper": 0.9,
+            "count": 5765,
+            "avg_prob": 0.8425090845913875,
+            "win_rate": 0.795316565481353
+          },
+          {
+            "bin_lower": 0.9,
+            "bin_upper": 1.0,
+            "count": 1091,
+            "avg_prob": 0.9248473401615055,
+            "win_rate": 0.8680109990834097
+          }
+        ],
+        "n_samples": 127015
+      },
+      "test": {
+        "brier": 0.2269746604622018,
+        "log_loss": 0.6456294382296179,
+        "roc_auc": 0.6694535280325467,
+        "accuracy": 0.6257852228537242,
+        "ece": 0.029145702383749434,
+        "calibration_bins": [
+          {
+            "bin_lower": 0.0,
+            "bin_upper": 0.1,
+            "count": 27,
+            "avg_prob": 0.07469869880868964,
+            "win_rate": 0.07407407407407407
+          },
+          {
+            "bin_lower": 0.1,
+            "bin_upper": 0.2,
+            "count": 192,
+            "avg_prob": 0.15979216900552065,
+            "win_rate": 0.23958333333333334
+          },
+          {
+            "bin_lower": 0.2,
+            "bin_upper": 0.3,
+            "count": 461,
+            "avg_prob": 0.2543277708468764,
+            "win_rate": 0.28633405639913234
+          },
+          {
+            "bin_lower": 0.3,
+            "bin_upper": 0.4,
+            "count": 809,
+            "avg_prob": 0.3558833891154047,
+            "win_rate": 0.39555006180469715
+          },
+          {
+            "bin_lower": 0.4,
+            "bin_upper": 0.5,
+            "count": 1272,
+            "avg_prob": 0.4520767990230944,
+            "win_rate": 0.47877358490566035
+          },
+          {
+            "bin_lower": 0.5,
+            "bin_upper": 0.6,
+            "count": 1424,
+            "avg_prob": 0.5501312844289818,
+            "win_rate": 0.5653089887640449
+          },
+          {
+            "bin_lower": 0.6,
+            "bin_upper": 0.7,
+            "count": 1181,
+            "avg_prob": 0.648476691362615,
+            "win_rate": 0.6274343776460627
+          },
+          {
+            "bin_lower": 0.7,
+            "bin_upper": 0.8,
+            "count": 819,
+            "avg_prob": 0.7477089632025076,
+            "win_rate": 0.7216117216117216
+          },
+          {
+            "bin_lower": 0.8,
+            "bin_upper": 0.9,
+            "count": 434,
+            "avg_prob": 0.8387264058869854,
+            "win_rate": 0.7741935483870968
+          },
+          {
+            "bin_lower": 0.9,
+            "bin_upper": 1.0,
+            "count": 67,
+            "avg_prob": 0.9236257573274492,
+            "win_rate": 0.8805970149253731
+          }
+        ],
+        "n_samples": 6686
+      }
+    },
+    "logistic_regression": {
+      "train": {
+        "brier": 0.22442856323307653,
+        "log_loss": 0.639239506173454,
+        "roc_auc": 0.6817607243283843,
+        "accuracy": 0.6288391134905326,
+        "ece": 0.003759179540727385,
+        "calibration_bins": [
+          {
+            "bin_lower": 0.0,
+            "bin_upper": 0.1,
+            "count": 210,
+            "avg_prob": 0.08188856401388409,
+            "win_rate": 0.08095238095238096
+          },
+          {
+            "bin_lower": 0.1,
+            "bin_upper": 0.2,
+            "count": 3554,
+            "avg_prob": 0.16306226084910863,
+            "win_rate": 0.18007878446820483
+          },
+          {
+            "bin_lower": 0.2,
+            "bin_upper": 0.3,
+            "count": 10727,
+            "avg_prob": 0.25624515147896665,
+            "win_rate": 0.25776079052857276
+          },
+          {
+            "bin_lower": 0.3,
+            "bin_upper": 0.4,
+            "count": 20308,
+            "avg_prob": 0.353929980581678,
+            "win_rate": 0.3510439235769155
+          },
+          {
+            "bin_lower": 0.4,
+            "bin_upper": 0.5,
+            "count": 29043,
+            "avg_prob": 0.451213978140283,
+            "win_rate": 0.4521227145955996
+          },
+          {
+            "bin_lower": 0.5,
+            "bin_upper": 0.6,
+            "count": 29037,
+            "avg_prob": 0.5485626478877198,
+            "win_rate": 0.5452353893308537
+          },
+          {
+            "bin_lower": 0.6,
+            "bin_upper": 0.7,
+            "count": 19801,
+            "avg_prob": 0.645828740186788,
+            "win_rate": 0.6416342608959144
+          },
+          {
+            "bin_lower": 0.7,
+            "bin_upper": 0.8,
+            "count": 10485,
+            "avg_prob": 0.7433082746900176,
+            "win_rate": 0.7509775870290891
+          },
+          {
+            "bin_lower": 0.8,
+            "bin_upper": 0.9,
+            "count": 3565,
+            "avg_prob": 0.8370444089051383,
+            "win_rate": 0.8518934081346423
+          },
+          {
+            "bin_lower": 0.9,
+            "bin_upper": 1.0,
+            "count": 285,
+            "avg_prob": 0.9174729330244007,
+            "win_rate": 0.9263157894736842
+          }
+        ],
+        "n_samples": 127015
+      },
+      "test": {
+        "brier": 0.23556909045085342,
+        "log_loss": 0.6643608856458206,
+        "roc_auc": 0.6431706224809673,
+        "accuracy": 0.6066407418486389,
+        "ece": 0.05267421970034535,
+        "calibration_bins": [
+          {
+            "bin_lower": 0.0,
+            "bin_upper": 0.1,
+            "count": 24,
+            "avg_prob": 0.08222434156312787,
+            "win_rate": 0.041666666666666664
+          },
+          {
+            "bin_lower": 0.1,
+            "bin_upper": 0.2,
+            "count": 242,
+            "avg_prob": 0.160952740337492,
+            "win_rate": 0.24380165289256198
+          },
+          {
+            "bin_lower": 0.2,
+            "bin_upper": 0.3,
+            "count": 542,
+            "avg_prob": 0.2558165690316847,
+            "win_rate": 0.39114391143911437
+          },
+          {
+            "bin_lower": 0.3,
+            "bin_upper": 0.4,
+            "count": 904,
+            "avg_prob": 0.3516937331588988,
+            "win_rate": 0.4413716814159292
+          },
+          {
+            "bin_lower": 0.4,
+            "bin_upper": 0.5,
+            "count": 1241,
+            "avg_prob": 0.45091752179997946,
+            "win_rate": 0.48186946011281223
+          },
+          {
+            "bin_lower": 0.5,
+            "bin_upper": 0.6,
+            "count": 1313,
+            "avg_prob": 0.5505835407978712,
+            "win_rate": 0.5712109672505712
+          },
+          {
+            "bin_lower": 0.6,
+            "bin_upper": 0.7,
+            "count": 1202,
+            "avg_prob": 0.64937240225105,
+            "win_rate": 0.6073211314475874
+          },
+          {
+            "bin_lower": 0.7,
+            "bin_upper": 0.8,
+            "count": 771,
+            "avg_prob": 0.7455854400889061,
+            "win_rate": 0.7055771725032426
+          },
+          {
+            "bin_lower": 0.8,
+            "bin_upper": 0.9,
+            "count": 420,
+            "avg_prob": 0.8405274958256372,
+            "win_rate": 0.7714285714285715
+          },
+          {
+            "bin_lower": 0.9,
+            "bin_upper": 1.0,
+            "count": 27,
+            "avg_prob": 0.9197040974736231,
+            "win_rate": 0.8888888888888888
+          }
+        ],
+        "n_samples": 6686
+      }
+    },
+    "gradient_boosting": {
+      "train": {
+        "brier": 0.212955499412024,
+        "log_loss": 0.612317924283746,
+        "roc_auc": 0.7193946642788117,
+        "accuracy": 0.6544266425225367,
+        "ece": 0.021848497032204834,
+        "calibration_bins": [
+          {
+            "bin_lower": 0.0,
+            "bin_upper": 0.1,
+            "count": 638,
+            "avg_prob": 0.0798552561015514,
+            "win_rate": 0.02664576802507837
+          },
+          {
+            "bin_lower": 0.1,
+            "bin_upper": 0.2,
+            "count": 4442,
+            "avg_prob": 0.1587900768762115,
+            "win_rate": 0.10198108959927961
+          },
+          {
+            "bin_lower": 0.2,
+            "bin_upper": 0.3,
+            "count": 9743,
+            "avg_prob": 0.2563553999953955,
+            "win_rate": 0.2239556604741866
+          },
+          {
+            "bin_lower": 0.3,
+            "bin_upper": 0.4,
+            "count": 20246,
+            "avg_prob": 0.3552241731506226,
+            "win_rate": 0.32929961473871383
+          },
+          {
+            "bin_lower": 0.4,
+            "bin_upper": 0.5,
+            "count": 28683,
+            "avg_prob": 0.45179055094213927,
+            "win_rate": 0.4425269323292543
+          },
+          {
+            "bin_lower": 0.5,
+            "bin_upper": 0.6,
+            "count": 31001,
+            "avg_prob": 0.5475147682391822,
+            "win_rate": 0.557336860101287
+          },
+          {
+            "bin_lower": 0.6,
+            "bin_upper": 0.7,
+            "count": 17232,
+            "avg_prob": 0.6431424679510704,
+            "win_rate": 0.6677692664809657
+          },
+          {
+            "bin_lower": 0.7,
+            "bin_upper": 0.8,
+            "count": 8884,
+            "avg_prob": 0.7443984177459226,
+            "win_rate": 0.7835434488968933
+          },
+          {
+            "bin_lower": 0.8,
+            "bin_upper": 0.9,
+            "count": 4539,
+            "avg_prob": 0.8463792613687399,
+            "win_rate": 0.8977748402731879
+          },
+          {
+            "bin_lower": 0.9,
+            "bin_upper": 1.0,
+            "count": 1607,
+            "avg_prob": 0.9261771127842107,
+            "win_rate": 0.9713752333540759
+          }
+        ],
+        "n_samples": 127015
+      },
+      "test": {
+        "brier": 0.22736156531241639,
+        "log_loss": 0.645977075969178,
+        "roc_auc": 0.6678832436098818,
+        "accuracy": 0.6212982351181573,
+        "ece": 0.02839099026893506,
+        "calibration_bins": [
+          {
+            "bin_lower": 0.0,
+            "bin_upper": 0.1,
+            "count": 10,
+            "avg_prob": 0.08464221890815227,
+            "win_rate": 0.0
+          },
+          {
+            "bin_lower": 0.1,
+            "bin_upper": 0.2,
+            "count": 110,
+            "avg_prob": 0.16269591591989263,
+            "win_rate": 0.23636363636363636
+          },
+          {
+            "bin_lower": 0.2,
+            "bin_upper": 0.3,
+            "count": 373,
+            "avg_prob": 0.2564816036218174,
+            "win_rate": 0.28150134048257375
+          },
+          {
+            "bin_lower": 0.3,
+            "bin_upper": 0.4,
+            "count": 858,
+            "avg_prob": 0.3581345025430644,
+            "win_rate": 0.36363636363636365
+          },
+          {
+            "bin_lower": 0.4,
+            "bin_upper": 0.5,
+            "count": 1642,
+            "avg_prob": 0.45416053858458477,
+            "win_rate": 0.4853836784409257
+          },
+          {
+            "bin_lower": 0.5,
+            "bin_upper": 0.6,
+            "count": 1875,
+            "avg_prob": 0.5468344541438123,
+            "win_rate": 0.5792
+          },
+          {
+            "bin_lower": 0.6,
+            "bin_upper": 0.7,
+            "count": 1010,
+            "avg_prob": 0.6432079737844375,
+            "win_rate": 0.6673267326732674
+          },
+          {
+            "bin_lower": 0.7,
+            "bin_upper": 0.8,
+            "count": 450,
+            "avg_prob": 0.7440745047101895,
+            "win_rate": 0.7733333333333333
+          },
+          {
+            "bin_lower": 0.8,
+            "bin_upper": 0.9,
+            "count": 265,
+            "avg_prob": 0.8482902509929684,
+            "win_rate": 0.8037735849056604
+          },
+          {
+            "bin_lower": 0.9,
+            "bin_upper": 1.0,
+            "count": 93,
+            "avg_prob": 0.9198086111544105,
+            "win_rate": 0.8602150537634409
+          }
+        ],
+        "n_samples": 6686
+      }
+    },
+    "calibrated_gradient_boosting": {
+      "train": {
+        "brier": 0.2144114948422414,
+        "log_loss": 0.615724239587484,
+        "roc_auc": 0.7143366491223443,
+        "accuracy": 0.6506160689682321,
+        "ece": 0.018594459619100917,
+        "calibration_bins": [
+          {
+            "bin_lower": 0.0,
+            "bin_upper": 0.1,
+            "count": 363,
+            "avg_prob": 0.08668735126106403,
+            "win_rate": 0.02203856749311295
+          },
+          {
+            "bin_lower": 0.1,
+            "bin_upper": 0.2,
+            "count": 4303,
+            "avg_prob": 0.15980526985629387,
+            "win_rate": 0.1031838252382059
+          },
+          {
+            "bin_lower": 0.2,
+            "bin_upper": 0.3,
+            "count": 10179,
+            "avg_prob": 0.257627265920156,
+            "win_rate": 0.22163277335691128
+          },
+          {
+            "bin_lower": 0.3,
+            "bin_upper": 0.4,
+            "count": 20912,
+            "avg_prob": 0.35377332321951743,
+            "win_rate": 0.3365053557765876
+          },
+          {
+            "bin_lower": 0.4,
+            "bin_upper": 0.5,
+            "count": 27397,
+            "avg_prob": 0.45193851561905984,
+            "win_rate": 0.44566923385772167
+          },
+          {
+            "bin_lower": 0.5,
+            "bin_upper": 0.6,
+            "count": 31655,
+            "avg_prob": 0.5474413988420574,
+            "win_rate": 0.5545095561522666
+          },
+          {
+            "bin_lower": 0.6,
+            "bin_upper": 0.7,
+            "count": 17618,
+            "avg_prob": 0.6432537328625999,
+            "win_rate": 0.6653422635940516
+          },
+          {
+            "bin_lower": 0.7,
+            "bin_upper": 0.8,
+            "count": 8530,
+            "avg_prob": 0.744514423273128,
+            "win_rate": 0.7773739742086753
+          },
+          {
+            "bin_lower": 0.8,
+            "bin_upper": 0.9,
+            "count": 4735,
+            "avg_prob": 0.8467853055270709,
+            "win_rate": 0.8939809926082365
+          },
+          {
+            "bin_lower": 0.9,
+            "bin_upper": 1.0,
+            "count": 1323,
+            "avg_prob": 0.9230924304258644,
+            "win_rate": 0.982615268329554
+          }
+        ],
+        "n_samples": 127015
+      },
+      "test": {
+        "brier": 0.225487385329756,
+        "log_loss": 0.6416471196638077,
+        "roc_auc": 0.6751019789669649,
+        "accuracy": 0.6284774154950643,
+        "ece": 0.02674733473269449,
+        "calibration_bins": [
+          {
+            "bin_lower": 0.0,
+            "bin_upper": 0.1,
+            "count": 8,
+            "avg_prob": 0.08573855332264281,
+            "win_rate": 0.0
+          },
+          {
+            "bin_lower": 0.1,
+            "bin_upper": 0.2,
+            "count": 122,
+            "avg_prob": 0.1581443769168296,
+            "win_rate": 0.1885245901639344
+          },
+          {
+            "bin_lower": 0.2,
+            "bin_upper": 0.3,
+            "count": 387,
+            "avg_prob": 0.2562049482918022,
+            "win_rate": 0.29198966408268734
+          },
+          {
+            "bin_lower": 0.3,
+            "bin_upper": 0.4,
+            "count": 924,
+            "avg_prob": 0.3570372840266054,
+            "win_rate": 0.36147186147186144
+          },
+          {
+            "bin_lower": 0.4,
+            "bin_upper": 0.5,
+            "count": 1470,
+            "avg_prob": 0.4544677056027004,
+            "win_rate": 0.47959183673469385
+          },
+          {
+            "bin_lower": 0.5,
+            "bin_upper": 0.6,
+            "count": 1929,
+            "avg_prob": 0.5465703504576711,
+            "win_rate": 0.583203732503888
+          },
+          {
+            "bin_lower": 0.6,
+            "bin_upper": 0.7,
+            "count": 1030,
+            "avg_prob": 0.6407513385371097,
+            "win_rate": 0.6728155339805825
+          },
+          {
+            "bin_lower": 0.7,
+            "bin_upper": 0.8,
+            "count": 474,
+            "avg_prob": 0.7440568380681966,
+            "win_rate": 0.7616033755274262
+          },
+          {
+            "bin_lower": 0.8,
+            "bin_upper": 0.9,
+            "count": 272,
+            "avg_prob": 0.8471040229472668,
+            "win_rate": 0.8345588235294118
+          },
+          {
+            "bin_lower": 0.9,
+            "bin_upper": 1.0,
+            "count": 70,
+            "avg_prob": 0.916291571061245,
+            "win_rate": 0.8571428571428571
+          }
+        ],
+        "n_samples": 6686
+      }
+    }
+  },
+  "manifest": {
+    "match_count": 133701,
+    "train_count": 127015,
+    "test_count": 6686,
+    "train_ratio": 0.95,
+    "train_start": "2012-09-21T20:00:00+00:00",
+    "train_end": "2024-06-09T05:00:00+00:00",
+    "test_start": "2024-06-09T06:00:00+00:00",
+    "test_end": "2025-10-16T13:00:00+00:00"
+  }
+}

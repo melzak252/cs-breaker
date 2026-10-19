@@ -1,0 +1,148 @@
+# Kedro-Style Declarative Data Catalog for CS-Breaker 5-Stage Simulation Pipeline & Kedro Nodes
+# Hierarchy: data/01_raw through data/08_reporting
+
+# =============================================================================
+# Layer 01: Raw Data Sources
+# =============================================================================
+kaggle_results_only_raw:
+  path: data/01_raw/kaggle_results_only.csv
+  expected_rows: 7033
+  sha256: c5c243fb8be2618f8aebc024a8034cec74c6142f7c378b21a0b1330648efdf27
+
+hltv_matches_raw:
+  type: kedro_datasets.pandas.CSVDataset
+  filepath: data/raw/hltv/matches.csv
+  path: data/01_raw/hltv_matches.csv
+  expected_rows: 122038
+  sha256: 7ff59a5d942210ce3be2e94c2ae4529f3a5326b8373ba7be4929818cf6b9b606
+  load_args:
+    dtype: str
+    keep_default_na: false
+
+kaggle_matches_raw:
+  type: kedro_datasets.pandas.CSVDataset
+  filepath: data/raw/kaggle/cs2_newestcombinedmatches.csv
+  load_args:
+    dtype: str
+    keep_default_na: false
+
+historical_maps_raw:
+  type: kedro_datasets.pandas.CSVDataset
+  filepath: data/raw/strandedpond/matches.csv
+  path: data/01_raw/strandedpond_matches.csv
+  expected_rows: 2299
+  sha256: c2b0b2c9ea404ecc5f4f98256fd12a51f22e89d2c7dbbca144dec2368fc763e4
+  load_args:
+    dtype: str
+    keep_default_na: false
+
+historical_players_raw:
+  type: kedro_datasets.pandas.CSVDataset
+  filepath: data/raw/strandedpond/player_stats.csv
+  load_args:
+    dtype: str
+    keep_default_na: false
+
+# =============================================================================
+# Layer 02: Intermediate Data
+# =============================================================================
+scraped_lineups_processed:
+  type: kedro_datasets.pandas.CSVDataset
+  filepath: data/processed/match_lineups.csv
+  path: data/02_intermediate/match_lineups.csv
+  load_args:
+    dtype: str
+    keep_default_na: false
+
+# =============================================================================
+# Layer 03: Primary (Consolidated Master Dataset)
+# =============================================================================
+consolidated_matches:
+  type: kedro_datasets.pandas.CSVDataset
+  filepath: data/processed/master_matches_consolidated.csv
+  path: data/03_primary/master_matches_consolidated.csv
+  expected_rows: 122038
+  sha256: cbd32f49584dcf8528b5ea7b0169d5788cffb4602815b80f32ff8ad94ecbc0d8
+  load_args:
+    dtype: str
+    keep_default_na: false
+
+# =============================================================================
+# Layer 04: Features
+# =============================================================================
+match_features_with_ratings:
+  type: kedro_datasets.pandas.CSVDataset
+  filepath: data/processed/match_features_with_ratings.csv
+  path: data/04_feature/match_features_with_ratings.csv
+  expected_rows: 675
+  sha256: 8f78a0efc68fcac4ba01c40e7165b98e700326280800578310bb7f935f5e3639
+
+player_rankings_master:
+  type: kedro_datasets.pandas.CSVDataset
+  filepath: data/processed/player_rankings_master.csv
+  path: data/04_feature/player_rankings_master.csv
+  expected_rows: 621
+  sha256: c7d6f4971138eebc45b5db623787e5e615da63acb94786754062a1a87701724a
+
+# =============================================================================
+# Layer 05: Model Input (Consolidated Canonical Benchmark)
+# =============================================================================
+canonical_benchmark_paired:
+  path: data/05_model_input/canonical_benchmark_paired.csv
+  expected_rows: 203
+  sha256: a6b3cd4a237bb940a7ffde8fa6b1ea118da5ae18e26749d3cbef6a2243c56cea
+
+development_features:
+  path: data/05_model_input/development_features.csv
+
+# =============================================================================
+# Layer 06: Frozen Models
+# =============================================================================
+baseline_model:
+  type: kedro_datasets.pickle.PickleDataset
+  filepath: artifacts/baseline_model.pkl
+  path: data/06_models/baseline_model.pkl
+  sha256: 1733cc14e7aaeab6d29dad8b561fa4c0ae5f08b919e48ce5f2073bda62348357
+
+player_rating_state:
+  type: kedro_datasets.pickle.PickleDataset
+  filepath: artifacts/player_rating_state.pkl
+  path: data/06_models/player_rating_state.pkl
+  sha256: 78e0fd7f8b79bbc8b1a64fe86936afb29647bebe27a1690dab58b09bef0c3215
+
+professional_selected_model:
+  path: data/06_models/professional_selected_model.pkl
+  sha256: 2006f25bf1a889588c75bf8e82cc6132bf32dfdfd596632ee1853a6ce10b8cde
+
+# =============================================================================
+# Layer 07: Model Output (Out-of-time Model Probability Panels)
+# =============================================================================
+baseline_test_predictions:
+  type: kedro_datasets.pandas.CSVDataset
+  filepath: artifacts/baseline_test_predictions.csv
+  path: data/07_model_output/baseline_test_predictions.csv
+  expected_rows: 164
+  sha256: 3af807b37d6f04ac33fa44dd36c1dc98edfa39b8cbbceca62861b73131ef96da
+
+bookmaker_comparison_matches:
+  path: data/07_model_output/bookmaker_comparison_matches.csv
+  expected_rows: 203
+  sha256: a6b3cd4a237bb940a7ffde8fa6b1ea118da5ae18e26749d3cbef6a2243c56cea
+
+# =============================================================================
+# Layer 08: Model Reporting
+# =============================================================================
+model_evaluation_metrics:
+  type: kedro_datasets.json.JSONDataset
+  filepath: artifacts/baseline_model_metrics.json
+  path: data/08_reporting/baseline_model_metrics.json
+  sha256: 054e9c2dc022d4b7e124ce24fddd4f12f2b8fa06349f3ad7d2de880c2f7e0485
+
+bookmaker_comparison_metrics:
+  path: data/08_reporting/bookmaker_comparison.json
+
+modeling_data_audit:
+  type: kedro_datasets.json.JSONDataset
+  filepath: data/audits/modeling_data_audit.json
+
+output_dir: data/08_reporting/simulation_pipeline

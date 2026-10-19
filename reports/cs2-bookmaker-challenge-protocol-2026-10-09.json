@@ -1,0 +1,228 @@
+{
+  "experiment": "cs2-bookmaker-challenge-2026-10-09",
+  "schema_version": 1,
+  "frozen_at_utc": "2026-10-09T22:49:53.171181+00:00",
+  "stage": "frozen_before_development_scores",
+  "objective": "Sports-only professional Counter-Strike BO3/BO5 series probabilities competitive with time-aligned bookmaker forecasts",
+  "cohort_manifest": "artifacts/bookmaker_challenge_20261009/frozen_cohorts.json",
+  "input_sha256": {
+    "data/processed/master_matches_consolidated.csv": "cbd32f49584dcf8528b5ea7b0169d5788cffb4602815b80f32ff8ad94ecbc0d8",
+    "data/raw/hltv/matches.csv": "7ff59a5d942210ce3be2e94c2ae4529f3a5326b8373ba7be4929818cf6b9b606",
+    "artifacts/bookmaker_challenge_20261009/previously_evaluated_ids.json": "fccbd43df8e813309e3b3feca2f85fb243df1f4d237f4f52047ea09c21cd4c62",
+    "artifacts/bookmaker_challenge_20261009/frozen_cohorts.json": "6317a839f0d874814e033116adf26447fba476fd8500a1c598311f11f5a99fdc"
+  },
+  "cohort_counts": {
+    "train": 19106,
+    "validation": 1487,
+    "test": 2728,
+    "test_context_only": 247
+  },
+  "partitions": {
+    "history_start": "2024-01-01",
+    "training_fit_start": "2024-07-01",
+    "train_end": "2026-04-30",
+    "validation_start": "2026-05-01",
+    "validation_end": "2026-06-30",
+    "test_start": "2026-07-01",
+    "test_end": "2026-10-07"
+  },
+  "holdout_limits": [
+    "All previously scored IDs and the entire earlier player cohort excluded from final scored TEST cases.",
+    "Raw historical outcomes already existed locally and informed earlier online states; this is previously unscored retrospective evaluation, not a prospective or wholly unseen-data study.",
+    "No forecast quality has been computed for the reserved cohort under this experiment."
+  ],
+  "features": {
+    "primary_history_lag_days": 1,
+    "sensitivity_history_lag_days": 2,
+    "update_policy": "All queries use only complete earlier source-calendar days; same-day outcomes/statistics frozen out; deterministic simultaneous updates.",
+    "series_elo": {
+      "k": [
+        16,
+        32,
+        64
+      ],
+      "half_life_days": [
+        90,
+        180,
+        365,
+        null
+      ],
+      "initial": 1500,
+      "scale": 400
+    },
+    "map_score_elo": {
+      "k": [
+        16,
+        32,
+        64
+      ],
+      "half_life_days": [
+        180,
+        365
+      ],
+      "observation": "series map-win fraction or completed native map winner",
+      "series_transform": "exchangeable independent map majority approximation"
+    },
+    "glicko2": {
+      "initial_rd": [
+        200,
+        350
+      ],
+      "initial_rating": 1500,
+      "volatility": 0.06,
+      "tau": 0.5,
+      "period": "source-calendar day"
+    },
+    "performance": "Prior verified five-participant team totals only, pooled player-round exposure and last10 measured series; availability/support explicit.",
+    "form": "Prior5/10/30 series win rate;10/30 series map margin and opponent-adjusted residual; prior count, rest and activity.",
+    "valve": "First-added global historical Git blobs, as-of max(snapshot date+7 days, first-addition committer UTC clock); latest global snapshot only; exact normalized team-name matching; highest-points org aggregate for multiple published rosters."
+  },
+  "candidate_space": {
+    "maximum_candidates": 256,
+    "rating_channels": [
+      "raw",
+      "train_only_zero_intercept_logit_slope_0_to_3"
+    ],
+    "ridge_logistic": {
+      "C": [
+        0.001,
+        0.01,
+        0.1,
+        1.0
+      ],
+      "groups": [
+        "ratings",
+        "ratings_form",
+        "all",
+        "ratings_vrs",
+        "all_vrs"
+      ],
+      "recency_half_life_days": [
+        180,
+        365,
+        null
+      ],
+      "mirror_augmentation": true,
+      "fit_intercept": false
+    },
+    "hist_gradient_boosting": {
+      "learning_rate": 0.05,
+      "max_iter": 200,
+      "max_leaf_nodes": [
+        3,
+        7,
+        15
+      ],
+      "l2_regularization": [
+        1,
+        10
+      ],
+      "min_samples_leaf": [
+        50,
+        150
+      ],
+      "groups": [
+        "ratings_form_vrs",
+        "all_vrs"
+      ],
+      "recency_half_life_days": 365,
+      "early_stopping": false,
+      "mirror_augmentation": true,
+      "symmetric_probability_projection": true
+    },
+    "predeclared_blends": [
+      {
+        "left": "calibrated_map_elo_32_180",
+        "right": "ridge_C0.1_all_vrs_h365",
+        "right_weights": [
+          0.25,
+          0.5,
+          0.75
+        ]
+      },
+      {
+        "left": "hgb_leaf7_l2_10_min150_all_vrs",
+        "right": "ridge_C0.1_all_vrs_h365",
+        "right_weights": [
+          0.5
+        ]
+      }
+    ],
+    "train_only_diagnostic_cutoffs": [
+      "2025-06-30",
+      "2025-12-31",
+      "2026-02-28"
+    ],
+    "learned_probability_stacking": "Not used unless based on genuinely chronological out-of-fold TRAIN forecasts."
+  },
+  "selection": {
+    "fit_partition": "train",
+    "selection_partition": "validation",
+    "metric": "log_loss",
+    "cohort": "Fixed one-hour market-covered validation union; forecasts do not consume prices.",
+    "tie_break": "Candidate recipe lexicographic order when losses differ by <=1e-12.",
+    "train_plus_validation_refit": false,
+    "pre_test_freeze": "Selected recipe, fitted artifacts, feature schema, source hashes and validation scores saved before TEST probability or loss computation.",
+    "after_test": "No reselection or hyperparameter tuning on this TEST cohort; new independent evidence required after failed confirmation."
+  },
+  "market": {
+    "books": [
+      "pinnacle",
+      "bet365",
+      "unibet"
+    ],
+    "primary_horizon": "one_hour",
+    "sensitivity_horizons": [
+      "six_hour",
+      "source_day"
+    ],
+    "clock": "Earlier provider scheduled/actual start minus horizon, or source-day midnight; both state clocks strictly before origin. Model source-day opening must not follow origin.",
+    "reconstruction": "Latest relevant terminal raw receipt per fixture/book; full historical state selection before cutoff, then activity/price/scope validity; no earlier-valid revival.",
+    "primary_devig": "proportional",
+    "sensitivity_devig": "power",
+    "primary_benchmark": "Equal-weight available-book consensus per native match; not executable or pooled independent book rows.",
+    "comparisons": [
+      "available_book_consensus",
+      "individual_books",
+      "common_all_books"
+    ],
+    "execution_certified": false
+  },
+  "acceptance": {
+    "minimum_paired_matches": 200,
+    "minimum_source_days": 30,
+    "log_loss": {
+      "maximum_point_model_minus_consensus": 0.005,
+      "maximum_one_sided_95_upper": 0.01
+    },
+    "brier": {
+      "maximum_point_model_minus_consensus": 0.0025,
+      "maximum_one_sided_95_upper": 0.005
+    },
+    "resampling": {
+      "draws": 5000,
+      "seed": 42,
+      "paired_clusters": [
+        "source_day",
+        "fixed_7_calendar_day_block"
+      ],
+      "both_cluster_bounds_required": true
+    },
+    "individual_book_maximum_point_log_loss_difference": 0.01,
+    "individual_book_minimum_matches_for_rule": 50,
+    "unsupported_claims": [
+      "profitability",
+      "executable positive EV",
+      "universal superiority",
+      "future guarantees"
+    ],
+    "sparse_book_policy": "Report inconclusive; do not convert low power or a CI crossing zero into evidence of equivalence."
+  },
+  "limitations": [
+    "Literal historical organizations, not verified contemporary starting rosters or identity alias resolution.",
+    "2024+ is a game-era proxy; native source-calendar days and retrospectively collected provider state clocks are not certified publication timestamps.",
+    "Valve Git first-addition commit clock plus seven-day lag is conservative provenance, not independent proof of public release.",
+    "Historical benchmark does not establish access to limits, prices, bets or settlement at those clocks."
+  ],
+  "shared_contract": "local://bookmaker-challenge-contract.md"
+}

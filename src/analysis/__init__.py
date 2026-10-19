@@ -1,0 +1,61 @@
+"""Analysis, benchmarking, risk guards, and simulation pipeline modules for CS-Breaker."""
+
+from src.analysis.betting_guards_a_to_d import (
+    apply_guard_a_plow,
+    apply_guard_b_dynamic_disagreement,
+    apply_guard_c_haircut,
+    apply_guard_d_clv_drift,
+    apply_guard_w_wasserstein_dro,
+    apply_model_consensus_veto,
+    calculate_clv,
+    devig_additive,
+    devig_multiplicative,
+    devig_power,
+    devig_shin,
+    dynamic_logit_disagreement,
+    wasserstein_dro_min_ev_hurdle,
+)
+from src.analysis.model_benchmark import (
+    BaselineComparisonResult,
+    ModelBenchmarkSummary,
+    brier_decomposition,
+    calculate_ece,
+    clip_probabilities,
+    compute_baseline_comparison,
+    compute_benchmark_summary,
+)
+from src.analysis.simulation_pipeline import (
+    run_stage1_verify_inputs,
+    run_stage2_model_benchmark,
+    run_stage3_betting_simulation,
+    run_stage4_econometric_audit,
+    run_stage5_generate_report,
+)
+
+__all__ = [
+    "BaselineComparisonResult",
+    "ModelBenchmarkSummary",
+    "apply_guard_a_plow",
+    "apply_guard_b_dynamic_disagreement",
+    "apply_guard_c_haircut",
+    "apply_guard_d_clv_drift",
+    "apply_guard_w_wasserstein_dro",
+    "apply_model_consensus_veto",
+    "brier_decomposition",
+    "calculate_clv",
+    "calculate_ece",
+    "clip_probabilities",
+    "compute_baseline_comparison",
+    "compute_benchmark_summary",
+    "devig_additive",
+    "devig_multiplicative",
+    "devig_power",
+    "devig_shin",
+    "dynamic_logit_disagreement",
+    "run_stage1_verify_inputs",
+    "run_stage2_model_benchmark",
+    "run_stage3_betting_simulation",
+    "run_stage4_econometric_audit",
+    "run_stage5_generate_report",
+    "wasserstein_dro_min_ev_hurdle",
+]

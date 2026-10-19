@@ -1,0 +1,190 @@
+{
+  "kind": "coverage_only_no_model_or_market_scoring",
+  "previously_evaluated_or_player_cohort_ids": 8318,
+  "previous_id_inputs": [
+    {
+      "path": "artifacts/baseline/predictions.csv",
+      "unique_ids": 5907,
+      "sha256": "a2b7e944a809684e5f616b66983ad8126896cae1d28f15a2cb69740b3d11ec47"
+    },
+    {
+      "path": "artifacts/player_ratings/predictions.csv",
+      "unique_ids": 824,
+      "sha256": "1eb4757fc8a4cb33506786680344180222de503d2a48aa2cf04b4273764c7eb1"
+    },
+    {
+      "path": "artifacts/steam_player_ratings/predictions.csv",
+      "unique_ids": 615,
+      "sha256": "dd59d789253ee7ca8ddf0f6c8d1b584764ccad68b881496dbb4135628d92fc5f"
+    },
+    {
+      "path": "data/processed/test_features.csv",
+      "unique_ids": 6686,
+      "sha256": "ac35f56be92866056ba3e1923981333bade1c906862273ac82c2ecac10d451f7"
+    },
+    {
+      "path": "data/processed/match_features_with_ratings.csv",
+      "unique_ids": 675,
+      "sha256": "8f78a0efc68fcac4ba01c40e7165b98e700326280800578310bb7f935f5e3639"
+    }
+  ],
+  "raw_result_rows": 122038,
+  "unique_native_result_ids": 122038,
+  "conflicted_native_ids": 0,
+  "mapping_status_counts": {
+    "matched": 3467,
+    "unmatched": 1455,
+    "event_unconfirmed": 350,
+    "ambiguous_fixture": 97,
+    "ambiguous_hltv_match": 21,
+    "event_conflict": 59,
+    "not_finished": 16
+  },
+  "strict_latest_prestart_quote_rejections": {
+    "quote_not_admitted": 6265
+  },
+  "monthly_native_coverage": {
+    "2026-01": {
+      "native_complete_series": 175,
+      "any_book": 9,
+      "pinnacle": 9,
+      "bet365": 0,
+      "unibet": 1,
+      "all_books": 0,
+      "new_native_series": 175,
+      "new_any_book": 9,
+      "new_pinnacle": 9,
+      "new_bet365": 0,
+      "new_unibet": 1,
+      "new_all_books": 0
+    },
+    "2026-02": {
+      "native_complete_series": 464,
+      "any_book": 164,
+      "pinnacle": 164,
+      "bet365": 0,
+      "unibet": 0,
+      "all_books": 0,
+      "new_native_series": 429,
+      "new_any_book": 147,
+      "new_pinnacle": 147,
+      "new_bet365": 0,
+      "new_unibet": 0,
+      "new_all_books": 0
+    },
+    "2026-03": {
+      "native_complete_series": 542,
+      "any_book": 269,
+      "pinnacle": 211,
+      "bet365": 7,
+      "unibet": 136,
+      "all_books": 2,
+      "new_native_series": 387,
+      "new_any_book": 179,
+      "new_pinnacle": 134,
+      "new_bet365": 6,
+      "new_unibet": 98,
+      "new_all_books": 1
+    },
+    "2026-04": {
+      "native_complete_series": 416,
+      "any_book": 297,
+      "pinnacle": 184,
+      "bet365": 0,
+      "unibet": 240,
+      "all_books": 0,
+      "new_native_series": 235,
+      "new_any_book": 152,
+      "new_pinnacle": 86,
+      "new_bet365": 0,
+      "new_unibet": 122,
+      "new_all_books": 0
+    },
+    "2026-05": {
+      "native_complete_series": 510,
+      "any_book": 405,
+      "pinnacle": 262,
+      "bet365": 0,
+      "unibet": 326,
+      "all_books": 0,
+      "new_native_series": 421,
+      "new_any_book": 318,
+      "new_pinnacle": 191,
+      "new_bet365": 0,
+      "new_unibet": 261,
+      "new_all_books": 0
+    },
+    "2026-06": {
+      "native_complete_series": 220,
+      "any_book": 189,
+      "pinnacle": 106,
+      "bet365": 24,
+      "unibet": 176,
+      "all_books": 12,
+      "new_native_series": 168,
+      "new_any_book": 137,
+      "new_pinnacle": 54,
+      "new_bet365": 20,
+      "new_unibet": 125,
+      "new_all_books": 8
+    },
+    "2026-07": {
+      "native_complete_series": 115,
+      "any_book": 95,
+      "pinnacle": 56,
+      "bet365": 0,
+      "unibet": 86,
+      "all_books": 0,
+      "new_native_series": 110,
+      "new_any_book": 91,
+      "new_pinnacle": 53,
+      "new_bet365": 0,
+      "new_unibet": 83,
+      "new_all_books": 0
+    },
+    "2026-08": {
+      "native_complete_series": 213,
+      "any_book": 160,
+      "pinnacle": 89,
+      "bet365": 88,
+      "unibet": 98,
+      "all_books": 17,
+      "new_native_series": 184,
+      "new_any_book": 132,
+      "new_pinnacle": 64,
+      "new_bet365": 61,
+      "new_unibet": 97,
+      "new_all_books": 16
+    },
+    "2026-09": {
+      "native_complete_series": 340,
+      "any_book": 266,
+      "pinnacle": 170,
+      "bet365": 143,
+      "unibet": 220,
+      "all_books": 71,
+      "new_native_series": 282,
+      "new_any_book": 210,
+      "new_pinnacle": 134,
+      "new_bet365": 102,
+      "new_unibet": 170,
+      "new_all_books": 47
+    },
+    "2026-10": {
+      "native_complete_series": 63,
+      "any_book": 53,
+      "pinnacle": 47,
+      "bet365": 38,
+      "unibet": 28,
+      "all_books": 22,
+      "new_native_series": 47,
+      "new_any_book": 39,
+      "new_pinnacle": 35,
+      "new_bet365": 26,
+      "new_unibet": 16,
+      "new_all_books": 13
+    }
+  },
+  "database_read_only": true,
+  "provider_requests": 0
+}

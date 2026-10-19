@@ -1,0 +1,595 @@
+{
+  "research_date": "2026-10-10",
+  "purpose": "Public methods evidence; not disclosure of proprietary production models or proof of bookmaker edge",
+  "evidence_policy": "Vendor claims are first-party self-report; paper results retain original population; search-only leads are not verified citations. Local coverage counts were computed directly from archived CSVs.",
+  "research_tracks": {
+    "professional-odds-methods": {
+      "research_date": "2026-10-10",
+      "scope": "Public engineering and operating disclosures from PandaScore, Oddin.gg, Abios/Kambi, GRID; current repo context from local://professional-cs2-research-contract.md. All vendor operational/model claims below are self-reports, not independent evidence of superior forecasting or profitability.",
+      "summary": "Public evidence supports a clear professional gap beyond team rating/form: rights-cleared, granular and timely match/player telemetry; a production market engine that derives multiple markets from a shared game-state probability model; separate prediction/model and odds/trading layers; human title expertise alongside automation; and operational controls for freshness, trading continuity, risk, availability and market suspension. Companies do not publish enough internals to know their actual training procedures, probability distributions, player/roster adjustment equations, or out-of-sample predictive quality. PandaScore's published round model is explicitly a CS:GO MR15 proof of concept from 2022 and not its production model or current CS2 method. It assumes Markov round dependence, models half-time pistol reset, and acknowledges close-game/stomp errors and omitted economy/map/pistol factors. CS2 MR12 materially changes the map-score process and requires refitting/re-deriving, not carrying that old 15-round structure forward. Our disclosed current model is a prematch BO3/BO5 team-level ensemble of Elo/Glicko/form/activity and static VRS, ridge C=1, side-symmetric; it is a far narrower target than operators' all-market, real-time trading stacks and has limited contemporary roster observability. The failed bookmaker challenge is not evidence of which proposed mechanism would improve it; use chronological development evidence only and retain protected TEST boundaries.",
+      "claims": [
+        {
+          "claim": "PandaScore's 2022 public round-model article is an MR15 CS:GO proof of concept, not a disclosed production model; the article itself says production moved to a more complex model.",
+          "evidence_quote": "The first half (from round 1 to 15) should be modeled with a fixed-n Markov Binomial distribution ... The second half (after round 15) should be modeled with a Negative Markov Binomial ... This led us to go for a more complex model for production which captures better these mechanisms.",
+          "source_url": "https://www.pandascore.co/blog/cs-go-round-modeling",
+          "source_title": "CS:GO Round Modeling (Jordan Peltier; 2022-09-16)",
+          "confidence": 0.99,
+          "evidence_kind": "direct primary article inspection",
+          "date": "2022-09-16",
+          "limitation": "CS:GO rules at publication; not CS2 model disclosure."
+        },
+        {
+          "claim": "PandaScore's baseline made per-round win probability depend only on the previous round, and used two parameters including pistol-round probability and first-order autocorrelation.",
+          "evidence_quote": "The probability for a team to win a round only depends on the outcome of the previous round",
+          "source_url": "https://www.pandascore.co/blog/cs-go-round-modeling",
+          "source_title": "CS:GO Round Modeling",
+          "confidence": 0.99,
+          "evidence_kind": "direct primary article inspection",
+          "date": "2022-09-16",
+          "limitation": "Description of a simple historical baseline; not the later proprietary model."
+        },
+        {
+          "claim": "The published MR15 baseline acknowledged overestimating close games, underestimating stomps among similarly strong teams, and omitting important dynamics including economy and map.",
+          "evidence_quote": "Overestimation of close games for teams of similar strengths; Underestimation of stomps for teams of similar strengths",
+          "source_url": "https://www.pandascore.co/blog/cs-go-round-modeling",
+          "source_title": "CS:GO Round Modeling",
+          "confidence": 0.99,
+          "evidence_kind": "direct primary article inspection",
+          "date": "2022-09-16",
+          "limitation": "Vendor's own figure and qualitative postmortem; not an independent benchmark."
+        },
+        {
+          "claim": "Valve changed competitive match length to 12-round halves in CS2; MR15-to-MR12 is a real rules/target distribution shift, not interchangeable nomenclature.",
+          "evidence_quote": "Adjusted Competitive mode match length to 12-round halves",
+          "source_url": "https://store.steampowered.com/news/posts/?appids=730&enddate=1694728145&feed=steam_community_announcements",
+          "source_title": "Counter-Strike 2 Release Notes for 8/31/2023 (Valve/Steam)",
+          "confidence": 0.93,
+          "evidence_kind": "Valve official release-note text found in search and date-checked; reader endpoint returned unrelated feed content",
+          "date": "2023-08-31",
+          "limitation": "Read endpoint supplied unrelated dynamic feed; exact quote is from official search result. First-to-13 is mathematical implication of MR12 regulation (24 maximum rounds), not quoted here. PandaScore MR15 article's old 15-round/first-to-16 rules should not be transplanted."
+        },
+        {
+          "claim": "PandaScore publicly describes a layered process of computer-vision/live data \u2192 data science predictions \u2192 expert trader-set odds, with continuing model refinement and post-match odds history/analysis.",
+          "evidence_quote": "Our data scientists constantly refine those data models, generating outcome prediction data. Expert traders turn the prediction data into odds, which are live updated in the odds markets & market lines",
+          "source_url": "https://www.pandascore.co/odds",
+          "source_title": "PandaScore Odds product page",
+          "confidence": 0.93,
+          "evidence_kind": "direct primary product-page inspection",
+          "date": "Accessed 2026-10-10; page undated",
+          "limitation": "Marketing description. It provides no retraining cadence, reproducible validation, feature list, or predictive performance evidence."
+        },
+        {
+          "claim": "Oddin offers a distinct official data product for customers' own proprietary models and a separate ready-priced odds feed; the former has trader-curated indicators and gRPC streaming.",
+          "evidence_quote": "The Esports Data API provides an official, low-latency feed engineered to plug directly into your proprietary models and power custom market pricing.",
+          "source_url": "https://oddin.gg/official-esports-data",
+          "source_title": "Official Esports Data API | Real-Time Licensed Esports Data",
+          "confidence": 0.96,
+          "evidence_kind": "direct primary product-page inspection",
+          "date": "Accessed 2026-10-10; page undated",
+          "limitation": "Product positioning does not establish universal coverage, independent latency, contract terms or model gains."
+        },
+        {
+          "claim": "Oddin's own trading-desk account describes human title experts and mathematicians recalibrating market models; ML flags team-performance/tempo changes, while traders interpret context such as a new CS2 map.",
+          "evidence_quote": "Title experts collaborate directly with mathematicians to build and recalibrate models for every market, constantly adapting them to new game patches. ... machine learning models flag subtle shifts in team performance or tempo",
+          "source_url": "https://oddin.gg/knowledge-hub/esports-trading-desk",
+          "source_title": "Inside Oddin.gg: What It Really Takes to Run a 24/7 Esports Trading Desk (2025-09-10)",
+          "confidence": 0.9,
+          "evidence_kind": "direct primary article inspection; authored by Head of Trading - Esports",
+          "date": "2025-09-10",
+          "limitation": "Self-description and nontechnical; no model equations, thresholds, retrain frequency, dataset or outcomes."
+        },
+        {
+          "claim": "Oddin publicly describes operational structure beyond modelling: dedicated prematch/live teams, match ownership without shift handoff mid-match, automated safeguards, and extra traders for major matches.",
+          "evidence_quote": "We split the workload into live trading and pre-match trading teams ... If a trader starts a match, that trader finishes it. No passing the baton mid-overtime",
+          "source_url": "https://oddin.gg/knowledge-hub/esports-trading-desk",
+          "source_title": "Inside Oddin.gg: What It Really Takes to Run a 24/7 Esports Trading Desk",
+          "confidence": 0.9,
+          "evidence_kind": "direct primary article inspection",
+          "date": "2025-09-10",
+          "limitation": "Does not quantify staffing/coverage or establish that all suppliers/operators use same setup."
+        },
+        {
+          "claim": "Abios announced it assumed all Counter-Strike trading across the Kambi network and provided CS2 markets based on proprietary automated modelling and real-time data, including official Bayes Esports and GRID data.",
+          "evidence_quote": "Abios has launched Counter-Strike 2 Bet Builder as it takes control of all Counter-Strike trading across the Kambi network. Harnessing proprietary, automated modelling and real-time data from leading providers",
+          "source_url": "https://abiosgaming.com/press/esports-bet-builder-kambi/",
+          "source_title": "Abios launches Counter-Strike 2 Bet Builder on the Kambi network (2024-09-25)",
+          "confidence": 0.98,
+          "evidence_kind": "direct primary press release",
+          "date": "2024-09-25",
+          "limitation": "Vendor announcement; does not expose model inputs, conditional distributions or measured skill. Network counts are time-bound."
+        },
+        {
+          "claim": "Abios's official-data partnership describes granular, rights-holder-derived feeds and more than 60 automated market types; stated pricing/uptime improvements are Abios claims, not independent results.",
+          "evidence_quote": "Abios ensures higher uptime and more accurate pricing thanks to the highly granular data from Bayes Esports which they get directly from the IP rights holders. With an automated odds feed covering more than 60 market types",
+          "source_url": "https://abiosgaming.com/press/bayes-esports-official-data-partnership/",
+          "source_title": "Abios obtains official Counter-Strike 2 and Dota 2 esports data through Bayes Esports partnership extension (2024-07-11)",
+          "confidence": 0.97,
+          "evidence_kind": "direct primary press release",
+          "date": "2024-07-11",
+          "limitation": "Official data access only for specified competitions/rights scope; benefits are supplier-reported."
+        },
+        {
+          "claim": "GRID's EFG partnership gives evidence of event-specific official rights and distribution for EFG-operated CS2 and Dota 2 live data, including IEM and ESL Pro League; do not assume all tournaments are covered.",
+          "evidence_quote": "Starting with IEM Cologne, GRID becomes the exclusive distributor, infrastructure, and integrity partner of live esports match data for all EFG-operated Counter-Strike 2 and Dota 2 competitions",
+          "source_url": "https://www.grid.gg/resources/newsroom/esl-faceit-grid-esports-data-partnership/",
+          "source_title": "ESL FACEIT Group partners with GRID for exclusive global distribution of official esports match data (2025-07-30)",
+          "confidence": 0.98,
+          "evidence_kind": "direct primary GRID announcement naming rights-holder scope",
+          "date": "2025-07-30",
+          "limitation": "Agreement covers EFG-operated competitions, not the entire CS2 ecosystem. Access rights and permitted use remain contractual."
+        },
+        {
+          "claim": "GRID Odds publicly describes pre-match and live pricing from official telemetry, proprietary models and specialist trading, plus player stats and in-round markets; launched in 2026 for CS2 and other titles.",
+          "evidence_quote": "GRID Odds combines proprietary models with specialist trading expertise to deliver accurate and competitive odds across pre-match and live esports markets.",
+          "source_url": "https://www.linkedin.com/pulse/grid-launches-odds-expanding-its-official-esports-data-business-2nb0f",
+          "source_title": "GRID launches GRID Odds, expanding its official esports data business further into betting (2026-09-10)",
+          "confidence": 0.95,
+          "evidence_kind": "direct GRID primary announcement inspection",
+          "date": "2026-09-10",
+          "limitation": "Newly announced service; adjectives such as accurate/competitive and claimed latencies are not independently evaluated. Internals undisclosed."
+        },
+        {
+          "claim": "GRID separates commercial data access and betting use from unrestricted free access: commercial plans are custom-priced, product availability scoped by agreement, and media plan cannot be used for betting.",
+          "evidence_quote": "Every plan on this page is commercial and custom-priced to the use case",
+          "source_url": "https://www.grid.gg/plans/",
+          "source_title": "GRID Plans & Pricing - Official Esports Data Access",
+          "confidence": 0.99,
+          "evidence_kind": "direct primary pricing/access page inspection",
+          "date": "Accessed 2026-10-10; current page",
+          "limitation": "No rate card; contract, tournament, territories, rights and data depth must be scoped. Noncommercial open access is a different license and not a betting-use entitlement."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.pandascore.co/blog/cs-go-round-modeling",
+          "title": "CS:GO Round Modeling",
+          "credibility": "Primary vendor technical article authored by Jordan Peltier; direct read; dated 2022-09-16.",
+          "summary": "Discloses an interpretable MR15 Markov-binomial baseline, analytical round-score distribution, halftime pistol reset and stated failure modes; useful example of coherent nested markets, explicitly not production internals."
+        },
+        {
+          "url": "https://www.pandascore.co/odds",
+          "title": "PandaScore Odds",
+          "credibility": "Primary vendor product page; direct read; undated/current at access.",
+          "summary": "Publicly describes data/model/trader pipeline, refinement and post-match odds history; marketing, no reproducible performance or exact retraining policy."
+        },
+        {
+          "url": "https://oddin.gg/official-esports-data",
+          "title": "Official Esports Data API | Real-Time Licensed Esports Data",
+          "credibility": "Primary vendor data-product page; direct read; undated/current at access.",
+          "summary": "Official licensed data, gRPC, trader-curated indicators, custom pricing support for customer models, separate from Oddin's premade odds feed."
+        },
+        {
+          "url": "https://oddin.gg/esports-odds-feed",
+          "title": "Esports Odds Feed API | Real-Time Esports Odds for Operators",
+          "credibility": "Primary vendor product page; direct read; undated/current at access.",
+          "summary": "Prematch/live ready-made odds, market configuration and margins, advertised markets and uptime; figures are vendor claims."
+        },
+        {
+          "url": "https://oddin.gg/knowledge-hub/esports-trading-desk",
+          "title": "Inside Oddin.gg: What It Really Takes to Run a 24/7 Esports Trading Desk",
+          "credibility": "Primary vendor operations article by Head of Trading - Esports; direct read; dated 2025-09-10.",
+          "summary": "Human title experts, mathematicians, ML signals, model recalibration with patches, division of prematch/live trading, match-continuous trader ownership and risk safeguards."
+        },
+        {
+          "url": "https://abiosgaming.com/press/esports-bet-builder-kambi/",
+          "title": "Abios launches Counter-Strike 2 Bet Builder on the Kambi network",
+          "credibility": "Primary Abios/Kambi press release; direct read; dated 2024-09-25.",
+          "summary": "CS2-specific proprietary automated trading and real-time data provider inputs; player props and correlated Bet Builder; says Abios took control of Counter-Strike trading on Kambi network."
+        },
+        {
+          "url": "https://abiosgaming.com/press/bayes-esports-official-data-partnership/",
+          "title": "Abios obtains official Counter-Strike 2 and Dota 2 esports data through Bayes Esports partnership extension",
+          "credibility": "Primary Abios press release describing its Bayes partnership; direct read; dated 2024-07-11.",
+          "summary": "Specific event-level rights-derived data access and >60 market feed claim, with vendor-attributed accuracy/uptime advantages."
+        },
+        {
+          "url": "https://www.grid.gg/resources/newsroom/esl-faceit-grid-esports-data-partnership/",
+          "title": "ESL FACEIT Group partners with GRID for exclusive global distribution of official esports match data",
+          "credibility": "Primary GRID announcement of rights-holder partnership; direct read; dated 2025-07-30.",
+          "summary": "Event-scoped official live data rights, distribution/infrastructure/integrity services for EFG-operated CS2 and Dota events."
+        },
+        {
+          "url": "https://www.grid.gg/plans/",
+          "title": "Plans & Pricing - Official Esports Data Access",
+          "credibility": "Primary GRID commercial access and licensing page; direct read; current at 2026-10-10.",
+          "summary": "Official-record positioning and distinct commercial paths for sportsbooks/media etc.; custom pricing and contract-scoped availability; media access prohibited for betting use."
+        },
+        {
+          "url": "https://www.linkedin.com/pulse/grid-launches-odds-expanding-its-official-esports-data-business-2nb0f",
+          "title": "GRID launches GRID Odds, expanding its official esports data business further into betting",
+          "credibility": "Primary GRID esports company announcement hosted on LinkedIn; direct read; dated 2026-09-10.",
+          "summary": "GRID Odds launch and declared official data + proprietary models + trading expertise across prematch/live, player and in-round markets; early product claims not independent."
+        },
+        {
+          "url": "https://store.steampowered.com/news/posts/?appids=730&enddate=1694728145&feed=steam_community_announcements",
+          "title": "Counter-Strike 2 Release Notes for 8/31/2023",
+          "credibility": "Official Valve/Steam release notes; searched directly; read endpoint redirected to unrelated feed, so quote integrity is based on exact search-returned official text.",
+          "summary": "Official quoted change to 12-round halves, supporting MR12 versus PandaScore's historical MR15 source. Direct reader fetch did not render the historic post."
+        }
+      ],
+      "contradictions": [
+        {
+          "point": "Rights-holder / official data availability versus generalized access assumptions",
+          "view_a": "Vendors frame direct server data as dependable and commercially useful; e.g., GRID describes official rights partnerships and Abios names Bayes/GRID feeds.",
+          "view_b": "Rights and access are not universal/free: GRID says availability is scoped per agreement and commercial plans custom-priced; its media plan cannot serve betting products. Abios's cited feed coverage is a defined tournament set.",
+          "resolution": "Treat official feed as a purchase/rights decision and event-level coverage map, not public data access or an assumed project feature."
+        },
+        {
+          "point": "Proprietary models versus verifiable modelling facts",
+          "view_a": "PandaScore, Oddin, Abios and GRID describe proprietary/advanced models, trader oversight and continuous refinement.",
+          "view_b": "No source discloses full production features, equations, training sample, calibration, retraining triggers/cadence, prospective log loss or independent market-beating results.",
+          "resolution": "Use disclosed architecture only as operation-level evidence; do not infer model quality or clone a private method from promotional descriptions."
+        },
+        {
+          "point": "MR15 article versus present CS2 rules",
+          "view_a": "PandaScore's technical article describes CS:GO 15-round halves, first to 16, MR15 overtime structure and explicitly says it is a baseline.",
+          "view_b": "Valve's CS2 change specifies 12-round halves and 24-round regulation (MR12).",
+          "resolution": "The baseline gives a transferable design pattern (coherent score-state distribution), not transferable MR15 parameters/rules; any CS2 map-score model must derive current regulation/overtime and side/pistol semantics."
+        }
+      ],
+      "gaps": [
+        "No independent public benchmark found for any vendor's CS2 prematch series log loss, calibration, closing-line performance or profitability; vendor turnover/uptime/margin claims are not model-performance evidence.",
+        "No public disclosure resolves actual production model families, priors, player/roster strength transfer, stand-in uncertainty, map-veto conditioning, coherent BO3/BO5 series simulation, probability calibration, or model retraining triggers/cadence.",
+        "No universally licensed free source for complete historical/current server-level CS2 telemetry established. Official data is rights-holder/event-specific and commercial terms are not published as a public rate card.",
+        "No independent substantiation for claimed sub-200ms/sub-second data latency, uptime or odds accuracy; product availability/contractual SLOs differ from headline figures.",
+        "Valve official MR12 release-note quote was visible in search result, but the reader returned unrelated historical Steam feed content. Date/quote are recorded with this access limitation.",
+        "No reliable evidence that the vendor's roster data feed proves an actual line-up-aware prediction adjustment; named sources do not publish the adjustment equations."
+      ],
+      "transferable_mechanisms": [
+        {
+          "mechanism": "Build coherent shared match/map-state distributions, not separate unrelated classifiers for every eventual market.",
+          "evidence": "PandaScore says one model per prediction can create contradictory forecasts and describes deriving intermediate and final score probabilities from a shared round process.",
+          "scope": "Adapt the coherent-probability principle to MR12 and the team's BO3/BO5 prematch forecasts; don't carry over the MR15 model parameters or live-state assumptions."
+        },
+        {
+          "mechanism": "Separate team strength estimation from event-specific match structure; condition series outcomes on map pool/veto and compose map outcomes into BO3/BO5 distributions.",
+          "evidence": "[INFERENCE] Multiple markets and Abios/PandaScore Bet Builder/player markets imply shared settlement-consistent outcomes, but no vendor discloses an exact decomposition. This is a design inference, not a disclosed vendor algorithm.",
+          "scope": "Candidate local improvement for map-level and series probabilities; validate only on allowed chronological development data."
+        },
+        {
+          "mechanism": "Represent roster/player identity and starting lineup as time-stamped, event-specific facts, with explicit uncertainty when lineup evidence is weak.",
+          "evidence": "GRID odds says per-player prop pricing uses a per-player event stream; however no vendor source proves their prematch roster adjustment policy. This is a cautious inference from need for player-level markets and known local data sparsity.",
+          "scope": "Do not treat sparse historical roster payloads as confirmed modern starters; avoid implicit roster imputation."
+        },
+        {
+          "mechanism": "Preserve point-in-time provenance and detect feed status/freshness/data corrections before using a prediction.",
+          "evidence": "[INFERENCE] Vendors emphasize official, low-latency server feeds, reliable updates, and data rights; their public materials do not publish our needed historical data-release timestamps.",
+          "scope": "Local point-in-time guard remains essential; official origin alone does not solve availability-time leakage."
+        },
+        {
+          "mechanism": "Add operational monitoring separate from statistical model quality: feed freshness/completeness, match state, event coverage, roster update, score correction, odds version, alert/suspend and post-match audit.",
+          "evidence": "Oddin describes trader continuity and automated error safeguards; PandaScore offers post-match odds history/analysis; GRID sells live trader console/integrity tools.",
+          "scope": "Public evidence supports the broad operational practice, not a particular threshold or our implementation details."
+        }
+      ],
+      "comparison_to_current_model": {
+        "current_model_facts_from_contract": "122,038 native historical results through 2026-10-07; 23,568 modern BO3/BO5 series and 4,420 map-coded histories; model chosen from 128 candidates is ridge C=1 over team ratings/form, no recency sample weighting, mirrored and side-symmetric. Inputs include 12-series Elo, 6-map-score Elo (not map-specific), two daily Glicko-2, form/rest/activity, sparse prior measured statistics and historical VRS. Player payloads are 670 eligible series (661 in 2026), not verified contemporary starters; VRS 27 snapshots and 7-day/max(first commit clock, snapshot+7d) availability proxy. One-hour market VAL 545 eligible matches. No paid feeds, bookmaker execution claim; same-day outcomes frozen out. Broad bookmaker challenge failed; its TEST is protected.",
+        "strengths_relative_to_public_vendor_examples": "Our coefficient training is chronological, sizeable versus scarce public quantitative vendor disclosure, avoids market prices as predictor and uses benchmark/model selection evidence with explicit temporal leakage controls. Its feature/target scope is intentionally prematch BO3/BO5 series prediction, not full live betting or per-round/player markets.",
+        "gaps_relative_to_professional_operations": "We lack the confirmed official granular server telemetry, per-player event observations and assured release-time rights; available roster payloads do not certify active lineups. Map-specific performance is not modeled by current map-score Elo. Current learner predicts series winner without shared calibrated map/score distribution, explicit veto-conditioned market tree, or bettor exposure/risk layer. There is no 24/7 human trading operation or production feed monitoring in model evidence. Public vendor internals are confidential, so these are capabilities-level gaps, not proof that their win-probability models are superior.",
+        "practical_priorities": "Near-term feasible: assess a coherent map-to-series probabilistic composition and stronger time-aware lineup/map-veto signals using only permitted development data; audit historic feature availability point-in-time, and label uncertainty for stale VRS/sparse roster facts. Future paid-data path: request tournament/territory/data depth/historical rights/latency/replay/derived-model-use and point-in-time timestamp terms. Add monitoring and market coverage only if product scope calls for operational betting. Do not use protected exposed TEST to choose a challenger, and do not claim independent confirmation from it."
+      },
+      "research_notes": "Searches covered PandaScore round model and format, Oddin official data/odds/trader operations, Abios/Kambi official CS2 trading and Bayes rights, GRID official EFG rights/price access/GRID Odds, and Valve MR12 update. Direct page reads were performed for all 10 vendor sources plus Valve attempt; contractual pricing not publicly disclosed. No repo edits, tests, model-quality experiments, or protected TEST inspection."
+    },
+    "dynamic-skill-research": {
+      "research_date": "2026-10-10",
+      "scope": "Fresh research beyond Elo/Glicko and EsportsBench on dynamic paired-comparison/Bayesian skill models, score-aware likelihoods, hierarchical shrinkage, uncertainty, temporal deployment, and CS2 applicability.",
+      "summary": "Recommend a causal, sparse dynamic Bradley\u2013Terry/logistic residual model as the next research candidate: latent name-level strengths evolve via Gaussian transitions; uncertainty grows between observations and contracts on results; the predictive probability integrates uncertainty. Start with pooled process variance and a Gaussian population prior, optionally mean-reverting only after chronological development validation. Hierarchical player effects are gated on actual, timely lineups with repeated cross-roster variation; current context does not establish these. WHR and TTT provide useful batch algorithms but smoothing uses future results and is leakage for past forecasts. Score-aware models support continuous or ordinal comparisons in general, but no inspected source validates treating stopped BO3/BO5 maps or round margins as independent fixed-length samples. Use a stopping-rule-aware BO recursion; model round/margin data with game-rule/exposure and termination structure. External results from Go, chess, Halo, NBA, ATP, and content comparisons establish method possibilities, not CS2 or bookmaker gains.",
+      "local_context": {
+        "data": "Contract states 122,038 native results; 23,568 modern accepted BO3/BO5 series plus 4,420 map-coded histories; 16,164 coefficient TRAIN series, 1,487 VAL; current chosen ridge C1 learner uses ratings/form among 128 candidates; 1,768 organizations and ~28k observation task scale.",
+        "rosters": "Contract reports historical participant payload for 670 eligible series (661 in 2026), not verified contemporary starting rosters. Do not presume lineup availability, release time, or stable identity aliases.",
+        "experiment_protection": "Existing exposed TEST is not independent confirmation; test outcomes must not tune another model. Use TRAIN/development chronological evaluation only. No model-quality experiments were run here."
+      },
+      "design": {
+        "likelihood": "At forecast time t, eta = eta_existing_name-level ratings + (u_orgA,t-u_orgB,t) + any genuinely observed pre-match player terms; y_t ~ Bernoulli(sigmoid(eta)). Integrate sigmoid over the filtered Gaussian eta distribution for the predictive probability rather than using sigmoid of posterior means. Treat it as a candidate residual component/ablation, not as a bookmaker-probability copy.",
+        "dynamics": "For elapsed time \u0394, u_i,t | u_i,t-1 ~ Normal(rho^\u0394 u_i,t-1, q(\u0394)). rho=1 is random walk (mean reversion absent); rho<1 gives mean reversion. Begin with pooled q, Gaussian prior and identifiability constraint (sum-zero contrasts); allow posterior variance to grow during inactivity. Learn q/rho and blending only on earlier chronological training predictions using proper scoring. Adaptive team/time-specific q is a higher-complexity follow-on, only if justified by chronological evidence.",
+        "filtering": "Sequential Gaussian assumed-density/EP or Laplace update from current likelihood and predictive prior, then propagate forward. Freeze same-day outcomes as required by contract. At any historical prediction cutoff, only outcomes available before the forecast may affect the state. Bayesian posterior uncertainty matters particularly for sparse names and can be propagated into p.",
+        "batch alternative": "WHR dynamically optimizes all time-stamped ratings with a Gaussian Wiener prior, Newton steps and per-entity tridiagonal Hessian; TTT uses repeated EP forward/backward messages. Retrospective smooth states using all outcomes can initialize analysis but cannot be used to score earlier forecast dates. For evaluation, refit/truncate by each cutoff or deploy forward filter.",
+        "hierarchy": "Partial pooling u_i ~ Normal(mu_group,tau\u00b2) shrinks poorly observed names toward group mean. Player effects require real pre-match lineup snapshots and identification from changing lineups; do not impute rosters from organization names or historical participants. Contract's 670 payload series are limited and unverified, so broad player strength coverage is not supported.",
+        "series_and_score": "A best-of series with target r=ceil(BO/2) should be aggregated via absorbing state DP: from nonterminal (a,b), transition to (a+1,b) with p_next and (a,b+1) with 1-p_next; stop at a=r or b=r and never observe unplayed maps. A map win is one outcome. A separate score model may use ordinal map score/round differential or an overdispersed count likelihood, but its unit is the map and it must represent MR12, overtime, and actual stopping/exposure; do not count observed rounds/maps as independent identical fixed-size trials without justification."
+      },
+      "computational_practicality": [
+        "Sparse state-space methods with fixed low-dimensional state can run in O(N) per iteration; 28k records is plausibly tractable. Kickscore paper demonstrates scale to millions; that is not a benchmark of a local implementation.",
+        "WHR paper's full analysis used 10.8m Go games/213,426 players, about 7 minutes for 200 iterations on a single 2.4GHz Core2 Duo; its per-entity tridiagonal computations are linear in appearances. Old hardware/domain-specific numbers cannot promise local runtime.",
+        "TTT paper reports 3.5m chess games and 18.5m variables/27.6m factors under 20 minutes on then-standard Pentium 4. It supports structured message passing scale, but unnecessary full history is not preferred for forward forecasts.",
+        "The 2021 GP/BRI paper evaluates 673 ATP games for 20 players and 5,904 NBA games and explicitly focuses on hindcasting; its GP MCMC is not an operational recipe for a 28k causal run.",
+        "2026 adaptive dynamic BT applies to 12,841 NBA games and reports its own lower Brier scores versus two comparators, particularly later playoffs. Domain transfer and independent replication for CS2 are unestablished.",
+        "TrueSkill2 reports Halo historical outcome accuracy 68% vs 52% classic TrueSkill. Its platform-specific massive data and kills/deaths, squads, experience, quitting are not target CS2 prematch facts; this accuracy is not log loss, betting profit or CS2 evidence."
+      ],
+      "claims": [
+        {
+          "claim": "WHR estimates a dynamic Bradley\u2013Terry maximum a posteriori over whole histories, with Gaussian temporal regularization and Hessian-based uncertainty approximation.",
+          "evidence_quote": "WHR directly computes the exact maximum a posteriori over the whole rating history of all players.",
+          "source_url": "https://www.remi-coulom.fr/WHR/WHR.pdf",
+          "source_title": "Whole-History Rating: A Bayesian Rating System for Players of Time-Varying Strength",
+          "confidence": 0.99
+        },
+        {
+          "claim": "Glickman's dynamic paired-comparison model evolves Gaussian skill distributions with elapsed-time variance and uses a sequential approximate Bayesian update; smoothing earlier periods explicitly conditions on future results.",
+          "evidence_quote": "A smoothing procedure to obtain approximate posterior distributions of strength parameters about earlier rating periods conditionally on both previous and future data.",
+          "source_url": "https://www.glicko.net/research/glicko.pdf",
+          "source_title": "Parameter estimation in large dynamic paired comparison experiments",
+          "confidence": 0.99
+        },
+        {
+          "claim": "TTT performs approximate EP and its backward messages propagate later results into earlier skill estimates, so smoothed states leak future data in forecasting backtests.",
+          "evidence_quote": "The backward passes make it possible to propagate information from the future into the past.",
+          "source_url": "https://proceedings.neurips.cc/paper/2007/file/9f53d83ec0691550f7d2507d57f4f5a2-Paper.pdf",
+          "source_title": "TrueSkill Through Time: Revisiting the History of Chess",
+          "confidence": 0.99
+        },
+        {
+          "claim": "TrueSkill2's base model uses team score ordering, not numeric score, and its extensions exploit individualized match features only when available.",
+          "evidence_quote": "When learning skills from data, only the team win/loss information is used (not scores).",
+          "source_url": "https://www.microsoft.com/en-us/research/wp-content/uploads/2018/03/trueskill2.pdf",
+          "source_title": "TrueSkill 2: An improved Bayesian skill rating system",
+          "confidence": 0.99
+        },
+        {
+          "claim": "A generalized BT family covers different discrete and continuous pairwise comparison distributions; Gaussian prior yields a strongly convex negative log posterior and unique MAP, not an application-specific CS2 score likelihood.",
+          "evidence_quote": "For any comparison matrix R, the negative log-posterior L(\u00b7|R) is (1/\u03c3\u00b2)-strongly convex, and thus admits a unique minimizer.",
+          "source_url": "https://ojs.aaai.org/index.php/AAAI/article/download/30020/31794",
+          "source_title": "Generalized Bradley-Terry Models for Score Estimation from Paired Comparisons",
+          "confidence": 0.98
+        },
+        {
+          "claim": "Dynamic GP paired-comparison inference uses sparse features and state-space recurrences with linear-in-observation-count iterations; models can choose binary, ordinal, Poisson score or Gaussian margin likelihoods.",
+          "evidence_quote": "The total running time per iteration of Algorithm 1 is O(N).",
+          "source_url": "https://arxiv.org/pdf/1903.07746",
+          "source_title": "Pairwise Comparisons with Flexible Time-Dynamics",
+          "confidence": 0.98
+        },
+        {
+          "claim": "The cited Krese\u2013\u0160trumbelj model evaluates GP/BRI temporal latent strengths in ATP and NBA, and frames its task as retrospective hindcasting rather than the usual short-term forecast.",
+          "evidence_quote": "Compared to the majority of related work which is motivated by forecasting, our approach addresses hindcasting.",
+          "source_url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0251945",
+          "source_title": "A Bayesian approach to time-varying latent strengths in pairwise comparisons",
+          "confidence": 0.98
+        },
+        {
+          "claim": "A 2026 dynamic BT paper proposes adaptive commensurate spike-and-slab innovation precision to shrink stable dynamics and allow wider shifts; evidence is from its NBA evaluation only.",
+          "evidence_quote": "strongly shrinking towards it when performance is stable or switching to a more diffuse prior to capture sudden changes.",
+          "source_url": "https://link.springer.com/article/10.1186/s40537-026-01486-6",
+          "source_title": "Bayesian dynamic Bradley-Terry model with commensurate spike-and-slab priors",
+          "confidence": 0.97
+        },
+        {
+          "claim": "No inspected source establishes that maps observed before a BO series stops are independent equal-fixed-length samples; generic score likelihoods do not solve stopped-series exposure or CS2 MR12/overtime structure.",
+          "evidence_quote": "To make use of this extra information, we can model a) the number of points of opponent i with a Poisson distribution whose rate is a function of si \u2212 sj, or b) the points difference with a Gaussian distribution centered at si \u2212 sj.",
+          "source_url": "https://arxiv.org/pdf/1903.07746",
+          "source_title": "Pairwise Comparisons with Flexible Time-Dynamics",
+          "confidence": 0.96
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.remi-coulom.fr/WHR/WHR.pdf",
+          "title": "Whole-History Rating: A Bayesian Rating System for Players of Time-Varying Strength (Coulom, 2008)",
+          "credibility": "Primary author paper; conference proceedings chapter",
+          "summary": "Dynamic Bradley\u2013Terry, Wiener prior, MAP Newton optimization, tridiagonal Hessian, uncertainty approximation, incremental approximation and KGS Go historical benchmark."
+        },
+        {
+          "url": "https://www.glicko.net/research/glicko.pdf",
+          "title": "Parameter estimation in large dynamic paired comparison experiments (Glickman, 1999)",
+          "credibility": "Primary author paper; JRSS Series C",
+          "summary": "Approximate Bayesian dynamic paired comparison, elapsed-time variance, uncertainty-aware updates, backward smoother and prequential predictive discrepancy to estimate variance parameters."
+        },
+        {
+          "url": "https://proceedings.neurips.cc/paper/2007/file/9f53d83ec0691550f7d2507d57f4f5a2-Paper.pdf",
+          "title": "TrueSkill Through Time: Revisiting the History of Chess (Dangauthier et al., 2007)",
+          "credibility": "Primary NeurIPS paper",
+          "summary": "Gaussian performance/probit team outcome, Gaussian temporal drift, EP message passing and future-conditioned backward smoothing; large chess inference report."
+        },
+        {
+          "url": "https://www.microsoft.com/en-us/research/wp-content/uploads/2018/03/trueskill2.pdf",
+          "title": "TrueSkill 2: An improved Bayesian skill rating system (Minka, Cleven & Zaykov, 2018)",
+          "credibility": "Primary Microsoft Research technical report; vendor-authored Halo results",
+          "summary": "Team/player generative model, random walks, individual-stat extensions, online and batch modes, historical prediction protocol and Halo-specific result."
+        },
+        {
+          "url": "https://ojs.aaai.org/index.php/AAAI/article/download/30020/31794",
+          "title": "Generalized Bradley-Terry Models for Score Estimation from Paired Comparisons (Fageot et al., AAAI 2024)",
+          "credibility": "Primary peer-reviewed AAAI paper",
+          "summary": "Exponential-family likelihood for discrete/continuous comparisons; Gaussian-prior MAP convexity, monotonicity and robustness for bounded score domains."
+        },
+        {
+          "url": "https://arxiv.org/pdf/1903.07746",
+          "title": "Pairwise Comparisons with Flexible Time-Dynamics (Maystre, Kristof & Grossglauser, KDD 2019)",
+          "credibility": "Primary author manuscript / ACM KDD paper",
+          "summary": "Dynamic GP score processes; flexible kernels; logit/probit/ordinal/Poisson/Gaussian outcomes; EP and reverse-KL inference; state-space Kalman/RTS and O(N) per iteration for sparse features."
+        },
+        {
+          "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0251945",
+          "title": "A Bayesian approach to time-varying latent strengths in pairwise comparisons (Krese & \u0160trumbelj, 2021)",
+          "credibility": "Primary peer-reviewed open-access PLOS ONE",
+          "summary": "Dynamic BT with BRI/GP, MCMC, optional probability inputs; ATP and NBA examples; distinguishes hindcasting from forecasting."
+        },
+        {
+          "url": "https://link.springer.com/article/10.1186/s40537-026-01486-6",
+          "title": "Bayesian dynamic Bradley-Terry model with commensurate spike-and-slab priors (Macr\u00ec-Demartino et al., 2026)",
+          "credibility": "Primary peer-reviewed open-access Journal of Big Data paper",
+          "summary": "Team/time adaptive state innovation precision, NBA application of 12,841 games, authors report better out-of-sample Brier than two dynamic comparators."
+        },
+        {
+          "url": "https://arxiv.org/html/1706.02447",
+          "title": "Luck is Hard to Beat: The Difficulty of Sports Prediction (Aoki, Assun\u00e7\u00e3o & Vaz de Melo, KDD 2017)",
+          "credibility": "Primary conference-paper preprint",
+          "summary": "Multi-sport skill/luck analysis and random-effects paired-comparison model; seasonal score variability, not fixed-length stopped series observations."
+        },
+        {
+          "url": "https://www.jstatsoft.org/article/download/v112i06/4680",
+          "title": "TrueSkill Through Time: Reliable Initial Skill Estimates and Historical Comparability with Julia, Python, and R (Landfried & Mocskos, 2025)",
+          "credibility": "Primary peer-reviewed Journal of Statistical Software article/software documentation",
+          "summary": "Implementation-oriented TTT equations, Gaussian/probit message passing, uncertainty and smoothing, with Julia/Python/R packages."
+        }
+      ],
+      "contradictions": [
+        {
+          "point": "Dynamics model choice: random walk vs mean-reverting/adaptive dynamics",
+          "view_a": "WHR, Glickman and TrueSkill use Gaussian random-walk-like evolution; uncertainty expands with elapsed time and skill changes can go either direction.",
+          "view_b": "GP kernels allow stationary mean reversion, trends, multi-timescale variation and discontinuities; commensurate spike-slab innovation variance adapts to stable vs abrupt state periods. Added flexibility raises tuning/identification burden."
+        },
+        {
+          "point": "Online filtering vs full-history smoothing",
+          "view_a": "Online models use historical information up to the forecast time, aligned to production deployment.",
+          "view_b": "WHR/TTT full history inference can revise old strengths using future results. Accurate historical curves are not valid pre-match features unless fit is truncated at each prediction cutoff."
+        },
+        {
+          "point": "Using numeric scores",
+          "view_a": "TrueSkill2 classic model learns from ordering, not numeric score; extra stats may be correlated or incentive sensitive.",
+          "view_b": "Generalized BT and dynamic paired-comparison models provide continuous/ordinal/Poisson/Gaussian comparison likelihoods, potentially using score data. They do not establish the correct CS2 map-round stopping model."
+        }
+      ],
+      "gaps": [
+        "No inspected primary source validates CS2 round margin/map scores from an early-stopped BO3/BO5 as independent fixed-length samples. Need map/round chronology, MR12, overtime, and actual series stopping/exposure data.",
+        "Starting roster coverage, stable aliases, and point-in-time identity availability remain unverified; participant payload on 670 series is not contemporary lineup evidence.",
+        "No comparison against the project\u2019s existing 128-candidate ridge-C1 Elo/Glicko ensemble was performed; exposed TEST must not be reused as independent evidence.",
+        "No inspected publication demonstrates bookmaker beating, CS2 profitability, or performance with this archive's release-time/identity limitations."
+      ],
+      "report": "Recommendation for the parent: evaluate a forward-only sparse dynamic BT component on organization/name IDs, preferably as a regularized residual beside the existing ratings. Start with pooled random-walk variance, Gaussian population shrinkage and uncertainty-integrated probabilities. Use prequential log loss/Brier on chronological TRAIN/development splits to estimate transition and blending parameters; do not smooth backward across the forecast cutoff, and preserve same-day freeze rules. Add mean reversion or adaptive transitions only if justified without touching exposed TEST. Only add player effects where verified lineups exist by the prematch timestamp and provide cross-roster identifiability. Predict BO scores/series by a terminal-state recursion over map win probabilities; numeric map/round margin must be a separately specified per-map score likelihood accounting for map exposure, MR12/overtime and series termination. Evidence of scale and improvements comes from other sports/games; measured participant/roster coverage is poor, and no source supports promising bookmaker gains."
+    },
+    "maps-roster-research": {
+      "research_scope": "CS2/CS:GO professional prematch forecasting: map-specific team strength, veto uncertainty, BO3/BO5 series aggregation, roster/player contributions, reusable public implementations and datasets. Research date 2026-10-10. No repository edits, local model experiments, builds, tests, lint, or formatters were performed.",
+      "comparison_to_archive": "Project facts per local contract: 122,038 native results through 2026-10-07; modern accepted history 23,568 BO3/BO5 series, 4,420 map-coded histories; current ridge C1 uses ratings/form, and the map-score Elo bank is not map-specific. Actual archive identifiers/schema and overlap with the external data were not available in the provided contract, so match-level joinability and new row yield remain unverified. Hugging Face OpenCS2 exposes native HLTV match_id, UTC match_date, event/team names, map_index/map_name, and CS2 player SteamIDs; HLTV endpoint also exposes native match/team/event/map-stat IDs. Join on native match id first where possible, then verify participants/date/map; do not treat team display names as stable IDs or assume coverage/release timestamps.",
+      "minimum_inputs_and_candidates": {
+        "map_team_rating": {
+          "minimum_table": "map_result(match_id, played_at_utc, team1_id, team2_id, map_id/name, map_winner_id; optionally regulation/OT round scores, side starts, event/game/version)",
+          "candidate": "Chronological dynamic Bradley-Terry/logistic model: logit P(A beats B on map m)= (team global strength A - B) + (map-specific team deviations A,m - B,m), with map deviations partially pooled toward zero. Optional time evolution on global and map terms; use only pre-match state. This is a proposed feasible model, not a performance guarantee. Validate against global Elo/map-neutral baseline on chronological development data.",
+          "caveat": "Pikhart thesis supports map-dependent skill/effects and score-driven/common-opponent forecasting, but is CS:GO MR15 era and reports accuracy, not log-loss. No inspected source established that a hierarchical CS2 map strength term improves prematch log-loss in this archive."
+        },
+        "pre_veto": {
+          "minimum_table": "match(match_id, timestamp, event/tournament, team IDs, best_of, legal_map_pool_as_of_event); veto_step(match_id, ordered_step, acting_team_id|null, action, map); maps(match_id, played_order, map, picker|null, played, winner/score)",
+          "candidate": "Fit a conditional choice/softmax model per legal veto state using available maps, step, actor/team, opponent, and point-in-time global/map strengths and lineup features; hard-mask illegal actions. Enumerate or sample legal veto sequences to produce P(veto|x), then integrate series probability across veto sequences rather than plug in one modal veto. Once per-map p values are available, a shared latent team/day form or posterior draw can create coherent dependence; map outcomes need not be assumed independent. BO3/BO5 match-absorption dynamic programming computes series chance from map probabilities and sequence.",
+          "distinction": "Petri et al. is counterfactual veto policy optimization/off-policy evaluation, not evidence that a behavior model forecasts the actual chosen sequence better, and its claimed probability gains concern hypothetical policy rewards, not held-out prediction log-loss. Train actual-veto choices for predictive sequence probabilities; keep optimal-strategy analysis separately labeled.",
+          "caveat": "Veto step rules, event map pool, side/decider rules, and available maps vary by match/tournament/era. Do not infer the legal pool or sequence from a present-day generic rule. Do not invent veto-release clocks: the sources establish match date, not when each veto became public/known."
+        },
+        "player_and_lineup": {
+          "minimum_table": "map_player(match_id, played_at_utc, map_id, native_player_id such as SteamID/HLTV player id, team_id, participation/starting-five evidence, per-map contribution outcomes); roster spells(player_id, team_id, start/end effective timestamps plus source/provenance); map team outcomes and opponents. Role/side/economy/action context required for contextual action-value models.",
+          "candidate": "First implement dated verified lineup aggregation of persistent player priors, with missing/uncertain lineup represented as uncertainty rather than guessed roster. Add regularized adjusted plus-minus on map/team outcome or round-margin labels, with team/opponent/player effects; paired with hierarchical shrinkage and chronological evaluation. Continuity can enter as prior shared maps / tenure / changes only when those facts are timestamped. Roles require independently sourced role/exposure labels or demo-level duties, with partial pooling; do not hardcode role bonuses.",
+          "caveat": "Plus-minus paper proposes linear/logistic/Bayesian rating models but abstract alone does not establish forecast gains. Team-switching case study finds initial declines followed by recovery, but this is observational association and not universal roster penalty. Rating 3.0/action values and HLTV stats are post-map outcomes: useful as historical lagged player features, never as prematch same-match inputs."
+        },
+        "series_dependence": "No inspected source establishes a validated prematch inter-map dependence model for CS2 BO3/BO5. Separate map-specific matchup strength from stochastic series-level latent strength/uncertainty; integrate through dynamic programming or Monte Carlo over posterior rating draws. Map outcomes' conditional independence is a modeling assumption, not an evidenced fact."
+      },
+      "sources_reviewed": [
+        {
+          "title": "Bandit Modeling of Map Selection in Counter-Strike: Global Offensive",
+          "url": "https://arxiv.org/pdf/2106.08888",
+          "kind": "primary research paper, full text",
+          "evidence": "Over 3,500 CS:GO BO3 matches and 25,000+ decisions; legal-map availability and each team's all-map/map-specific win rates are context; softmax policy gradient; off-policy direct-method and self-normalized importance weighting. The paper itself says its conclusions vary drastically between evaluators and SN-IW can be imprecise far from logging policy. Historical CS:GO pool and MR15; counterfactual strategy, not series-log-loss model.",
+          "quote": "The direct method instead of the self-normalized estimator, we reach drastically different conclusions about which model to use"
+        },
+        {
+          "title": "Prediction models in e-sports: Generalized autoregressive score and common opponent models",
+          "url": "https://insis.vse.cz/zp/66121",
+          "kind": "2019 University of Economics Prague master's thesis, full PDF",
+          "evidence": "CS:GO result forecasting from publicly available match time/result; map-independent and map-dependent GAS plus general/map-specific/time-weighted common-opponent approaches; temporal team skill. Thesis describes 2019 standard CS:GO MR15 and seven-map veto system, so its game mechanics are era-bound. Reported best accuracy table uses differing sample sizes and is accuracy, not log loss. More detailed data/evaluation pages should be inspected before any reproduction.",
+          "quote": "The most significant advantage shared by both of these models ... is that they require only publicly available data in order to forecast future match results."
+        },
+        {
+          "title": "Rating Players of Counter-Strike: Global Offensive Based on Plus/Minus value",
+          "url": "https://arxiv.org/abs/2409.05052",
+          "kind": "primary research preprint abstract",
+          "evidence": "CS:GO plus-minus player rating explores regularized linear regression, logistic regression and Bayesian linear models against team point differences; proposes indirect contribution measurement. Abstract provides no independently verified effect size/forecast benchmark; supplemental public implementation/data availability was not established here.",
+          "quote": "Using models such as regularized linear regression, logistic regression, and Bayesian linear models, we examine the relationship between player participation and team point differences."
+        },
+        {
+          "title": "Individual and Collective Performance Deteriorate in a New Team: A Case Study of CS:GO Tournaments",
+          "url": "https://arxiv.org/abs/2205.09693",
+          "kind": "primary research preprint abstract",
+          "evidence": "Observational CS:GO tournament study reports player/team performance declines initially after player switches and later recovery. It motivates testing a time-varying adaptation feature, not a fixed adjustment; not a prematch log-loss paper and not causal proof that any roster switch produces a particular penalty.",
+          "quote": "After a player switched to a new team, both the individual and the collective performance dropped initially, and then slowly recovered."
+        },
+        {
+          "title": "Valuing Player Actions in Counter-Strike: Global Offensive",
+          "url": "https://arxiv.org/abs/2011.01324",
+          "kind": "primary research paper/preprint abstract",
+          "evidence": "Context-aware action valuation based on changes in round-win chance; reports open-source data model/parser and 70m+ in-game events. This is live/round-state action attribution from demos, not directly prematch. Potential lagged player summaries can be calculated before forecast date if source data/IDs are licensed and available.",
+          "quote": "a context-aware framework to value players' actions based on changes in their team's chances of winning."
+        },
+        {
+          "title": "HLTV CS2 Demos Dataset",
+          "url": "https://huggingface.co/datasets/blanchon/opencs2_dataset_demo",
+          "kind": "public dataset card and metadata schema; maintainer-provided",
+          "evidence": "One Parquet row per played CS2 .dem/map. Fields include HLTV match_id, event, team1/team2, series format, UTC match_date, map_index/map_name, patch, played rounds, winner side; nested player name and SteamID and player K/D/ADR/KAST/rating/impact; round/kills detail. Maps played only, not full legal pool or veto decisions. Card says demos mirrored from HLTV public endpoint and downstream users must respect tournament terms. Current README examples contain old repo IDs while repository card is current, so check actual file paths/revision before ingestion.",
+          "quote": "Each row of the metadata Parquet is one .dem file (one played CS2 map)"
+        },
+        {
+          "title": "HLTV Rating 3.0 methodology",
+          "url": "https://www.hltv.org/news/42485/introducing-rating-30",
+          "kind": "vendor/editorial technical methodology (self-described), 2025-08-20",
+          "evidence": "Explains economy adjustment and round swing using map/side/economy/players-alive/bomb context, with kill credit apportioned by damage, flash assists and trades. Rich contextual player measurements, but produced during matches; no claim here of prematch forecast lift or source code/reproducibility. Good conceptual blueprint only if equivalent historic demo inputs are available.",
+          "quote": "Round Swing looks at each kill and sees how much it changes a team's chance of winning the round."
+        },
+        {
+          "title": "HLTV match endpoint types and parser",
+          "url": "https://github.com/gigobyte/HLTV/blob/master/src/endpoints/getMatch.ts",
+          "kind": "open-source implementation; unofficial third-party scraper",
+          "evidence": "Defines FullMatch with native numeric match ID, optional Unix date, event, optional teams with IDs, vetoes whose action enum is removed/picked/leftover and optional acting team, maps with map name/stat ID/round scores/half results, and players. Scraper extracts veto lines in page order. This is a collection schema/parser, not a downloadable dataset or guarantee of completeness/stability; HLTV scraping constraints/terms need separate review. Presence of `date` is not a veto disclosure time.",
+          "quote": "export interface Veto { team?: Team; map: GameMap; type: 'removed' | 'picked' | 'leftover' }"
+        },
+        {
+          "title": "CS2 Major ML Pick'Em Predictor",
+          "url": "https://github.com/holygodly/CS2-Major-ML-PickEm-Predictor",
+          "kind": "public implementation and documented example schemas; author-reported",
+          "evidence": "Implements map-level XGBoost + isotonic model, time-weighted/Beta-smoothed features, veto softmax simulation, Monte Carlo. Readme specifies match CSV with HLTV match_id/type/teams/series score/date/url; player map/side rows with player id, kills/deaths/ADR/KAST/rating; match detail ordered veto_steps and map picker/score/winner/half-side. Crawler is explicitly unpublished; examples are not full training data. Claims test/backtest/validation are self-reported and no independent guarantee. Team-name exact-match fallback to 0.5 is a brittle identity lesson.",
+          "quote": "The crawler is not convenient to publish, so everyone can scrape the data by themselves."
+        },
+        {
+          "title": "CS2 Dynamic Hybrid Elo Tournament Forecaster",
+          "url": "https://github.com/AmitYitshaki/cs2-ai-forecasting",
+          "kind": "public implementation, data, documentation; author-reported",
+          "evidence": "Documented V2 replays map records point-in-time, combines org/team Elo (180d half-life) and player Elo aggregated across active five (1095d half-life), has lineup-prior-map/cold-start features, logistic/XGBoost map predictions and BO3/BO5 simulations; repository includes input/features/artifacts. README explicitly says held-out evaluation one-shot and details leakage controls, but project has no stars and results are self-reported. Inspecting this is high-value implementation reference, not independent proof; roster inputs require active-five evidence and timestamped data.",
+          "quote": "The pipeline replays valid maps in strict chronological order. Every feature is emitted before the current result updates state."
+        }
+      ],
+      "evaluation_and_boundaries": [
+        "Prematch prediction inputs must have as-of timestamps and known-at time. Post-veto probability is a distinct forecast after actual picks/bans are observed; map/round/demo outcomes are never prematch inputs.",
+        "Keep veto sequence prediction (behavioral conditional likelihood) apart from strategy optimization (counterfactual policy utility). Paper's policy reward improvement is not calibrated predictive log-loss and depends on off-policy evaluator; paper says direct-method vs SN-IW conclusions diverge.",
+        "Series outcomes couple maps through shared opponent strength, lineup/day form, and map order context. A BO3/BO5 recursion is a calculation from supplied per-map conditional probabilities, not evidence of conditional independence. Compare no-dependence baseline vs shared rating posterior draws using chronological development only.",
+        "For fair CS:GO-to-CS2 transport, use a game-version/era indicator or distinct latent parameters; legacy paper's CS:GO rules/pool and demo data are not automatically CS2-ready. Current MR12 economy and map pool change.",
+        "For HLTV rating/action features: lag and timestamp source statistics before match date; these ratings are completed-match evaluation metrics and are not known before that match. Role labels from editorial attributes are not automatically historically complete or point-in-time.",
+        "No public source inspected supplied verified contemporary starting five with trusted release timestamps, complete veto data over the project's history, permission assurance covering redistribution, or verified external-to-local archive join yield. Don't infer announcement/release times from match times or page scrape timestamps."
+      ],
+      "recommendation": "Feasible low-risk follow-on candidate (parent determines experiment): build only well-defined native-ID historical joins from OpenCS2 metadata to local archive; produce map-level rows with event timestamps and raw source provenance, explicitly noting post-match data. Separately test hierarchical/partial-pooled map residuals against current team-strength baseline and a legal-pool veto marginalization model only where actual ordered veto records and event-specific legal pool are present. Do not add sparse demo-derived player stats or unverified rosters as automatic predictors. For player channel, treat verified dated active-five priors and regularized player/opponent-adjusted outcome model as a distinct hypothesis. Any measured comparison should be chronological and use non-exposed development/validation evidence; no independent confirmation claim from prior locked/exposed test."
+    }
+  },
+  "local_data_audit": {
+    "scope": "coverage/provenance only; no new TEST probabilities or scores",
+    "measured_series_by_development_partition": {
+      "validation": 133,
+      "train": 301
+    },
+    "opencs2": {
+      "all_export_rows": 1988,
+      "rows_before_2026_05_01": 1988,
+      "native_master_join_rows": 1988,
+      "native_master_join_series": 860,
+      "frozen_train_join_rows": 1988,
+      "frozen_train_join_series": 860,
+      "rows_whose_score1_score2_equal_native_series_score": 1988,
+      "score_correction": "Export score1/score2 are series scores, not per-map scores; analysis_score_ct/t are side counts, not stable-organization scores. Valid per-map labels require reconstruction and independent organization orientation."
+    },
+    "strandedpond": {
+      "raw_rows_before_2026_05_01": 1044,
+      "raw_rows_for_already_verified_measured_series": 721,
+      "already_verified_measured_series": 301,
+      "raw_rows_include_duplicates": true
+    },
+    "blocked_features": [
+      "No inspected ordered veto history",
+      "No certified prematch roster announcement times",
+      "No verified cross-source organization aliases",
+      "Ektarr match IDs use a different namespace"
+    ]
+  },
+  "parent_rechecked_material_sources": [
+    "https://www.pandascore.co/blog/cs-go-round-modeling",
+    "https://www.glicko.net/research/glicko.pdf",
+    "https://www.remi-coulom.fr/WHR/WHR.pdf",
+    "https://oddin.gg/knowledge-hub/esports-trading-desk",
+    "https://oddin.gg/official-esports-data"
+  ],
+  "excluded_from_verified_citations": [
+    "Valve Steam MR12 news-feed lead: unresolved full original post; search-only evidence retained in track for provenance."
+  ],
+  "model_hypothesis": "Forward-only approximate Bayesian latent map-strength with coherent stopped-series scores is a locally testable derivative, not a claim about any vendor production recipe."
+}

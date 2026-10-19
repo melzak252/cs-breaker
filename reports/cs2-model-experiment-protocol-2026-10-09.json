@@ -1,0 +1,82 @@
+{
+  "protocol_version": 1,
+  "frozen_before_new_candidate_evaluation": true,
+  "research_date": "2026-10-09",
+  "purpose": "Improve the audited Kedro lineup-conditional series predictor and compare frozen forecasts with stored bookmaker probabilities without TEST-driven selection.",
+  "status_at_freeze": "Original baseline and bookmaker reproduction completed; no new candidate has been evaluated.",
+  "baseline": {
+    "directory": "artifacts/model_research_20261009/before",
+    "selected_model": "pure_elo",
+    "feature_sha256": "054d8dbb10ce61caa24978f5cd780e6c432dd60fb7ad09137710efbd1193f545",
+    "player_baseline_source_sha256": "1a87be3bda20be19f2500b5d8ff38a5e9475f757c58f4a3572f92ab6ad18ef6d",
+    "validation_log_loss": 0.6844189891507106,
+    "test_log_loss": 0.6446693920512413,
+    "test_already_observed": true
+  },
+  "cohort": {
+    "eligible_series": 675,
+    "train_rows": 396,
+    "validation_rows": 115,
+    "test_rows": 164,
+    "unit": "One complete native-HLTV-ID BO3/BO5 played series meeting existing exact-lineup eligibility.",
+    "split": "Existing whole source-calendar-day 60/20/remainder split; unchanged IDs, orientation, target and source dates.",
+    "train_dates": ["2025-12-08", "2026-06-07"],
+    "validation_dates": ["2026-06-09", "2026-08-13"],
+    "test_dates": ["2026-08-14", "2026-10-07"],
+    "forecast_kind": "retrospective_actual_lineup_conditional",
+    "availability_limit": "Historical played lineups, source dates and postgame records do not certify pre-event publication or executable forecasting. Date cutoffs are source-day conventions, not actual kickoff timestamps."
+  },
+  "archive_features": {
+    "source": "data/processed/master_matches_consolidated.csv",
+    "minimum_source_date": "2024-01-01",
+    "eligibility": "Existing _valid_series complete BO3/BO5 rule, native unique IDs, valid source dates, two nonempty distinct literal source team names; no roster requirement for history only.",
+    "observed_eligible_history_rows_before_implementation": 23568,
+    "identity": "Literal source team names only; no cross-source aliases, organization-ID claim, OpenCS2 crosswalk or nickname identity inference.",
+    "era": "Date >= 2024-01-01 is a modern-era proxy, not independently verified CS2 game-version certification.",
+    "channels": [
+      {"name": "archive_elo", "initial_rating": 1500, "scale": 400, "k": 32, "half_life_days": null},
+      {"name": "archive_decay", "initial_rating": 1500, "scale": 400, "k": 32, "half_life_days": 180}
+    ],
+    "features": ["archive_elo_diff", "archive_elo_prob", "archive_decay_diff", "archive_decay_prob", "archive_team1_prior_matches", "archive_team2_prior_matches", "archive_minimum_prior_matches"],
+    "replay": "Compute every source-day target feature before all same-day archive and player updates. Earlier evaluation-day outcomes may update following days. Fit/calibration coefficients remain TRAIN-only.",
+    "cold_start": "Neutral 1500 prior with explicit prior-match counts; read-only queries do not register unknown teams.",
+    "inference": "Persist both engines. Require explicit disjoint five-player rosters and forecast day strictly after the maximum saved player/archive history day. Reject obsolete state/artifact versions; no compatibility shim."
+  },
+  "candidate_set": {
+    "original_candidates": ["pure_elo", "pure_glicko", "pure_trueskill", "pure_openskill", "logistic_regression", "gradient_boosting"],
+    "original_classifier_features": "Retain original non-archive feature columns and original hyperparameters for an unchanged narrow-history comparison.",
+    "new_raw_candidates": ["pure_archive_elo", "pure_archive_decay"],
+    "calibrated_candidates": ["calibrated_elo", "calibrated_glicko", "calibrated_trueskill", "calibrated_openskill"],
+    "calibration": "One nonnegative zero-intercept logit slope per prequential raw player-rating channel, fit by TRAIN log loss only; bounded from 0 to 3. Equal-strength probabilities remain 0.5 and reversed sides complement. If all TRAIN logits are zero use slope 1. No isotonic or in-sample classifier calibration.",
+    "compact_candidates": [
+      {"name": "ridge_rating_logits", "features": ["elo_prob", "glicko_prob", "trueskill_prob", "openskill_prob", "archive_elo_prob", "archive_decay_prob"], "transform": "Clipped logit; TRAIN-only StandardScaler with_mean=false; LogisticRegression C=0.1, fit_intercept=false, random_state=42, max_iter=1000."},
+      {"name": "ridge_strength_form", "features": ["elo_diff", "archive_elo_diff", "archive_decay_diff", "lineup_win_rate_diff", "lineup_last10_win_rate_diff", "player_kpr_diff", "player_dpr_diff", "player_adr_diff", "player_kast_diff"], "transform": "TRAIN-only StandardScaler with_mean=false; LogisticRegression C=0.1, fit_intercept=false, random_state=42, max_iter=1000."}
+    ],
+    "fixed_blends": [
+      {"name": "blend_player_archive_elo", "probabilities": ["elo_prob", "archive_elo_prob"], "weights": [0.5, 0.5]},
+      {"name": "blend_player_archive_decay", "probabilities": ["elo_prob", "archive_decay_prob"], "weights": [0.5, 0.5]}
+    ],
+    "maximum_full_schema_candidates": 16,
+    "numeric_logit_epsilon": 1e-12,
+    "reduced_schema_behavior": "API tests/callers may supply the existing smaller explicit feature schema: omit archive-dependent recipes when their declared columns are absent; compact models use only their declared present columns. Never infer missing values or accept unknown mirror semantics.",
+    "controls": ["constant_0_5", "TRAIN-only literal class prior; diagnostic orientation-asymmetric control"]
+  },
+  "selection": {
+    "primary": "Minimum VALIDATION log loss among the frozen 16 eligible candidates, committed before computing TEST scores.",
+    "tie_break": "Prefer incumbent pure_elo on an exact tie, then deterministic declared candidate order.",
+    "fitting": "TRAIN only; no TRAIN+VALIDATION refit after selection.",
+    "development_diagnostics": "Three expanding-origin folds entirely within TRAIN source days: first half is initial training prefix, remaining days divided into three consecutive blocks. Refit each candidate only on the preceding prefix; report skipped single-class prefixes. Diagnostic only, not an additional TEST-informed selection rule.",
+    "test_policy": "One frozen exploratory before/after evaluation; do not change features, hyperparameters, thresholds or promotion choice in response to TEST performance. Previously seen TEST is not an untouched prospective confirmation.",
+    "reporting": "All candidate validation and TEST log loss/Brier/accuracy/AUC, split and support details, inner-fold diagnostics, selected deployable recipe, same-ID selected-before versus selected-after paired source-day bootstrap uncertainty; 5000 draws, seed 42."
+  },
+  "bookmaker_protocol": {
+    "source": "Existing data/app/app.sqlite3 opened read-only; no provider requests or app mutation.",
+    "books": ["pinnacle", "bet365", "unibet"],
+    "primary": "Existing latest-stored-observation, strict pre-start source-clock gates, native-ID/result/orientation checks, proportional de-vig; no fallback after an invalid latest observation.",
+    "sensitivities": ["Power de-vig on identical valid pairs: solve q1^a + q2^a = 1 per quote; exponent depends on prices only, never outcomes.", "source_day cutoff: additionally require both quote source clocks and current receipt strictly before nominal source-day 00:00 UTC. Filter stored latest observations only; do not claim reconstructed earlier snapshots or certified matched information cutoffs."],
+    "table_rule": "Per-book paired identical-ID model/book cohorts plus a separate all-books intersection; never rank books from differently sampled per-book scores.",
+    "uncertainty": "Paired model-minus-book log loss and Brier on each per-book and all-book-common cohort; source-day block bootstrap 5000 draws seed 42. Empty scores/intervals null; singleton-day degeneracy disclosed.",
+    "interpretation": "Stored source clocks and played-lineup conditioning do not certify obtainable quotes, closing prices, contemporary forecasts, CLV, execution or ROI. No outcome-selected de-vig recipe or market blend. No demonstrated edge without independent evidence."
+  },
+  "excluded_scope": ["New network/provider acquisition", "Automatic bets or bankroll optimization", "Invented current rosters", "Unobserved veto/map-pool features", "Cross-era entity aliases", "TEST-selected market blending", "Fixing or replacing the unrelated generic CLI training pipeline", "Claiming a universal CS log-loss floor", "Claiming a fresh untouched TEST or prospective production readiness"]
+}

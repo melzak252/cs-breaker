@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cs-breaker"
+version = "0.1.0"
+description = "CS2 match outcome prediction, rating experiments, and quantitative esports modeling system"
+readme = "README.md"
+license = "MIT"
+authors = [{ name = "Jakub Melzacki", email = "melzacki.jakubl@gmail.com" }]
+requires-python = ">=3.11"
+
+[tool.setuptools]
+packages = ["src", "pipeline"]
+
+[tool.kedro]
+package_name = "pipeline"
+project_name = "cs-breaker"
+kedro_init_version = "1.7.0"
+source_dir = "."
+
+[tool.kedro_telemetry]
+project_id = "52bbd250328948ae97436dec6370d52e"

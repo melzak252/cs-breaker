@@ -1,0 +1,575 @@
+{
+  "protocol_sha256": "a19a867ebe9774619e31e8b283db1cc494aa1143fafc476c0dde2a39d238472f",
+  "prepared_at_utc": "2026-10-09T23:15:23.725453+00:00",
+  "artifacts": {
+    "development_features.csv": "274a5146b3f1ed3f45b725024080d72c112cb15995f1fece2e8ab51b1b3f9b88",
+    "development_state.pkl": "24c775c73b629b5b45e986548e2b0ddd4d780e93bdb71b756f512014f0489ec4",
+    "market_snapshot.json.gz": "573d513e42a5717f11aa43b3d0f8bae92440e1809a18b1740888de45eb3e8f0b",
+    "market_cases.json": "49bbcf2adc669f2595989c572754b04f3510caa63a2a9393a6aee586d6615fe0",
+    "market_audit.json": "735b3a290c782b304ef5ad8970f2f56621f1948ebeecc20c7628845167468a8d",
+    "history_audit.json": "c2c17db87c37baa3235316b3bbcbc8c8200f6785770c528a04acdd89815a6f66"
+  },
+  "sources": {
+    "scripts/evaluate_bookmaker_challenge.py": "408c11f950aaaf8ae5d17f744e8619994b40fcf1bb1062b6105961c668433252",
+    "scripts/collect_valve_standings.py": "2c67655e70c509aa621787086eaa5516f67c0b20c737b4b92e784313a6fd3de7",
+    "scripts/collect_cs_oddspapi.py": "dc4ae5640f02c2ce625156b3d9cb431d1fe86da8bdffae069fd9ea586cc69d70",
+    "scripts/map_cs_oddspapi_history.py": "e7bc032c004d279c499a21d7c861ec00286c1e301decdd48ced3c1eb7aae3fe3",
+    "pipeline/features/series_history.py": "c310eaa4179b54d74162f7b26e4aed16e18768a52f800f8807037c604326c70d",
+    "pipeline/features/valve_standings.py": "82d8c54a44c21a6a04316b1489ab796c74144de06a250c6652a48a5c7eb0291a",
+    "pipeline/features/unified_player_ratings.py": "549927d3d6733e9ba76149e45c607f689740f4b890280883cd4db71873d75b56",
+    "pipeline/ratings/player_elo.py": "bfde5a3a58902bc0ab9afd596d9c2194b8571b2ddae876021bc6fbdf84113d37",
+    "pipeline/models/series_forecast.py": "2309e017b98472b65590c8046a60523360c585dcb466e2b786a90d612679ec49",
+    "pipeline/models/player_baseline.py": "2c00f2d540f4384b40d0de58dfb53caecc75c41c3cbe471d79f4de7468ae9401",
+    "pipeline/models/metrics.py": "c97fc51732adcf661700482e1d0d66efa1ace5b7291b599245c3313797b28688",
+    "pipeline/models/bookmaker_comparison.py": "9405454fe3b0749e21d5e13c4a17f678abb9950f647114c2e0ba7eafdc33308e",
+    "pipeline/models/market_history.py": "ea70c23d37681fdd05bdfdfc9de8ec1bae0a64513324302c11fd99b0e2c81e9a",
+    "pipeline/models/challenge_evaluation.py": "b6a3e31c687f2739b196b8b2497d9992707c54072c64d7c060f7bd75ce26fd92",
+    "pipeline/cli.py": "a4bf1b96e8a21764086057aec9607cf4769206291fc5c6c7e6531746033b5bff",
+    "requirements-modeling.txt": "913c972290f9aba34c196727ba1e8f149818d89fad34f281765baa83f7012540"
+  },
+  "standings_directory": "/home/melzak/dev/cs-breaker/data/raw/valve_standings_20261009",
+  "standings_manifest_sha256": "d6dcf2918bf1184127984cd9f44712cface07d3200b62768a8cf6677fccadd46",
+  "master": "/home/melzak/dev/cs-breaker/data/processed/master_matches_consolidated.csv",
+  "master_sha256": "cbd32f49584dcf8528b5ea7b0169d5788cffb4602815b80f32ff8ad94ecbc0d8",
+  "native_results": "/home/melzak/dev/cs-breaker/data/raw/hltv/matches.csv",
+  "native_results_sha256": "7ff59a5d942210ce3be2e94c2ae4529f3a5326b8373ba7be4929818cf6b9b606",
+  "feature_columns": [
+    "series_elo_16_90_prob",
+    "series_elo_16_90_diff",
+    "series_elo_16_180_prob",
+    "series_elo_16_180_diff",
+    "series_elo_16_365_prob",
+    "series_elo_16_365_diff",
+    "series_elo_16_none_prob",
+    "series_elo_16_none_diff",
+    "series_elo_32_90_prob",
+    "series_elo_32_90_diff",
+    "series_elo_32_180_prob",
+    "series_elo_32_180_diff",
+    "series_elo_32_365_prob",
+    "series_elo_32_365_diff",
+    "series_elo_32_none_prob",
+    "series_elo_32_none_diff",
+    "series_elo_64_90_prob",
+    "series_elo_64_90_diff",
+    "series_elo_64_180_prob",
+    "series_elo_64_180_diff",
+    "series_elo_64_365_prob",
+    "series_elo_64_365_diff",
+    "series_elo_64_none_prob",
+    "series_elo_64_none_diff",
+    "map_elo_16_180_prob",
+    "map_elo_16_180_diff",
+    "map_elo_16_365_prob",
+    "map_elo_16_365_diff",
+    "map_elo_32_180_prob",
+    "map_elo_32_180_diff",
+    "map_elo_32_365_prob",
+    "map_elo_32_365_diff",
+    "map_elo_64_180_prob",
+    "map_elo_64_180_diff",
+    "map_elo_64_365_prob",
+    "map_elo_64_365_diff",
+    "glicko_200_prob",
+    "glicko_200_diff",
+    "glicko_200_rd_diff",
+    "glicko_200_joint_rd",
+    "glicko_350_prob",
+    "glicko_350_diff",
+    "glicko_350_rd_diff",
+    "glicko_350_joint_rd",
+    "series_win_rate_5_diff",
+    "series_win_rate_10_diff",
+    "series_win_rate_30_diff",
+    "series_map_margin_10_diff",
+    "series_map_margin_30_diff",
+    "series_residual_form_10_diff",
+    "series_residual_form_30_diff",
+    "series_count_diff",
+    "series_log_count_diff",
+    "series_rest_days_diff",
+    "series_log_rest_diff",
+    "series_activity_30d_diff",
+    "minimum_prior_series",
+    "minimum_activity_30d",
+    "team1_prior_series",
+    "team2_prior_series",
+    "team1_cold",
+    "team2_cold",
+    "either_team_cold",
+    "team_kpr_diff",
+    "team_dpr_diff",
+    "team_assists_per_player_round_diff",
+    "team_adr_diff",
+    "team_kast_diff",
+    "team_last10_kpr_diff",
+    "team_last10_dpr_diff",
+    "team_last10_assists_per_player_round_diff",
+    "team_last10_adr_diff",
+    "team_last10_kast_diff",
+    "performance_available",
+    "last10_performance_available",
+    "minimum_prior_measured_maps",
+    "minimum_prior_measured_series",
+    "performance_age_days",
+    "vrs_points_diff",
+    "vrs_log_rank_diff",
+    "vrs_available",
+    "vrs_age_days",
+    "vrs_minimum_roster_count"
+  ],
+  "mirror_rules": {
+    "series_elo_16_90_diff": {
+      "operation": "negate",
+      "source": "series_elo_16_90_diff"
+    },
+    "series_elo_16_180_diff": {
+      "operation": "negate",
+      "source": "series_elo_16_180_diff"
+    },
+    "series_elo_16_365_diff": {
+      "operation": "negate",
+      "source": "series_elo_16_365_diff"
+    },
+    "series_elo_16_none_diff": {
+      "operation": "negate",
+      "source": "series_elo_16_none_diff"
+    },
+    "series_elo_32_90_diff": {
+      "operation": "negate",
+      "source": "series_elo_32_90_diff"
+    },
+    "series_elo_32_180_diff": {
+      "operation": "negate",
+      "source": "series_elo_32_180_diff"
+    },
+    "series_elo_32_365_diff": {
+      "operation": "negate",
+      "source": "series_elo_32_365_diff"
+    },
+    "series_elo_32_none_diff": {
+      "operation": "negate",
+      "source": "series_elo_32_none_diff"
+    },
+    "series_elo_64_90_diff": {
+      "operation": "negate",
+      "source": "series_elo_64_90_diff"
+    },
+    "series_elo_64_180_diff": {
+      "operation": "negate",
+      "source": "series_elo_64_180_diff"
+    },
+    "series_elo_64_365_diff": {
+      "operation": "negate",
+      "source": "series_elo_64_365_diff"
+    },
+    "series_elo_64_none_diff": {
+      "operation": "negate",
+      "source": "series_elo_64_none_diff"
+    },
+    "map_elo_16_180_diff": {
+      "operation": "negate",
+      "source": "map_elo_16_180_diff"
+    },
+    "map_elo_16_365_diff": {
+      "operation": "negate",
+      "source": "map_elo_16_365_diff"
+    },
+    "map_elo_32_180_diff": {
+      "operation": "negate",
+      "source": "map_elo_32_180_diff"
+    },
+    "map_elo_32_365_diff": {
+      "operation": "negate",
+      "source": "map_elo_32_365_diff"
+    },
+    "map_elo_64_180_diff": {
+      "operation": "negate",
+      "source": "map_elo_64_180_diff"
+    },
+    "map_elo_64_365_diff": {
+      "operation": "negate",
+      "source": "map_elo_64_365_diff"
+    },
+    "glicko_200_diff": {
+      "operation": "negate",
+      "source": "glicko_200_diff"
+    },
+    "glicko_200_rd_diff": {
+      "operation": "negate",
+      "source": "glicko_200_rd_diff"
+    },
+    "glicko_350_diff": {
+      "operation": "negate",
+      "source": "glicko_350_diff"
+    },
+    "glicko_350_rd_diff": {
+      "operation": "negate",
+      "source": "glicko_350_rd_diff"
+    },
+    "series_win_rate_5_diff": {
+      "operation": "negate",
+      "source": "series_win_rate_5_diff"
+    },
+    "series_win_rate_10_diff": {
+      "operation": "negate",
+      "source": "series_win_rate_10_diff"
+    },
+    "series_win_rate_30_diff": {
+      "operation": "negate",
+      "source": "series_win_rate_30_diff"
+    },
+    "series_map_margin_10_diff": {
+      "operation": "negate",
+      "source": "series_map_margin_10_diff"
+    },
+    "series_map_margin_30_diff": {
+      "operation": "negate",
+      "source": "series_map_margin_30_diff"
+    },
+    "series_residual_form_10_diff": {
+      "operation": "negate",
+      "source": "series_residual_form_10_diff"
+    },
+    "series_residual_form_30_diff": {
+      "operation": "negate",
+      "source": "series_residual_form_30_diff"
+    },
+    "series_count_diff": {
+      "operation": "negate",
+      "source": "series_count_diff"
+    },
+    "series_log_count_diff": {
+      "operation": "negate",
+      "source": "series_log_count_diff"
+    },
+    "series_rest_days_diff": {
+      "operation": "negate",
+      "source": "series_rest_days_diff"
+    },
+    "series_log_rest_diff": {
+      "operation": "negate",
+      "source": "series_log_rest_diff"
+    },
+    "series_activity_30d_diff": {
+      "operation": "negate",
+      "source": "series_activity_30d_diff"
+    },
+    "team_kpr_diff": {
+      "operation": "negate",
+      "source": "team_kpr_diff"
+    },
+    "team_dpr_diff": {
+      "operation": "negate",
+      "source": "team_dpr_diff"
+    },
+    "team_assists_per_player_round_diff": {
+      "operation": "negate",
+      "source": "team_assists_per_player_round_diff"
+    },
+    "team_adr_diff": {
+      "operation": "negate",
+      "source": "team_adr_diff"
+    },
+    "team_kast_diff": {
+      "operation": "negate",
+      "source": "team_kast_diff"
+    },
+    "team_last10_kpr_diff": {
+      "operation": "negate",
+      "source": "team_last10_kpr_diff"
+    },
+    "team_last10_dpr_diff": {
+      "operation": "negate",
+      "source": "team_last10_dpr_diff"
+    },
+    "team_last10_assists_per_player_round_diff": {
+      "operation": "negate",
+      "source": "team_last10_assists_per_player_round_diff"
+    },
+    "team_last10_adr_diff": {
+      "operation": "negate",
+      "source": "team_last10_adr_diff"
+    },
+    "team_last10_kast_diff": {
+      "operation": "negate",
+      "source": "team_last10_kast_diff"
+    },
+    "series_elo_16_90_prob": {
+      "operation": "complement",
+      "source": "series_elo_16_90_prob"
+    },
+    "series_elo_16_180_prob": {
+      "operation": "complement",
+      "source": "series_elo_16_180_prob"
+    },
+    "series_elo_16_365_prob": {
+      "operation": "complement",
+      "source": "series_elo_16_365_prob"
+    },
+    "series_elo_16_none_prob": {
+      "operation": "complement",
+      "source": "series_elo_16_none_prob"
+    },
+    "series_elo_32_90_prob": {
+      "operation": "complement",
+      "source": "series_elo_32_90_prob"
+    },
+    "series_elo_32_180_prob": {
+      "operation": "complement",
+      "source": "series_elo_32_180_prob"
+    },
+    "series_elo_32_365_prob": {
+      "operation": "complement",
+      "source": "series_elo_32_365_prob"
+    },
+    "series_elo_32_none_prob": {
+      "operation": "complement",
+      "source": "series_elo_32_none_prob"
+    },
+    "series_elo_64_90_prob": {
+      "operation": "complement",
+      "source": "series_elo_64_90_prob"
+    },
+    "series_elo_64_180_prob": {
+      "operation": "complement",
+      "source": "series_elo_64_180_prob"
+    },
+    "series_elo_64_365_prob": {
+      "operation": "complement",
+      "source": "series_elo_64_365_prob"
+    },
+    "series_elo_64_none_prob": {
+      "operation": "complement",
+      "source": "series_elo_64_none_prob"
+    },
+    "map_elo_16_180_prob": {
+      "operation": "complement",
+      "source": "map_elo_16_180_prob"
+    },
+    "map_elo_16_365_prob": {
+      "operation": "complement",
+      "source": "map_elo_16_365_prob"
+    },
+    "map_elo_32_180_prob": {
+      "operation": "complement",
+      "source": "map_elo_32_180_prob"
+    },
+    "map_elo_32_365_prob": {
+      "operation": "complement",
+      "source": "map_elo_32_365_prob"
+    },
+    "map_elo_64_180_prob": {
+      "operation": "complement",
+      "source": "map_elo_64_180_prob"
+    },
+    "map_elo_64_365_prob": {
+      "operation": "complement",
+      "source": "map_elo_64_365_prob"
+    },
+    "glicko_200_prob": {
+      "operation": "complement",
+      "source": "glicko_200_prob"
+    },
+    "glicko_350_prob": {
+      "operation": "complement",
+      "source": "glicko_350_prob"
+    },
+    "glicko_200_joint_rd": {
+      "operation": "identity",
+      "source": "glicko_200_joint_rd"
+    },
+    "glicko_350_joint_rd": {
+      "operation": "identity",
+      "source": "glicko_350_joint_rd"
+    },
+    "minimum_prior_series": {
+      "operation": "identity",
+      "source": "minimum_prior_series"
+    },
+    "minimum_activity_30d": {
+      "operation": "identity",
+      "source": "minimum_activity_30d"
+    },
+    "either_team_cold": {
+      "operation": "identity",
+      "source": "either_team_cold"
+    },
+    "performance_available": {
+      "operation": "identity",
+      "source": "performance_available"
+    },
+    "last10_performance_available": {
+      "operation": "identity",
+      "source": "last10_performance_available"
+    },
+    "minimum_prior_measured_maps": {
+      "operation": "identity",
+      "source": "minimum_prior_measured_maps"
+    },
+    "minimum_prior_measured_series": {
+      "operation": "identity",
+      "source": "minimum_prior_measured_series"
+    },
+    "performance_age_days": {
+      "operation": "identity",
+      "source": "performance_age_days"
+    },
+    "team1_prior_series": {
+      "operation": "swap",
+      "source": "team2_prior_series"
+    },
+    "team2_prior_series": {
+      "operation": "swap",
+      "source": "team1_prior_series"
+    },
+    "team1_cold": {
+      "operation": "swap",
+      "source": "team2_cold"
+    },
+    "team2_cold": {
+      "operation": "swap",
+      "source": "team1_cold"
+    },
+    "vrs_points_diff": {
+      "operation": "negate",
+      "source": "vrs_points_diff"
+    },
+    "vrs_log_rank_diff": {
+      "operation": "negate",
+      "source": "vrs_log_rank_diff"
+    },
+    "vrs_available": {
+      "operation": "identity",
+      "source": "vrs_available"
+    },
+    "vrs_age_days": {
+      "operation": "identity",
+      "source": "vrs_age_days"
+    },
+    "vrs_minimum_roster_count": {
+      "operation": "identity",
+      "source": "vrs_minimum_roster_count"
+    }
+  },
+  "development_history_through": "2026-06-30",
+  "development_series": 20593,
+  "test_features_or_model_forecasts_generated": false,
+  "coverage_only": {
+    "one_hour": {
+      "train": {
+        "unique_matches": 695,
+        "per_book": {
+          "pinnacle": 535,
+          "unibet": 358,
+          "bet365": 7
+        }
+      },
+      "validation": {
+        "unique_matches": 545,
+        "per_book": {
+          "pinnacle": 327,
+          "unibet": 467,
+          "bet365": 26
+        }
+      },
+      "test": {
+        "unique_matches": 419,
+        "per_book": {
+          "unibet": 346,
+          "pinnacle": 250,
+          "bet365": 155
+        }
+      },
+      "test_context_only": {
+        "unique_matches": 102,
+        "per_book": {
+          "pinnacle": 82,
+          "unibet": 68,
+          "bet365": 75
+        }
+      }
+    },
+    "six_hour": {
+      "train": {
+        "unique_matches": 533,
+        "per_book": {
+          "pinnacle": 428,
+          "unibet": 247,
+          "bet365": 7
+        }
+      },
+      "validation": {
+        "unique_matches": 446,
+        "per_book": {
+          "unibet": 367,
+          "pinnacle": 266,
+          "bet365": 31
+        }
+      },
+      "test": {
+        "unique_matches": 325,
+        "per_book": {
+          "unibet": 253,
+          "pinnacle": 203,
+          "bet365": 90
+        }
+      },
+      "test_context_only": {
+        "unique_matches": 81,
+        "per_book": {
+          "pinnacle": 69,
+          "unibet": 47,
+          "bet365": 62
+        }
+      }
+    },
+    "source_day": {
+      "train": {
+        "unique_matches": 242,
+        "per_book": {
+          "pinnacle": 187,
+          "unibet": 120,
+          "bet365": 5
+        }
+      },
+      "validation": {
+        "unique_matches": 270,
+        "per_book": {
+          "unibet": 221,
+          "pinnacle": 153,
+          "bet365": 24
+        }
+      },
+      "test": {
+        "unique_matches": 170,
+        "per_book": {
+          "unibet": 117,
+          "pinnacle": 95,
+          "bet365": 59
+        }
+      },
+      "test_context_only": {
+        "unique_matches": 77,
+        "per_book": {
+          "pinnacle": 63,
+          "unibet": 44,
+          "bet365": 56
+        }
+      }
+    }
+  },
+  "valve_snapshots": 27,
+  "feature_support": {
+    "train": {
+      "performance_available": 408,
+      "vrs_available": 10065,
+      "either_team_cold": 1461
+    },
+    "validation": {
+      "performance_available": 262,
+      "vrs_available": 1133,
+      "either_team_cold": 95
+    }
+  }
+}

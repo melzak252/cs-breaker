@@ -1,0 +1,85 @@
+# DVC Pipeline Specification for CS-Breaker Kedro 8-Layer Simulation Pipeline
+# Run end-to-end via: dvc repro
+# View metrics via:   dvc metrics show
+
+stages:
+  verify_inputs:
+    cmd: .venv/bin/python scripts/run_simulation_pipeline.py --stage verify_inputs
+    deps:
+      - src/analysis/simulation_pipeline.py
+      - scripts/run_simulation_pipeline.py
+      - conf/base/catalog.yml
+      - conf/base/parameters.yml
+      - data/01_raw/kaggle_results_only.csv
+      - data/03_primary/master_matches_consolidated.csv
+      - data/04_feature/match_features_with_ratings.csv
+      - data/05_model_input/canonical_benchmark_paired.csv
+    outs:
+      - data/08_reporting/simulation_pipeline/stage1_input_manifest.json
+
+  model_benchmark:
+    cmd: .venv/bin/python scripts/run_simulation_pipeline.py --stage model_benchmark
+    deps:
+      - src/analysis/simulation_pipeline.py
+      - src/analysis/model_benchmark.py
+      - scripts/run_simulation_pipeline.py
+      - conf/base/catalog.yml
+      - conf/base/parameters.yml
+      - data/08_reporting/simulation_pipeline/stage1_input_manifest.json
+      - data/05_model_input/canonical_benchmark_paired.csv
+    params:
+      - conf/base/parameters.yml:
+          - simulation.benchmark
+          - simulation.shrinkage
+    outs:
+      - data/08_reporting/simulation_pipeline/stage2_model_benchmark.json
+      - data/08_reporting/simulation_pipeline/stage2_shrinkage_grid.csv
+
+  betting_simulation:
+    cmd: .venv/bin/python scripts/run_simulation_pipeline.py --stage betting_simulation
+    deps:
+      - src/analysis/simulation_pipeline.py
+      - src/analysis/betting_guards_a_to_d.py
+      - scripts/run_simulation_pipeline.py
+      - conf/base/catalog.yml
+      - conf/base/parameters.yml
+      - data/08_reporting/simulation_pipeline/stage2_model_benchmark.json
+      - data/05_model_input/canonical_benchmark_paired.csv
+    params:
+      - conf/base/parameters.yml:
+          - simulation.betting
+    outs:
+      - data/08_reporting/simulation_pipeline/stage3_betting_simulation.json
+      - data/08_reporting/simulation_pipeline/stage3_strategy_comparison.csv
+
+  econometric_audit:
+    cmd: .venv/bin/python scripts/run_simulation_pipeline.py --stage econometric_audit
+    deps:
+      - src/analysis/simulation_pipeline.py
+      - scripts/run_simulation_pipeline.py
+      - conf/base/catalog.yml
+      - conf/base/parameters.yml
+      - data/08_reporting/simulation_pipeline/stage3_betting_simulation.json
+      - data/05_model_input/canonical_benchmark_paired.csv
+    params:
+      - conf/base/parameters.yml:
+          - simulation.econometrics
+    outs:
+      - data/08_reporting/simulation_pipeline/stage4_econometric_audit.json
+      - data/08_reporting/simulation_pipeline/stage4_noise_decay_table.csv
+
+  generate_report:
+    cmd: .venv/bin/python scripts/run_simulation_pipeline.py --stage generate_report
+    deps:
+      - src/analysis/simulation_pipeline.py
+      - scripts/run_simulation_pipeline.py
+      - data/08_reporting/simulation_pipeline/stage1_input_manifest.json
+      - data/08_reporting/simulation_pipeline/stage2_model_benchmark.json
+      - data/08_reporting/simulation_pipeline/stage3_betting_simulation.json
+      - data/08_reporting/simulation_pipeline/stage4_econometric_audit.json
+    metrics:
+      - data/08_reporting/simulation_pipeline/summary_metrics.json:
+          cache: false
+    outs:
+      - data/08_reporting/simulation_pipeline/SIMULATION_REPORT.md:
+          cache: false

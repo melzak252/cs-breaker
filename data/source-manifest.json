@@ -1,0 +1,104 @@
+{
+  "recorded_at": "2026-10-04T13:27:29.827817+00:00",
+  "purpose": "Credential-free public export acquisition; no live-site scraper or third-party executable code run",
+  "sources": [
+    {
+      "name": "strandedpond",
+      "repository": "StrandedPond/hltv_scraper",
+      "revision": "a2e4d26694197451e33e0fe2b64d813bdafca446",
+      "license_status": "No explicit data license established; source README declares HLTV scraping",
+      "files": [
+        {
+          "local_path": "data/raw/strandedpond/matches.csv",
+          "url": "https://raw.githubusercontent.com/StrandedPond/hltv_scraper/a2e4d26694197451e33e0fe2b64d813bdafca446/hltv_scraper/matches.csv",
+          "source_bytes": 399712,
+          "source_sha256": "c2b0b2c9ea404ecc5f4f98256fd12a51f22e89d2c7dbbca144dec2368fc763e4",
+          "stored_sha256": "c2b0b2c9ea404ecc5f4f98256fd12a51f22e89d2c7dbbca144dec2368fc763e4"
+        },
+        {
+          "local_path": "data/raw/strandedpond/player_stats.csv",
+          "url": "https://raw.githubusercontent.com/StrandedPond/hltv_scraper/a2e4d26694197451e33e0fe2b64d813bdafca446/hltv_scraper/player_stats.csv",
+          "source_bytes": 2488798,
+          "source_sha256": "e833269dcfc03b53b17b7105387d8e0776b5065057ec011faee47acce9cda6bd",
+          "stored_sha256": "e833269dcfc03b53b17b7105387d8e0776b5065057ec011faee47acce9cda6bd"
+        }
+      ]
+    },
+    {
+      "name": "kaggle",
+      "dataset": "griffindesroches/cs2-hltv-professional-match-statistics-dataset",
+      "version": 5,
+      "publisher_license": "CC0: Public Domain; upstream rights not independently established",
+      "files": [
+        {
+          "local_path": "data/raw/kaggle/cs2_newestcombinedmatches.csv",
+          "url": "https://www.kaggle.com/api/v1/datasets/download/griffindesroches/cs2-hltv-professional-match-statistics-dataset/cs2_newestcombinedmatches.csv?datasetVersionNumber=5",
+          "source_bytes": 7387407,
+          "source_sha256": "f4503abcd09ca6c7e94efd4e930c8fd7a4aed62b75b3b7f03bd547a51d5175ca",
+          "stored_sha256": "f4503abcd09ca6c7e94efd4e930c8fd7a4aed62b75b3b7f03bd547a51d5175ca"
+        }
+      ]
+    },
+    {
+      "name": "opencs2",
+      "repository": "blanchon/opencs2_dataset_demo",
+      "revision": "912a363098feec3f220e41d68634d2f71676c28b",
+      "publisher_license": "CC BY 4.0; upstream rights not independently established",
+      "file_manifest": "data/raw/opencs2/manifest.json",
+      "files": 137,
+      "metadata_bytes": 13071350
+    },
+    {
+      "name": "ektarr",
+      "dataset": "ektarr/counter-strike-pro-matches",
+      "publisher_license": "CC BY-SA 4.0; upstream rights not independently established",
+      "files": [
+        {
+          "local_path": "data/raw/ektarr/cs2_all_tiers_games.csv",
+          "url": "https://www.kaggle.com/api/v1/datasets/download/ektarr/counter-strike-pro-matches",
+          "source_bytes": 14162226,
+          "source_sha256": "1a826c1ee008bfab521761ebdadfa01a15736eedb826304081223d5b392a47ac",
+          "stored_sha256": "1a826c1ee008bfab521761ebdadfa01a15736eedb826304081223d5b392a47ac"
+        }
+      ]
+    },
+    {
+      "name": "hltv",
+      "purpose": "Direct bounded browser-automation scrape of HLTV results page",
+      "publisher_license": "HLTV ToS restricts automated extraction and commercial reuse; local research validation only",
+      "files": [
+        {
+          "local_path": "data/raw/hltv/matches.csv",
+          "url": "https://www.hltv.org/results",
+          "source_bytes": 87806,
+          "source_sha256": "05af47587df9eaf64394047b763bccd06c2f6efb1cad10900bd97becdb66a377",
+          "stored_sha256": "05af47587df9eaf64394047b763bccd06c2f6efb1cad10900bd97becdb66a377"
+        }
+      ]
+    }
+  ],
+  "derived_exports": [
+    {
+      "local_path": "data/exports/kaggle/results_only.csv",
+      "scope": "13 result/provenance columns only; excludes snapshot-derived predictors; target scores/winner remain labels"
+    },
+    {
+      "local_path": "data/exports/opencs2/maps.csv",
+      "scope": "Source scalar columns plus source shard and unverified CT/T analysis score totals"
+    },
+    {
+      "local_path": "data/exports/opencs2/player_scopes.csv",
+      "scope": "Source player aggregates preserved separately for ct/t/all, no inferred team mapping or deduplication"
+    },
+    {
+      "local_path": "data/exports/ektarr/matches.csv",
+      "scope": "11 series columns only; excludes snapshot-derived player stats; target scores/winner remain labels"
+    }
+  ],
+  "audit_files": [
+    "data/audits/strandedpond-audit.json",
+    "data/audits/kaggle-audit.json",
+    "data/audits/opencs2-audit.json"
+  ],
+  "time_semantics": "recorded_at is manifest creation time, not original source-publication time. Per-file retrieval start/end clocks were not captured for CSV files."
+}

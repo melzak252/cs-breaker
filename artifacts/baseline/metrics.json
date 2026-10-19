@@ -1,0 +1,1524 @@
+{
+  "accuracy_tie_rule": "p >= 0.5 predicts team1",
+  "cohorts": {
+    "test": {
+      "first": "2025-07-01T04:00:00+00:00",
+      "last": "2025-10-16T13:00:00+00:00",
+      "n": 2238
+    },
+    "train": {
+      "first": "2024-05-15T06:00:00+00:00",
+      "last": "2024-12-29T03:30:00+00:00",
+      "n": 1796
+    },
+    "validation": {
+      "first": "2025-01-03T07:00:00+00:00",
+      "last": "2025-06-30T10:00:00+00:00",
+      "n": 1873
+    }
+  },
+  "excluded_score_pairs": {
+    "0-1": 35,
+    "0-13": 5,
+    "0-3": 13,
+    "1-0": 26,
+    "1-13": 13,
+    "1-3": 16,
+    "10-13": 45,
+    "11-13": 55,
+    "12-16": 7,
+    "13-0": 4,
+    "13-1": 15,
+    "13-10": 50,
+    "13-11": 44,
+    "13-16": 11,
+    "13-2": 21,
+    "13-3": 35,
+    "13-4": 37,
+    "13-5": 50,
+    "13-6": 42,
+    "13-7": 57,
+    "13-8": 55,
+    "13-9": 53,
+    "14-16": 17,
+    "15-19": 5,
+    "16-12": 9,
+    "16-13": 14,
+    "16-14": 22,
+    "16-19": 4,
+    "17-19": 2,
+    "19-15": 2,
+    "19-17": 8,
+    "19-22": 1,
+    "2-13": 16,
+    "2-3": 18,
+    "20-22": 2,
+    "22-20": 2,
+    "28-25": 1,
+    "3-0": 25,
+    "3-1": 17,
+    "3-13": 24,
+    "3-2": 11,
+    "34-31": 1,
+    "4-13": 19,
+    "5-13": 34,
+    "6-13": 41,
+    "7-13": 54,
+    "8-13": 45,
+    "9-13": 43
+  },
+  "input": {
+    "eligible_rows": 5907,
+    "excluded_rows": 1126,
+    "identity": "hltv_match_id",
+    "path": "data/exports/kaggle/results_only.csv",
+    "sha256": "c5c243fb8be2618f8aebc024a8034cec74c6142f7c378b21a0b1330648efdf27",
+    "total_rows": 7033
+  },
+  "k_candidates": [
+    0,
+    8,
+    16,
+    24,
+    32,
+    48,
+    64
+  ],
+  "limitations": [
+    "Historical result-release timestamps are unavailable; daily batching is an assumption, not verified publication-time safety.",
+    "Eligibility uses BO3-compatible scores, not independently verified format labels.",
+    "Literal team-name identities; no roster continuity or alias reconciliation.",
+    "No odds, profit evaluation, map predictions, or live data."
+  ],
+  "metrics": {
+    "test": {
+      "coin_flip": {
+        "accuracy": 0.5522788203753352,
+        "brier": 0.25,
+        "calibration_bins": [
+          {
+            "lower": 0.0,
+            "mean_probability": null,
+            "n": 0,
+            "upper": 0.1,
+            "win_rate": null
+          },
+          {
+            "lower": 0.1,
+            "mean_probability": null,
+            "n": 0,
+            "upper": 0.2,
+            "win_rate": null
+          },
+          {
+            "lower": 0.2,
+            "mean_probability": null,
+            "n": 0,
+            "upper": 0.3,
+            "win_rate": null
+          },
+          {
+            "lower": 0.3,
+            "mean_probability": null,
+            "n": 0,
+            "upper": 0.4,
+            "win_rate": null
+          },
+          {
+            "lower": 0.4,
+            "mean_probability": null,
+            "n": 0,
+            "upper": 0.5,
+            "win_rate": null
+          },
+          {
+            "lower": 0.5,
+            "mean_probability": 0.5,
+            "n": 2238,
+            "upper": 0.6,
+            "win_rate": 0.5522788203753352
+          },
+          {
+            "lower": 0.6,
+            "mean_probability": null,
+            "n": 0,
+            "upper": 0.7,
+            "win_rate": null
+          },
+          {
+            "lower": 0.7,
+            "mean_probability": null,
+            "n": 0,
+            "upper": 0.8,
+            "win_rate": null
+          },
+          {
+            "lower": 0.8,
+            "mean_probability": null,
+            "n": 0,
+            "upper": 0.9,
+            "win_rate": null
+          },
+          {
+            "lower": 0.9,
+            "mean_probability": null,
+            "n": 0,
+            "upper": 1.0,
+            "win_rate": null
+          }
+        ],
+        "ece_10_bins": 0.052278820375335155,
+        "log_loss": 0.6931471805599453,
+        "n": 2238,
+        "roc_auc": 0.5
+      },
+      "elo": {
+        "accuracy": 0.5978552278820375,
+        "brier": 0.23680943029390905,
+        "calibration_bins": [
+          {
+            "lower": 0.0,
+            "mean_probability": 0.07970136731994568,
+            "n": 1,
+            "upper": 0.1,
+            "win_rate": 0.0
+          },
+          {
+            "lower": 0.1,
+            "mean_probability": 0.1788995818003835,
+            "n": 5,
+            "upper": 0.2,
+            "win_rate": 0.2
+          },
+          {
+            "lower": 0.2,
+            "mean_probability": 0.262407512648515,
+            "n": 81,
+            "upper": 0.3,
+            "win_rate": 0.30864197530864196
+          },
+          {
+            "lower": 0.3,
+            "mean_probability": 0.3579594836710067,
+            "n": 280,
+            "upper": 0.4,
+            "win_rate": 0.41785714285714287
+          },
+          {
+            "lower": 0.4,
+            "mean_probability": 0.452744808513495,
+            "n": 637,
+            "upper": 0.5,
+            "win_rate": 0.4835164835164835
+          },
+          {
+            "lower": 0.5,
+            "mean_probability": 0.5465507041316946,
+            "n": 653,
+            "upper": 0.6,
+            "win_rate": 0.5911179173047473
+          },
+          {
+            "lower": 0.6,
+            "mean_probability": 0.644083213322695,
+            "n": 395,
+            "upper": 0.7,
+            "win_rate": 0.6658227848101266
+          },
+          {
+            "lower": 0.7,
+            "mean_probability": 0.7374782123499217,
+            "n": 163,
+            "upper": 0.8,
+            "win_rate": 0.7177914110429447
+          },
+          {
+            "lower": 0.8,
+            "mean_probability": 0.8338641667139077,
+            "n": 23,
+            "upper": 0.9,
+            "win_rate": 0.8260869565217391
+          },
+          {
+            "lower": 0.9,
+            "mean_probability": null,
+            "n": 0,
+            "upper": 1.0,
+            "win_rate": null
+          }
+        ],
+        "ece_10_bins": 0.036363021389546966,
+        "log_loss": 0.6660366185655325,
+        "n": 2238,
+        "roc_auc": 0.6252640350367227
+      },
+      "training_prior": {
+        "accuracy": 0.5522788203753352,
+        "brier": 0.2474947271289042,
+        "calibration_bins": [
+          {
+            "lower": 0.0,
+            "mean_probability": null,
+            "n": 0,
+            "upper": 0.1,
+            "win_rate": null
+          },
+          {
+            "lower": 0.1,
+            "mean_probability": null,
+            "n": 0,
+            "upper": 0.2,
+            "win_rate": null
+          },
+          {
+            "lower": 0.2,
+            "mean_probability": null,
+            "n": 0,
+            "upper": 0.3,
+            "win_rate": null
+          },
+          {
+            "lower": 0.3,
+            "mean_probability": null,
+            "n": 0,
+            "upper": 0.4,
+            "win_rate": null
+          },
+          {
+            "lower": 0.4,
+            "mean_probability": null,
+            "n": 0,
+            "upper": 0.5,
+            "win_rate": null
+          },
+          {
+            "lower": 0.5,
+            "mean_probability": 0.5673719376391982,
+            "n": 2238,
+            "upper": 0.6,
+            "win_rate": 0.5522788203753352
+          },
+          {
+            "lower": 0.6,
+            "mean_probability": null,
+            "n": 0,
+            "upper": 0.7,
+            "win_rate": null
+          },
+          {
+            "lower": 0.7,
+            "mean_probability": null,
+            "n": 0,
+            "upper": 0.8,
+            "win_rate": null
+          },
+          {
+            "lower": 0.8,
+            "mean_probability": null,
+            "n": 0,
+            "upper": 0.9,
+            "win_rate": null
+          },
+          {
+            "lower": 0.9,
+            "mean_probability": null,
+            "n": 0,
+            "upper": 1.0,
+            "win_rate": null
+          }
+        ],
+        "ece_10_bins": 0.015093117263863087,
+        "log_loss": 0.688133851126814,
+        "n": 2238,
+        "roc_auc": 0.5
+      }
+    },
+    "validation": {
+      "coin_flip": {
+        "accuracy": 0.5258942872397224,
+        "brier": 0.25,
+        "calibration_bins": [
+          {
+            "lower": 0.0,
+            "mean_probability": null,
+            "n": 0,
+            "upper": 0.1,
+            "win_rate": null
+          },
+          {
+            "lower": 0.1,
+            "mean_probability": null,
+            "n": 0,
+            "upper": 0.2,
+            "win_rate": null
+          },
+          {
+            "lower": 0.2,
+            "mean_probability": null,
+            "n": 0,
+            "upper": 0.3,
+            "win_rate": null
+          },
+          {
+            "lower": 0.3,
+            "mean_probability": null,
+            "n": 0,
+            "upper": 0.4,
+            "win_rate": null
+          },
+          {
+            "lower": 0.4,
+            "mean_probability": null,
+            "n": 0,
+            "upper": 0.5,
+            "win_rate": null
+          },
+          {
+            "lower": 0.5,
+            "mean_probability": 0.5,
+            "n": 1873,
+            "upper": 0.6,
+            "win_rate": 0.5258942872397224
+          },
+          {
+            "lower": 0.6,
+            "mean_probability": null,
+            "n": 0,
+            "upper": 0.7,
+            "win_rate": null
+          },
+          {
+            "lower": 0.7,
+            "mean_probability": null,
+            "n": 0,
+            "upper": 0.8,
+            "win_rate": null
+          },
+          {
+            "lower": 0.8,
+            "mean_probability": null,
+            "n": 0,
+            "upper": 0.9,
+            "win_rate": null
+          },
+          {
+            "lower": 0.9,
+            "mean_probability": null,
+            "n": 0,
+            "upper": 1.0,
+            "win_rate": null
+          }
+        ],
+        "ece_10_bins": 0.025894287239722424,
+        "log_loss": 0.6931471805599453,
+        "n": 1873,
+        "roc_auc": 0.5
+      },
+      "elo": {
+        "accuracy": 0.5728777362520021,
+        "brier": 0.24028514171066992,
+        "calibration_bins": [
+          {
+            "lower": 0.0,
+            "mean_probability": null,
+            "n": 0,
+            "upper": 0.1,
+            "win_rate": null
+          },
+          {
+            "lower": 0.1,
+            "mean_probability": 0.17659554874602176,
+            "n": 20,
+            "upper": 0.2,
+            "win_rate": 0.2
+          },
+          {
+            "lower": 0.2,
+            "mean_probability": 0.26073729722935524,
+            "n": 82,
+            "upper": 0.3,
+            "win_rate": 0.32926829268292684
+          },
+          {
+            "lower": 0.3,
+            "mean_probability": 0.35848955586654085,
+            "n": 233,
+            "upper": 0.4,
+            "win_rate": 0.37339055793991416
+          },
+          {
+            "lower": 0.4,
+            "mean_probability": 0.45225413448532376,
+            "n": 483,
+            "upper": 0.5,
+            "win_rate": 0.5113871635610766
+          },
+          {
+            "lower": 0.5,
+            "mean_probability": 0.5463678489269349,
+            "n": 601,
+            "upper": 0.6,
+            "win_rate": 0.5374376039933444
+          },
+          {
+            "lower": 0.6,
+            "mean_probability": 0.642421995234266,
+            "n": 292,
+            "upper": 0.7,
+            "win_rate": 0.6198630136986302
+          },
+          {
+            "lower": 0.7,
+            "mean_probability": 0.7417338712224001,
+            "n": 145,
+            "upper": 0.8,
+            "win_rate": 0.7103448275862069
+          },
+          {
+            "lower": 0.8,
+            "mean_probability": 0.8366681492558341,
+            "n": 17,
+            "upper": 0.9,
+            "win_rate": 0.7647058823529411
+          },
+          {
+            "lower": 0.9,
+            "mean_probability": null,
+            "n": 0,
+            "upper": 1.0,
+            "win_rate": null
+          }
+        ],
+        "ece_10_bins": 0.029818412630564766,
+        "log_loss": 0.673182594101514,
+        "n": 1873,
+        "roc_auc": 0.6090844651758357
+      },
+      "training_prior": {
+        "accuracy": 0.5258942872397224,
+        "brier": 0.2510498813710079,
+        "calibration_bins": [
+          {
+            "lower": 0.0,
+            "mean_probability": null,
+            "n": 0,
+            "upper": 0.1,
+            "win_rate": null
+          },
+          {
+            "lower": 0.1,
+            "mean_probability": null,
+            "n": 0,
+            "upper": 0.2,
+            "win_rate": null
+          },
+          {
+            "lower": 0.2,
+            "mean_probability": null,
+            "n": 0,
+            "upper": 0.3,
+            "win_rate": null
+          },
+          {
+            "lower": 0.3,
+            "mean_probability": null,
+            "n": 0,
+            "upper": 0.4,
+            "win_rate": null
+          },
+          {
+            "lower": 0.4,
+            "mean_probability": null,
+            "n": 0,
+            "upper": 0.5,
+            "win_rate": null
+          },
+          {
+            "lower": 0.5,
+            "mean_probability": 0.5673719376391982,
+            "n": 1873,
+            "upper": 0.6,
+            "win_rate": 0.5258942872397224
+          },
+          {
+            "lower": 0.6,
+            "mean_probability": null,
+            "n": 0,
+            "upper": 0.7,
+            "win_rate": null
+          },
+          {
+            "lower": 0.7,
+            "mean_probability": null,
+            "n": 0,
+            "upper": 0.8,
+            "win_rate": null
+          },
+          {
+            "lower": 0.8,
+            "mean_probability": null,
+            "n": 0,
+            "upper": 0.9,
+            "win_rate": null
+          },
+          {
+            "lower": 0.9,
+            "mean_probability": null,
+            "n": 0,
+            "upper": 1.0,
+            "win_rate": null
+          }
+        ],
+        "ece_10_bins": 0.04147765039947582,
+        "log_loss": 0.6952876659198839,
+        "n": 1873,
+        "roc_auc": 0.5
+      }
+    }
+  },
+  "protocol": "UTC-day batches; all predictions precede all updates for that date",
+  "schema_version": 1,
+  "selected_k": 32,
+  "selection": "minimum validation log loss; ties use smaller K",
+  "test_monthly": {
+    "2025-07": {
+      "coin_flip": {
+        "accuracy": 0.5917721518987342,
+        "brier": 0.25,
+        "calibration_bins": [
+          {
+            "lower": 0.0,
+            "mean_probability": null,
+            "n": 0,
+            "upper": 0.1,
+            "win_rate": null
+          },
+          {
+            "lower": 0.1,
+            "mean_probability": null,
+            "n": 0,
+            "upper": 0.2,
+            "win_rate": null
+          },
+          {
+            "lower": 0.2,
+            "mean_probability": null,
+            "n": 0,
+            "upper": 0.3,
+            "win_rate": null
+          },
+          {
+            "lower": 0.3,
+            "mean_probability": null,
+            "n": 0,
+            "upper": 0.4,
+            "win_rate": null
+          },
+          {
+            "lower": 0.4,
+            "mean_probability": null,
+            "n": 0,
+            "upper": 0.5,
+            "win_rate": null
+          },
+          {
+            "lower": 0.5,
+            "mean_probability": 0.5,
+            "n": 316,
+            "upper": 0.6,
+            "win_rate": 0.5917721518987342
+          },
+          {
+            "lower": 0.6,
+            "mean_probability": null,
+            "n": 0,
+            "upper": 0.7,
+            "win_rate": null
+          },
+          {
+            "lower": 0.7,
+            "mean_probability": null,
+            "n": 0,
+            "upper": 0.8,
+            "win_rate": null
+          },
+          {
+            "lower": 0.8,
+            "mean_probability": null,
+            "n": 0,
+            "upper": 0.9,
+            "win_rate": null
+          },
+          {
+            "lower": 0.9,
+            "mean_probability": null,
+            "n": 0,
+            "upper": 1.0,
+            "win_rate": null
+          }
+        ],
+        "ece_10_bins": 0.09177215189873422,
+        "log_loss": 0.6931471805599453,
+        "n": 316,
+        "roc_auc": 0.5
+      },
+      "elo": {
+        "accuracy": 0.5917721518987342,
+        "brier": 0.23536149607143597,
+        "calibration_bins": [
+          {
+            "lower": 0.0,
+            "mean_probability": null,
+            "n": 0,
+            "upper": 0.1,
+            "win_rate": null
+          },
+          {
+            "lower": 0.1,
+            "mean_probability": 0.17887991884152066,
+            "n": 2,
+            "upper": 0.2,
+            "win_rate": 0.5
+          },
+          {
+            "lower": 0.2,
+            "mean_probability": 0.2622628873832626,
+            "n": 3,
+            "upper": 0.3,
+            "win_rate": 0.0
+          },
+          {
+            "lower": 0.3,
+            "mean_probability": 0.3675487239260977,
+            "n": 30,
+            "upper": 0.4,
+            "win_rate": 0.43333333333333335
+          },
+          {
+            "lower": 0.4,
+            "mean_probability": 0.4528299871068807,
+            "n": 99,
+            "upper": 0.5,
+            "win_rate": 0.5353535353535354
+          },
+          {
+            "lower": 0.5,
+            "mean_probability": 0.5458956586117816,
+            "n": 104,
+            "upper": 0.6,
+            "win_rate": 0.625
+          },
+          {
+            "lower": 0.6,
+            "mean_probability": 0.6428999630086527,
+            "n": 54,
+            "upper": 0.7,
+            "win_rate": 0.7222222222222222
+          },
+          {
+            "lower": 0.7,
+            "mean_probability": 0.7274210410987244,
+            "n": 21,
+            "upper": 0.8,
+            "win_rate": 0.6190476190476191
+          },
+          {
+            "lower": 0.8,
+            "mean_probability": 0.8158925599434892,
+            "n": 3,
+            "upper": 0.9,
+            "win_rate": 1.0
+          },
+          {
+            "lower": 0.9,
+            "mean_probability": null,
+            "n": 0,
+            "upper": 1.0,
+            "win_rate": null
+          }
+        ],
+        "ece_10_bins": 0.08516081034257228,
+        "log_loss": 0.6633431714644076,
+        "n": 316,
+        "roc_auc": 0.6260415371222485
+      }
+    },
+    "2025-08": {
+      "coin_flip": {
+        "accuracy": 0.5333333333333333,
+        "brier": 0.25,
+        "calibration_bins": [
+          {
+            "lower": 0.0,
+            "mean_probability": null,
+            "n": 0,
+            "upper": 0.1,
+            "win_rate": null
+          },
+          {
+            "lower": 0.1,
+            "mean_probability": null,
+            "n": 0,
+            "upper": 0.2,
+            "win_rate": null
+          },
+          {
+            "lower": 0.2,
+            "mean_probability": null,
+            "n": 0,
+            "upper": 0.3,
+            "win_rate": null
+          },
+          {
+            "lower": 0.3,
+            "mean_probability": null,
+            "n": 0,
+            "upper": 0.4,
+            "win_rate": null
+          },
+          {
+            "lower": 0.4,
+            "mean_probability": null,
+            "n": 0,
+            "upper": 0.5,
+            "win_rate": null
+          },
+          {
+            "lower": 0.5,
+            "mean_probability": 0.5,
+            "n": 570,
+            "upper": 0.6,
+            "win_rate": 0.5333333333333333
+          },
+          {
+            "lower": 0.6,
+            "mean_probability": null,
+            "n": 0,
+            "upper": 0.7,
+            "win_rate": null
+          },
+          {
+            "lower": 0.7,
+            "mean_probability": null,
+            "n": 0,
+            "upper": 0.8,
+            "win_rate": null
+          },
+          {
+            "lower": 0.8,
+            "mean_probability": null,
+            "n": 0,
+            "upper": 0.9,
+            "win_rate": null
+          },
+          {
+            "lower": 0.9,
+            "mean_probability": null,
+            "n": 0,
+            "upper": 1.0,
+            "win_rate": null
+          }
+        ],
+        "ece_10_bins": 0.033333333333333326,
+        "log_loss": 0.6931471805599453,
+        "n": 570,
+        "roc_auc": 0.5
+      },
+      "elo": {
+        "accuracy": 0.5859649122807018,
+        "brier": 0.2395865302475302,
+        "calibration_bins": [
+          {
+            "lower": 0.0,
+            "mean_probability": 0.07970136731994568,
+            "n": 1,
+            "upper": 0.1,
+            "win_rate": 0.0
+          },
+          {
+            "lower": 0.1,
+            "mean_probability": 0.17891269043962543,
+            "n": 3,
+            "upper": 0.2,
+            "win_rate": 0.0
+          },
+          {
+            "lower": 0.2,
+            "mean_probability": 0.26131560753365585,
+            "n": 24,
+            "upper": 0.3,
+            "win_rate": 0.25
+          },
+          {
+            "lower": 0.3,
+            "mean_probability": 0.3525679359799423,
+            "n": 72,
+            "upper": 0.4,
+            "win_rate": 0.4305555555555556
+          },
+          {
+            "lower": 0.4,
+            "mean_probability": 0.4539797307023233,
+            "n": 168,
+            "upper": 0.5,
+            "win_rate": 0.4880952380952381
+          },
+          {
+            "lower": 0.5,
+            "mean_probability": 0.5430304914454155,
+            "n": 166,
+            "upper": 0.6,
+            "win_rate": 0.5843373493975904
+          },
+          {
+            "lower": 0.6,
+            "mean_probability": 0.6415475735172772,
+            "n": 93,
+            "upper": 0.7,
+            "win_rate": 0.6451612903225806
+          },
+          {
+            "lower": 0.7,
+            "mean_probability": 0.7388869330071828,
+            "n": 35,
+            "upper": 0.8,
+            "win_rate": 0.6
+          },
+          {
+            "lower": 0.8,
+            "mean_probability": 0.8521157601868086,
+            "n": 8,
+            "upper": 0.9,
+            "win_rate": 0.875
+          },
+          {
+            "lower": 0.9,
+            "mean_probability": null,
+            "n": 0,
+            "upper": 1.0,
+            "win_rate": null
+          }
+        ],
+        "ece_10_bins": 0.0429327342589677,
+        "log_loss": 0.6711969852477743,
+        "n": 570,
+        "roc_auc": 0.6110630193905817
+      }
+    },
+    "2025-09": {
+      "coin_flip": {
+        "accuracy": 0.5385556915544676,
+        "brier": 0.25,
+        "calibration_bins": [
+          {
+            "lower": 0.0,
+            "mean_probability": null,
+            "n": 0,
+            "upper": 0.1,
+            "win_rate": null
+          },
+          {
+            "lower": 0.1,
+            "mean_probability": null,
+            "n": 0,
+            "upper": 0.2,
+            "win_rate": null
+          },
+          {
+            "lower": 0.2,
+            "mean_probability": null,
+            "n": 0,
+            "upper": 0.3,
+            "win_rate": null
+          },
+          {
+            "lower": 0.3,
+            "mean_probability": null,
+            "n": 0,
+            "upper": 0.4,
+            "win_rate": null
+          },
+          {
+            "lower": 0.4,
+            "mean_probability": null,
+            "n": 0,
+            "upper": 0.5,
+            "win_rate": null
+          },
+          {
+            "lower": 0.5,
+            "mean_probability": 0.5,
+            "n": 817,
+            "upper": 0.6,
+            "win_rate": 0.5385556915544676
+          },
+          {
+            "lower": 0.6,
+            "mean_probability": null,
+            "n": 0,
+            "upper": 0.7,
+            "win_rate": null
+          },
+          {
+            "lower": 0.7,
+            "mean_probability": null,
+            "n": 0,
+            "upper": 0.8,
+            "win_rate": null
+          },
+          {
+            "lower": 0.8,
+            "mean_probability": null,
+            "n": 0,
+            "upper": 0.9,
+            "win_rate": null
+          },
+          {
+            "lower": 0.9,
+            "mean_probability": null,
+            "n": 0,
+            "upper": 1.0,
+            "win_rate": null
+          }
+        ],
+        "ece_10_bins": 0.038555691554467586,
+        "log_loss": 0.6931471805599453,
+        "n": 817,
+        "roc_auc": 0.5
+      },
+      "elo": {
+        "accuracy": 0.602203182374541,
+        "brier": 0.23818970717182114,
+        "calibration_bins": [
+          {
+            "lower": 0.0,
+            "mean_probability": null,
+            "n": 0,
+            "upper": 0.1,
+            "win_rate": null
+          },
+          {
+            "lower": 0.1,
+            "mean_probability": null,
+            "n": 0,
+            "upper": 0.2,
+            "win_rate": null
+          },
+          {
+            "lower": 0.2,
+            "mean_probability": 0.2637081841104134,
+            "n": 38,
+            "upper": 0.3,
+            "win_rate": 0.39473684210526316
+          },
+          {
+            "lower": 0.3,
+            "mean_probability": 0.3616926917588547,
+            "n": 94,
+            "upper": 0.4,
+            "win_rate": 0.39361702127659576
+          },
+          {
+            "lower": 0.4,
+            "mean_probability": 0.45216368187816036,
+            "n": 234,
+            "upper": 0.5,
+            "win_rate": 0.44871794871794873
+          },
+          {
+            "lower": 0.5,
+            "mean_probability": 0.5471978322941945,
+            "n": 243,
+            "upper": 0.6,
+            "win_rate": 0.5802469135802469
+          },
+          {
+            "lower": 0.6,
+            "mean_probability": 0.6460216029714391,
+            "n": 147,
+            "upper": 0.7,
+            "win_rate": 0.6666666666666666
+          },
+          {
+            "lower": 0.7,
+            "mean_probability": 0.7417737794938009,
+            "n": 54,
+            "upper": 0.8,
+            "win_rate": 0.7222222222222222
+          },
+          {
+            "lower": 0.8,
+            "mean_probability": 0.8255529676356671,
+            "n": 7,
+            "upper": 0.9,
+            "win_rate": 0.7142857142857143
+          },
+          {
+            "lower": 0.9,
+            "mean_probability": null,
+            "n": 0,
+            "upper": 1.0,
+            "win_rate": null
+          }
+        ],
+        "ece_10_bins": 0.02654428827391136,
+        "log_loss": 0.6694867021231865,
+        "n": 817,
+        "roc_auc": 0.6252712804436943
+      }
+    },
+    "2025-10": {
+      "coin_flip": {
+        "accuracy": 0.5700934579439252,
+        "brier": 0.25,
+        "calibration_bins": [
+          {
+            "lower": 0.0,
+            "mean_probability": null,
+            "n": 0,
+            "upper": 0.1,
+            "win_rate": null
+          },
+          {
+            "lower": 0.1,
+            "mean_probability": null,
+            "n": 0,
+            "upper": 0.2,
+            "win_rate": null
+          },
+          {
+            "lower": 0.2,
+            "mean_probability": null,
+            "n": 0,
+            "upper": 0.3,
+            "win_rate": null
+          },
+          {
+            "lower": 0.3,
+            "mean_probability": null,
+            "n": 0,
+            "upper": 0.4,
+            "win_rate": null
+          },
+          {
+            "lower": 0.4,
+            "mean_probability": null,
+            "n": 0,
+            "upper": 0.5,
+            "win_rate": null
+          },
+          {
+            "lower": 0.5,
+            "mean_probability": 0.5,
+            "n": 535,
+            "upper": 0.6,
+            "win_rate": 0.5700934579439252
+          },
+          {
+            "lower": 0.6,
+            "mean_probability": null,
+            "n": 0,
+            "upper": 0.7,
+            "win_rate": null
+          },
+          {
+            "lower": 0.7,
+            "mean_probability": null,
+            "n": 0,
+            "upper": 0.8,
+            "win_rate": null
+          },
+          {
+            "lower": 0.8,
+            "mean_probability": null,
+            "n": 0,
+            "upper": 0.9,
+            "win_rate": null
+          },
+          {
+            "lower": 0.9,
+            "mean_probability": null,
+            "n": 0,
+            "upper": 1.0,
+            "win_rate": null
+          }
+        ],
+        "ece_10_bins": 0.07009345794392519,
+        "log_loss": 0.6931471805599453,
+        "n": 535,
+        "roc_auc": 0.5
+      },
+      "elo": {
+        "accuracy": 0.6074766355140186,
+        "brier": 0.23259805465182176,
+        "calibration_bins": [
+          {
+            "lower": 0.0,
+            "mean_probability": null,
+            "n": 0,
+            "upper": 0.1,
+            "win_rate": null
+          },
+          {
+            "lower": 0.1,
+            "mean_probability": null,
+            "n": 0,
+            "upper": 0.2,
+            "win_rate": null
+          },
+          {
+            "lower": 0.2,
+            "mean_probability": 0.2609833928360297,
+            "n": 16,
+            "upper": 0.3,
+            "win_rate": 0.25
+          },
+          {
+            "lower": 0.3,
+            "mean_probability": 0.35497844397869943,
+            "n": 84,
+            "upper": 0.4,
+            "win_rate": 0.42857142857142855
+          },
+          {
+            "lower": 0.4,
+            "mean_probability": 0.4521571910443769,
+            "n": 136,
+            "upper": 0.5,
+            "win_rate": 0.5
+          },
+          {
+            "lower": 0.5,
+            "mean_probability": 0.5500880462495932,
+            "n": 140,
+            "upper": 0.6,
+            "win_rate": 0.5928571428571429
+          },
+          {
+            "lower": 0.6,
+            "mean_probability": 0.6442294186741481,
+            "n": 101,
+            "upper": 0.7,
+            "win_rate": 0.6534653465346535
+          },
+          {
+            "lower": 0.7,
+            "mean_probability": 0.736156226453724,
+            "n": 53,
+            "upper": 0.8,
+            "win_rate": 0.8301886792452831
+          },
+          {
+            "lower": 0.8,
+            "mean_probability": 0.8270802599290539,
+            "n": 5,
+            "upper": 0.9,
+            "win_rate": 0.8
+          },
+          {
+            "lower": 0.9,
+            "mean_probability": null,
+            "n": 0,
+            "upper": 1.0,
+            "win_rate": null
+          }
+        ],
+        "ece_10_bins": 0.04654914120690909,
+        "log_loss": 0.6568609213851109,
+        "n": 535,
+        "roc_auc": 0.6387170349251604
+      }
+    }
+  },
+  "test_unseen_team_counts": {
+    "0": {
+      "elo": {
+        "accuracy": 0.6027842227378191,
+        "brier": 0.23579335210226426,
+        "calibration_bins": [
+          {
+            "lower": 0.0,
+            "mean_probability": 0.07970136731994568,
+            "n": 1,
+            "upper": 0.1,
+            "win_rate": 0.0
+          },
+          {
+            "lower": 0.1,
+            "mean_probability": 0.1788995818003835,
+            "n": 5,
+            "upper": 0.2,
+            "win_rate": 0.2
+          },
+          {
+            "lower": 0.2,
+            "mean_probability": 0.26198338578906505,
+            "n": 79,
+            "upper": 0.3,
+            "win_rate": 0.2911392405063291
+          },
+          {
+            "lower": 0.3,
+            "mean_probability": 0.3580782240258187,
+            "n": 273,
+            "upper": 0.4,
+            "win_rate": 0.4065934065934066
+          },
+          {
+            "lower": 0.4,
+            "mean_probability": 0.45280269805291,
+            "n": 602,
+            "upper": 0.5,
+            "win_rate": 0.4700996677740864
+          },
+          {
+            "lower": 0.5,
+            "mean_probability": 0.5470625871669357,
+            "n": 621,
+            "upper": 0.6,
+            "win_rate": 0.5861513687600645
+          },
+          {
+            "lower": 0.6,
+            "mean_probability": 0.6443273319341909,
+            "n": 390,
+            "upper": 0.7,
+            "win_rate": 0.6641025641025641
+          },
+          {
+            "lower": 0.7,
+            "mean_probability": 0.7368992776676149,
+            "n": 161,
+            "upper": 0.8,
+            "win_rate": 0.7142857142857143
+          },
+          {
+            "lower": 0.8,
+            "mean_probability": 0.8338641667139077,
+            "n": 23,
+            "upper": 0.9,
+            "win_rate": 0.8260869565217391
+          },
+          {
+            "lower": 0.9,
+            "mean_probability": null,
+            "n": 0,
+            "upper": 1.0,
+            "win_rate": null
+          }
+        ],
+        "ece_10_bins": 0.028748060347093256,
+        "log_loss": 0.6639497032687786,
+        "n": 2155,
+        "roc_auc": 0.631119409465914
+      },
+      "n": 2155
+    },
+    "1": {
+      "elo": {
+        "accuracy": 0.46153846153846156,
+        "brier": 0.2640362976588336,
+        "calibration_bins": [
+          {
+            "lower": 0.0,
+            "mean_probability": null,
+            "n": 0,
+            "upper": 0.1,
+            "win_rate": null
+          },
+          {
+            "lower": 0.1,
+            "mean_probability": null,
+            "n": 0,
+            "upper": 0.2,
+            "win_rate": null
+          },
+          {
+            "lower": 0.2,
+            "mean_probability": 0.27916052359678756,
+            "n": 2,
+            "upper": 0.3,
+            "win_rate": 1.0
+          },
+          {
+            "lower": 0.3,
+            "mean_probability": 0.3533286098333389,
+            "n": 7,
+            "upper": 0.4,
+            "win_rate": 0.8571428571428571
+          },
+          {
+            "lower": 0.4,
+            "mean_probability": 0.45174910843555577,
+            "n": 35,
+            "upper": 0.5,
+            "win_rate": 0.7142857142857143
+          },
+          {
+            "lower": 0.5,
+            "mean_probability": 0.5433978950862788,
+            "n": 27,
+            "upper": 0.6,
+            "win_rate": 0.7037037037037037
+          },
+          {
+            "lower": 0.6,
+            "mean_probability": 0.6250419616260166,
+            "n": 5,
+            "upper": 0.7,
+            "win_rate": 0.8
+          },
+          {
+            "lower": 0.7,
+            "mean_probability": 0.7840824542756172,
+            "n": 2,
+            "upper": 0.8,
+            "win_rate": 1.0
+          },
+          {
+            "lower": 0.8,
+            "mean_probability": null,
+            "n": 0,
+            "upper": 0.9,
+            "win_rate": null
+          },
+          {
+            "lower": 0.9,
+            "mean_probability": null,
+            "n": 0,
+            "upper": 1.0,
+            "win_rate": null
+          }
+        ],
+        "ece_10_bins": 0.25374412826561227,
+        "log_loss": 0.7219564859313392,
+        "n": 78,
+        "roc_auc": 0.4870689655172414
+      },
+      "n": 78
+    },
+    "2": {
+      "elo": {
+        "accuracy": 0.6,
+        "brier": 0.25,
+        "calibration_bins": [
+          {
+            "lower": 0.0,
+            "mean_probability": null,
+            "n": 0,
+            "upper": 0.1,
+            "win_rate": null
+          },
+          {
+            "lower": 0.1,
+            "mean_probability": null,
+            "n": 0,
+            "upper": 0.2,
+            "win_rate": null
+          },
+          {
+            "lower": 0.2,
+            "mean_probability": null,
+            "n": 0,
+            "upper": 0.3,
+            "win_rate": null
+          },
+          {
+            "lower": 0.3,
+            "mean_probability": null,
+            "n": 0,
+            "upper": 0.4,
+            "win_rate": null
+          },
+          {
+            "lower": 0.4,
+            "mean_probability": null,
+            "n": 0,
+            "upper": 0.5,
+            "win_rate": null
+          },
+          {
+            "lower": 0.5,
+            "mean_probability": 0.5,
+            "n": 5,
+            "upper": 0.6,
+            "win_rate": 0.6
+          },
+          {
+            "lower": 0.6,
+            "mean_probability": null,
+            "n": 0,
+            "upper": 0.7,
+            "win_rate": null
+          },
+          {
+            "lower": 0.7,
+            "mean_probability": null,
+            "n": 0,
+            "upper": 0.8,
+            "win_rate": null
+          },
+          {
+            "lower": 0.8,
+            "mean_probability": null,
+            "n": 0,
+            "upper": 0.9,
+            "win_rate": null
+          },
+          {
+            "lower": 0.9,
+            "mean_probability": null,
+            "n": 0,
+            "upper": 1.0,
+            "win_rate": null
+          }
+        ],
+        "ece_10_bins": 0.09999999999999998,
+        "log_loss": 0.6931471805599453,
+        "n": 5,
+        "roc_auc": 0.5
+      },
+      "n": 5
+    }
+  },
+  "train_end_exclusive": "2025-01-01",
+  "training_team1_win_rate": 0.5673719376391982,
+  "validation_candidates": [
+    {
+      "brier": 0.25,
+      "k": 0,
+      "log_loss": 0.6931471805599453
+    },
+    {
+      "brier": 0.24432521421094375,
+      "k": 8,
+      "log_loss": 0.6816442806242655
+    },
+    {
+      "brier": 0.24214688589761896,
+      "k": 16,
+      "log_loss": 0.6770394963106741
+    },
+    {
+      "brier": 0.24093064262919597,
+      "k": 24,
+      "log_loss": 0.6744689358975658
+    },
+    {
+      "brier": 0.24028514171066992,
+      "k": 32,
+      "log_loss": 0.673182594101514
+    },
+    {
+      "brier": 0.2402655540155478,
+      "k": 48,
+      "log_loss": 0.6736144142102394
+    },
+    {
+      "brier": 0.24145653419735705,
+      "k": 64,
+      "log_loss": 0.6771263232852962
+    }
+  ],
+  "validation_end_exclusive": "2025-07-01"
+}

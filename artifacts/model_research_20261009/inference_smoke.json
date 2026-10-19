@@ -1,0 +1,119 @@
+{
+  "selected_model": "blend_player_archive_elo",
+  "artifact_version": 4,
+  "state_schema_version": 2,
+  "saved_test_predictions_checked": 164,
+  "maximum_saved_prediction_absolute_error": 8.326672684688674e-17,
+  "scenario_source_hltv_id": "2398746",
+  "scenario_not_verified_current_lineup": true,
+  "team1": "Legacy",
+  "team2": "M80",
+  "roster1": [
+    "hltv:player:19686",
+    "hltv:player:15698",
+    "hltv:player:17215",
+    "hltv:player:19045",
+    "hltv:player:19869"
+  ],
+  "roster2": [
+    "hltv:player:16599",
+    "hltv:player:21665",
+    "hltv:player:22921",
+    "hltv:player:15370",
+    "hltv:player:20104"
+  ],
+  "forecast_day": "2026-10-09",
+  "command": "/home/melzak/dev/cs-breaker/.venv/bin/python -m pipeline.cli predict-player --team1 Legacy --team2 M80 --roster1 hltv:player:19686 hltv:player:15698 hltv:player:17215 hltv:player:19045 hltv:player:19869 --roster2 hltv:player:16599 hltv:player:21665 hltv:player:22921 hltv:player:15370 hltv:player:20104 --day 2026-10-09",
+  "forward": {
+    "prob_team1_win": 0.5738714544814625,
+    "prob_team2_win": 0.4261285455185375,
+    "forecast_kind": "explicit_roster_scenario",
+    "history_through": "2026-10-07",
+    "team1": "Legacy",
+    "team2": "M80",
+    "day": "2026-10-09",
+    "minimum_prior_matches": 1,
+    "team1_known_players": 5,
+    "team2_known_players": 5,
+    "archive_team1_prior_matches": 205,
+    "archive_team2_prior_matches": 193,
+    "archive_minimum_prior_matches": 193,
+    "performance_available": false,
+    "caveats": [
+      "Explicit supplied roster scenario; no inferred current starters or live forecast",
+      "Archive identities are literal source names, not organization IDs or inferred aliases",
+      "Archive date >= 2024-01-01 is a modern-era proxy, not verified CS2 version evidence",
+      "Source-day history and actual played lineups do not certify pre-event availability"
+    ],
+    "roster1": [
+      "hltv:player:19686",
+      "hltv:player:15698",
+      "hltv:player:17215",
+      "hltv:player:19045",
+      "hltv:player:19869"
+    ],
+    "roster2": [
+      "hltv:player:16599",
+      "hltv:player:21665",
+      "hltv:player:22921",
+      "hltv:player:15370",
+      "hltv:player:20104"
+    ],
+    "model_artifact": "artifacts/baseline_model.pkl",
+    "state_artifact": "artifacts/player_rating_state.pkl",
+    "lineup_assumption": "User-supplied roster scenario; no inferred or certified starters",
+    "network_requests": 0
+  },
+  "reverse": {
+    "prob_team1_win": 0.4261285455185375,
+    "prob_team2_win": 0.5738714544814625,
+    "forecast_kind": "explicit_roster_scenario",
+    "history_through": "2026-10-07",
+    "team1": "M80",
+    "team2": "Legacy",
+    "day": "2026-10-09",
+    "minimum_prior_matches": 1,
+    "team1_known_players": 5,
+    "team2_known_players": 5,
+    "archive_team1_prior_matches": 193,
+    "archive_team2_prior_matches": 205,
+    "archive_minimum_prior_matches": 193,
+    "performance_available": false,
+    "caveats": [
+      "Explicit supplied roster scenario; no inferred current starters or live forecast",
+      "Archive identities are literal source names, not organization IDs or inferred aliases",
+      "Archive date >= 2024-01-01 is a modern-era proxy, not verified CS2 version evidence",
+      "Source-day history and actual played lineups do not certify pre-event availability"
+    ],
+    "roster1": [
+      "hltv:player:16599",
+      "hltv:player:21665",
+      "hltv:player:22921",
+      "hltv:player:15370",
+      "hltv:player:20104"
+    ],
+    "roster2": [
+      "hltv:player:19686",
+      "hltv:player:15698",
+      "hltv:player:17215",
+      "hltv:player:19045",
+      "hltv:player:19869"
+    ],
+    "model_artifact": "artifacts/baseline_model.pkl",
+    "state_artifact": "artifacts/player_rating_state.pkl",
+    "lineup_assumption": "User-supplied roster scenario; no inferred or certified starters",
+    "network_requests": 0
+  },
+  "query_state_unchanged": true,
+  "artifact_bytes_unchanged": true,
+  "history_day_rejected": {
+    "returncode": 2,
+    "stderr": "Error: Forecast day must be after the saved rating history"
+  },
+  "obsolete_model_rejected": {
+    "returncode": 2,
+    "stderr": "Error: Unsupported model artifact version; retrain the current feature schema"
+  },
+  "model_sha256": "1733cc14e7aaeab6d29dad8b561fa4c0ae5f08b919e48ce5f2073bda62348357",
+  "state_sha256": "78e0fd7f8b79bbc8b1a64fe86936afb29647bebe27a1690dab58b09bef0c3215"
+}

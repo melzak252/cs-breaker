@@ -1,0 +1,1488 @@
+hltv_match_id,source_date,team1,team2,target,format,partition,model_selected,prob_team1_win,prob_team2_win
+2393335,2026-05-01,FaZe,FURIA,1,bo3,validation,ridge_C1_ratings_form_hnone,0.21102244386684055,0.7889775561331595
+2393336,2026-05-01,Natus Vincere,GamerLegion,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7360845008520946,0.26391549914790535
+2393547,2026-05-01,fnatic,Lavked,1,bo3,validation,ridge_C1_ratings_form_hnone,0.46114439551448627,0.5388556044855137
+2393564,2026-05-01,Ground Zero,THUNDER dOWNUNDER,0,bo3,validation,ridge_C1_ratings_form_hnone,0.2837356757980078,0.7162643242019922
+2393594,2026-05-01,NEXVOID,Chinggis Warriors,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5104475649426878,0.48955243505731216
+2393595,2026-05-01,TYLOO,The Huns,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7398533273369676,0.2601466726630324
+2393622,2026-05-01,Fake do Biru,ShindeN,0,bo3,validation,ridge_C1_ratings_form_hnone,0.4312171673126185,0.5687828326873815
+2393623,2026-05-01,Isurus,Bounty Hunters,0,bo3,validation,ridge_C1_ratings_form_hnone,0.3549696376026672,0.6450303623973328
+2393652,2026-05-01,Zomblers,Fisher College,1,bo3,validation,ridge_C1_ratings_form_hnone,0.23430613196285183,0.7656938680371481
+2393653,2026-05-01,FarmVille,regain,0,bo3,validation,ridge_C1_ratings_form_hnone,0.37414357859575686,0.6258564214042431
+2393702,2026-05-01,Imperial,Fake do Biru,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5643209640808837,0.4356790359191163
+2393726,2026-05-01,FarmVille,Shimmer,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7489433048673075,0.25105669513269246
+2393727,2026-05-01,girl kissers,Incognito,0,bo3,validation,ridge_C1_ratings_form_hnone,0.4097353800410988,0.5902646199589012
+2393790,2026-05-01,STATE,Ursa,0,bo3,validation,ridge_C1_ratings_form_hnone,0.27551830981463554,0.7244816901853645
+2393792,2026-05-01,HYPERSPIRIT,MANA,0,bo3,validation,ridge_C1_ratings_form_hnone,0.348219280025205,0.6517807199747949
+2393793,2026-05-01,Dripmen,Famalicão,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5297053548542102,0.4702946451457898
+2393872,2026-05-01,R2,Keyd Stars,0,bo3,validation,ridge_C1_ratings_form_hnone,0.25377321167517347,0.7462267883248266
+2393873,2026-05-01,Isurus,Yawara,0,bo3,validation,ridge_C1_ratings_form_hnone,0.48331282660684816,0.5166871733931518
+2393874,2026-05-01,Vasco,paiN Academy,0,bo3,validation,ridge_C1_ratings_form_hnone,0.6597739322576227,0.3402260677423773
+2393912,2026-05-01,Bebop,HEROIC Academy,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6158812188726599,0.3841187811273401
+2393913,2026-05-01,PsychoFace,ALGO,1,bo3,validation,ridge_C1_ratings_form_hnone,0.2476752442422276,0.7523247557577724
+2393914,2026-05-01,Walczaki,Oxuji,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6135369284090968,0.3864630715909032
+2393915,2026-05-01,UNiTY,TNC,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5405977709478627,0.45940222905213735
+2393998,2026-05-01,GenOne,The Last Resort,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5187617425172926,0.48123825748270743
+2393999,2026-05-01,Lavked,ex-Zero Tenacity,0,bo3,validation,ridge_C1_ratings_form_hnone,0.7573571187419723,0.2426428812580277
+2394000,2026-05-01,SPARTA,INOX Division,0,bo3,validation,ridge_C1_ratings_form_hnone,0.40768518128813336,0.5923148187118666
+2394001,2026-05-01,HEROIC Academy,ASTRAL,0,bo3,validation,ridge_C1_ratings_form_hnone,0.331563672556617,0.668436327443383
+2394060,2026-05-01,5star,Unitronics,1,bo3,validation,ridge_C1_ratings_form_hnone,0.784643340755264,0.21535665924473602
+2394061,2026-05-01,JiJieHao,Wings of Freedom,1,bo3,validation,ridge_C1_ratings_form_hnone,0.8379380006055053,0.16206199939449473
+2394062,2026-05-01,ZEVS,Rooster,0,bo3,validation,ridge_C1_ratings_form_hnone,0.277501376440192,0.722498623559808
+2394063,2026-05-01,Last Bullet,Alter Ego,0,bo3,validation,ridge_C1_ratings_form_hnone,0.3145897510131209,0.6854102489868791
+2394064,2026-05-01,Nas,Legion,1,bo3,validation,ridge_C1_ratings_form_hnone,0.281566257970769,0.718433742029231
+2394065,2026-05-01,UR,BORING PLAYERS,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5936819185590336,0.40631808144096637
+2394066,2026-05-01,BMZ,WYDO,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7706071195548678,0.22939288044513217
+2394067,2026-05-01,Chaos,Just Swing,0,bo3,validation,ridge_C1_ratings_form_hnone,0.2290903883032509,0.7709096116967491
+2393346,2026-05-02,G2,FaZe,0,bo3,validation,ridge_C1_ratings_form_hnone,0.7457349999371389,0.2542650000628611
+2393347,2026-05-02,GamerLegion,Astralis,1,bo3,validation,ridge_C1_ratings_form_hnone,0.3187788009767052,0.6812211990232948
+2393348,2026-05-02,Natus Vincere,FaZe,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7848071812335997,0.21519281876640028
+2393548,2026-05-02,SPARTA,fnatic,1,bo3,validation,ridge_C1_ratings_form_hnone,0.4157441625484841,0.5842558374515159
+2393566,2026-05-02,Abyssal,Ground Zero,0,bo3,validation,ridge_C1_ratings_form_hnone,0.3937211744903659,0.6062788255096341
+2393596,2026-05-02,TYLOO,Chinggis Warriors,1,bo3,validation,ridge_C1_ratings_form_hnone,0.783621181194502,0.21637881880549803
+2393624,2026-05-02,Imperial,Galorys,1,bo3,validation,ridge_C1_ratings_form_hnone,0.49646883074236625,0.5035311692576337
+2393625,2026-05-02,ShindeN,Bounty Hunters,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5838713952441077,0.4161286047558923
+2393654,2026-05-02,Voca,Wildcard,0,bo3,validation,ridge_C1_ratings_form_hnone,0.47788238933519933,0.5221176106648007
+2393655,2026-05-02,Zomblers,regain,1,bo3,validation,ridge_C1_ratings_form_hnone,0.40739444470166897,0.592605555298331
+2393703,2026-05-02,Turma do Pagode,Bounty Hunters,1,bo3,validation,ridge_C1_ratings_form_hnone,0.20710984706014146,0.7928901529398585
+2393704,2026-05-02,Fluxo,LP,0,bo3,validation,ridge_C1_ratings_form_hnone,0.6060347506721415,0.3939652493278585
+2393794,2026-05-02,Lilmix,Famalicão,0,bo3,validation,ridge_C1_ratings_form_hnone,0.6408870722981326,0.3591129277018674
+2393795,2026-05-02,PsychoFace,Ursa,0,bo3,validation,ridge_C1_ratings_form_hnone,0.26568741890989456,0.7343125810901054
+2393796,2026-05-02,ASTRAL,Bebop,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5692199960545803,0.4307800039454197
+2393797,2026-05-02,INOX Division,MANA,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6965454193000532,0.3034545806999468
+2393865,2026-05-02,AaB,BIG Academy,0,bo3,validation,ridge_C1_ratings_form_hnone,0.586311148099799,0.413688851900201
+2393917,2026-05-02,UNiTY,PsychoFace,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6039467686776979,0.3960532313223021
+2393980,2026-05-02,Gentle Mates,FOKUS,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5177248754249292,0.4822751245750708
+2393981,2026-05-02,Eternal Fire,magic,0,bo3,validation,ridge_C1_ratings_form_hnone,0.2180179871231555,0.7819820128768444
+2393982,2026-05-02,illwill,100 Thieves,0,bo3,validation,ridge_C1_ratings_form_hnone,0.4485989404657718,0.5514010595342282
+2393983,2026-05-02,Sharks,BET-M,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6299045336750285,0.3700954663249715
+2394002,2026-05-02,GenOne,INOX Division,0,bo3,validation,ridge_C1_ratings_form_hnone,0.3702835114397976,0.6297164885602025
+2394003,2026-05-02,ASTRAL,ex-Zero Tenacity,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5701697070104439,0.4298302929895561
+2394004,2026-05-02,CYBERSHOKE,Lavked,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5406022928430698,0.4593977071569302
+2394005,2026-05-02,Walczaki,AaB,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6876650066720911,0.3123349933279089
+2394046,2026-05-02,Johnny Speeds,MTX,1,bo3,validation,ridge_C1_ratings_form_hnone,0.8903894928200035,0.10961050717999654
+2394047,2026-05-02,Lilmix,ROUNDS,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7588999041580855,0.2411000958419145
+2394048,2026-05-02,INFINITE,Lilmix,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7289949224624229,0.2710050775375771
+2394049,2026-05-02,G2 Ares,Johnny Speeds,0,bo3,validation,ridge_C1_ratings_form_hnone,0.24060957324039833,0.7593904267596017
+2394050,2026-05-02,G2 Ares,Lilmix,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6558482408831526,0.34415175911684737
+2394051,2026-05-02,Johnny Speeds,INFINITE,0,bo3,validation,ridge_C1_ratings_form_hnone,0.6769933526755184,0.3230066473244816
+2394068,2026-05-02,Wings of Freedom,Nas,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7646364628545751,0.2353635371454249
+2394069,2026-05-02,Unitronics,BORING PLAYERS,0,bo3,validation,ridge_C1_ratings_form_hnone,0.32588655494290375,0.6741134450570962
+2394070,2026-05-02,Last Bullet,BMZ,1,bo3,validation,ridge_C1_ratings_form_hnone,0.44471402854565434,0.5552859714543457
+2394071,2026-05-02,ZEVS,Just Swing,0,bo3,validation,ridge_C1_ratings_form_hnone,0.29836277706396097,0.701637222936039
+2394072,2026-05-02,5star,JiJieHao,1,bo3,validation,ridge_C1_ratings_form_hnone,0.3651138747596029,0.6348861252403971
+2394073,2026-05-02,Alter Ego,Rooster,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6581857308616423,0.34181426913835766
+2394074,2026-05-02,Wings of Freedom,BORING PLAYERS,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5194319083771615,0.48056809162283853
+2394075,2026-05-02,Last Bullet,Just Swing,1,bo3,validation,ridge_C1_ratings_form_hnone,0.48644647645032457,0.5135535235496754
+2394078,2026-05-02,EC BANGA,M1X KS,0,bo3,validation,ridge_C1_ratings_form_hnone,0.2252570578583561,0.7747429421416439
+2394081,2026-05-02,INOX Division,Aurora Young Blud,1,bo3,validation,ridge_C1_ratings_form_hnone,0.737313407824503,0.26268659217549695
+2393349,2026-05-03,Vitality,GamerLegion,1,bo3,validation,ridge_C1_ratings_form_hnone,0.8611630293569852,0.1388369706430148
+2393350,2026-05-03,Natus Vincere,Vitality,0,bo5,validation,ridge_C1_ratings_form_hnone,0.1918211386918634,0.8081788613081367
+2393549,2026-05-03,Nemesis,SPARTA,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7299980981239087,0.2700019018760913
+2393567,2026-05-03,THUNDER dOWNUNDER,Ground Zero,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7321095118309868,0.2678904881690132
+2393597,2026-05-03,NEXVOID,TYLOO,0,bo3,validation,ridge_C1_ratings_form_hnone,0.26693990467329876,0.7330600953267012
+2393626,2026-05-03,Galorys,Bounty Hunters,0,bo3,validation,ridge_C1_ratings_form_hnone,0.568288610381305,0.43171138961869504
+2393656,2026-05-03,Voca,Zomblers,1,bo3,validation,ridge_C1_ratings_form_hnone,0.8202462368948836,0.17975376310511637
+2393706,2026-05-03,UNO MILLE,QUINTESSÊNCIA,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7804447608917063,0.21955523910829366
+2393707,2026-05-03,Keyd Stars,MIBR Academy,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5184594052485983,0.48154059475140165
+2393710,2026-05-03,UNO MILLE,Keyd Stars,1,bo3,validation,ridge_C1_ratings_form_hnone,0.42286694304056505,0.577133056959435
+2393730,2026-05-03,Zomblers,InControl,1,bo3,validation,ridge_C1_ratings_form_hnone,0.49340450014039616,0.5065954998596038
+2393798,2026-05-03,Omega,Lavked,0,bo3,validation,ridge_C1_ratings_form_hnone,0.22638320350560626,0.7736167964943937
+2393799,2026-05-03,ex-RUBY,HAVU,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6452481274108122,0.35475187258918783
+2393801,2026-05-03,TDK,INOX Division,0,bo3,validation,ridge_C1_ratings_form_hnone,0.49348341078707736,0.5065165892129226
+2393866,2026-05-03,Imperial Academy,AaB,1,bo3,validation,ridge_C1_ratings_form_hnone,0.20736335105022546,0.7926366489497745
+2393878,2026-05-03,BESTIA Academy,ALZON,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6716722244947154,0.3283277755052846
+2393879,2026-05-03,ELITES,Isurus,0,bo3,validation,ridge_C1_ratings_form_hnone,0.04690968476096802,0.953090315239032
+2393881,2026-05-03,Vasco,Players,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6019001532513981,0.3980998467486019
+2393918,2026-05-03,Ursa,HAVU,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5852516700277042,0.4147483299722958
+2393919,2026-05-03,Lavked,GenOne,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6135769262406524,0.3864230737593476
+2393920,2026-05-03,Phantom,aAa,1,bo3,validation,ridge_C1_ratings_form_hnone,0.597283973807389,0.40271602619261104
+2393921,2026-05-03,RBLS,HYPERSPIRIT,0,bo3,validation,ridge_C1_ratings_form_hnone,0.6585953820046451,0.34140461799535493
+2393984,2026-05-03,Gentle Mates,magic,0,bo3,validation,ridge_C1_ratings_form_hnone,0.4810991457369491,0.5189008542630509
+2393985,2026-05-03,Sharks,100 Thieves,1,bo3,validation,ridge_C1_ratings_form_hnone,0.44420165880564283,0.5557983411943572
+2394006,2026-05-03,SPARTA,HEROIC Academy,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7424206904023666,0.2575793095976334
+2394007,2026-05-03,AM,The Last Resort,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5769189930218868,0.42308100697811324
+2394008,2026-05-03,HYPERSPIRIT,aAa,0,bo3,validation,ridge_C1_ratings_form_hnone,0.445555711117294,0.554444288882706
+2394009,2026-05-03,TNC,megoshort,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5676130686159182,0.4323869313840818
+2394076,2026-05-03,JiJieHao,BORING PLAYERS,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7826482792740821,0.2173517207259179
+2394077,2026-05-03,Rooster,Last Bullet,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5229078508275219,0.4770921491724781
+2394083,2026-05-03,BRUTE,benched gods,1,bo3,validation,ridge_C1_ratings_form_hnone,0.4757067014797105,0.5242932985202895
+2394084,2026-05-03,Dripmen,NEW VISION,0,bo3,validation,ridge_C1_ratings_form_hnone,0.6466265708405896,0.3533734291594104
+2393627,2026-05-04,Imperial,Bounty Hunters,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5893109819544164,0.41068901804558355
+2393657,2026-05-04,Wildcard,Voca,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5668367521613297,0.43316324783867033
+2393708,2026-05-04,Bounty Hunters,METANOIA Wolves,1,bo3,validation,ridge_C1_ratings_form_hnone,0.8195719344959244,0.18042806550407564
+2393709,2026-05-04,Fluxo,Fake do Biru,0,bo3,validation,ridge_C1_ratings_form_hnone,0.4967167616159437,0.5032832383840563
+2393734,2026-05-04,Wildcard,M80,0,bo3,validation,ridge_C1_ratings_form_hnone,0.4421088722136899,0.5578911277863101
+2393803,2026-05-04,TNC,UNiTY,1,bo3,validation,ridge_C1_ratings_form_hnone,0.4172721218728923,0.5827278781271077
+2393804,2026-05-04,MOUZ NXT,Ursa,0,bo3,validation,ridge_C1_ratings_form_hnone,0.4825798397814639,0.5174201602185361
+2393805,2026-05-04,Walczaki,Famalicão,1,bo3,validation,ridge_C1_ratings_form_hnone,0.9166280701737735,0.08337192982622654
+2393867,2026-05-04,BIG Academy,Imperial Academy,0,bo3,validation,ridge_C1_ratings_form_hnone,0.745874310193585,0.25412568980641503
+2393883,2026-05-04,Keyd Stars,paiN Academy,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7610145667263074,0.2389854332736926
+2393884,2026-05-04,Crashers,ALZON,0,bo3,validation,ridge_C1_ratings_form_hnone,0.7560653498098924,0.24393465019010763
+2393885,2026-05-04,Players,FURIA fe,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7176487540981,0.28235124590189997
+2393922,2026-05-04,GenOne,aAa,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6609178216628966,0.3390821783371034
+2393923,2026-05-04,HAVU,RBLS,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5218177900676485,0.4781822099323515
+2393924,2026-05-04,Lavked,Phantom,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6397699804891149,0.36023001951088507
+2393925,2026-05-04,Ursa,HYPERSPIRIT,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7261707533998288,0.27382924660017116
+2394010,2026-05-04,AaB,aAa,1,bo3,validation,ridge_C1_ratings_form_hnone,0.569509550101833,0.430490449898167
+2394011,2026-05-04,CYBERSHOKE,megoshort,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7688559610026031,0.23114403899739688
+2394012,2026-05-04,HEROIC Academy,The Last Resort,0,bo3,validation,ridge_C1_ratings_form_hnone,0.3764989727281799,0.6235010272718201
+2394088,2026-05-04,M1X KS,The Last Resort,0,bo3,validation,ridge_C1_ratings_form_hnone,0.3658085109342389,0.6341914890657612
+2394089,2026-05-04,BRUTE,Atreides,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5186499296470931,0.4813500703529069
+2394183,2026-05-04,ALGO,Fire Flux,1,bo3,validation,ridge_C1_ratings_form_hnone,0.4034801389419732,0.5965198610580268
+2394184,2026-05-04,INFURITY,BIG Academy,0,bo3,validation,ridge_C1_ratings_form_hnone,0.16429632768719282,0.8357036723128072
+2393807,2026-05-05,TDK,Famalicão,1,bo3,validation,ridge_C1_ratings_form_hnone,0.9238678624104775,0.07613213758952253
+2393808,2026-05-05,GenOne,HAVU,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6095990805666611,0.3904009194333389
+2393809,2026-05-05,Omega,UNiTY,1,bo3,validation,ridge_C1_ratings_form_hnone,0.48871316097322304,0.511286839026777
+2393886,2026-05-05,ELITES,DAMAJUANA,0,bo3,validation,ridge_C1_ratings_form_hnone,0.18618246822364903,0.813817531776351
+2393887,2026-05-05,UNO MILLE,Isurus,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5661797983735406,0.4338202016264594
+2393926,2026-05-05,Phantom,GenOne,1,bo3,validation,ridge_C1_ratings_form_hnone,0.461320065898706,0.538679934101294
+2393927,2026-05-05,HYPERSPIRIT,RBLS,0,bo3,validation,ridge_C1_ratings_form_hnone,0.3406222739495847,0.6593777260504152
+2394013,2026-05-05,AM,ASTRAL,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5750302738119175,0.4249697261880825
+2394014,2026-05-05,Walczaki,Lavked,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5784488101470584,0.4215511898529416
+2394015,2026-05-05,SPARTA,GenOne,1,bo3,validation,ridge_C1_ratings_form_hnone,0.551509595766652,0.44849040423334796
+2394090,2026-05-05,Aurora Young Blud,Lilmix,0,bo3,validation,ridge_C1_ratings_form_hnone,0.6520929910631338,0.3479070089368662
+2394093,2026-05-05,INOX Division,ex-Zero Tenacity,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7440940088121387,0.2559059911878613
+2393810,2026-05-06,TNC,Lavked,1,bo3,validation,ridge_C1_ratings_form_hnone,0.2415946578068935,0.7584053421931065
+2393811,2026-05-06,Walczaki,INOX Division,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5161822849052503,0.4838177150947497
+2393812,2026-05-06,FAVBET,Ursa,1,bo3,validation,ridge_C1_ratings_form_hnone,0.557761090504504,0.44223890949549605
+2393813,2026-05-06,ex-RUBY,Oxuji,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6086586891058884,0.3913413108941116
+2393888,2026-05-06,paiN Academy,R2,1,bo3,validation,ridge_C1_ratings_form_hnone,0.49549513442023296,0.504504865579767
+2393889,2026-05-06,BESTIA Academy,Vasco,0,bo3,validation,ridge_C1_ratings_form_hnone,0.2667100408319865,0.7332899591680135
+2393890,2026-05-06,Players,ALZON,0,bo3,validation,ridge_C1_ratings_form_hnone,0.7306994182738443,0.2693005817261557
+2393891,2026-05-06,Isurus,R2,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6841666450985524,0.3158333549014476
+2393928,2026-05-06,TNC,Phantom,1,bo3,validation,ridge_C1_ratings_form_hnone,0.33782646718533327,0.6621735328146667
+2393929,2026-05-06,Lavked,UNiTY,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7675814737982566,0.23241852620174341
+2393930,2026-05-06,Ursa,Oxuji,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5217262749122297,0.47827372508777033
+2393931,2026-05-06,Walczaki,RBLS,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7462834569038674,0.25371654309613256
+2394016,2026-05-06,AaB,GenOne,1,bo3,validation,ridge_C1_ratings_form_hnone,0.4239268659077242,0.5760731340922758
+2394017,2026-05-06,CYBERSHOKE,ASTRAL,1,bo3,validation,ridge_C1_ratings_form_hnone,0.683567541872732,0.31643245812726795
+2394018,2026-05-06,Lavked,The Last Resort,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6777219856857795,0.32227801431422054
+2394094,2026-05-06,Atreides,Lilmix,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6145312778617247,0.3854687221382753
+2394097,2026-05-06,ex-Zero Tenacity,benched gods,0,bo3,validation,ridge_C1_ratings_form_hnone,0.666215879593741,0.33378412040625904
+2393814,2026-05-07,UNiTY,Bebop,1,bo3,validation,ridge_C1_ratings_form_hnone,0.3822495880145388,0.6177504119854612
+2393815,2026-05-07,HAVU,Famalicão,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7954572803942324,0.20454271960576764
+2393816,2026-05-07,MOUZ NXT,Lavked,0,bo3,validation,ridge_C1_ratings_form_hnone,0.4357272071057944,0.5642727928942056
+2393817,2026-05-07,Oxuji,Ursa,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5360303538661044,0.4639696461338956
+2393892,2026-05-07,BESTIA Academy,DAMAJUANA,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6256859417575289,0.3743140582424711
+2393893,2026-05-07,Procyon,Yawara,0,bo3,validation,ridge_C1_ratings_form_hnone,0.29044210239742246,0.7095578976025776
+2393894,2026-05-07,Turma do Pagode,BESTIA Academy,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6562534243804374,0.34374657561956257
+2393895,2026-05-07,Fake do Biru,Vasco,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7596569990557992,0.2403430009442008
+2394019,2026-05-07,Tricked,AM,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5907294467875175,0.4092705532124825
+2394020,2026-05-07,Nemiga,AaB,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7440010585587626,0.25599894144123736
+2394021,2026-05-07,Betclic,INOX Division,0,bo3,validation,ridge_C1_ratings_form_hnone,0.3453455444572784,0.6546544555427216
+2394022,2026-05-07,Nuclear TigeRES,ex-Zero Tenacity,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7960604457049247,0.20393955429507526
+2394098,2026-05-07,benched gods,M1X KS,1,bo3,validation,ridge_C1_ratings_form_hnone,0.560694442509006,0.439305557490994
+2394100,2026-05-07,BRUTE,NEW VISION,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7480697913736387,0.2519302086263613
+2394101,2026-05-07,The Last Resort,INOX Division,0,bo3,validation,ridge_C1_ratings_form_hnone,0.2583736806155353,0.7416263193844648
+2394194,2026-05-07,Fire Flux,BIG Academy,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5628701529006982,0.4371298470993018
+2393711,2026-05-08,Yawara,Fake do Biru,1,bo3,validation,ridge_C1_ratings_form_hnone,0.3532129027179467,0.6467870972820533
+2393818,2026-05-08,TDK,GenOne,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6880581400584393,0.31194185994156065
+2393819,2026-05-08,Omega,INOX Division,0,bo3,validation,ridge_C1_ratings_form_hnone,0.1851247067893716,0.8148752932106285
+2393820,2026-05-08,Walczaki,ex-RUBY,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6211863751949434,0.37881362480505665
+2393821,2026-05-08,FAVBET,TNC,0,bo3,validation,ridge_C1_ratings_form_hnone,0.7105239559061086,0.2894760440938914
+2393896,2026-05-08,Imperial,ALZON,1,bo3,validation,ridge_C1_ratings_form_hnone,0.9384982387923322,0.061501761207667816
+2393897,2026-05-08,Bounty Hunters,Keyd Stars,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6584489420583555,0.34155105794164453
+2393898,2026-05-08,LP,UNO MILLE,1,bo3,validation,ridge_C1_ratings_form_hnone,0.572880289266372,0.427119710733628
+2393932,2026-05-08,SPARTA,ex-RUBY,0,bo3,validation,ridge_C1_ratings_form_hnone,0.47990465851343544,0.5200953414865646
+2393933,2026-05-08,AM,MOUZ NXT,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5540773558528309,0.4459226441471691
+2393935,2026-05-08,Sashi,Lavked,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5885119301846105,0.41148806981538955
+2394023,2026-05-08,9INE,Walczaki,0,bo3,validation,ridge_C1_ratings_form_hnone,0.4005672377060372,0.5994327622939628
+2394024,2026-05-08,Nemesis,CYBERSHOKE,0,bo3,validation,ridge_C1_ratings_form_hnone,0.701012588089646,0.29898741191035405
+2394025,2026-05-08,Alliance,Lavked,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7230630190926746,0.27693698090732544
+2394026,2026-05-08,BET-M,SPARTA,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5296116430603333,0.47038835693966674
+2394102,2026-05-08,benched gods,NEW VISION,0,bo3,validation,ridge_C1_ratings_form_hnone,0.7319997590546856,0.2680002409453144
+2394103,2026-05-08,Atreides,The Last Resort,1,bo3,validation,ridge_C1_ratings_form_hnone,0.4040956798051275,0.5959043201948725
+2394272,2026-05-08,ALGO,BIG Academy,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5026545369634434,0.4973454630365566
+2393712,2026-05-09,LP,Turma do Pagode,0,bo3,validation,ridge_C1_ratings_form_hnone,0.607902531651628,0.392097468348372
+2393822,2026-05-09,GenOne,Ursa,1,bo3,validation,ridge_C1_ratings_form_hnone,0.4824507074560521,0.5175492925439479
+2393823,2026-05-09,Omega,HAVU,0,bo3,validation,ridge_C1_ratings_form_hnone,0.46615322565161654,0.5338467743483835
+2393824,2026-05-09,MOUZ NXT,UNiTY,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6796264319248512,0.32037356807514883
+2393900,2026-05-09,Galorys,paiN Academy,1,bo3,validation,ridge_C1_ratings_form_hnone,0.8551817002260592,0.14481829977394078
+2393901,2026-05-09,Bounty Hunters,Turma do Pagode,0,bo3,validation,ridge_C1_ratings_form_hnone,0.6575340601775835,0.34246593982241647
+2393903,2026-05-09,Isurus,Fake do Biru,1,bo3,validation,ridge_C1_ratings_form_hnone,0.3044805900120209,0.6955194099879791
+2393904,2026-05-09,LP,Galorys,1,bo3,validation,ridge_C1_ratings_form_hnone,0.4103685975239969,0.5896314024760031
+2393936,2026-05-09,Nuclear TigeRES,Oxuji,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6805016338257557,0.3194983661742443
+2393937,2026-05-09,Eternal Fire,Johnny Speeds,1,bo3,validation,ridge_C1_ratings_form_hnone,0.35476143453455566,0.6452385654654443
+2393938,2026-05-09,Tricked,Walczaki,1,bo3,validation,ridge_C1_ratings_form_hnone,0.3899281699133325,0.6100718300866674
+2393939,2026-05-09,Betclic,FAVBET,0,bo3,validation,ridge_C1_ratings_form_hnone,0.4524946441787187,0.5475053558212812
+2394027,2026-05-09,Alliance,Nuclear TigeRES,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5568659251862743,0.4431340748137257
+2394028,2026-05-09,BET-M,Walczaki,0,bo3,validation,ridge_C1_ratings_form_hnone,0.39714940852788244,0.6028505914721176
+2394029,2026-05-09,Nemiga,INOX Division,1,bo3,validation,ridge_C1_ratings_form_hnone,0.4741403678272088,0.5258596321727912
+2394030,2026-05-09,AM,CYBERSHOKE,0,bo3,validation,ridge_C1_ratings_form_hnone,0.389004665658077,0.610995334341923
+2394104,2026-05-09,INOX Division,BRUTE,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7938858967963075,0.2061141032036925
+2394105,2026-05-09,Atreides,NEW VISION,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6221862559628648,0.3778137440371352
+2394116,2026-05-09,Aurora,HEROIC,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5829823113513982,0.4170176886486018
+2394117,2026-05-09,G2,Fisher College,1,bo3,validation,ridge_C1_ratings_form_hnone,0.8911157712398254,0.10888422876017456
+2394118,2026-05-09,MOUZ,Gentle Mates,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7736696956470823,0.22633030435291768
+2394119,2026-05-09,The MongolZ,magic,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6978036749327071,0.3021963250672929
+2394120,2026-05-09,Falcons,K27,1,bo3,validation,ridge_C1_ratings_form_hnone,0.861486087781686,0.138513912218314
+2394121,2026-05-09,Spirit,The Huns,1,bo3,validation,ridge_C1_ratings_form_hnone,0.9122629624952905,0.08773703750470951
+2394122,2026-05-09,FURIA,Monte,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6822757950848486,0.3177242049151514
+2394123,2026-05-09,PARIVISION,9z,0,bo3,validation,ridge_C1_ratings_form_hnone,0.6709468712626361,0.3290531287373639
+2393713,2026-05-10,Imperial,UNO MILLE,0,bo3,validation,ridge_C1_ratings_form_hnone,0.7370846964590245,0.2629153035409755
+2393714,2026-05-10,Galorys,Bounty Hunters,1,bo3,validation,ridge_C1_ratings_form_hnone,0.4791851986644178,0.5208148013355822
+2393715,2026-05-10,Yawara,Turma do Pagode,1,bo3,validation,ridge_C1_ratings_form_hnone,0.41126149453138305,0.588738505468617
+2393825,2026-05-10,TDK,Lavked,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6389894743336901,0.36101052566630987
+2393826,2026-05-10,FAVBET,Oxuji,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5830132360613994,0.41698676393860057
+2393827,2026-05-10,ex-RUBY,INOX Division,1,bo3,validation,ridge_C1_ratings_form_hnone,0.40267239502715585,0.5973276049728442
+2393902,2026-05-10,Imperial,Yawara,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6923255696314042,0.30767443036859576
+2393905,2026-05-10,Isurus,Turma do Pagode,1,bo3,validation,ridge_C1_ratings_form_hnone,0.32440900314858956,0.6755909968514104
+2393906,2026-05-10,Imperial,LP,0,bo3,validation,ridge_C1_ratings_form_hnone,0.620146051057449,0.379853948942551
+2393940,2026-05-10,Tricked,MOUZ NXT,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6579107002058382,0.3420892997941618
+2393941,2026-05-10,Sashi,ex-RUBY,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5230496461754857,0.47695035382451434
+2393942,2026-05-10,SPARTA,Lavked,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5074929388599825,0.4925070611400175
+2393943,2026-05-10,TDK,Nuclear TigeRES,0,bo3,validation,ridge_C1_ratings_form_hnone,0.4292750664031377,0.5707249335968623
+2394031,2026-05-10,Nuclear TigeRES,Walczaki,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5465267671909524,0.4534732328090476
+2394032,2026-05-10,Nemiga,CYBERSHOKE,1,bo3,validation,ridge_C1_ratings_form_hnone,0.587293753646309,0.412706246353691
+2394033,2026-05-10,Walczaki,Nemiga,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5135929891912463,0.4864070108087537
+2394106,2026-05-10,BRUTE,Atreides,1,bo3,validation,ridge_C1_ratings_form_hnone,0.4916034057827894,0.5083965942172106
+2394107,2026-05-10,INOX Division,BRUTE,1,bo3,validation,ridge_C1_ratings_form_hnone,0.8024799401158651,0.1975200598841349
+2394124,2026-05-10,MOUZ,G2,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5371169554727901,0.46288304452720985
+2394125,2026-05-10,K27,Gentle Mates,0,bo3,validation,ridge_C1_ratings_form_hnone,0.46018487984293194,0.539815120157068
+2394126,2026-05-10,The MongolZ,Spirit,0,bo3,validation,ridge_C1_ratings_form_hnone,0.4042701307217954,0.5957298692782046
+2394127,2026-05-10,Aurora,The Huns,1,bo3,validation,ridge_C1_ratings_form_hnone,0.8234969686524556,0.17650303134754441
+2394128,2026-05-10,FURIA,HEROIC,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6141153376178263,0.38588466238217367
+2394129,2026-05-10,PARIVISION,Fisher College,1,bo3,validation,ridge_C1_ratings_form_hnone,0.8716979646349473,0.1283020353650527
+2394130,2026-05-10,Falcons,9z,0,bo3,validation,ridge_C1_ratings_form_hnone,0.7556320228385012,0.24436797716149883
+2394131,2026-05-10,Monte,magic,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5499509758591556,0.45004902414084436
+2394229,2026-05-10,100 Thieves,A Great Chaos,1,bo3,validation,ridge_C1_ratings_form_hnone,0.8951970262049673,0.10480297379503267
+2394230,2026-05-10,BASEMENT BOYS,Linx Legacy,1,bo3,validation,ridge_C1_ratings_form_hnone,0.8896255291352279,0.11037447086477215
+2394231,2026-05-10,MTX,Gatorian,0,bo3,validation,ridge_C1_ratings_form_hnone,0.6188710389894311,0.3811289610105689
+2394232,2026-05-10,Acend,HAFO,1,bo3,validation,ridge_C1_ratings_form_hnone,0.8529584150546474,0.14704158494535258
+2394233,2026-05-10,Linx Legacy,A Great Chaos,0,bo3,validation,ridge_C1_ratings_form_hnone,0.4446195810796423,0.5553804189203577
+2394234,2026-05-10,HAFO,MTX,0,bo3,validation,ridge_C1_ratings_form_hnone,0.38112896101056887,0.6188710389894312
+2394235,2026-05-10,100 Thieves,BASEMENT BOYS,1,bo3,validation,ridge_C1_ratings_form_hnone,0.8872312690630924,0.11276873093690765
+2394236,2026-05-10,Acend,Gatorian,1,bo3,validation,ridge_C1_ratings_form_hnone,0.8529584150546474,0.14704158494535258
+2394237,2026-05-10,A Great Chaos,Gatorian,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5,0.5
+2394238,2026-05-10,MTX,BASEMENT BOYS,0,bo3,validation,ridge_C1_ratings_form_hnone,0.30308715047093304,0.696912849529067
+2394443,2026-05-10,OlyBet,PURE,1,bo3,validation,ridge_C1_ratings_form_hnone,0.4986716260376365,0.5013283739623635
+2393716,2026-05-11,UNO MILLE,Galorys,1,bo3,validation,ridge_C1_ratings_form_hnone,0.36543432349062654,0.6345656765093735
+2393717,2026-05-11,Turma do Pagode,Galorys,1,bo3,validation,ridge_C1_ratings_form_hnone,0.31368412065781814,0.6863158793421819
+2393828,2026-05-11,MOUZ NXT,INOX Division,0,bo3,validation,ridge_C1_ratings_form_hnone,0.3006520024670349,0.6993479975329651
+2393830,2026-05-11,GenOne,Lavked,0,bo3,validation,ridge_C1_ratings_form_hnone,0.3967562694810694,0.6032437305189307
+2393907,2026-05-11,LP,Isurus,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6625049848041834,0.3374950151958166
+2393945,2026-05-11,Betclic,Johnny Speeds,0,bo3,validation,ridge_C1_ratings_form_hnone,0.41424194287423466,0.5857580571257653
+2393946,2026-05-11,AM,Walczaki,0,bo3,validation,ridge_C1_ratings_form_hnone,0.24441564561429774,0.7555843543857023
+2393947,2026-05-11,Oxuji,TNC,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6236313741497098,0.3763686258502902
+2394108,2026-05-11,Vitality,BC.Game,1,bo3,validation,ridge_C1_ratings_form_hnone,0.9630164923650504,0.03698350763494962
+2394109,2026-05-11,B8,BETBOOM,0,bo3,validation,ridge_C1_ratings_form_hnone,0.44583579751949853,0.5541642024805015
+2394110,2026-05-11,paiN,FaZe,1,bo3,validation,ridge_C1_ratings_form_hnone,0.45124154806376404,0.548758451936236
+2394111,2026-05-11,NRG,FUT,0,bo3,validation,ridge_C1_ratings_form_hnone,0.20796075102570666,0.7920392489742933
+2394132,2026-05-11,PARIVISION,Aurora,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5144103221495668,0.48558967785043317
+2394133,2026-05-11,HEROIC,Gentle Mates,0,bo3,validation,ridge_C1_ratings_form_hnone,0.669665259717096,0.330334740282904
+2394134,2026-05-11,Falcons,Monte,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7466976340168614,0.2533023659831386
+2394135,2026-05-11,The MongolZ,G2,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5114644389134001,0.4885355610865999
+2394136,2026-05-11,MOUZ,9z,0,bo3,validation,ridge_C1_ratings_form_hnone,0.6277912099319516,0.3722087900680484
+2394137,2026-05-11,K27,magic,0,bo3,validation,ridge_C1_ratings_form_hnone,0.4307381546935062,0.5692618453064938
+2394138,2026-05-11,FURIA,Spirit,0,bo3,validation,ridge_C1_ratings_form_hnone,0.44162824155225927,0.5583717584477408
+2394139,2026-05-11,The Huns,Fisher College,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5580080075918974,0.4419919924081026
+2394239,2026-05-11,BASEMENT BOYS,A Great Chaos,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6055290466079428,0.3944709533920572
+2394240,2026-05-11,100 Thieves,Acend,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6645929175369634,0.33540708246303663
+2394241,2026-05-11,BASEMENT BOYS,Acend,1,bo3,validation,ridge_C1_ratings_form_hnone,0.20490665753068849,0.7950933424693115
+2394242,2026-05-11,100 Thieves,BASEMENT BOYS,1,bo3,validation,ridge_C1_ratings_form_hnone,0.8833374517183397,0.11666254828166034
+2394243,2026-05-11,FlyQuest,JiJieHao,0,bo3,validation,ridge_C1_ratings_form_hnone,0.6421813379584242,0.35781866204157575
+2394244,2026-05-11,Chinggis Warriors,NEXVOID,1,bo3,validation,ridge_C1_ratings_form_hnone,0.4566351144011634,0.5433648855988367
+2394245,2026-05-11,TYLOO,Ground Zero,1,bo3,validation,ridge_C1_ratings_form_hnone,0.8054871567633142,0.19451284323668583
+2394246,2026-05-11,5star,Rare Atom,1,bo3,validation,ridge_C1_ratings_form_hnone,0.4526792483330775,0.5473207516669225
+2394247,2026-05-11,Lynn Vision,Alter Ego,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6796403859324112,0.32035961406758884
+2394248,2026-05-11,Haunted House,THUNDER dOWNUNDER,1,bo3,validation,ridge_C1_ratings_form_hnone,0.06975274051675978,0.9302472594832403
+2394249,2026-05-11,SemperFi,Change The Game,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6393472702911508,0.3606527297088492
+2394250,2026-05-11,Last Bullet,Kaleido,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5246933832464633,0.4753066167535367
+2394273,2026-05-11,Isurus,GUARA,1,bo3,validation,ridge_C1_ratings_form_hnone,0.8262613207267413,0.1737386792732587
+2394275,2026-05-11,Galorys,ex-KRÜ,1,bo3,validation,ridge_C1_ratings_form_hnone,0.8752951184205103,0.12470488157948967
+2393831,2026-05-12,SPARTA,Oxuji,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5078264498974101,0.4921735501025899
+2393832,2026-05-12,fnatic,HAVU,1,bo3,validation,ridge_C1_ratings_form_hnone,0.71522459478431,0.28477540521569
+2393833,2026-05-12,BET-M,Walczaki,0,bo3,validation,ridge_C1_ratings_form_hnone,0.34360401488027215,0.6563959851197279
+2393834,2026-05-12,HOTU,INOX Division,1,bo3,validation,ridge_C1_ratings_form_hnone,0.515985869449455,0.484014130550545
+2393949,2026-05-12,Nuclear TigeRES,Eternal Fire,0,bo3,validation,ridge_C1_ratings_form_hnone,0.732846873401096,0.267153126598904
+2393950,2026-05-12,TDK,Sashi,0,bo3,validation,ridge_C1_ratings_form_hnone,0.555421812991951,0.44457818700804896
+2393951,2026-05-12,MOUZ NXT,Lavked,0,bo3,validation,ridge_C1_ratings_form_hnone,0.3628820084163319,0.6371179915836681
+2394112,2026-05-12,Natus Vincere,Passion UA,1,bo3,validation,ridge_C1_ratings_form_hnone,0.8740318145777795,0.12596818542222055
+2394113,2026-05-12,SINNERS,GamerLegion,0,bo3,validation,ridge_C1_ratings_form_hnone,0.3396102067992671,0.6603897932007329
+2394114,2026-05-12,Legacy,M80,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5405700692159262,0.4594299307840738
+2394115,2026-05-12,Liquid,Astralis,0,bo3,validation,ridge_C1_ratings_form_hnone,0.19385012546982272,0.8061498745301773
+2394140,2026-05-12,MOUZ,Aurora,1,bo3,validation,ridge_C1_ratings_form_hnone,0.560619512237241,0.43938048776275895
+2394141,2026-05-12,HEROIC,magic,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5767643281926745,0.42323567180732546
+2394142,2026-05-12,The MongolZ,Falcons,0,bo3,validation,ridge_C1_ratings_form_hnone,0.3756008520700813,0.6243991479299187
+2394143,2026-05-12,Monte,The Huns,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7497596039971979,0.2502403960028021
+2394144,2026-05-12,FURIA,Gentle Mates,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7550287622906515,0.24497123770934848
+2394145,2026-05-12,PARIVISION,G2,0,bo3,validation,ridge_C1_ratings_form_hnone,0.4574656950123994,0.5425343049876006
+2394157,2026-05-12,BETBOOM,Vitality,1,bo3,validation,ridge_C1_ratings_form_hnone,0.12800272050854467,0.8719972794914553
+2394158,2026-05-12,paiN,FUT,1,bo3,validation,ridge_C1_ratings_form_hnone,0.25600076017793877,0.7439992398220612
+2394159,2026-05-12,B8,BC.Game,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7436566002576258,0.2563433997423742
+2394160,2026-05-12,FaZe,NRG,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5684981215890077,0.4315018784109923
+2394251,2026-05-12,JiJieHao,Chinggis Warriors,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5306829680239962,0.46931703197600383
+2394252,2026-05-12,TYLOO,5star,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7373154473601073,0.26268455263989265
+2394253,2026-05-12,Lynn Vision,Haunted House,1,bo3,validation,ridge_C1_ratings_form_hnone,0.9056524271152331,0.09434757288476692
+2394254,2026-05-12,SemperFi,Kaleido,0,bo3,validation,ridge_C1_ratings_form_hnone,0.6704341786200171,0.3295658213799829
+2394255,2026-05-12,FlyQuest,NEXVOID,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6070389530139824,0.39296104698601764
+2394256,2026-05-12,Ground Zero,Rare Atom,1,bo3,validation,ridge_C1_ratings_form_hnone,0.43787282591821836,0.5621271740817817
+2394257,2026-05-12,Alter Ego,THUNDER dOWNUNDER,0,bo3,validation,ridge_C1_ratings_form_hnone,0.39360844712745174,0.6063915528725483
+2394258,2026-05-12,Change The Game,Last Bullet,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5762347543350836,0.42376524566491636
+2394276,2026-05-12,Yawara,VEXA,0,bo3,validation,ridge_C1_ratings_form_hnone,0.8948794966633874,0.1051205033366126
+2394279,2026-05-12,LP,BESTIA Academy,1,bo3,validation,ridge_C1_ratings_form_hnone,0.9040187071616445,0.09598129283835555
+2394323,2026-05-12,Procyon,GUARA,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6921790828074514,0.30782091719254856
+2394324,2026-05-12,ex-KRÜ,ALKA,0,bo3,validation,ridge_C1_ratings_form_hnone,0.6041105542595986,0.3958894457404014
+2394325,2026-05-12,BESTIA Academy,HereWeGoAgain,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7538746119170536,0.24612538808294637
+2394371,2026-05-12,GenOne,Project 91,1,bo3,validation,ridge_C1_ratings_form_hnone,0.8328777154508705,0.16712228454912947
+2394372,2026-05-12,OlyBet,SAW,1,bo3,validation,ridge_C1_ratings_form_hnone,0.31316104840535086,0.6868389515946491
+2394373,2026-05-12,aAa,G2 Ares,0,bo3,validation,ridge_C1_ratings_form_hnone,0.3882620085714171,0.6117379914285829
+2394374,2026-05-12,Rune Eaters,MASONIC,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5814729121131088,0.4185270878868912
+2393835,2026-05-13,Nemiga,ex-RUBY,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5739696581138134,0.4260303418861866
+2393836,2026-05-13,100 Thieves,Lavked,0,bo3,validation,ridge_C1_ratings_form_hnone,0.6572305813430763,0.3427694186569237
+2393837,2026-05-13,KOLESIE,TDK,0,bo3,validation,ridge_C1_ratings_form_hnone,0.41329225598776914,0.5867077440122308
+2393838,2026-05-13,Betclic,TNC,0,bo3,validation,ridge_C1_ratings_form_hnone,0.6231788244423336,0.37682117555766637
+2393953,2026-05-13,SPARTA,TNC,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6826876354939339,0.31731236450606615
+2393954,2026-05-13,Betclic,AM,0,bo3,validation,ridge_C1_ratings_form_hnone,0.49709050181669173,0.5029094981833082
+2393955,2026-05-13,Tricked,ex-RUBY,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5185416658712995,0.48145833412870054
+2394146,2026-05-13,Gentle Mates,magic,0,bo3,validation,ridge_C1_ratings_form_hnone,0.45844130219440243,0.5415586978055975
+2394147,2026-05-13,Monte,G2,0,bo3,validation,ridge_C1_ratings_form_hnone,0.37682541496036004,0.62317458503964
+2394148,2026-05-13,The MongolZ,Aurora,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5693481485630296,0.4306518514369704
+2394161,2026-05-13,Natus Vincere,GamerLegion,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6872681240938899,0.31273187590611007
+2394162,2026-05-13,Astralis,Legacy,0,bo3,validation,ridge_C1_ratings_form_hnone,0.6069520079543008,0.3930479920456992
+2394163,2026-05-13,Passion UA,SINNERS,0,bo3,validation,ridge_C1_ratings_form_hnone,0.417023508752142,0.582976491247858
+2394164,2026-05-13,Liquid,M80,1,bo3,validation,ridge_C1_ratings_form_hnone,0.34366912765558866,0.6563308723444113
+2394165,2026-05-13,B8,FUT,1,bo3,validation,ridge_C1_ratings_form_hnone,0.28242996338535636,0.7175700366146436
+2394166,2026-05-13,FaZe,Vitality,0,bo3,validation,ridge_C1_ratings_form_hnone,0.11534024290700085,0.8846597570929992
+2394167,2026-05-13,SINNERS,Astralis,0,bo3,validation,ridge_C1_ratings_form_hnone,0.2579153677673067,0.7420846322326933
+2394168,2026-05-13,GamerLegion,Liquid,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7259807622585367,0.2740192377414633
+2394259,2026-05-13,5star,FlyQuest,1,bo3,validation,ridge_C1_ratings_form_hnone,0.33798153851808077,0.6620184614819192
+2394260,2026-05-13,Chinggis Warriors,Ground Zero,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5734857720620212,0.4265142279379788
+2394261,2026-05-13,SemperFi,THUNDER dOWNUNDER,0,bo3,validation,ridge_C1_ratings_form_hnone,0.37314764419000546,0.6268523558099945
+2394262,2026-05-13,Haunted House,Change The Game,1,bo3,validation,ridge_C1_ratings_form_hnone,0.28008514876552926,0.7199148512344707
+2394263,2026-05-13,TYLOO,JiJieHao,0,bo3,validation,ridge_C1_ratings_form_hnone,0.6975680949581855,0.3024319050418145
+2394264,2026-05-13,Lynn Vision,Kaleido,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7405924481377686,0.2594075518622314
+2394265,2026-05-13,Chinggis Warriors,5star,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5220515503021124,0.47794844969788763
+2394266,2026-05-13,Haunted House,THUNDER dOWNUNDER,0,bo3,validation,ridge_C1_ratings_form_hnone,0.14239993607667234,0.8576000639233277
+2394277,2026-05-13,UNO MILLE,paiN Academy,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7958493961192745,0.20415060388072548
+2394280,2026-05-13,Bounty Hunters,MIBR fe,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7883300304938523,0.2116699695061477
+2394281,2026-05-13,Yawara,GUARA,1,bo3,validation,ridge_C1_ratings_form_hnone,0.8694001393060828,0.13059986069391716
+2394282,2026-05-13,Bounty Hunters,VEXA,1,bo3,validation,ridge_C1_ratings_form_hnone,0.8843486473606674,0.11565135263933257
+2394283,2026-05-13,BESTIA Academy,METANOIA Wolves,0,bo3,validation,ridge_C1_ratings_form_hnone,0.3866140386476795,0.6133859613523205
+2394326,2026-05-13,R2,Blitzkrieg,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5917238861899013,0.40827611381009865
+2394327,2026-05-13,METANOIA Wolves,VEXA,0,bo3,validation,ridge_C1_ratings_form_hnone,0.6678590064561314,0.3321409935438686
+2394328,2026-05-13,Vasco,Red Feet,0,bo3,validation,ridge_C1_ratings_form_hnone,0.6886945569076575,0.31130544309234254
+2394375,2026-05-13,Project 91,SAW,1,bo3,validation,ridge_C1_ratings_form_hnone,0.34844205412469326,0.6515579458753067
+2394376,2026-05-13,aAa,Rune Eaters,0,bo3,validation,ridge_C1_ratings_form_hnone,0.48488593582793516,0.5151140641720648
+2394377,2026-05-13,GenOne,OlyBet,1,bo3,validation,ridge_C1_ratings_form_hnone,0.80252646063133,0.19747353936866996
+2394378,2026-05-13,MASONIC,G2 Ares,0,bo3,validation,ridge_C1_ratings_form_hnone,0.3014263000017951,0.6985736999982048
+2393839,2026-05-14,SPARTA,Nemiga,0,bo3,validation,ridge_C1_ratings_form_hnone,0.34380341550147425,0.6561965844985258
+2393840,2026-05-14,Lavked,TNC,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7416563832489571,0.2583436167510429
+2393841,2026-05-14,fnatic,TDK,1,bo3,validation,ridge_C1_ratings_form_hnone,0.3972168425599214,0.6027831574400786
+2393842,2026-05-14,HOTU,Walczaki,0,bo3,validation,ridge_C1_ratings_form_hnone,0.4447867747829356,0.5552132252170644
+2393956,2026-05-14,TDK,MOUZ NXT,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7154210541257874,0.2845789458742126
+2393957,2026-05-14,Nuclear TigeRES,Lavked,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5892070898040186,0.4107929101959814
+2394169,2026-05-14,BETBOOM,paiN,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5892022003349073,0.41079779966509267
+2394170,2026-05-14,B8,Vitality,0,bo3,validation,ridge_C1_ratings_form_hnone,0.13429817524706744,0.8657018247529326
+2394171,2026-05-14,Natus Vincere,Legacy,0,bo3,validation,ridge_C1_ratings_form_hnone,0.64975372943952,0.35024627056047997
+2394172,2026-05-14,GamerLegion,Astralis,1,bo3,validation,ridge_C1_ratings_form_hnone,0.4404396350526425,0.5595603649473575
+2394267,2026-05-14,TYLOO,5star,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6596121397885942,0.34038786021140577
+2394268,2026-05-14,Kaleido,THUNDER dOWNUNDER,0,bo3,validation,ridge_C1_ratings_form_hnone,0.27916793777677706,0.7208320622232229
+2394284,2026-05-14,Galorys,UNO MILLE,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5350299968558748,0.4649700031441252
+2394285,2026-05-14,Keyd Stars,Fake do Biru,0,bo3,validation,ridge_C1_ratings_form_hnone,0.4279488829826783,0.5720511170173217
+2394286,2026-05-14,LP,Isurus,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6834175086123915,0.3165824913876085
+2394331,2026-05-14,ex-KRÜ,Blitzkrieg,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5522541069540887,0.4477458930459113
+2394332,2026-05-14,GUARA,METANOIA Wolves,0,bo3,validation,ridge_C1_ratings_form_hnone,0.29567352970000427,0.7043264702999957
+2394379,2026-05-14,MANA,BRUTE,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5336545096617298,0.4663454903382702
+2394380,2026-05-14,Famalicão,Falcons Force,1,bo3,validation,ridge_C1_ratings_form_hnone,0.3523630341152862,0.6476369658847139
+2394381,2026-05-14,ex-Zero Tenacity,Young Ninjas,1,bo3,validation,ridge_C1_ratings_form_hnone,0.4684892986685345,0.5315107013314655
+2394382,2026-05-14,Just Players,Hashiras,1,bo3,validation,ridge_C1_ratings_form_hnone,0.44260812810372074,0.5573918718962793
+2394466,2026-05-14,SHISHKA,Endless Journey,1,bo3,validation,ridge_C1_ratings_form_hnone,0.319310023759811,0.680689976240189
+2394467,2026-05-14,DONSTU,CYBERSHOKE Prospects,0,bo3,validation,ridge_C1_ratings_form_hnone,0.6237496778897076,0.3762503221102924
+2393843,2026-05-15,Lavked,fnatic,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5111577525977999,0.48884224740220006
+2393844,2026-05-15,Walczaki,Nemiga,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5772085209404678,0.4227914790595322
+2393845,2026-05-15,Lavked,Nemiga,0,bo3,validation,ridge_C1_ratings_form_hnone,0.3690508923285908,0.6309491076714092
+2393959,2026-05-15,Sashi,Oxuji,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6093082697195876,0.3906917302804124
+2393960,2026-05-15,AM,SPARTA,0,bo3,validation,ridge_C1_ratings_form_hnone,0.47391969763731445,0.5260803023626855
+2393961,2026-05-15,Johnny Speeds,ex-RUBY,0,bo3,validation,ridge_C1_ratings_form_hnone,0.4327982992977992,0.5672017007022008
+2394149,2026-05-15,MOUZ,Aurora,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5591440686071397,0.4408559313928603
+2394150,2026-05-15,Spirit,G2,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6540117257932478,0.34598827420675216
+2394151,2026-05-15,9z,magic,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5571697637813536,0.44283023621864637
+2394152,2026-05-15,FURIA,Falcons,0,bo3,validation,ridge_C1_ratings_form_hnone,0.4021256917697239,0.5978743082302761
+2394173,2026-05-15,paiN,GamerLegion,0,bo3,validation,ridge_C1_ratings_form_hnone,0.3955971545639143,0.6044028454360857
+2394287,2026-05-15,ex-KRÜ,Vasco,1,bo3,validation,ridge_C1_ratings_form_hnone,0.30019826514281334,0.6998017348571867
+2394288,2026-05-15,MIBR fe,paiN Academy,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5459554712439447,0.4540445287560553
+2394289,2026-05-15,Galorys,LP,0,bo3,validation,ridge_C1_ratings_form_hnone,0.4773567313049416,0.5226432686950584
+2394290,2026-05-15,Bounty Hunters,Fake do Biru,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5490267890832153,0.45097321091678466
+2394291,2026-05-15,Isurus,ex-KRÜ,1,bo3,validation,ridge_C1_ratings_form_hnone,0.786437347278015,0.21356265272198505
+2394335,2026-05-15,paiN Academy,ALKA,0,bo3,validation,ridge_C1_ratings_form_hnone,0.603834640192927,0.396165359807073
+2394336,2026-05-15,R2,Procyon,0,bo3,validation,ridge_C1_ratings_form_hnone,0.4597667832733675,0.5402332167266325
+2394337,2026-05-15,VEXA,BESTIA Academy,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5684300971387098,0.43156990286129016
+2394383,2026-05-15,MANA,Falcons Force,0,bo3,validation,ridge_C1_ratings_form_hnone,0.7496186725829058,0.2503813274170942
+2394384,2026-05-15,Young Ninjas,Hashiras,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5253636022357673,0.4746363977642327
+2394385,2026-05-15,BRUTE,Famalicão,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7817990756733275,0.21820092432667249
+2394386,2026-05-15,ex-Zero Tenacity,Just Players,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5516154530712327,0.4483845469287673
+2394468,2026-05-15,Misa,Endless Journey,0,bo3,validation,ridge_C1_ratings_form_hnone,0.6573566311752985,0.3426433688247015
+2394469,2026-05-15,Atreides,DONSTU,0,bo3,validation,ridge_C1_ratings_form_hnone,0.528625883470184,0.471374116529816
+2394474,2026-05-15,ORDALUK,Hapoka,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5,0.5
+2393962,2026-05-16,SPARTA,Walczaki,0,bo3,validation,ridge_C1_ratings_form_hnone,0.26343859021992155,0.7365614097800784
+2393963,2026-05-16,Johnny Speeds,Oxuji,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5568860216420063,0.4431139783579937
+2393964,2026-05-16,TDK,Lavked,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5513833009066141,0.44861669909338586
+2394153,2026-05-16,MOUZ,Spirit,0,bo3,validation,ridge_C1_ratings_form_hnone,0.41010044549913227,0.5898995545008677
+2394154,2026-05-16,magic,Falcons,0,bo3,validation,ridge_C1_ratings_form_hnone,0.25256659499962775,0.7474334050003723
+2394174,2026-05-16,Natus Vincere,Vitality,1,bo3,validation,ridge_C1_ratings_form_hnone,0.2697111585888011,0.7302888414111989
+2394176,2026-05-16,Legacy,GamerLegion,0,bo3,validation,ridge_C1_ratings_form_hnone,0.502062339348865,0.497937660651135
+2394269,2026-05-16,JiJieHao,TYLOO,1,bo3,validation,ridge_C1_ratings_form_hnone,0.37110042534782495,0.628899574652175
+2394270,2026-05-16,Lynn Vision,THUNDER dOWNUNDER,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5494878651251917,0.45051213487480835
+2394292,2026-05-16,Keyd Stars,METANOIA Wolves,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7332843559666444,0.26671564403335557
+2394293,2026-05-16,paiN Academy,VEXA,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5906373217994565,0.4093626782005435
+2394294,2026-05-16,MIBR fe,GUARA,0,bo3,validation,ridge_C1_ratings_form_hnone,0.6884938256513113,0.31150617434868866
+2394295,2026-05-16,BESTIA Academy,Vasco,1,bo3,validation,ridge_C1_ratings_form_hnone,0.32364637952581377,0.6763536204741862
+2394338,2026-05-16,MIBR Academy,Red Feet,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7257964058851623,0.27420359411483775
+2394341,2026-05-16,VEXA,paiN Academy,0,bo3,validation,ridge_C1_ratings_form_hnone,0.4093626782005434,0.5906373217994566
+2394387,2026-05-16,OlyBet,Project 91,1,bo3,validation,ridge_C1_ratings_form_hnone,0.4898160516896586,0.5101839483103414
+2394389,2026-05-16,Falcons Force,Famalicão,1,bo3,validation,ridge_C1_ratings_form_hnone,0.588423475477152,0.411576524522848
+2394390,2026-05-16,Young Ninjas,ex-Zero Tenacity,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5529500705708499,0.4470499294291501
+2394444,2026-05-16,Inner Circle Academy,Nyxon,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7731887915207295,0.2268112084792705
+2394445,2026-05-16,Honvéd,A Great Chaos,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7441131520172037,0.25588684798279626
+2394446,2026-05-16,MASONIC,PURE,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6712071719632446,0.32879282803675536
+2394447,2026-05-16,BASEMENT BOYS,MTX,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7685394388568026,0.23146056114319735
+2394448,2026-05-16,Nyxon,A Great Chaos,0,bo3,validation,ridge_C1_ratings_form_hnone,0.4695744155874627,0.5304255844125373
+2394449,2026-05-16,MTX,PURE,0,bo3,validation,ridge_C1_ratings_form_hnone,0.4421394662136596,0.5578605337863404
+2394450,2026-05-16,Inner Circle Academy,Honvéd,1,bo3,validation,ridge_C1_ratings_form_hnone,0.4817137317653758,0.5182862682346242
+2394451,2026-05-16,BASEMENT BOYS,MASONIC,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6024195984864175,0.39758040151358254
+2394452,2026-05-16,A Great Chaos,MASONIC,0,bo3,validation,ridge_C1_ratings_form_hnone,0.2957874514448797,0.7042125485551203
+2394453,2026-05-16,PURE,Honvéd,0,bo3,validation,ridge_C1_ratings_form_hnone,0.34387302077206927,0.6561269792279307
+2394470,2026-05-16,SHISHKA,CYBERSHOKE Prospects,0,bo3,validation,ridge_C1_ratings_form_hnone,0.29141052252180366,0.7085894774781963
+2394471,2026-05-16,Endless Journey,DONSTU,1,bo3,validation,ridge_C1_ratings_form_hnone,0.38404842709720605,0.615951572902794
+2394155,2026-05-17,MOUZ,magic,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6664083367486122,0.3335916632513878
+2394156,2026-05-17,Spirit,Falcons,1,bo5,validation,ridge_C1_ratings_form_hnone,0.5312732617982521,0.46872673820174793
+2394175,2026-05-17,BETBOOM,Natus Vincere,0,bo3,validation,ridge_C1_ratings_form_hnone,0.35203308643737075,0.6479669135626293
+2394177,2026-05-17,Legacy,BETBOOM,1,bo3,validation,ridge_C1_ratings_form_hnone,0.49783317560381457,0.5021668243961854
+2394178,2026-05-17,GamerLegion,Natus Vincere,0,bo5,validation,ridge_C1_ratings_form_hnone,0.32482913971913,0.6751708602808699
+2394271,2026-05-17,JiJieHao,Lynn Vision,0,bo5,validation,ridge_C1_ratings_form_hnone,0.3916702985149857,0.6083297014850143
+2394296,2026-05-17,UNO MILLE,Yawara,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5258647608446805,0.4741352391553195
+2394297,2026-05-17,Bounty Hunters,Yawara,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6139095674229635,0.38609043257703646
+2394298,2026-05-17,Isurus,VEXA,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7659543294758342,0.2340456705241658
+2394299,2026-05-17,ex-KRÜ,BESTIA Academy,1,bo3,validation,ridge_C1_ratings_form_hnone,0.506180445196067,0.493819554803933
+2394302,2026-05-17,Galorys,Keyd Stars,0,bo3,validation,ridge_C1_ratings_form_hnone,0.6173770621432373,0.3826229378567627
+2394342,2026-05-17,ex-KRÜ,Red Feet,1,bo3,validation,ridge_C1_ratings_form_hnone,0.547175003136881,0.45282499686311894
+2394343,2026-05-17,R2,HereWeGoAgain,1,bo3,validation,ridge_C1_ratings_form_hnone,0.8289011223824447,0.17109887761755527
+2394345,2026-05-17,ALKA,MIBR Academy,1,bo3,validation,ridge_C1_ratings_form_hnone,0.24403739091429433,0.7559626090857057
+2394391,2026-05-17,Just Players,OlyBet,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7308406286140028,0.2691593713859972
+2394392,2026-05-17,G2 Ares,Falcons Force,0,bo3,validation,ridge_C1_ratings_form_hnone,0.6334561333370728,0.36654386666292715
+2394393,2026-05-17,GenOne,ex-Zero Tenacity,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5036042008162301,0.49639579918376986
+2394394,2026-05-17,BRUTE,Rune Eaters,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6406365656846287,0.3593634343153713
+2394454,2026-05-17,MASONIC,Honvéd,1,bo3,validation,ridge_C1_ratings_form_hnone,0.45775991732862276,0.5422400826713772
+2394455,2026-05-17,Inner Circle Academy,BASEMENT BOYS,0,bo3,validation,ridge_C1_ratings_form_hnone,0.6664903283375992,0.33350967166240075
+2394456,2026-05-17,MASONIC,Inner Circle Academy,0,bo3,validation,ridge_C1_ratings_form_hnone,0.23556304614808699,0.764436953851913
+2394457,2026-05-17,BASEMENT BOYS,Inner Circle Academy,1,bo3,validation,ridge_C1_ratings_form_hnone,0.33350967166240075,0.6664903283375992
+2394472,2026-05-17,SHISHKA,Endless Journey,0,bo3,validation,ridge_C1_ratings_form_hnone,0.2884046209905662,0.7115953790094338
+2394473,2026-05-17,CYBERSHOKE Prospects,Endless Journey,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5059122755969966,0.4940877244030034
+2393965,2026-05-18,Nemesis,Walczaki,0,bo3,validation,ridge_C1_ratings_form_hnone,0.4244182728543819,0.5755817271456181
+2393966,2026-05-18,1win,Eternal Fire,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5990902179911142,0.40090978200888583
+2393967,2026-05-18,illwill,ex-RUBY,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5430338606033088,0.4569661393966912
+2393968,2026-05-18,BET-M,Tricked,0,bo3,validation,ridge_C1_ratings_form_hnone,0.42677642186890075,0.5732235781310993
+2394300,2026-05-18,METANOIA Wolves,paiN Academy,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5259621394325757,0.47403786056742425
+2394301,2026-05-18,UNO MILLE,GUARA,1,bo3,validation,ridge_C1_ratings_form_hnone,0.8608422111056079,0.13915778889439212
+2394303,2026-05-18,Yawara,ex-KRÜ,1,bo3,validation,ridge_C1_ratings_form_hnone,0.8030120364445286,0.19698796355547143
+2394304,2026-05-18,Galorys,paiN Academy,1,bo3,validation,ridge_C1_ratings_form_hnone,0.8120877057393652,0.18791229426063483
+2394346,2026-05-18,Procyon,BESTIA Academy,0,bo3,validation,ridge_C1_ratings_form_hnone,0.6285235348627957,0.37147646513720434
+2394348,2026-05-18,VEXA,Blitzkrieg,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6204543128554295,0.3795456871445705
+2394395,2026-05-18,SPARTA,Just Players,0,bo3,validation,ridge_C1_ratings_form_hnone,0.6821138985762558,0.3178861014237442
+2394396,2026-05-18,Ursa,Lazer Cats,0,bo3,validation,ridge_C1_ratings_form_hnone,0.6528278182305471,0.34717218176945286
+2394397,2026-05-18,PsychoFace,Leo,0,bo3,validation,ridge_C1_ratings_form_hnone,0.3248548564575381,0.6751451435424619
+2394398,2026-05-18,Oramond,ALGO,0,bo3,validation,ridge_C1_ratings_form_hnone,0.609404649069423,0.39059535093057696
+2394479,2026-05-18,fnatic,ex-Zero Tenacity,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6803815812595732,0.31961841874042685
+2394480,2026-05-18,AM,megoshort,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7371044089285791,0.2628955910714209
+2394481,2026-05-18,EAC,GenOne,0,bo3,validation,ridge_C1_ratings_form_hnone,0.21426844062903005,0.78573155937097
+2394482,2026-05-18,ex-RUBY,ASTRAL,0,bo3,validation,ridge_C1_ratings_form_hnone,0.7434677499945113,0.25653225000548874
+2393969,2026-05-19,Nemiga,TDK,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5685658713845024,0.43143412861549757
+2393970,2026-05-19,HOTU,Sashi,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5978667193870806,0.4021332806129194
+2393971,2026-05-19,100 Thieves,Nuclear TigeRES,0,bo3,validation,ridge_C1_ratings_form_hnone,0.46903978798480733,0.5309602120151926
+2393972,2026-05-19,FOKUS,Oxuji,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6626432413164132,0.33735675868358683
+2394305,2026-05-19,VEXA,UNO MILLE,0,bo3,validation,ridge_C1_ratings_form_hnone,0.21908993187399917,0.7809100681260008
+2394349,2026-05-19,HereWeGoAgain,Red Feet,0,bo3,validation,ridge_C1_ratings_form_hnone,0.3296112320028033,0.6703887679971967
+2394350,2026-05-19,R2,METANOIA Wolves,0,bo3,validation,ridge_C1_ratings_form_hnone,0.4902993915183155,0.5097006084816845
+2394351,2026-05-19,ex-KRÜ,paiN Academy,0,bo3,validation,ridge_C1_ratings_form_hnone,0.47864816247282427,0.5213518375271757
+2394399,2026-05-19,ex-RUBY,GenOne,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7339298300474404,0.2660701699525596
+2394400,2026-05-19,AM,BRUTE,0,bo3,validation,ridge_C1_ratings_form_hnone,0.602441201432373,0.397558798567627
+2394401,2026-05-19,Phantom,TNC,1,bo3,validation,ridge_C1_ratings_form_hnone,0.573211903093619,0.426788096906381
+2394402,2026-05-19,fnatic,Falcons Force,1,bo3,validation,ridge_C1_ratings_form_hnone,0.750212334877848,0.249787665122152
+2394483,2026-05-19,Eternal Fire,Rune Eaters,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7597701271084067,0.24022987289159325
+2394484,2026-05-19,PsychoFace,HEROIC Academy,1,bo3,validation,ridge_C1_ratings_form_hnone,0.4309483292149214,0.5690516707850786
+2394485,2026-05-19,Oramond,Lavked,1,bo3,validation,ridge_C1_ratings_form_hnone,0.32142083722567427,0.6785791627743257
+2394486,2026-05-19,Ursa,ALGO,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6060613420637952,0.39393865793620475
+2394527,2026-05-19,Hashiras,Young Ninjas,1,bo3,validation,ridge_C1_ratings_form_hnone,0.4827359677983058,0.5172640322016941
+2394528,2026-05-19,Bebop,Misa,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5735571722353539,0.42644282776464615
+2394529,2026-05-19,ASTRAL,CYBERSHOKE Prospects,0,bo3,validation,ridge_C1_ratings_form_hnone,0.6813004899563395,0.3186995100436605
+2394530,2026-05-19,MASONIC,Project 91,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6696578703009595,0.33034212969904053
+2393973,2026-05-20,Nemiga,Nuclear TigeRES,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5547576522196409,0.4452423477803591
+2393974,2026-05-20,HOTU,ex-RUBY,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5936531705718047,0.40634682942819533
+2393975,2026-05-20,1win,FOKUS,1,bo3,validation,ridge_C1_ratings_form_hnone,0.48089141909915756,0.5191085809008424
+2393976,2026-05-20,Walczaki,Tricked,0,bo3,validation,ridge_C1_ratings_form_hnone,0.6464798850997033,0.35352011490029667
+2394207,2026-05-20,Legacy,TYLOO,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7132898574265562,0.28671014257344385
+2394208,2026-05-20,Falcons,M80,1,bo3,validation,ridge_C1_ratings_form_hnone,0.8134735148971717,0.18652648510282832
+2394209,2026-05-20,MIBR,PARIVISION,1,bo3,validation,ridge_C1_ratings_form_hnone,0.3212694254540633,0.6787305745459367
+2394210,2026-05-20,The MongolZ,B8,0,bo3,validation,ridge_C1_ratings_form_hnone,0.6268093638498236,0.37319063615017645
+2394352,2026-05-20,MIBR Academy,Procyon,0,bo3,validation,ridge_C1_ratings_form_hnone,0.6725145196320438,0.3274854803679562
+2394353,2026-05-20,MIBR Academy,R2,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7034332545211579,0.2965667454788421
+2394354,2026-05-20,ex-KRÜ,GUARA,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6629342428229753,0.3370657571770247
+2394403,2026-05-20,AM,Falcons Force,1,bo3,validation,ridge_C1_ratings_form_hnone,0.679599178974444,0.320400821025556
+2394404,2026-05-20,SPARTA,GenOne,0,bo3,validation,ridge_C1_ratings_form_hnone,0.6394640780677485,0.3605359219322515
+2394405,2026-05-20,Ursa,Oramond,0,bo3,validation,ridge_C1_ratings_form_hnone,0.48580841613738224,0.5141915838626178
+2394406,2026-05-20,PsychoFace,TNC,1,bo3,validation,ridge_C1_ratings_form_hnone,0.33673198263893306,0.663268017361067
+2394487,2026-05-20,Lavked,ex-Zero Tenacity,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6950388618865442,0.3049611381134558
+2394488,2026-05-20,ex-RUBY,Rune Eaters,1,bo3,validation,ridge_C1_ratings_form_hnone,0.8566036710340568,0.14339632896594323
+2394489,2026-05-20,ALGO,HEROIC Academy,0,bo3,validation,ridge_C1_ratings_form_hnone,0.6278797138662044,0.37212028613379555
+2394491,2026-05-20,fnatic,Oramond,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5881796469253316,0.41182035307466835
+2394531,2026-05-20,Young Ninjas,Misa,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5746305402289725,0.42536945977102747
+2394532,2026-05-20,ASTRAL,Project 91,1,bo3,validation,ridge_C1_ratings_form_hnone,0.8390895605469189,0.16091043945308114
+2394533,2026-05-20,Hashiras,Bebop,1,bo3,validation,ridge_C1_ratings_form_hnone,0.4904547694916711,0.5095452305083289
+2394534,2026-05-20,CYBERSHOKE Prospects,MASONIC,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6045674041889114,0.3954325958110886
+2394652,2026-05-20,Kinoa,BIG Academy,0,bo3,validation,ridge_C1_ratings_form_hnone,0.2099424437354689,0.7900575562645311
+2393977,2026-05-21,1win,Nuclear TigeRES,1,bo3,validation,ridge_C1_ratings_form_hnone,0.4184176659994884,0.5815823340005116
+2393978,2026-05-21,Tricked,HOTU,1,bo3,validation,ridge_C1_ratings_form_hnone,0.44309469867828155,0.5569053013217184
+2393979,2026-05-21,1win,Tricked,1,bo3,validation,ridge_C1_ratings_form_hnone,0.4768991508920212,0.5231008491079788
+2394211,2026-05-21,NRG,MOUZ,0,bo3,validation,ridge_C1_ratings_form_hnone,0.20350871698924788,0.7964912830107521
+2394212,2026-05-21,BC.Game,paiN,0,bo3,validation,ridge_C1_ratings_form_hnone,0.25779324414069715,0.7422067558593028
+2394213,2026-05-21,3DMAX,Liquid,0,bo3,validation,ridge_C1_ratings_form_hnone,0.6632516880850188,0.3367483119149812
+2394214,2026-05-21,Lynn Vision,Ninjas in Pyjamas,1,bo3,validation,ridge_C1_ratings_form_hnone,0.4481961409290881,0.5518038590709119
+2394215,2026-05-21,M80,MOUZ,0,bo3,validation,ridge_C1_ratings_form_hnone,0.2916928250986791,0.7083071749013209
+2394216,2026-05-21,TYLOO,paiN,0,bo3,validation,ridge_C1_ratings_form_hnone,0.47976657856450394,0.520233421435496
+2394217,2026-05-21,The MongolZ,Liquid,1,bo3,validation,ridge_C1_ratings_form_hnone,0.8037474022311939,0.1962525977688061
+2394218,2026-05-21,PARIVISION,Lynn Vision,1,bo3,validation,ridge_C1_ratings_form_hnone,0.619008776792918,0.380991223207082
+2394355,2026-05-21,VEXA,Red Feet,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6585484790961155,0.34145152090388453
+2394356,2026-05-21,Galorys,ex-KRÜ,1,bo3,validation,ridge_C1_ratings_form_hnone,0.8098368362426733,0.19016316375732667
+2394357,2026-05-21,LP,VEXA,1,bo3,validation,ridge_C1_ratings_form_hnone,0.8573863903290144,0.14261360967098557
+2394358,2026-05-21,Isurus,Procyon,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7195084026707675,0.28049159732923246
+2394407,2026-05-21,Phantom,Leo,1,bo3,validation,ridge_C1_ratings_form_hnone,0.53624409598933,0.46375590401067
+2394408,2026-05-21,fnatic,BRUTE,1,bo3,validation,ridge_C1_ratings_form_hnone,0.661304207643362,0.33869579235663805
+2394409,2026-05-21,ALGO,Lazer Cats,1,bo3,validation,ridge_C1_ratings_form_hnone,0.46922907151010407,0.5307709284898959
+2394410,2026-05-21,ex-RUBY,Just Players,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7013431690807677,0.29865683091923234
+2394490,2026-05-21,EAC,megoshort,0,bo3,validation,ridge_C1_ratings_form_hnone,0.2967507224205904,0.7032492775794096
+2394492,2026-05-21,PsychoFace,Ursa,1,bo3,validation,ridge_C1_ratings_form_hnone,0.3307963951294268,0.6692036048705732
+2394493,2026-05-21,AM,GenOne,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5533250845056221,0.4466749154943779
+2394494,2026-05-21,Eternal Fire,ASTRAL,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6068776286551779,0.3931223713448221
+2394535,2026-05-21,ex-Zero Tenacity,Subtop De France,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7726884765701331,0.22731152342986694
+2394536,2026-05-21,SAW,Julie&Cie,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5199255103578011,0.4800744896421989
+2394537,2026-05-21,Just Players,Lilmix,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7405477125784965,0.2594522874215035
+2394538,2026-05-21,Rune Eaters,Bushido Wildcats,1,bo3,validation,ridge_C1_ratings_form_hnone,0.578571958756996,0.42142804124300404
+2394653,2026-05-21,ALGO,EAC,1,bo3,validation,ridge_C1_ratings_form_hnone,0.736023143300119,0.263976856699881
+2394730,2026-05-21,Kinoa,ALGO,1,bo3,validation,ridge_C1_ratings_form_hnone,0.2502264019364344,0.7497735980635656
+2393323,2026-05-22,Alliance,Walczaki,1,bo3,validation,ridge_C1_ratings_form_hnone,0.3926119517221505,0.6073880482778495
+2393324,2026-05-22,Sashi,EYEBALLERS,0,bo3,validation,ridge_C1_ratings_form_hnone,0.44578514793682644,0.5542148520631736
+2394219,2026-05-22,Falcons,Legacy,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6485546761967838,0.35144532380321625
+2394220,2026-05-22,MOUZ,paiN,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6678746179194619,0.3321253820805381
+2394221,2026-05-22,MIBR,B8,1,bo3,validation,ridge_C1_ratings_form_hnone,0.3901020859260888,0.6098979140739111
+2394222,2026-05-22,The MongolZ,PARIVISION,1,bo3,validation,ridge_C1_ratings_form_hnone,0.564678643732649,0.435321356267351
+2394223,2026-05-22,Legacy,The MongolZ,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5172159370947074,0.48278406290529263
+2394224,2026-05-22,B8,MOUZ,0,bo3,validation,ridge_C1_ratings_form_hnone,0.3954751261783537,0.6045248738216463
+2394306,2026-05-22,Bounty Hunters,Galorys,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5499154469227755,0.4500845530772245
+2394307,2026-05-22,Fake do Biru,UNO MILLE,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5901435331966167,0.4098564668033833
+2394359,2026-05-22,Yawara,BESTIA Academy,1,bo3,validation,ridge_C1_ratings_form_hnone,0.8081779905402442,0.1918220094597558
+2394360,2026-05-22,Fake do Biru,paiN Academy,0,bo3,validation,ridge_C1_ratings_form_hnone,0.8384810085476555,0.1615189914523445
+2394361,2026-05-22,Bounty Hunters,MIBR Academy,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7016417954495087,0.29835820455049133
+2394362,2026-05-22,Keyd Stars,METANOIA Wolves,1,bo3,validation,ridge_C1_ratings_form_hnone,0.755431055201832,0.24456894479816804
+2394411,2026-05-22,SPARTA,Falcons Force,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7675042461714308,0.23249575382856924
+2394412,2026-05-22,Ursa,TNC,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5959722820108436,0.4040277179891564
+2394413,2026-05-22,PsychoFace,BRUTE,0,bo3,validation,ridge_C1_ratings_form_hnone,0.4317820629407447,0.5682179370592553
+2394414,2026-05-22,Oramond,GenOne,0,bo3,validation,ridge_C1_ratings_form_hnone,0.6187852238712743,0.3812147761287257
+2394495,2026-05-22,AM,PsychoFace,1,bo3,validation,ridge_C1_ratings_form_hnone,0.649862556628976,0.35013744337102404
+2394497,2026-05-22,fnatic,megoshort,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7943053189195605,0.20569468108043953
+2394498,2026-05-22,Lavked,HEROIC Academy,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7961688864374459,0.20383111356255412
+2394499,2026-05-22,Ursa,ASTRAL,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5567465991216923,0.44325340087830767
+2394539,2026-05-22,Subtop De France,Julie&Cie,0,bo3,validation,ridge_C1_ratings_form_hnone,0.4906197674759264,0.5093802325240736
+2394540,2026-05-22,Lilmix,Bushido Wildcats,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5195946278271193,0.4804053721728807
+2394541,2026-05-22,ex-Zero Tenacity,SAW,0,bo3,validation,ridge_C1_ratings_form_hnone,0.652476779768334,0.34752322023166604
+2394542,2026-05-22,Just Players,Rune Eaters,0,bo3,validation,ridge_C1_ratings_form_hnone,0.6251076894393973,0.3748923105606027
+2394648,2026-05-22,eternal premium,WeClear,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6621189424644467,0.3378810575355533
+2394649,2026-05-22,BAKS,Xcity,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6457623821842203,0.35423761781577967
+2394650,2026-05-22,Spirit Academy Black,Aurora Young Blud,1,bo3,validation,ridge_C1_ratings_form_hnone,0.4801919550416115,0.5198080449583885
+2394651,2026-05-22,CYBERSHOKE Prospects,Oxuji,1,bo3,validation,ridge_C1_ratings_form_hnone,0.27955799337848247,0.7204420066215176
+2394679,2026-05-22,INFINITE,RBLS,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5040851943145633,0.49591480568543667
+2394680,2026-05-22,Inner Circle,OG,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5385030226893476,0.4614969773106524
+2394681,2026-05-22,Gaimin Gladiators,Acend,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5712154328815838,0.42878456711841617
+2394682,2026-05-22,Sharks,Betclic,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7268343403240632,0.27316565967593676
+2394683,2026-05-22,Wildcard,Inner Circle,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5553946948900543,0.44460530510994567
+2394684,2026-05-22,FOKUS,RBLS,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7083165493408634,0.2916834506591366
+2394686,2026-05-22,Betclic,RBLS,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5336541650508618,0.46634583494913817
+2394732,2026-05-22,BAKS,eternal premium,1,bo3,validation,ridge_C1_ratings_form_hnone,0.48805700362419013,0.5119429963758099
+2394733,2026-05-22,Xcity,WeClear,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5,0.5
+2394734,2026-05-22,CYBERSHOKE Prospects,Spirit Academy Black,1,bo3,validation,ridge_C1_ratings_form_hnone,0.48518269067372166,0.5148173093262783
+2394735,2026-05-22,Oxuji,Aurora Young Blud,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7276145405616226,0.27238545943837744
+2394736,2026-05-22,WeClear,Spirit Academy Black,0,bo3,validation,ridge_C1_ratings_form_hnone,0.30291669871638116,0.6970833012836188
+2394737,2026-05-22,eternal premium,Oxuji,0,bo3,validation,ridge_C1_ratings_form_hnone,0.15817482951706324,0.8418251704829367
+2393325,2026-05-23,Walczaki,Sashi,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6728335731783109,0.32716642682168906
+2393326,2026-05-23,Alliance,EYEBALLERS,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5752102152778713,0.4247897847221287
+2394225,2026-05-23,Falcons,MOUZ,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6191399588889567,0.3808600411110433
+2394226,2026-05-23,MIBR,Legacy,0,bo3,validation,ridge_C1_ratings_form_hnone,0.30581939674563335,0.6941806032543667
+2394308,2026-05-23,LP,Yawara,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5976382424372366,0.4023617575627634
+2394309,2026-05-23,Keyd Stars,Isurus,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5329399437013103,0.46706005629868974
+2394363,2026-05-23,UNO MILLE,ALKA,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7581149253101115,0.2418850746898885
+2394364,2026-05-23,UNO MILLE,Galorys,1,bo3,validation,ridge_C1_ratings_form_hnone,0.46903257266270265,0.5309674273372973
+2394365,2026-05-23,LP,Isurus,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6471781282751164,0.35282187172488355
+2394366,2026-05-23,Keyd Stars,paiN Academy,1,bo3,validation,ridge_C1_ratings_form_hnone,0.747023057019926,0.252976942980074
+2394415,2026-05-23,Lazer Cats,Leo,0,bo3,validation,ridge_C1_ratings_form_hnone,0.4389398309622691,0.5610601690377309
+2394416,2026-05-23,AM,Just Players,0,bo3,validation,ridge_C1_ratings_form_hnone,0.6147725093413238,0.38522749065867623
+2394417,2026-05-23,ex-RUBY,Phantom,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6820325689800428,0.31796743101995717
+2394418,2026-05-23,fnatic,ALGO,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7434754139259689,0.25652458607403106
+2394496,2026-05-23,Eternal Fire,Oramond,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5280533979480009,0.4719466020519991
+2394500,2026-05-23,ex-RUBY,GenOne,1,bo3,validation,ridge_C1_ratings_form_hnone,0.705544864342945,0.29445513565705494
+2394501,2026-05-23,ALGO,ex-Zero Tenacity,0,bo3,validation,ridge_C1_ratings_form_hnone,0.47922786989104327,0.5207721301089567
+2394502,2026-05-23,EAC,Rune Eaters,0,bo3,validation,ridge_C1_ratings_form_hnone,0.2191458116020294,0.7808541883979706
+2394543,2026-05-23,Misa,Bebop,0,bo3,validation,ridge_C1_ratings_form_hnone,0.4477447633701541,0.5522552366298459
+2394544,2026-05-23,ASTRAL,MASONIC,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6794653846352103,0.32053461536478967
+2394545,2026-05-23,Julie&Cie,ex-Zero Tenacity,0,bo3,validation,ridge_C1_ratings_form_hnone,0.327465026150081,0.672534973849919
+2394546,2026-05-23,Bushido Wildcats,Just Players,1,bo3,validation,ridge_C1_ratings_form_hnone,0.3534370330609604,0.6465629669390396
+2394599,2026-05-23,100 Thieves,Eternal 21,1,bo3,validation,ridge_C1_ratings_form_hnone,0.8718465273811948,0.12815347261880516
+2394600,2026-05-23,Sashi Academy,Strael Bora,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6615910182125976,0.3384089817874024
+2394601,2026-05-23,Fortress,Invicta,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5565742880080842,0.4434257119919158
+2394602,2026-05-23,STATE,95 Vikings,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7337661496937307,0.26623385030626934
+2394603,2026-05-23,Eternal 21,Strael Bora,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5470825113114666,0.45291748868853343
+2394604,2026-05-23,95 Vikings,Fortress,0,bo3,validation,ridge_C1_ratings_form_hnone,0.4074734893139771,0.5925265106860229
+2394605,2026-05-23,100 Thieves,Sashi Academy,1,bo3,validation,ridge_C1_ratings_form_hnone,0.9186380810011261,0.0813619189988739
+2394606,2026-05-23,STATE,Invicta,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7636252391325592,0.2363747608674408
+2394607,2026-05-23,Strael Bora,Invicta,1,bo3,validation,ridge_C1_ratings_form_hnone,0.43176933255142425,0.5682306674485758
+2394608,2026-05-23,Fortress,Sashi Academy,1,bo3,validation,ridge_C1_ratings_form_hnone,0.4697617068971216,0.5302382931028784
+2394641,2026-05-23,EAC,The Last Resort,1,bo3,validation,ridge_C1_ratings_form_hnone,0.2119939834647565,0.7880060165352435
+2394642,2026-05-23,JiJieHao,FromPR,1,bo3,validation,ridge_C1_ratings_form_hnone,0.90914613033597,0.09085386966402997
+2394643,2026-05-23,Atreides,ENCE,1,bo3,validation,ridge_C1_ratings_form_hnone,0.3361968496140648,0.6638031503859352
+2394644,2026-05-23,UNiTY,BASEMENT BOYS,0,bo3,validation,ridge_C1_ratings_form_hnone,0.49699422548727573,0.5030057745127243
+2394685,2026-05-23,Gaimin Gladiators,Inner Circle,0,bo3,validation,ridge_C1_ratings_form_hnone,0.4477302442283201,0.5522697557716799
+2394687,2026-05-23,Acend,Wildcard,0,bo3,validation,ridge_C1_ratings_form_hnone,0.3899011794030264,0.6100988205969736
+2394688,2026-05-23,Sharks,FOKUS,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5321908982177832,0.4678091017822168
+2394689,2026-05-23,Inner Circle,Sharks,1,bo3,validation,ridge_C1_ratings_form_hnone,0.41961476285171245,0.5803852371482876
+2394690,2026-05-23,Betclic,Acend,0,bo3,validation,ridge_C1_ratings_form_hnone,0.43084465287261375,0.5691553471273862
+2394691,2026-05-23,Wildcard,FOKUS,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5106307172239445,0.4893692827760555
+2394695,2026-05-23,GenOne,MANA,1,bo3,validation,ridge_C1_ratings_form_hnone,0.581850672409959,0.418149327590041
+2394696,2026-05-23,Omega,ASTRAL,1,bo3,validation,ridge_C1_ratings_form_hnone,0.45787125030886555,0.5421287496911344
+2394698,2026-05-23,EAC,Hashiras,1,bo3,validation,ridge_C1_ratings_form_hnone,0.16799491603595562,0.8320050839640444
+2394738,2026-05-23,BAKS,CYBERSHOKE Prospects,0,bo3,validation,ridge_C1_ratings_form_hnone,0.3480032625572492,0.6519967374427508
+2394739,2026-05-23,Oxuji,Spirit Academy Black,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6758831106268147,0.3241168893731853
+2394740,2026-05-23,BAKS,Oxuji,0,bo3,validation,ridge_C1_ratings_form_hnone,0.25997501586012234,0.7400249841398776
+2394741,2026-05-23,CYBERSHOKE Prospects,Oxuji,0,bo3,validation,ridge_C1_ratings_form_hnone,0.3968291797464524,0.6031708202535476
+2394742,2026-05-23,Julie&Cie,brazylijski luz,0,bo3,validation,ridge_C1_ratings_form_hnone,0.4941494705328461,0.5058505294671539
+2394744,2026-05-23,Project 91,EC BANGA,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6367947206411834,0.36320527935881664
+2394745,2026-05-23,SAW,Enjoy,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5453857398895269,0.4546142601104731
+2394780,2026-05-23,HEROIC Academy,DONSTU,0,bo3,validation,ridge_C1_ratings_form_hnone,0.47177983497010334,0.5282201650298967
+2394906,2026-05-23,G2 Ares,Phantom Academy,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6842049676755697,0.3157950323244303
+2394907,2026-05-23,Spirit HU,mXm,0,bo3,validation,ridge_C1_ratings_form_hnone,0.30800125373343934,0.6919987462665607
+2393327,2026-05-24,Walczaki,Alliance,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5687536841922842,0.4312463158077158
+2393328,2026-05-24,EYEBALLERS,Alliance,0,bo3,validation,ridge_C1_ratings_form_hnone,0.4721851986888564,0.5278148013111437
+2394227,2026-05-24,MOUZ,MIBR,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7258966469713086,0.2741033530286914
+2394228,2026-05-24,Falcons,Legacy,0,bo5,validation,ridge_C1_ratings_form_hnone,0.6633714270973703,0.3366285729026297
+2394310,2026-05-24,Fake do Biru,Galorys,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5373429524775298,0.46265704752247017
+2394311,2026-05-24,LP,Keyd Stars,1,bo3,validation,ridge_C1_ratings_form_hnone,0.645510398124352,0.35448960187564804
+2394367,2026-05-24,Bounty Hunters,Yawara,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5395773063842277,0.46042269361577226
+2394369,2026-05-24,Bounty Hunters,Keyd Stars,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5843662392374619,0.4156337607625381
+2394419,2026-05-24,AM,TNC,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5875206618347992,0.41247933816520077
+2394420,2026-05-24,SPARTA,Lazer Cats,0,bo3,validation,ridge_C1_ratings_form_hnone,0.6814479917840875,0.31855200821591245
+2394421,2026-05-24,PsychoFace,Oramond,0,bo3,validation,ridge_C1_ratings_form_hnone,0.3285678901216351,0.6714321098783649
+2394503,2026-05-24,GenOne,megoshort,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7119098756816674,0.2880901243183326
+2394506,2026-05-24,fnatic,Lavked,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5379447441277343,0.4620552558722657
+2394507,2026-05-24,PsychoFace,Oramond,0,bo3,validation,ridge_C1_ratings_form_hnone,0.3285678901216351,0.6714321098783649
+2394547,2026-05-24,CYBERSHOKE Prospects,ex-Zero Tenacity,0,bo3,validation,ridge_C1_ratings_form_hnone,0.49829452650913886,0.5017054734908611
+2394548,2026-05-24,Hashiras,Bushido Wildcats,0,bo3,validation,ridge_C1_ratings_form_hnone,0.6178364536380327,0.38216354636196725
+2394549,2026-05-24,SAW,ASTRAL,0,bo3,validation,ridge_C1_ratings_form_hnone,0.4343384611234524,0.5656615388765476
+2394550,2026-05-24,Rune Eaters,Bebop,1,bo3,validation,ridge_C1_ratings_form_hnone,0.4219738856047872,0.5780261143952128
+2394609,2026-05-24,100 Thieves,STATE,1,bo3,validation,ridge_C1_ratings_form_hnone,0.8408804519741118,0.15911954802588824
+2394610,2026-05-24,Strael Bora,Fortress,0,bo3,validation,ridge_C1_ratings_form_hnone,0.4042493347601435,0.5957506652398565
+2394611,2026-05-24,Fortress,STATE,0,bo3,validation,ridge_C1_ratings_form_hnone,0.29662564863109886,0.7033743513689011
+2394612,2026-05-24,100 Thieves,STATE,0,bo3,validation,ridge_C1_ratings_form_hnone,0.8408804519741118,0.15911954802588824
+2394645,2026-05-24,EAC,Atreides,0,bo3,validation,ridge_C1_ratings_form_hnone,0.32753358082477957,0.6724664191752204
+2394646,2026-05-24,JiJieHao,BASEMENT BOYS,1,bo3,validation,ridge_C1_ratings_form_hnone,0.8189859083211662,0.18101409167883376
+2394647,2026-05-24,Atreides,JiJieHao,1,bo3,validation,ridge_C1_ratings_form_hnone,0.21401966698227076,0.7859803330177293
+2394692,2026-05-24,Acend,Inner Circle,0,bo3,validation,ridge_C1_ratings_form_hnone,0.38571947019489483,0.6142805298051052
+2394693,2026-05-24,FOKUS,Inner Circle,1,bo3,validation,ridge_C1_ratings_form_hnone,0.483181986017234,0.5168180139827661
+2394694,2026-05-24,Wildcard,FOKUS,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5741908913830862,0.4258091086169138
+2394699,2026-05-24,MANA,Hashiras,0,bo3,validation,ridge_C1_ratings_form_hnone,0.49591903318166836,0.5040809668183317
+2394701,2026-05-24,GenOne,EAC,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7321392448430079,0.26786075515699215
+2394702,2026-05-24,ALGO,Omega,0,bo3,validation,ridge_C1_ratings_form_hnone,0.44054153909908156,0.5594584609009184
+2394746,2026-05-24,Subtop De France,Dripmen,0,bo3,validation,ridge_C1_ratings_form_hnone,0.564632443222139,0.435367556777861
+2394747,2026-05-24,Lilmix,NEW VISION,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5184563116581182,0.48154368834188177
+2394748,2026-05-24,G2 Ares,DONSTU,1,bo3,validation,ridge_C1_ratings_form_hnone,0.49353522628316426,0.5064647737168357
+2394749,2026-05-24,Bushido Wildcats,Misa,0,bo3,validation,ridge_C1_ratings_form_hnone,0.4539543678524597,0.5460456321475403
+2394781,2026-05-24,Oramond,Project 91,1,bo3,validation,ridge_C1_ratings_form_hnone,0.8458579384781806,0.15414206152181942
+2394782,2026-05-24,Entropy,WAZABI,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6149563984916833,0.38504360150831674
+2394922,2026-05-24,Marsborne,SportsBetExpert,0,bo3,validation,ridge_C1_ratings_form_hnone,0.6807105390740482,0.3192894609259518
+2394312,2026-05-25,Galorys,LP,0,bo3,validation,ridge_C1_ratings_form_hnone,0.40712213385192225,0.5928778661480778
+2394370,2026-05-25,Bounty Hunters,LP,1,bo3,validation,ridge_C1_ratings_form_hnone,0.47399308882527097,0.526006911174729
+2394422,2026-05-25,Leo,GenOne,0,bo3,validation,ridge_C1_ratings_form_hnone,0.4360795872516068,0.5639204127483932
+2394423,2026-05-25,Phantom,BRUTE,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5340890541039758,0.4659109458960242
+2394424,2026-05-25,ALGO,Just Players,0,bo3,validation,ridge_C1_ratings_form_hnone,0.43581308500774946,0.5641869149922505
+2394476,2026-05-25,SSSghoul,OKSUCC,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5,0.5
+2394504,2026-05-25,ASTRAL,ex-Zero Tenacity,1,bo3,validation,ridge_C1_ratings_form_hnone,0.49596117658101796,0.5040388234189821
+2394505,2026-05-25,HEROIC Academy,Rune Eaters,0,bo3,validation,ridge_C1_ratings_form_hnone,0.42478595014252635,0.5752140498574736
+2394508,2026-05-25,ex-RUBY,Ursa,0,bo3,validation,ridge_C1_ratings_form_hnone,0.7374423740152447,0.2625576259847553
+2394551,2026-05-25,Ursa,aAa,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7315677426613525,0.2684322573386475
+2394552,2026-05-25,Lavked,Phantom,0,bo3,validation,ridge_C1_ratings_form_hnone,0.6240181694846532,0.37598183051534684
+2394553,2026-05-25,Leo,ex-Zero Tenacity,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5504840614359876,0.4495159385640124
+2394554,2026-05-25,ex-RUBY,Rune Eaters,1,bo3,validation,ridge_C1_ratings_form_hnone,0.8033249706351206,0.19667502936487935
+2394613,2026-05-25,Nuclear TigeRES,Oxuji,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7582931922336154,0.24170680776638465
+2394614,2026-05-25,SPARTA,Athlon,1,bo3,validation,ridge_C1_ratings_form_hnone,0.8495844415036037,0.15041555849639632
+2394615,2026-05-25,SPARTA,Nuclear TigeRES,0,bo3,validation,ridge_C1_ratings_form_hnone,0.28076871803090503,0.7192312819690949
+2394616,2026-05-25,Athlon,Oxuji,0,bo3,validation,ridge_C1_ratings_form_hnone,0.19229302293858763,0.8077069770614124
+2394617,2026-05-25,Oxuji,SPARTA,1,bo3,validation,ridge_C1_ratings_form_hnone,0.44970956623188785,0.5502904337681122
+2394618,2026-05-25,K27,PsychoFace,1,bo3,validation,ridge_C1_ratings_form_hnone,0.8456380119942369,0.15436198800576306
+2394619,2026-05-25,WW,Tricksters,1,bo3,validation,ridge_C1_ratings_form_hnone,0.8684190102623803,0.13158098973761967
+2394620,2026-05-25,WW,K27,0,bo3,validation,ridge_C1_ratings_form_hnone,0.3973809879166412,0.6026190120833588
+2394621,2026-05-25,Tricksters,PsychoFace,0,bo3,validation,ridge_C1_ratings_form_hnone,0.22930947660487844,0.7706905233951216
+2394703,2026-05-25,Lazer Cats,Just Players,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5170107699799307,0.4829892300200693
+2394704,2026-05-25,TNC,ex-Zero Tenacity,0,bo3,validation,ridge_C1_ratings_form_hnone,0.4946003433474242,0.5053996566525758
+2394706,2026-05-25,HYPERSPIRIT,Bebop,1,bo3,validation,ridge_C1_ratings_form_hnone,0.3741412099021948,0.6258587900978052
+2394731,2026-05-25,BIG Academy,Kinoa,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7309651410513223,0.26903485894867774
+2394750,2026-05-25,SAW,Subtop De France,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7040491043318664,0.2959508956681336
+2394753,2026-05-25,Hashiras,NEW VISION,0,bo3,validation,ridge_C1_ratings_form_hnone,0.6830118865101744,0.3169881134898256
+2394784,2026-05-25,TNC,Misa,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5819494378518609,0.41805056214813907
+2394908,2026-05-25,RUSTEC,Entropy,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6396927957355919,0.3603072042644081
+2394909,2026-05-25,ASTRAL,brazylijski luz,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6517960746292616,0.3482039253707384
+2394910,2026-05-25,MANA,Falcons Force,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6075779674363064,0.39242203256369357
+2394911,2026-05-25,G2 Ares,Lilmix,0,bo3,validation,ridge_C1_ratings_form_hnone,0.7078593122238497,0.2921406877761503
+2394923,2026-05-25,Overtake Sector,ex-Aether,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5,0.5
+2394924,2026-05-25,Marsborne,Overtake Sector,1,bo3,validation,ridge_C1_ratings_form_hnone,0.8415078265472924,0.1584921734527076
+2394925,2026-05-25,SportsBetExpert,ex-Aether,1,bo3,validation,ridge_C1_ratings_form_hnone,0.792778438981885,0.20722156101811495
+2394926,2026-05-25,Prestige,MANA,1,bo3,validation,ridge_C1_ratings_form_hnone,0.2730691170421161,0.7269308829578839
+2394927,2026-05-25,ALGO,NAVI Junior,1,bo3,validation,ridge_C1_ratings_form_hnone,0.48352996288391226,0.5164700371160877
+2394928,2026-05-25,Kaleido,Ground Zero,1,bo3,validation,ridge_C1_ratings_form_hnone,0.4950774540879953,0.5049225459120047
+2394425,2026-05-26,Oramond,Leo,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6602418133142983,0.3397581866857017
+2394426,2026-05-26,AM,Lazer Cats,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5870253476890981,0.4129746523109019
+2394427,2026-05-26,ALGO,BRUTE,1,bo3,validation,ridge_C1_ratings_form_hnone,0.39062148804597774,0.6093785119540223
+2394477,2026-05-26,The Last Resort,Dripmen,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7648155207395884,0.23518447926041164
+2394509,2026-05-26,fnatic,Rune Eaters,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7451615691201476,0.25483843087985236
+2394510,2026-05-26,GenOne,ASTRAL,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6223199650261602,0.37768003497383984
+2394511,2026-05-26,ex-RUBY,PsychoFace,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7636277568186429,0.23637224318135708
+2394555,2026-05-26,RBLS,ASTRAL,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5708812298987873,0.4291187701012127
+2394556,2026-05-26,HEROIC Academy,TNC,0,bo3,validation,ridge_C1_ratings_form_hnone,0.37043144675299566,0.6295685532470043
+2394557,2026-05-26,Oramond,HAVU,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7154474010099249,0.2845525989900751
+2394558,2026-05-26,KOLESIE,Bushido Wildcats,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7603580501163215,0.23964194988367848
+2394622,2026-05-26,PsychoFace,WW,1,bo3,validation,ridge_C1_ratings_form_hnone,0.23848883044738445,0.7615111695526156
+2394623,2026-05-26,BET-M,Aurora Young Blud,0,bo3,validation,ridge_C1_ratings_form_hnone,0.771080634957859,0.22891936504214105
+2394624,2026-05-26,ARCRED,163NEWS,1,bo3,validation,ridge_C1_ratings_form_hnone,0.8573979905039756,0.14260200949602442
+2394625,2026-05-26,ARCRED,Aurora Young Blud,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7597133478030045,0.24028665219699552
+2394626,2026-05-26,163NEWS,BET-M,0,bo3,validation,ridge_C1_ratings_form_hnone,0.13749633933631505,0.8625036606636849
+2394627,2026-05-26,BET-M,Aurora Young Blud,1,bo3,validation,ridge_C1_ratings_form_hnone,0.771080634957859,0.22891936504214105
+2394628,2026-05-26,1win,Virtus.pro,0,bo3,validation,ridge_C1_ratings_form_hnone,0.6467589642659646,0.3532410357340354
+2394629,2026-05-26,CYBERSHOKE,Dark Moon,1,bo3,validation,ridge_C1_ratings_form_hnone,0.8386742516333693,0.16132574836663072
+2394630,2026-05-26,CYBERSHOKE,Virtus.pro,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5034958333273009,0.49650416667269914
+2394631,2026-05-26,Dark Moon,1win,0,bo3,validation,ridge_C1_ratings_form_hnone,0.1078544468145533,0.8921455531854467
+2394632,2026-05-26,1win,CYBERSHOKE,0,bo3,validation,ridge_C1_ratings_form_hnone,0.6569435174740492,0.3430564825259508
+2394707,2026-05-26,Lazer Cats,TNC,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5185335168817277,0.48146648311827234
+2394708,2026-05-26,Rune Eaters,Bebop,0,bo3,validation,ridge_C1_ratings_form_hnone,0.4839018988163485,0.5160981011836515
+2394709,2026-05-26,Just Players,ex-Zero Tenacity,1,bo3,validation,ridge_C1_ratings_form_hnone,0.49814373388337596,0.501856266116624
+2394710,2026-05-26,Oramond,HYPERSPIRIT,0,bo3,validation,ridge_C1_ratings_form_hnone,0.7515963754633366,0.24840362453666343
+2394754,2026-05-26,Vexar,Lilmix,1,bo3,validation,ridge_C1_ratings_form_hnone,0.41663781540407174,0.5833621845959283
+2394755,2026-05-26,DONSTU,Bushido Wildcats,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5463241250547982,0.4536758749452018
+2394757,2026-05-26,G2 Ares,Misa,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5315377320448046,0.4684622679551954
+2394785,2026-05-26,ENCE,CYBERSHOKE Prospects,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5992399044167673,0.40076009558323267
+2394786,2026-05-26,UNiTY,Atreides,0,bo3,validation,ridge_C1_ratings_form_hnone,0.36956069409357006,0.6304393059064299
+2394929,2026-05-26,TYLOO,Kaleido,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7765476675613109,0.22345233243868912
+2394932,2026-05-26,Nemesis,INOX Division,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5491262888866567,0.4508737111133433
+2394953,2026-05-26,NAVI Junior,Prestige,0,bo3,validation,ridge_C1_ratings_form_hnone,0.6227788394168076,0.37722116058319244
+2394954,2026-05-26,Falcons Force,brazylijski luz,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5500383711529959,0.4499616288470041
+2394955,2026-05-26,G2 Ares,Entropy,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5640014978886462,0.4359985021113538
+2394956,2026-05-26,RUSTEC,Lilmix,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7449619637243269,0.2550380362756731
+2394957,2026-05-26,ASTRAL,MANA,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5688900422892605,0.43110995771073946
+2394195,2026-05-27,3DMAX,magic,0,bo3,validation,ridge_C1_ratings_form_hnone,0.40817335847724884,0.5918266415227511
+2394196,2026-05-27,HEROIC,Ninjas in Pyjamas,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5498810819746859,0.4501189180253141
+2394197,2026-05-27,FaZe,Alliance,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5729375032535177,0.42706249674648233
+2394198,2026-05-27,9z,Sharks,0,bo3,validation,ridge_C1_ratings_form_hnone,0.7297220456762573,0.2702779543237427
+2394428,2026-05-27,Johnny Speeds,Phantom,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5585952138092865,0.44140478619071355
+2394429,2026-05-27,Nemiga,Oramond,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7727615195761954,0.22723848042380457
+2394430,2026-05-27,Gentle Mates,ALGO,1,bo3,validation,ridge_C1_ratings_form_hnone,0.882632800328851,0.11736719967114895
+2394431,2026-05-27,Eternal Fire,fnatic,1,bo3,validation,ridge_C1_ratings_form_hnone,0.4340061428469596,0.5659938571530404
+2394559,2026-05-27,Lavked,Rune Eaters,1,bo3,validation,ridge_C1_ratings_form_hnone,0.739649152797837,0.26035084720216295
+2394560,2026-05-27,RBLS,Bushido Wildcats,0,bo3,validation,ridge_C1_ratings_form_hnone,0.6418581081377385,0.35814189186226153
+2394562,2026-05-27,Leo,HAVU,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5579981778479444,0.44200182215205563
+2394563,2026-05-27,ex-RUBY,ASTRAL,1,bo3,validation,ridge_C1_ratings_form_hnone,0.719846648793003,0.280153351206997
+2394633,2026-05-27,Nuclear TigeRES,PsychoFace,1,bo3,validation,ridge_C1_ratings_form_hnone,0.8354298700467742,0.16457012995322584
+2394634,2026-05-27,ARCRED,CYBERSHOKE,1,bo3,validation,ridge_C1_ratings_form_hnone,0.48210982872518193,0.5178901712748181
+2394635,2026-05-27,Oxuji,K27,0,bo3,validation,ridge_C1_ratings_form_hnone,0.3128172950244909,0.687182704975509
+2394636,2026-05-27,BET-M,Virtus.pro,0,bo3,validation,ridge_C1_ratings_form_hnone,0.3879269400685692,0.6120730599314308
+2394711,2026-05-27,Hashiras,EAC,0,bo3,validation,ridge_C1_ratings_form_hnone,0.6572719609615693,0.34272803903843074
+2394712,2026-05-27,ASTRAL,ALGO,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5817856492654218,0.41821435073457824
+2394713,2026-05-27,TNC,ex-Zero Tenacity,1,bo3,validation,ridge_C1_ratings_form_hnone,0.4608713396242472,0.5391286603757528
+2394714,2026-05-27,Bebop,Oramond,0,bo3,validation,ridge_C1_ratings_form_hnone,0.4048239467815258,0.5951760532184742
+2394758,2026-05-27,Misa,SAW,1,bo3,validation,ridge_C1_ratings_form_hnone,0.48977367713811154,0.5102263228618884
+2394759,2026-05-27,Hashiras,Julie&Cie,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7299666835687848,0.2700333164312152
+2394761,2026-05-27,Dripmen,Bushido Wildcats,1,bo3,validation,ridge_C1_ratings_form_hnone,0.24454850673472212,0.7554514932652778
+2394787,2026-05-27,Young Ninjas,Lilmix,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6649686534364939,0.3350313465635061
+2394788,2026-05-27,HEROIC Academy,GenOne,0,bo3,validation,ridge_C1_ratings_form_hnone,0.20892795725531732,0.7910720427446827
+2394789,2026-05-27,DONSTU,brazylijski luz,0,bo3,validation,ridge_C1_ratings_form_hnone,0.559397808078197,0.44060219192180305
+2394930,2026-05-27,SemperFi,THUNDER dOWNUNDER,1,bo3,validation,ridge_C1_ratings_form_hnone,0.3516537218842909,0.6483462781157091
+2394933,2026-05-27,TDK,Nemiga,1,bo3,validation,ridge_C1_ratings_form_hnone,0.40426803087159713,0.5957319691284029
+2394936,2026-05-27,M80,Iowa Stormboar,1,bo3,validation,ridge_C1_ratings_form_hnone,0.9192056401947204,0.0807943598052796
+2394939,2026-05-27,BESTIA,25 cents,1,bo3,validation,ridge_C1_ratings_form_hnone,0.8352813429953481,0.16471865700465194
+2394940,2026-05-27,Galorys,LP,1,bo3,validation,ridge_C1_ratings_form_hnone,0.4257001437145389,0.5742998562854611
+2394958,2026-05-27,ALGO,Prestige,1,bo3,validation,ridge_C1_ratings_form_hnone,0.609313532168963,0.390686467831037
+2394959,2026-05-27,ASTRAL,brazylijski luz,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6825751351851652,0.3174248648148348
+2394960,2026-05-27,Lilmix,G2 Ares,0,bo3,validation,ridge_C1_ratings_form_hnone,0.30693639900919234,0.6930636009908077
+2394963,2026-05-27,Young Ninjas,TNC,0,bo3,validation,ridge_C1_ratings_form_hnone,0.47538774374771237,0.5246122562522877
+2394964,2026-05-27,brazylijski luz,Honvéd,0,bo3,validation,ridge_C1_ratings_form_hnone,0.6463558401444731,0.3536441598555269
+2394965,2026-05-27,brazylijski luz,White Tigers,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7172038328129042,0.28279616718709577
+2394313,2026-05-28,3DMAX,Alliance,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5212536860446303,0.4787463139553697
+2394314,2026-05-28,HEROIC,9z,0,bo3,validation,ridge_C1_ratings_form_hnone,0.4484268766297683,0.5515731233702317
+2394315,2026-05-28,magic,FaZe,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5275874402531378,0.47241255974686225
+2394432,2026-05-28,Betclic,GenOne,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5265035724363684,0.47349642756363164
+2394433,2026-05-28,Tricked,Just Players,0,bo3,validation,ridge_C1_ratings_form_hnone,0.7885213150335222,0.21147868496647781
+2394434,2026-05-28,1win,AM,0,bo3,validation,ridge_C1_ratings_form_hnone,0.7168440558308399,0.2831559441691601
+2394435,2026-05-28,WW,ex-RUBY,1,bo3,validation,ridge_C1_ratings_form_hnone,0.476790153759852,0.523209846240148
+2394512,2026-05-28,FOKUS,Ursa,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7447823438308403,0.2552176561691597
+2394513,2026-05-28,Gentle Mates,GenOne,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7859213445140301,0.21407865548596994
+2394514,2026-05-28,illwill,fnatic,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5692569991733382,0.43074300082666184
+2394515,2026-05-28,Betclic,Eternal Fire,0,bo3,validation,ridge_C1_ratings_form_hnone,0.44786095568618545,0.5521390443138146
+2394561,2026-05-28,HEROIC Academy,aAa,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5708908047591402,0.4291091952408598
+2394564,2026-05-28,Phantom,TNC,0,bo3,validation,ridge_C1_ratings_form_hnone,0.6291947370433146,0.37080526295668537
+2394566,2026-05-28,KOLESIE,ex-Zero Tenacity,0,bo3,validation,ridge_C1_ratings_form_hnone,0.6469695718804257,0.3530304281195743
+2394637,2026-05-28,Nuclear TigeRES,ARCRED,0,bo3,validation,ridge_C1_ratings_form_hnone,0.6186109140402837,0.3813890859597163
+2394638,2026-05-28,K27,Virtus.pro,0,bo3,validation,ridge_C1_ratings_form_hnone,0.4854334997619156,0.5145665002380844
+2394639,2026-05-28,Nuclear TigeRES,K27,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5162878064825112,0.48371219351748884
+2394640,2026-05-28,ARCRED,Virtus.pro,0,bo3,validation,ridge_C1_ratings_form_hnone,0.3946159927851931,0.6053840072148069
+2394715,2026-05-28,Acend,Just Players,0,bo3,validation,ridge_C1_ratings_form_hnone,0.6681010832827976,0.3318989167172024
+2394716,2026-05-28,ex-RUBY,Omega,0,bo3,validation,ridge_C1_ratings_form_hnone,0.74443436231991,0.25556563768009
+2394717,2026-05-28,KOLESIE,GenOne,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5607555288782968,0.4392444711217032
+2394718,2026-05-28,Johnny Speeds,Oramond,0,bo3,validation,ridge_C1_ratings_form_hnone,0.570290634994863,0.429709365005137
+2394762,2026-05-28,Hashiras,Misa,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5411000169088592,0.4588999830911408
+2394764,2026-05-28,Enjoy,brazylijski luz,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5369404320953275,0.4630595679046725
+2394765,2026-05-28,NEW VISION,G2 Ares,0,bo3,validation,ridge_C1_ratings_form_hnone,0.38628591368631726,0.6137140863136827
+2394790,2026-05-28,Project 91,WAZABI,1,bo3,validation,ridge_C1_ratings_form_hnone,0.49173009751352226,0.5082699024864777
+2394791,2026-05-28,Oramond,Entropy,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7451092789181478,0.2548907210818522
+2394912,2026-05-28,INOX Division,ex-Zero Tenacity,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7607112667500798,0.23928873324992017
+2394913,2026-05-28,aAa,UNiTY,0,bo3,validation,ridge_C1_ratings_form_hnone,0.3319909826505909,0.6680090173494091
+2394915,2026-05-28,Phantom,Atreides,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5369384610888023,0.4630615389111977
+2394931,2026-05-28,TYLOO,SemperFi,1,bo5,validation,ridge_C1_ratings_form_hnone,0.7487083042654181,0.2512916957345819
+2394937,2026-05-28,Chicken Coop,Voca,0,bo3,validation,ridge_C1_ratings_form_hnone,0.19386508809373815,0.8061349119062619
+2394941,2026-05-28,25 cents,LP,0,bo3,validation,ridge_C1_ratings_form_hnone,0.26174659009764206,0.7382534099023579
+2394942,2026-05-28,BESTIA,Galorys,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5987754288915276,0.4012245711084724
+2394943,2026-05-28,Bounty Hunters,GameHunters,0,bo3,validation,ridge_C1_ratings_form_hnone,0.7292402930192955,0.2707597069807045
+2394944,2026-05-28,Fluxo,BlackBelt,1,bo3,validation,ridge_C1_ratings_form_hnone,0.822700504830418,0.177299495169582
+2394966,2026-05-28,Young Ninjas,Project 91,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7572854514147015,0.2427145485852985
+2395003,2026-05-28,TNC,Honvéd,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6452604835552502,0.35473951644474977
+2395004,2026-05-28,brazylijski luz,Young Ninjas,0,bo3,validation,ridge_C1_ratings_form_hnone,0.40306834033847894,0.5969316596615211
+2395005,2026-05-28,Young Ninjas,Honvéd,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6399942075207239,0.3600057924792761
+2395006,2026-05-28,TNC,Young Ninjas,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5196555525274682,0.4803444474725318
+2394316,2026-05-29,Ninjas in Pyjamas,Sharks,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6508109342668938,0.34918906573310615
+2394317,2026-05-29,Alliance,Sharks,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5486266117597005,0.4513733882402995
+2394318,2026-05-29,9z,FaZe,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5511702706777658,0.4488297293222342
+2394319,2026-05-29,magic,Ninjas in Pyjamas,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5390099285638079,0.4609900714361921
+2394320,2026-05-29,FaZe,Sharks,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6456852289088342,0.3543147710911658
+2394436,2026-05-29,AM,Johnny Speeds,0,bo3,validation,ridge_C1_ratings_form_hnone,0.4378080044198559,0.5621919955801441
+2394437,2026-05-29,Nemiga,WW,0,bo3,validation,ridge_C1_ratings_form_hnone,0.6827405983338324,0.3172594016661676
+2394438,2026-05-29,Gentle Mates,Eternal Fire,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7097313579098044,0.29026864209019565
+2394439,2026-05-29,Just Players,GenOne,0,bo3,validation,ridge_C1_ratings_form_hnone,0.4791408731920691,0.5208591268079309
+2394478,2026-05-29,OKSUCC,Dripmen,0,bo3,validation,ridge_C1_ratings_form_hnone,0.4930521484038767,0.5069478515961233
+2394516,2026-05-29,Nemiga,ex-RUBY,1,bo3,validation,ridge_C1_ratings_form_hnone,0.698114970489717,0.30188502951028295
+2394517,2026-05-29,Nemesis,Lavked,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6974569198408264,0.30254308015917364
+2394518,2026-05-29,100 Thieves,Oramond,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5976166010658752,0.4023833989341248
+2394519,2026-05-29,Tricked,AM,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7036094161495444,0.2963905838504556
+2394567,2026-05-29,HAVU,aAa,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6884150279779233,0.3115849720220767
+2394569,2026-05-29,Lavked,HEROIC Academy,1,bo3,validation,ridge_C1_ratings_form_hnone,0.8204412099890394,0.17955879001096064
+2394570,2026-05-29,KOLESIE,ASTRAL,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6418705148079157,0.3581294851920843
+2394719,2026-05-29,Betclic,ALGO,0,bo3,validation,ridge_C1_ratings_form_hnone,0.627520800659866,0.37247919934013396
+2394720,2026-05-29,OG,EAC,1,bo3,validation,ridge_C1_ratings_form_hnone,0.787650193060999,0.21234980693900096
+2394721,2026-05-29,CYBERSHOKE,HYPERSPIRIT,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7569254663431755,0.24307453365682452
+2394722,2026-05-29,TDK,TNC,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7758149073081892,0.22418509269181075
+2394766,2026-05-29,Misa,brazylijski luz,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5672925447884807,0.4327074552115193
+2394767,2026-05-29,Vexar,NEW VISION,1,bo3,validation,ridge_C1_ratings_form_hnone,0.45938067613245015,0.5406193238675499
+2394792,2026-05-29,Misa,Lilmix,1,bo3,validation,ridge_C1_ratings_form_hnone,0.63675918397143,0.36324081602856995
+2394934,2026-05-29,Nemesis,TDK,0,bo5,validation,ridge_C1_ratings_form_hnone,0.5937271078148573,0.40627289218514273
+2394935,2026-05-29,ShindeN,Imperial,1,bo5,validation,ridge_C1_ratings_form_hnone,0.5293144252223791,0.47068557477762085
+2394938,2026-05-29,M80,Voca,1,bo5,validation,ridge_C1_ratings_form_hnone,0.6338783640657218,0.36612163593427816
+2394945,2026-05-29,Bounty Hunters,BlackBelt,1,bo3,validation,ridge_C1_ratings_form_hnone,0.8135806526719076,0.1864193473280924
+2394946,2026-05-29,GameHunters,Fluxo,0,bo3,validation,ridge_C1_ratings_form_hnone,0.38410972538333504,0.615890274616665
+2394947,2026-05-29,BESTIA,Bounty Hunters,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5644133082677294,0.4355866917322706
+2394961,2026-05-29,ENCE,KUUSAMO,1,bo3,validation,ridge_C1_ratings_form_hnone,0.8403029288475936,0.1596970711524064
+2394962,2026-05-29,cirahvi,boyband,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5,0.5
+2395007,2026-05-29,HOTU,PCIFIC,1,bo3,validation,ridge_C1_ratings_form_hnone,0.8956183370452848,0.10438166295471518
+2395008,2026-05-29,Rune Eaters,DNK,1,bo3,validation,ridge_C1_ratings_form_hnone,0.8730227743067648,0.12697722569323522
+2395009,2026-05-29,DEPO,Game Point,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7391052562867848,0.2608947437132152
+2395010,2026-05-29,Omega,Dark Moon,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7245787601848536,0.27542123981514643
+2395011,2026-05-29,Rune Eaters,HOTU,0,bo3,validation,ridge_C1_ratings_form_hnone,0.15319438405371932,0.8468056159462807
+2395012,2026-05-29,DNK,PCIFIC,0,bo3,validation,ridge_C1_ratings_form_hnone,0.3488892419728392,0.6511107580271608
+2395013,2026-05-29,Omega,DEPO,1,bo3,validation,ridge_C1_ratings_form_hnone,0.539119427383189,0.46088057261681104
+2395014,2026-05-29,Dark Moon,Game Point,1,bo3,validation,ridge_C1_ratings_form_hnone,0.670358353823077,0.32964164617692304
+2395015,2026-05-29,PCIFIC,Rune Eaters,0,bo3,validation,ridge_C1_ratings_form_hnone,0.22490269823782333,0.7750973017621767
+2395016,2026-05-29,DEPO,Dark Moon,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6475841967688967,0.35241580323110333
+2395023,2026-05-29,WAZABI,Atreides,0,bo3,validation,ridge_C1_ratings_form_hnone,0.1488723748474925,0.8511276251525075
+2395024,2026-05-29,aAa,ex-Zero Tenacity,1,bo3,validation,ridge_C1_ratings_form_hnone,0.23177284287684718,0.7682271571231528
+2395025,2026-05-29,INOX Division,UNiTY,0,bo3,validation,ridge_C1_ratings_form_hnone,0.8018239011340184,0.19817609886598164
+2395026,2026-05-29,Young Ninjas,Phantom,1,bo3,validation,ridge_C1_ratings_form_hnone,0.3697618416821783,0.6302381583178217
+2394321,2026-05-30,Ninjas in Pyjamas,FaZe,1,bo3,validation,ridge_C1_ratings_form_hnone,0.47089893000459104,0.529101069995409
+2394322,2026-05-30,magic,Ninjas in Pyjamas,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5561153170572966,0.44388468294270345
+2394440,2026-05-30,WW,Johnny Speeds,1,bo3,validation,ridge_C1_ratings_form_hnone,0.562813514856075,0.437186485143925
+2394441,2026-05-30,Gentle Mates,GenOne,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7552793245560308,0.24472067544396925
+2394442,2026-05-30,WW,Gentle Mates,0,bo3,validation,ridge_C1_ratings_form_hnone,0.3397589475111926,0.6602410524888074
+2394520,2026-05-30,Gentle Mates,Eternal Fire,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7020869596696296,0.29791304033037036
+2394521,2026-05-30,Tricked,Nemiga,0,bo3,validation,ridge_C1_ratings_form_hnone,0.43495118834704394,0.5650488116529561
+2394522,2026-05-30,FOKUS,fnatic,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6118195939838531,0.3881804060161469
+2394523,2026-05-30,100 Thieves,Nemesis,0,bo3,validation,ridge_C1_ratings_form_hnone,0.374976972626224,0.625023027373776
+2394571,2026-05-30,Oramond,Leo,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6508781011284523,0.34912189887154765
+2394572,2026-05-30,Phantom,Bushido Wildcats,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6295668961737437,0.37043310382625627
+2394573,2026-05-30,ex-Zero Tenacity,ex-RUBY,0,bo3,validation,ridge_C1_ratings_form_hnone,0.28167679255676936,0.7183232074432306
+2394723,2026-05-30,OG,Just Players,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5954957476413112,0.4045042523586888
+2394725,2026-05-30,ALGO,KOLESIE,0,bo3,validation,ridge_C1_ratings_form_hnone,0.31630210566351974,0.6836978943364802
+2394726,2026-05-30,Oramond,CYBERSHOKE,1,bo3,validation,ridge_C1_ratings_form_hnone,0.4106478719988679,0.5893521280011321
+2394768,2026-05-30,G2 Ares,Enjoy,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5680834365947237,0.4319165634052763
+2394769,2026-05-30,brazylijski luz,Vexar,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5611256075679978,0.4388743924320022
+2394794,2026-05-30,ENCE,UNiTY,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5735323225747163,0.4264676774252837
+2394795,2026-05-30,CYBERSHOKE Prospects,Atreides,1,bo3,validation,ridge_C1_ratings_form_hnone,0.4284896971397142,0.5715103028602858
+2394948,2026-05-30,LP,GameHunters,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6943856655898835,0.30561433441011654
+2394949,2026-05-30,Fluxo,BESTIA,0,bo3,validation,ridge_C1_ratings_form_hnone,0.3927561598750494,0.6072438401249506
+2394967,2026-05-30,KUUSAMO,cirahvi,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5065757473889496,0.4934242526110504
+2394968,2026-05-30,ENCE,boyband,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7237457092374247,0.27625429076257535
+2395017,2026-05-30,HOTU,DEPO,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7782967390668322,0.22170326093316783
+2395018,2026-05-30,Omega,Rune Eaters,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5945391987654438,0.4054608012345562
+2395019,2026-05-30,DEPO,Omega,0,bo3,validation,ridge_C1_ratings_form_hnone,0.47926884646215917,0.5207311535378408
+2395027,2026-05-30,Yawara,UNO MILLE,1,bo5,validation,ridge_C1_ratings_form_hnone,0.4431246778111877,0.5568753221888123
+2395028,2026-05-30,INOX Division,aAa,1,bo3,validation,ridge_C1_ratings_form_hnone,0.8900413659003096,0.10995863409969042
+2395029,2026-05-30,Young Ninjas,WAZABI,1,bo3,validation,ridge_C1_ratings_form_hnone,0.781934937863062,0.218065062136938
+2395030,2026-05-30,NineFly,NXG,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5,0.5
+2395031,2026-05-30,F5,absolute cinema,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7483555186355295,0.2516444813644705
+2395032,2026-05-30,LAG,makeSHIFT,1,bo3,validation,ridge_C1_ratings_form_hnone,0.8008732384859303,0.19912676151406972
+2395033,2026-05-30,Reign Above,FRZ,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5821534904136138,0.41784650958638625
+2395034,2026-05-30,SportsBetExpert,NXG,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7994976769042664,0.20050232309573357
+2395035,2026-05-30,Chicken Coop,F5,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6192059998722738,0.38079400012772624
+2395036,2026-05-30,Marsborne,LAG,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6373293575650738,0.3626706424349262
+2395037,2026-05-30,Wanted Goons,Reign Above,0,bo3,validation,ridge_C1_ratings_form_hnone,0.6804084708312931,0.3195915291687069
+2395038,2026-05-30,Wanted Goons,NineFly,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7041571783376044,0.2958428216623956
+2395039,2026-05-30,LAG,absolute cinema,1,bo3,validation,ridge_C1_ratings_form_hnone,0.8155378321824965,0.18446216781750346
+2395040,2026-05-30,F5,makeSHIFT,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7234179546912256,0.2765820453087744
+2395041,2026-05-30,NXG,FRZ,0,bo3,validation,ridge_C1_ratings_form_hnone,0.44085942015865265,0.5591405798413474
+2395106,2026-05-30,M1Z,GENESIS,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5948457734245385,0.4051542265754615
+2394524,2026-05-31,Gentle Mates,Nemesis,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5188355442932354,0.4811644557067646
+2394525,2026-05-31,FOKUS,Nemiga,1,bo3,validation,ridge_C1_ratings_form_hnone,0.4233644032259247,0.5766355967740753
+2394526,2026-05-31,Nemesis,FOKUS,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5489006637269036,0.4510993362730964
+2394575,2026-05-31,Leo,ASTRAL,0,bo3,validation,ridge_C1_ratings_form_hnone,0.4745567002715285,0.5254432997284715
+2394576,2026-05-31,HEROIC Academy,Bushido Wildcats,0,bo3,validation,ridge_C1_ratings_form_hnone,0.4419838819907109,0.5580161180092891
+2394577,2026-05-31,RBLS,HAVU,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5823225798911051,0.41767742010889486
+2394727,2026-05-31,TDK,OG,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6386816738550202,0.36131832614497983
+2394728,2026-05-31,KOLESIE,DragonClaw,0,bo3,validation,ridge_C1_ratings_form_hnone,0.8535456090016833,0.1464543909983167
+2394729,2026-05-31,TDK,DragonClaw,0,bo3,validation,ridge_C1_ratings_form_hnone,0.891711877857126,0.10828812214287398
+2394770,2026-05-31,G2 Ares,Vexar,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5638124835807752,0.4361875164192248
+2394771,2026-05-31,Enjoy,G2 Ares,1,bo3,validation,ridge_C1_ratings_form_hnone,0.4884542490385456,0.5115457509614544
+2394796,2026-05-31,TNC,Misa,0,bo3,validation,ridge_C1_ratings_form_hnone,0.6460132944941246,0.3539867055058754
+2394797,2026-05-31,ENCE,Atreides,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5519194196170489,0.44808058038295107
+2394950,2026-05-31,Galorys,LP,0,bo3,validation,ridge_C1_ratings_form_hnone,0.4792068199810435,0.5207931800189565
+2394951,2026-05-31,Fluxo,Galorys,0,bo3,validation,ridge_C1_ratings_form_hnone,0.4350946350025445,0.5649053649974555
+2394969,2026-05-31,cirahvi,boyband,1,bo3,validation,ridge_C1_ratings_form_hnone,0.392345383298183,0.607654616701817
+2394970,2026-05-31,ENCE,cirahvi,1,bo3,validation,ridge_C1_ratings_form_hnone,0.8361568146876196,0.1638431853123804
+2395020,2026-05-31,HOTU,Rune Eaters,1,bo3,validation,ridge_C1_ratings_form_hnone,0.8329506657988761,0.1670493342011239
+2395021,2026-05-31,Omega,Rune Eaters,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5918141743699116,0.40818582563008843
+2395022,2026-05-31,HOTU,Rune Eaters,1,bo3,validation,ridge_C1_ratings_form_hnone,0.8329506657988761,0.1670493342011239
+2395042,2026-05-31,SportsBetExpert,Chicken Coop,0,bo3,validation,ridge_C1_ratings_form_hnone,0.6200407128662395,0.3799592871337605
+2395043,2026-05-31,Marsborne,Reign Above,1,bo3,validation,ridge_C1_ratings_form_hnone,0.9002690222607674,0.09973097773923256
+2395044,2026-05-31,Wanted Goons,LAG,0,bo3,validation,ridge_C1_ratings_form_hnone,0.24253766583179365,0.7574623341682063
+2395045,2026-05-31,F5,FRZ,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7017321398252944,0.29826786017470563
+2395046,2026-05-31,LAG,SportsBetExpert,0,bo3,validation,ridge_C1_ratings_form_hnone,0.47059741587131154,0.5294025841286885
+2395047,2026-05-31,Reign Above,F5,1,bo3,validation,ridge_C1_ratings_form_hnone,0.3782920845411128,0.6217079154588872
+2395048,2026-05-31,Marsborne,Chicken Coop,0,bo3,validation,ridge_C1_ratings_form_hnone,0.7247075935532059,0.2752924064467941
+2395049,2026-05-31,Reign Above,SportsBetExpert,0,bo3,validation,ridge_C1_ratings_form_hnone,0.1591322797081658,0.8408677202918342
+2395050,2026-05-31,Marsborne,SportsBetExpert,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6063271394231772,0.3936728605768228
+2395086,2026-05-31,Atreides,G2 Ares,1,bo3,validation,ridge_C1_ratings_form_hnone,0.598453516764697,0.40154648323530295
+2395087,2026-05-31,RUSTEC,Young Ninjas,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6120475050882239,0.3879524949117761
+2395088,2026-05-31,UNiTY,ASTRAL,0,bo3,validation,ridge_C1_ratings_form_hnone,0.46554781899887043,0.5344521810011296
+2395089,2026-05-31,MANA,INOX Division,0,bo3,validation,ridge_C1_ratings_form_hnone,0.2162368008624997,0.7837631991375003
+2395139,2026-05-31,KLG,WBT,0,bo3,validation,ridge_C1_ratings_form_hnone,0.422056162303516,0.577943837696484
+2395140,2026-05-31,SNITKO,ZOTIX,0,bo3,validation,ridge_C1_ratings_form_hnone,0.388559907971326,0.611440092028674
+2395141,2026-05-31,WBT,ZOTIX,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5439470856852372,0.4560529143147628
+2395142,2026-05-31,Lithuanian Wolves,Galaxy,1,bo3,validation,ridge_C1_ratings_form_hnone,0.4562904911448709,0.5437095088551291
+2394578,2026-06-01,Phantom,DragonClaw,1,bo3,validation,ridge_C1_ratings_form_hnone,0.3676096692505584,0.6323903307494416
+2394579,2026-06-01,Ursa,ex-Zero Tenacity,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5647111074260178,0.4352888925739822
+2394580,2026-06-01,KOLESIE,Lavked,1,bo3,validation,ridge_C1_ratings_form_hnone,0.47778049686530544,0.5222195031346946
+2394798,2026-06-01,GenOne,DONSTU,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7562033225484027,0.24379667745159728
+2394799,2026-06-01,Project 91,Entropy,0,bo3,validation,ridge_C1_ratings_form_hnone,0.3557020725689114,0.6442979274310886
+2394952,2026-06-01,BESTIA,LP,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5740995776895701,0.4259004223104299
+2395051,2026-06-01,Chicken Coop,Marsborne,1,bo5,validation,ridge_C1_ratings_form_hnone,0.32228762984883186,0.6777123701511681
+2395053,2026-06-01,NEW VISION,Banger Gang,1,bo3,validation,ridge_C1_ratings_form_hnone,0.4174914411064374,0.5825085588935626
+2395054,2026-06-01,Arch,OLDBOYS PL,1,bo3,validation,ridge_C1_ratings_form_hnone,0.2720444047333762,0.7279555952666238
+2395056,2026-06-01,B8 Academy,XI,1,bo3,validation,ridge_C1_ratings_form_hnone,0.31284465985030807,0.6871553401496919
+2395057,2026-06-01,ReThink,VP.Prodigy,1,bo3,validation,ridge_C1_ratings_form_hnone,0.1219266961765419,0.878073303823458
+2395058,2026-06-01,Misa,Falcons Force,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5818701530966347,0.4181298469033653
+2395059,2026-06-01,QUAZAR,eternal premium,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6944938763509911,0.30550612364900886
+2394581,2026-06-02,RBLS,ex-Zero Tenacity,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5315380713071172,0.46846192869288283
+2394582,2026-06-02,Lavked,ASTRAL,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6280996706476054,0.3719003293523946
+2394800,2026-06-02,brazylijski luz,Atreides,1,bo3,validation,ridge_C1_ratings_form_hnone,0.27355246164529157,0.7264475383547084
+2394803,2026-06-02,CYBERSHOKE Prospects,GenOne,0,bo3,validation,ridge_C1_ratings_form_hnone,0.3949765460909868,0.6050234539090131
+2395052,2026-06-02,DONSTU,Fire Flux,0,bo3,validation,ridge_C1_ratings_form_hnone,0.4015873286049747,0.5984126713950253
+2395055,2026-06-02,ENRAGE,Wingman,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5986723518841404,0.40132764811585964
+2394584,2026-06-03,illwill,ex-Zero Tenacity,0,bo3,validation,ridge_C1_ratings_form_hnone,0.7470805806756378,0.25291941932436224
+2394585,2026-06-03,1win,Lavked,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5918968998287623,0.40810310017123774
+2394586,2026-06-03,Johnny Speeds,TNC,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6765230386538379,0.3234769613461621
+2394587,2026-06-03,Echo,Phantom,0,bo3,validation,ridge_C1_ratings_form_hnone,0.16834682846791627,0.8316531715320837
+2394802,2026-06-03,Young Ninjas,Entropy,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6486460102867727,0.3513539897132273
+2394852,2026-06-03,GamerLegion,BETBOOM,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5483141963761441,0.4516858036238559
+2394853,2026-06-03,TYLOO,SINNERS,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6162007465070514,0.38379925349294863
+2394854,2026-06-03,M80,B8,0,bo3,validation,ridge_C1_ratings_form_hnone,0.4438471800879703,0.5561528199120297
+2394855,2026-06-03,Gaimin Gladiators,HEROIC,0,bo3,validation,ridge_C1_ratings_form_hnone,0.2471803548289343,0.7528196451710657
+2395068,2026-06-03,NEW VISION,Fire Flux,0,bo3,validation,ridge_C1_ratings_form_hnone,0.33436276710190016,0.6656372328980998
+2395069,2026-06-03,Arch,Wingman,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5207912664845185,0.47920873351548154
+2395070,2026-06-03,B8 Academy,ReThink,0,bo3,validation,ridge_C1_ratings_form_hnone,0.3672266729938078,0.6327733270061922
+2395071,2026-06-03,QUAZAR,Falcons Force,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5606444988781031,0.4393555011218969
+2395090,2026-06-03,ARCRED,INOX Division,0,bo3,validation,ridge_C1_ratings_form_hnone,0.4915863420381351,0.5084136579618649
+2395091,2026-06-03,AM,ex-RUBY,1,bo3,validation,ridge_C1_ratings_form_hnone,0.3925665789082916,0.6074334210917084
+2395092,2026-06-03,Nuclear TigeRES,RUSTEC,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7279801312750925,0.27201986872490747
+2395093,2026-06-03,TDK,Atreides,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7534694371386397,0.24653056286136033
+2395143,2026-06-03,ENCE,brazylijski luz,0,bo3,validation,ridge_C1_ratings_form_hnone,0.6550114855627149,0.34498851443728507
+2395144,2026-06-03,The Last Resort,Entropy,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6379805237879481,0.3620194762120519
+2395145,2026-06-03,HYPERSPIRIT,Atreides,1,bo3,validation,ridge_C1_ratings_form_hnone,0.38279050472319043,0.6172094952768096
+2395146,2026-06-03,HEROIC Academy,TNC,1,bo3,validation,ridge_C1_ratings_form_hnone,0.32325557881365036,0.6767444211863496
+2394588,2026-06-04,Nemiga,Bushido Wildcats,0,bo3,validation,ridge_C1_ratings_form_hnone,0.8872321067043369,0.11276789329566306
+2394589,2026-06-04,Betclic,KOLESIE,1,bo3,validation,ridge_C1_ratings_form_hnone,0.40498653776724347,0.5950134622327565
+2394590,2026-06-04,100 Thieves,Ursa,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7344962065044115,0.2655037934955885
+2394591,2026-06-04,AM,ex-RUBY,0,bo3,validation,ridge_C1_ratings_form_hnone,0.4474133205559817,0.5525866794440183
+2394804,2026-06-04,PsychoFace,HYPERSPIRIT,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5095136639383627,0.4904863360616373
+2394805,2026-06-04,INOX Division,brazylijski luz,1,bo3,validation,ridge_C1_ratings_form_hnone,0.8031794630671383,0.19682053693286172
+2394856,2026-06-04,THUNDER dOWNUNDER,FlyQuest,0,bo3,validation,ridge_C1_ratings_form_hnone,0.4855024722390553,0.5144975277609447
+2394857,2026-06-04,TYLOO,Sharks,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6292649288695511,0.3707350711304489
+2394858,2026-06-04,GamerLegion,BIG,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6493141030475491,0.3506858969524509
+2394859,2026-06-04,MIBR,Lynn Vision,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5161901278480369,0.48380987215196314
+2394860,2026-06-04,Liquid,HEROIC,1,bo3,validation,ridge_C1_ratings_form_hnone,0.3871854745686379,0.6128145254313622
+2394861,2026-06-04,M80,NRG,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5668923542609261,0.4331076457390739
+2395094,2026-06-04,SPARTA,Ursa,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5689666805445532,0.43103331945544676
+2395095,2026-06-04,CYBERSHOKE,Acend,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5626813475980934,0.4373186524019066
+2395096,2026-06-04,Betclic,ASTRAL,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5610061536796391,0.43899384632036087
+2395097,2026-06-04,Walczaki,KOLESIE,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7144620628950347,0.28553793710496533
+2395147,2026-06-04,ENCE,Entropy,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7459301698361699,0.2540698301638301
+2395148,2026-06-04,Atreides,TNC,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5771638958350179,0.4228361041649821
+2395149,2026-06-04,brazylijski luz,The Last Resort,0,bo3,validation,ridge_C1_ratings_form_hnone,0.44699664154711677,0.5530033584528833
+2395150,2026-06-04,HYPERSPIRIT,HEROIC Academy,0,bo3,validation,ridge_C1_ratings_form_hnone,0.6131877324288237,0.38681226757117626
+2394592,2026-06-05,ex-Zero Tenacity,Johnny Speeds,0,bo3,validation,ridge_C1_ratings_form_hnone,0.3267000177263115,0.6732999822736885
+2394593,2026-06-05,1win,Betclic,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6315416473127372,0.3684583526872628
+2394594,2026-06-05,Bushido Wildcats,ex-RUBY,0,bo3,validation,ridge_C1_ratings_form_hnone,0.27209926465773016,0.7279007353422698
+2394595,2026-06-05,100 Thieves,Phantom,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7065272198891773,0.2934727801108227
+2394806,2026-06-05,Lavked,MANA,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7290343491002225,0.27096565089977753
+2394807,2026-06-05,Oxuji,Misa,0,bo3,validation,ridge_C1_ratings_form_hnone,0.7003196479608711,0.2996803520391289
+2394862,2026-06-05,TYLOO,Lynn Vision,1,bo3,validation,ridge_C1_ratings_form_hnone,0.53751338687275,0.46248661312725003
+2394863,2026-06-05,Liquid,FlyQuest,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5013312000908738,0.49866879990912616
+2394864,2026-06-05,NRG,BIG,0,bo3,validation,ridge_C1_ratings_form_hnone,0.4634997092591542,0.5365002907408458
+2395060,2026-06-05,eternal premium,Project 91,1,bo3,validation,ridge_C1_ratings_form_hnone,0.4951043167405028,0.5048956832594972
+2395061,2026-06-05,Misa,JUMBO,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6196730919074657,0.38032690809253433
+2395062,2026-06-05,VP.Prodigy,Clutchain,0,bo3,validation,ridge_C1_ratings_form_hnone,0.7011148384401359,0.2988851615598641
+2395063,2026-06-05,XI,LFO 6,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6553972045054932,0.3446027954945068
+2395064,2026-06-05,ENRAGE,ROUNDS,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5654015382419834,0.43459846175801664
+2395066,2026-06-05,ZOTIX,Banger Gang,0,bo3,validation,ridge_C1_ratings_form_hnone,0.4871148537644661,0.5128851462355339
+2395067,2026-06-05,DONSTU,COPH9K,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7790888060538148,0.2209111939461852
+2395072,2026-06-05,Fire Flux,Arch,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5104679760215842,0.4895320239784158
+2395073,2026-06-05,QUAZAR,ReThink,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7117577575513144,0.28824224244868557
+2395098,2026-06-05,KOLESIE,Atreides,0,bo3,validation,ridge_C1_ratings_form_hnone,0.6142858271096965,0.3857141728903035
+2395099,2026-06-05,Acend,Ursa,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6047469386152351,0.3952530613847649
+2395100,2026-06-05,SPARTA,CYBERSHOKE,0,bo3,validation,ridge_C1_ratings_form_hnone,0.4118185243126111,0.5881814756873889
+2395101,2026-06-05,ex-RUBY,RUSTEC,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6254211877802857,0.37457881221971434
+2395152,2026-06-05,Leo,Lilmix,1,bo3,validation,ridge_C1_ratings_form_hnone,0.683967136637302,0.316032863362698
+2395153,2026-06-05,aAa,ex-Zero Tenacity,0,bo3,validation,ridge_C1_ratings_form_hnone,0.2396067371303357,0.7603932628696644
+2395154,2026-06-05,GenOne,BIG Academy,0,bo3,validation,ridge_C1_ratings_form_hnone,0.6327708618272154,0.3672291381727846
+2394596,2026-06-06,Johnny Speeds,1win,1,bo3,validation,ridge_C1_ratings_form_hnone,0.4216206224550164,0.5783793775449836
+2394597,2026-06-06,ex-RUBY,100 Thieves,0,bo3,validation,ridge_C1_ratings_form_hnone,0.38022615924732184,0.6197738407526782
+2394598,2026-06-06,Johnny Speeds,100 Thieves,0,bo3,validation,ridge_C1_ratings_form_hnone,0.3720145380532057,0.6279854619467943
+2394808,2026-06-06,G2 Ares,aAa,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7762689623548804,0.2237310376451196
+2394809,2026-06-06,RUSTEC,Young Ninjas,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5864741469388185,0.4135258530611815
+2395102,2026-06-06,Betclic,INOX Division,0,bo3,validation,ridge_C1_ratings_form_hnone,0.3156810368869323,0.6843189631130677
+2395103,2026-06-06,ARCRED,ASTRAL,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7074983815709239,0.29250161842907607
+2395104,2026-06-06,TDK,Walczaki,1,bo3,validation,ridge_C1_ratings_form_hnone,0.4132491198448577,0.5867508801551423
+2395105,2026-06-06,Nuclear TigeRES,AM,1,bo3,validation,ridge_C1_ratings_form_hnone,0.705508509972506,0.294491490027494
+2395156,2026-06-06,aAa,GenOne,0,bo3,validation,ridge_C1_ratings_form_hnone,0.1559699468650565,0.8440300531349435
+2395157,2026-06-06,Leo,NEW VISION,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6607917262898394,0.3392082737101606
+2395158,2026-06-06,ex-Zero Tenacity,BIG Academy,1,bo3,validation,ridge_C1_ratings_form_hnone,0.4422040617328904,0.5577959382671096
+2394810,2026-06-07,KOLESIE,Lazer Cats,1,bo3,validation,ridge_C1_ratings_form_hnone,0.678771285359456,0.32122871464054403
+2394811,2026-06-07,Virtus.pro,GenOne,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7161047601346268,0.28389523986537324
+2394885,2026-06-07,B8,GamerLegion,1,bo3,validation,ridge_C1_ratings_form_hnone,0.44979570693758486,0.5502042930624151
+2394886,2026-06-07,FlyQuest,paiN,0,bo3,validation,ridge_C1_ratings_form_hnone,0.45383331344061495,0.546166686559385
+2394887,2026-06-07,G2,FUT,0,bo3,validation,ridge_C1_ratings_form_hnone,0.4664486335348861,0.5335513664651139
+2394888,2026-06-07,Spirit,9z,1,bo3,validation,ridge_C1_ratings_form_hnone,0.764588241341957,0.23541175865804298
+2395107,2026-06-07,SPARTA,AM,0,bo3,validation,ridge_C1_ratings_form_hnone,0.45356754797330995,0.5464324520266901
+2395109,2026-06-07,ARCRED,Walczaki,0,bo3,validation,ridge_C1_ratings_form_hnone,0.3464577198236819,0.6535422801763181
+2395110,2026-06-07,TDK,INOX Division,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5730397442266679,0.4269602557733321
+2395159,2026-06-07,ENCE,brazylijski luz,0,bo3,validation,ridge_C1_ratings_form_hnone,0.6184227173656158,0.3815772826343842
+2395161,2026-06-07,Lilmix,NEW VISION,0,bo3,validation,ridge_C1_ratings_form_hnone,0.4810111549531564,0.5189888450468436
+2395162,2026-06-07,GenOne,BIG Academy,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5956395807352042,0.4043604192647958
+2395242,2026-06-07,Wanted Goons,Brahmas,0,bo3,validation,ridge_C1_ratings_form_hnone,0.6977972399413158,0.3022027600586842
+2395244,2026-06-07,Club 333,raisedbypixels,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6372902412019039,0.3627097587980961
+2395256,2026-06-07,BIPT,ZUFE,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5722475828068427,0.42775241719315726
+2395257,2026-06-07,eSuba,LPH,0,bo3,validation,ridge_C1_ratings_form_hnone,0.4140532077964475,0.5859467922035525
+2395258,2026-06-07,Acend,Phantom,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5779311778926772,0.42206882210732277
+2395259,2026-06-07,Betclic,Spirit Academy,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5543390985014002,0.4456609014985998
+2395260,2026-06-07,CYBERSHOKE,SHISHKA,0,bo3,validation,ridge_C1_ratings_form_hnone,0.8749775896275093,0.12502241037249073
+2395261,2026-06-07,WBT,Noir Verse,0,bo3,validation,ridge_C1_ratings_form_hnone,0.6269858576588689,0.37301414234113106
+2394812,2026-06-08,PsychoFace,brazylijski luz,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5196392572498456,0.4803607427501544
+2394813,2026-06-08,HYPERSPIRIT,INOX Division,0,bo3,validation,ridge_C1_ratings_form_hnone,0.19579699065994144,0.8042030093400585
+2394889,2026-06-08,Astralis,paiN,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5979658892652302,0.4020341107347698
+2394890,2026-06-08,MIBR,B8,0,bo3,validation,ridge_C1_ratings_form_hnone,0.44639809536383057,0.5536019046361694
+2394891,2026-06-08,Monte,BETBOOM,0,bo3,validation,ridge_C1_ratings_form_hnone,0.38019136405980164,0.6198086359401984
+2394892,2026-06-08,TYLOO,9z,0,bo3,validation,ridge_C1_ratings_form_hnone,0.4373465956180162,0.5626534043819837
+2394893,2026-06-08,G2,BIG,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6644758643132334,0.33552413568676664
+2394894,2026-06-08,M80,Legacy,0,bo3,validation,ridge_C1_ratings_form_hnone,0.3515766825689878,0.6484233174310122
+2395074,2026-06-08,Misa,eternal premium,0,bo3,validation,ridge_C1_ratings_form_hnone,0.7586706978496471,0.24132930215035286
+2395075,2026-06-08,XI,Clutchain,1,bo3,validation,ridge_C1_ratings_form_hnone,0.36244957995839266,0.6375504200416073
+2395076,2026-06-08,ROUNDS,OLDBOYS PL,0,bo3,validation,ridge_C1_ratings_form_hnone,0.2604687910728528,0.7395312089271472
+2395077,2026-06-08,DONSTU,Banger Gang,1,bo3,validation,ridge_C1_ratings_form_hnone,0.720287146332549,0.279712853667451
+2395111,2026-06-08,KOLESIE,ASTRAL,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6152016800078101,0.38479831999218994
+2395112,2026-06-08,Nuclear TigeRES,CYBERSHOKE,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6525545295402945,0.34744547045970553
+2395113,2026-06-08,Ursa,RUSTEC,0,bo3,validation,ridge_C1_ratings_form_hnone,0.4751517933616223,0.5248482066383777
+2395114,2026-06-08,Acend,ex-RUBY,0,bo3,validation,ridge_C1_ratings_form_hnone,0.4471532472743194,0.5528467527256806
+2395163,2026-06-08,Leo,HYPERSPIRIT,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5731240494405536,0.4268759505594464
+2395164,2026-06-08,brazylijski luz,ex-Zero Tenacity,1,bo3,validation,ridge_C1_ratings_form_hnone,0.44555367193962225,0.5544463280603777
+2395165,2026-06-08,The Last Resort,GenOne,0,bo3,validation,ridge_C1_ratings_form_hnone,0.367047617033334,0.632952382966666
+2395166,2026-06-08,HEROIC Academy,NEW VISION,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5707388225849015,0.4292611774150985
+2395226,2026-06-08,Rooster,MARKandLARRY,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7367982201838793,0.2632017798161207
+2395227,2026-06-08,Abyssal,MGLBROS,1,bo3,validation,ridge_C1_ratings_form_hnone,0.8408853524667894,0.15911464753321058
+2395245,2026-06-08,Chicken Coop,Third Prime,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7964832398976393,0.20351676010236075
+2394814,2026-06-09,MANA,Oxuji,0,bo3,validation,ridge_C1_ratings_form_hnone,0.3749329320207881,0.6250670679792119
+2394815,2026-06-09,Lavked,Misa,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7348288915216171,0.2651711084783829
+2394895,2026-06-09,Monte,paiN,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5197494372349515,0.4802505627650485
+2394896,2026-06-09,Legacy,TYLOO,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6437295924017344,0.35627040759826556
+2394897,2026-06-09,BIG,B8,0,bo3,validation,ridge_C1_ratings_form_hnone,0.4289005433231532,0.5710994566768468
+2395115,2026-06-09,CYBERSHOKE,ex-RUBY,0,bo3,validation,ridge_C1_ratings_form_hnone,0.4795825373080411,0.5204174626919589
+2395116,2026-06-09,Betclic,AM,1,bo3,validation,ridge_C1_ratings_form_hnone,0.4292917078742441,0.5707082921257559
+2395117,2026-06-09,KOLESIE,RUSTEC,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5782880549343797,0.42171194506562026
+2395168,2026-06-09,ex-RUBY,RUSTEC,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6356400650383176,0.3643599349616824
+2395169,2026-06-09,Virtus.pro,Oxuji,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7499185553952912,0.2500814446047088
+2395170,2026-06-09,PsychoFace,GenOne,0,bo3,validation,ridge_C1_ratings_form_hnone,0.2959280159482554,0.7040719840517446
+2395228,2026-06-09,Abyssal,Rooster,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5236604735819048,0.4763395264180952
+2395229,2026-06-09,MGLBROS,MARKandLARRY,0,bo3,validation,ridge_C1_ratings_form_hnone,0.3237569609362495,0.6762430390637505
+2395246,2026-06-09,Brahmas,Villainous,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5079602834414447,0.4920397165585553
+2395247,2026-06-09,Club 333,Chicken Coop,0,bo3,validation,ridge_C1_ratings_form_hnone,0.27209903774527067,0.7279009622547293
+2394816,2026-06-10,aAa,RUSTEC,1,bo3,validation,ridge_C1_ratings_form_hnone,0.18880732714022586,0.8111926728597741
+2394817,2026-06-10,G2 Ares,Young Ninjas,1,bo3,validation,ridge_C1_ratings_form_hnone,0.49407304680673114,0.5059269531932689
+2395078,2026-06-10,Wingman,eternal premium,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6225230159063937,0.3774769840936063
+2395079,2026-06-10,NEW VISION,XI,0,bo3,validation,ridge_C1_ratings_form_hnone,0.6297649228094131,0.3702350771905869
+2395080,2026-06-10,Falcons Force,OLDBOYS PL,0,bo3,validation,ridge_C1_ratings_form_hnone,0.3517844096448467,0.6482155903551533
+2395081,2026-06-10,B8 Academy,DONSTU,0,bo3,validation,ridge_C1_ratings_form_hnone,0.18781174575492054,0.8121882542450795
+2395119,2026-06-10,SPARTA,Atreides,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5091288444427866,0.4908711555572134
+2395120,2026-06-10,Walczaki,INOX Division,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6124804733808069,0.3875195266191931
+2395171,2026-06-10,SPARTA,brazylijski luz,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6155261910814374,0.38447380891856264
+2395172,2026-06-10,Ursa,HEROIC Academy,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6269688471067473,0.3730311528932527
+2395173,2026-06-10,KOLESIE,Leo,0,bo3,validation,ridge_C1_ratings_form_hnone,0.6438831061706176,0.3561168938293824
+2395174,2026-06-10,illwill,G2 Ares,0,bo3,validation,ridge_C1_ratings_form_hnone,0.688975006688567,0.31102499331143296
+2395230,2026-06-10,Ground Zero,Masked Regime,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7994460985448776,0.20055390145512242
+2395231,2026-06-10,Ding Cuts,DXA,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6221490624060008,0.37785093759399924
+2394818,2026-06-11,Lazer Cats,GenOne,0,bo3,validation,ridge_C1_ratings_form_hnone,0.3247314455741557,0.6752685544258443
+2394819,2026-06-11,KOLESIE,Virtus.pro,1,bo3,validation,ridge_C1_ratings_form_hnone,0.2940352934821453,0.7059647065178547
+2394898,2026-06-11,Vitality,FUT,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6979742653998746,0.3020257346001254
+2394899,2026-06-11,Falcons,G2,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6328337279817408,0.36716627201825924
+2394900,2026-06-11,Natus Vincere,Spirit,0,bo3,validation,ridge_C1_ratings_form_hnone,0.4011327222960527,0.5988672777039473
+2394901,2026-06-11,FURIA,B8,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6499278800505153,0.35007211994948473
+2394902,2026-06-11,Aurora,Monte,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5537115718655999,0.44628842813440006
+2394903,2026-06-11,PARIVISION,9z,0,bo3,validation,ridge_C1_ratings_form_hnone,0.4263081209249507,0.5736918790750494
+2394904,2026-06-11,The MongolZ,BETBOOM,0,bo3,validation,ridge_C1_ratings_form_hnone,0.48322997262105327,0.5167700273789467
+2394905,2026-06-11,MOUZ,Legacy,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5310844607838681,0.46891553921613194
+2395121,2026-06-11,Acend,INOX Division,1,bo3,validation,ridge_C1_ratings_form_hnone,0.36848837826768044,0.6315116217323196
+2395122,2026-06-11,AM,CYBERSHOKE,0,bo3,validation,ridge_C1_ratings_form_hnone,0.4787610549474191,0.521238945052581
+2395123,2026-06-11,SPARTA,KOLESIE,0,bo3,validation,ridge_C1_ratings_form_hnone,0.4937687316926137,0.5062312683073863
+2395175,2026-06-11,PsychoFace,brazylijski luz,1,bo3,validation,ridge_C1_ratings_form_hnone,0.4763433394696249,0.5236566605303751
+2395176,2026-06-11,illwill,RUSTEC,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6774254684725922,0.3225745315274078
+2395177,2026-06-11,Bebop,Oxuji,1,bo3,validation,ridge_C1_ratings_form_hnone,0.37465859748996405,0.6253414025100359
+2395178,2026-06-11,KOLESIE,HEROIC Academy,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7258956894957083,0.27410431050429174
+2395232,2026-06-11,Ding Cuts,Ground Zero,0,bo3,validation,ridge_C1_ratings_form_hnone,0.24336531305721998,0.75663468694278
+2395233,2026-06-11,DXA,Masked Regime,1,bo3,validation,ridge_C1_ratings_form_hnone,0.3150098353695453,0.6849901646304547
+2394820,2026-06-12,aAa,Young Ninjas,0,bo3,validation,ridge_C1_ratings_form_hnone,0.23910639943016698,0.760893600569833
+2394821,2026-06-12,GenOne,Virtus.pro,0,bo3,validation,ridge_C1_ratings_form_hnone,0.31138268809509895,0.688617311904901
+2394822,2026-06-12,brazylijski luz,HYPERSPIRIT,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5118063787282358,0.48819362127176424
+2394971,2026-06-12,FURIA,MOUZ,1,bo3,validation,ridge_C1_ratings_form_hnone,0.4900654630628422,0.5099345369371577
+2394972,2026-06-12,The MongolZ,B8,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6008937628526568,0.39910623714734317
+2394973,2026-06-12,FUT,G2,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5308073652614712,0.4691926347385288
+2394974,2026-06-12,PARIVISION,Monte,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5181971049126167,0.4818028950873833
+2394975,2026-06-12,Falcons,BETBOOM,0,bo3,validation,ridge_C1_ratings_form_hnone,0.6117511247117583,0.3882488752882417
+2394976,2026-06-12,Natus Vincere,Legacy,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6072500701895,0.39274992981050005
+2394977,2026-06-12,Aurora,Spirit,0,bo3,validation,ridge_C1_ratings_form_hnone,0.2461463846820196,0.7538536153179805
+2394978,2026-06-12,Vitality,9z,0,bo3,validation,ridge_C1_ratings_form_hnone,0.7748024488128241,0.22519755118717588
+2395082,2026-06-12,Wingman,XI,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6302938600992697,0.3697061399007303
+2395083,2026-06-12,OLDBOYS PL,DONSTU,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6313025023773012,0.36869749762269877
+2395179,2026-06-12,ex-RUBY,G2 Ares,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6757106002054221,0.32428939979457794
+2395181,2026-06-12,SPARTA,GenOne,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5107694556162826,0.4892305443837174
+2395182,2026-06-12,Ursa,Leo,1,bo3,validation,ridge_C1_ratings_form_hnone,0.4899801142904935,0.5100198857095065
+2395234,2026-06-12,MARKandLARRY,Abyssal,1,bo3,validation,ridge_C1_ratings_form_hnone,0.24380063571475952,0.7561993642852405
+2395235,2026-06-12,Ding Cuts,DXA,0,bo3,validation,ridge_C1_ratings_form_hnone,0.6218744726613442,0.3781255273386558
+2395265,2026-06-12,Washed,STATE,0,bo3,validation,ridge_C1_ratings_form_hnone,0.24333057776051303,0.756669422239487
+2395266,2026-06-12,Invicta,Sashi Academy,0,bo3,validation,ridge_C1_ratings_form_hnone,0.3751430191399958,0.6248569808600042
+2395269,2026-06-12,MASONIC,MASQ,0,bo3,validation,ridge_C1_ratings_form_hnone,0.7504751997274668,0.2495248002725332
+2395270,2026-06-12,struggletony,XI,1,bo3,validation,ridge_C1_ratings_form_hnone,0.38146468230592434,0.6185353176940757
+2395277,2026-06-12,Marsborne,F5,1,bo3,validation,ridge_C1_ratings_form_hnone,0.8413983081793333,0.15860169182066675
+2395278,2026-06-12,DETONATE,Iowa Stormboar,1,bo3,validation,ridge_C1_ratings_form_hnone,0.31319028024944195,0.686809719750558
+2395279,2026-06-12,Club 333,Festina Lente,0,bo3,validation,ridge_C1_ratings_form_hnone,0.6570593461765915,0.34294065382340855
+2395280,2026-06-12,Wanted Goons,Overtake Sector,0,bo3,validation,ridge_C1_ratings_form_hnone,0.598122292212724,0.40187770778727605
+2394823,2026-06-13,Oxuji,Misa,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6644620579545872,0.33553794204541276
+2394979,2026-06-13,Natus Vincere,The MongolZ,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6332247415573389,0.3667752584426611
+2394980,2026-06-13,B8,FUT,0,bo3,validation,ridge_C1_ratings_form_hnone,0.3347487473107254,0.6652512526892747
+2394981,2026-06-13,Aurora,G2,1,bo3,validation,ridge_C1_ratings_form_hnone,0.4586041102522249,0.5413958897477751
+2394982,2026-06-13,Falcons,Monte,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6950089643711299,0.3049910356288701
+2394983,2026-06-13,Vitality,MOUZ,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6401963196537611,0.3598036803462389
+2394984,2026-06-13,PARIVISION,Legacy,0,bo3,validation,ridge_C1_ratings_form_hnone,0.3800078404093359,0.6199921595906641
+2394985,2026-06-13,BETBOOM,FURIA,0,bo3,validation,ridge_C1_ratings_form_hnone,0.4616550136918961,0.5383449863081039
+2395183,2026-06-13,Oxuji,brazylijski luz,0,bo3,validation,ridge_C1_ratings_form_hnone,0.6451595135533658,0.35484048644663424
+2395184,2026-06-13,RUSTEC,HEROIC Academy,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5942403886039052,0.40575961139609484
+2395185,2026-06-13,PsychoFace,G2 Ares,1,bo3,validation,ridge_C1_ratings_form_hnone,0.4374995039422838,0.5625004960577162
+2395186,2026-06-13,KOLESIE,Bebop,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6966268480174915,0.30337315198250847
+2395248,2026-06-13,Wanted Goons,F5,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5008918073027135,0.49910819269728646
+2395249,2026-06-13,LAG,Olympus,0,bo3,validation,ridge_C1_ratings_form_hnone,0.8135326727004453,0.18646732729955473
+2395262,2026-06-13,The Last Resort,Dripmen,1,bo5,validation,ridge_C1_ratings_form_hnone,0.7595474844098445,0.24045251559015546
+2395271,2026-06-13,Sashi Academy,Washed,0,bo3,validation,ridge_C1_ratings_form_hnone,0.38610500590733343,0.6138949940926666
+2395272,2026-06-13,struggletony,MASONIC,0,bo3,validation,ridge_C1_ratings_form_hnone,0.31112491697868955,0.6888750830213104
+2395273,2026-06-13,STATE,MASONIC,0,bo3,validation,ridge_C1_ratings_form_hnone,0.605985046369486,0.394014953630514
+2395274,2026-06-13,MASQ,Washed,0,bo3,validation,ridge_C1_ratings_form_hnone,0.27608338452173664,0.7239166154782634
+2395275,2026-06-13,MASQ,STATE,0,bo3,validation,ridge_C1_ratings_form_hnone,0.23805006571234233,0.7619499342876577
+2395276,2026-06-13,Washed,MASONIC,1,bo3,validation,ridge_C1_ratings_form_hnone,0.4112351725654181,0.5887648274345819
+2395281,2026-06-13,Marsborne,Overtake Sector,1,bo3,validation,ridge_C1_ratings_form_hnone,0.8048369097330125,0.19516309026698753
+2395282,2026-06-13,DETONATE,Festina Lente,0,bo3,validation,ridge_C1_ratings_form_hnone,0.37150828236731126,0.6284917176326887
+2395283,2026-06-13,F5,Wanted Goons,0,bo3,validation,ridge_C1_ratings_form_hnone,0.4991081926972861,0.5008918073027139
+2395284,2026-06-13,Iowa Stormboar,Club 333,1,bo3,validation,ridge_C1_ratings_form_hnone,0.4203055373980942,0.5796944626019058
+2395285,2026-06-13,DETONATE,Wanted Goons,1,bo3,validation,ridge_C1_ratings_form_hnone,0.3082055786516061,0.691794421348394
+2395286,2026-06-13,Iowa Stormboar,Overtake Sector,1,bo3,validation,ridge_C1_ratings_form_hnone,0.4457138887269828,0.5542861112730172
+2395292,2026-06-13,Alliance,SAAB,1,bo3,validation,ridge_C1_ratings_form_hnone,0.8880193294739938,0.11198067052600624
+2395293,2026-06-13,PURE,Nexus,0,bo3,validation,ridge_C1_ratings_form_hnone,0.28704128909930293,0.7129587109006971
+2395294,2026-06-13,Metizport,atputies,1,bo3,validation,ridge_C1_ratings_form_hnone,0.8178862622491296,0.18211373775087036
+2395295,2026-06-13,EAC,Noir Verse,1,bo3,validation,ridge_C1_ratings_form_hnone,0.4595855732552566,0.5404144267447434
+2395296,2026-06-13,fnatic,Minkens finest,1,bo3,validation,ridge_C1_ratings_form_hnone,0.9098784507474911,0.09012154925250893
+2395297,2026-06-13,aimclub,6666,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7258272021023809,0.27417279789761906
+2395298,2026-06-13,BASEMENT BOYS,By Legends,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7776583855180846,0.22234161448191536
+2395299,2026-06-13,Entropy,Gatorian,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6043115148784575,0.39568848512154253
+2395300,2026-06-13,Alliance,Nexus,0,bo3,validation,ridge_C1_ratings_form_hnone,0.8625236478013418,0.13747635219865817
+2395301,2026-06-13,Metizport,EAC,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6760375110882701,0.32396248891172985
+2395302,2026-06-13,fnatic,aimclub,1,bo3,validation,ridge_C1_ratings_form_hnone,0.8467325104177542,0.15326748958224579
+2395303,2026-06-13,BASEMENT BOYS,Entropy,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6614915111133697,0.3385084888866303
+2395304,2026-06-13,SAAB,PURE,0,bo3,validation,ridge_C1_ratings_form_hnone,0.35028823526364206,0.6497117647363579
+2395305,2026-06-13,atputies,Noir Verse,0,bo3,validation,ridge_C1_ratings_form_hnone,0.20813045403019914,0.7918695459698009
+2395306,2026-06-13,Minkens finest,6666,0,bo3,validation,ridge_C1_ratings_form_hnone,0.3963024845416186,0.6036975154583815
+2395307,2026-06-13,By Legends,Gatorian,0,bo3,validation,ridge_C1_ratings_form_hnone,0.3873718910430386,0.6126281089569614
+2395308,2026-06-13,Nexus,Metizport,0,bo3,validation,ridge_C1_ratings_form_hnone,0.3550306284400139,0.6449693715599861
+2395309,2026-06-13,fnatic,BASEMENT BOYS,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7400215452301009,0.2599784547698991
+2395310,2026-06-13,aimclub,PURE,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6559108188448859,0.3440891811551141
+2395311,2026-06-13,Noir Verse,Entropy,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6108477349468335,0.38915226505316647
+2395312,2026-06-13,6666,Alliance,0,bo3,validation,ridge_C1_ratings_form_hnone,0.11198067052600585,0.8880193294739942
+2395313,2026-06-13,Gatorian,EAC,0,bo3,validation,ridge_C1_ratings_form_hnone,0.33857021801167964,0.6614297819883204
+2395314,2026-06-13,aimclub,Noir Verse,0,bo3,validation,ridge_C1_ratings_form_hnone,0.4173252686153995,0.5826747313846006
+2395315,2026-06-13,Alliance,EAC,1,bo3,validation,ridge_C1_ratings_form_hnone,0.8788874043838724,0.12111259561612764
+2394824,2026-06-14,INFINITE,Virtus.pro,1,bo3,validation,ridge_C1_ratings_form_hnone,0.26189437864563936,0.7381056213543606
+2394825,2026-06-14,Nuclear TigeRES,Oxuji,0,bo3,validation,ridge_C1_ratings_form_hnone,0.7966218512763407,0.20337814872365934
+2394986,2026-06-14,Spirit,9z,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7301531388047369,0.26984686119526313
+2394987,2026-06-14,MOUZ,FUT,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5604626104430033,0.4395373895569967
+2394988,2026-06-14,The MongolZ,Monte,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5954875466770793,0.40451245332292074
+2394989,2026-06-14,BETBOOM,Vitality,0,bo3,validation,ridge_C1_ratings_form_hnone,0.3064017097669854,0.6935982902330147
+2394990,2026-06-14,Aurora,9z,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5322595282912876,0.46774047170871236
+2394991,2026-06-14,Natus Vincere,Falcons,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5423795050874337,0.4576204949125663
+2394992,2026-06-14,G2,Legacy,1,bo3,validation,ridge_C1_ratings_form_hnone,0.48930404569760483,0.5106959543023952
+2395085,2026-06-14,Arch,OLDBOYS PL,1,bo3,validation,ridge_C1_ratings_form_hnone,0.43704447566429444,0.5629555243357056
+2395124,2026-06-14,K27,Walczaki,1,bo3,validation,ridge_C1_ratings_form_hnone,0.3854448715316572,0.6145551284683428
+2395125,2026-06-14,HOTU,KOLESIE,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5994813483863306,0.4005186516136694
+2395126,2026-06-14,1win,TDK,0,bo3,validation,ridge_C1_ratings_form_hnone,0.34218449304697607,0.6578155069530239
+2395127,2026-06-14,illwill,Nuclear TigeRES,0,bo3,validation,ridge_C1_ratings_form_hnone,0.3559408870316654,0.6440591129683346
+2395187,2026-06-14,illwill,Virtus.pro,1,bo3,validation,ridge_C1_ratings_form_hnone,0.41134428257429456,0.5886557174257054
+2395188,2026-06-14,SPARTA,Leo,0,bo3,validation,ridge_C1_ratings_form_hnone,0.6332790397991221,0.36672096020087785
+2395189,2026-06-14,ex-RUBY,INOX Division,0,bo3,validation,ridge_C1_ratings_form_hnone,0.469742400556468,0.530257599443532
+2395190,2026-06-14,Ursa,GenOne,1,bo3,validation,ridge_C1_ratings_form_hnone,0.4160204547471336,0.5839795452528664
+2395252,2026-06-14,Wanted Goons,Olympus,0,bo3,validation,ridge_C1_ratings_form_hnone,0.40793627066317656,0.5920637293368234
+2395253,2026-06-14,Omen,Xiaoma,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7498405405281836,0.2501594594718164
+2395287,2026-06-14,Marsborne,Festina Lente,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6901450656464082,0.3098549343535918
+2395288,2026-06-14,DETONATE,Iowa Stormboar,0,bo3,validation,ridge_C1_ratings_form_hnone,0.4072033279087338,0.5927966720912662
+2395289,2026-06-14,Festina Lente,Iowa Stormboar,0,bo3,validation,ridge_C1_ratings_form_hnone,0.524473440621797,0.475526559378203
+2395291,2026-06-14,INFURITY,VanirQuick,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5705363844377102,0.42946361556228985
+2395316,2026-06-14,Nexus,Noir Verse,1,bo3,validation,ridge_C1_ratings_form_hnone,0.477763481660469,0.522236518339531
+2395317,2026-06-14,BASEMENT BOYS,Alliance,0,bo3,validation,ridge_C1_ratings_form_hnone,0.19421799966816178,0.8057820003318382
+2395318,2026-06-14,fnatic,Metizport,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5995897094757221,0.4004102905242779
+2395319,2026-06-14,Nexus,Alliance,0,bo3,validation,ridge_C1_ratings_form_hnone,0.1693010655708262,0.8306989344291738
+2395320,2026-06-14,fnatic,Alliance,0,bo3,validation,ridge_C1_ratings_form_hnone,0.3851597229536456,0.6148402770463544
+2395321,2026-06-14,Metizport,Alliance,0,bo3,validation,ridge_C1_ratings_form_hnone,0.2989310350448081,0.7010689649551919
+2394827,2026-06-15,Walczaki,G2 Ares,1,bo3,validation,ridge_C1_ratings_form_hnone,0.8176524109353573,0.18234758906464266
+2394993,2026-06-15,9z,The MongolZ,1,bo3,validation,ridge_C1_ratings_form_hnone,0.4874022313500011,0.512597768649999
+2394994,2026-06-15,BETBOOM,FUT,1,bo3,validation,ridge_C1_ratings_form_hnone,0.4942994179122244,0.5057005820877756
+2394995,2026-06-15,Natus Vincere,G2,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5965709926980051,0.40342900730199494
+2395084,2026-06-15,ReThink,Wingman,1,bo3,validation,ridge_C1_ratings_form_hnone,0.30578227543939135,0.6942177245606087
+2395128,2026-06-15,Gentle Mates,Acend,1,bo3,validation,ridge_C1_ratings_form_hnone,0.71103210072819,0.28896789927181
+2395129,2026-06-15,100 Thieves,Betclic,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7211944172501308,0.2788055827498692
+2395130,2026-06-15,Nemesis,CYBERSHOKE,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7342279455364599,0.26577205446354013
+2395131,2026-06-15,INFINITE,ex-RUBY,1,bo3,validation,ridge_C1_ratings_form_hnone,0.3458648757744258,0.6541351242255742
+2395191,2026-06-15,Bebop,RUSTEC,1,bo3,validation,ridge_C1_ratings_form_hnone,0.46140804419340886,0.5385919558065911
+2395192,2026-06-15,Virtus.pro,brazylijski luz,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7852743852650108,0.2147256147349892
+2395193,2026-06-15,SPARTA,G2 Ares,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6117671936417606,0.3882328063582394
+2395236,2026-06-15,Rooster,DXA,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7525109309581014,0.2474890690418986
+2395237,2026-06-15,Ground Zero,MARKandLARRY,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7738765319262606,0.2261234680737394
+2395254,2026-06-15,Club 333,Olympus,1,bo3,validation,ridge_C1_ratings_form_hnone,0.32260913811549763,0.6773908618845024
+2395255,2026-06-15,Brahmas,Omen,1,bo3,validation,ridge_C1_ratings_form_hnone,0.40272456514277455,0.5972754348572255
+2395290,2026-06-15,Marsborne,Iowa Stormboar,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6719424672203964,0.3280575327796036
+2394828,2026-06-16,Sashi,HYPERSPIRIT,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7636248759389221,0.23637512406107786
+2394829,2026-06-16,EAC,KOLESIE,0,bo3,validation,ridge_C1_ratings_form_hnone,0.25223498972530073,0.7477650102746993
+2395132,2026-06-16,HOTU,TDK,0,bo3,validation,ridge_C1_ratings_form_hnone,0.39296794433901994,0.6070320556609801
+2395133,2026-06-16,Gentle Mates,Nuclear TigeRES,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5425450168710525,0.4574549831289475
+2395134,2026-06-16,K27,100 Thieves,1,bo3,validation,ridge_C1_ratings_form_hnone,0.48275269286221734,0.5172473071377827
+2395135,2026-06-16,Nemesis,INFINITE,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7533220437316552,0.24667795626834477
+2395194,2026-06-16,illwill,ex-RUBY,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5003875952521084,0.4996124047478916
+2395195,2026-06-16,PsychoFace,Leo,0,bo3,validation,ridge_C1_ratings_form_hnone,0.4940131403159345,0.5059868596840655
+2395196,2026-06-16,KOLESIE,GenOne,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5373774813493197,0.46262251865068027
+2395238,2026-06-16,Ground Zero,Rooster,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5901167826520898,0.4098832173479102
+2395239,2026-06-16,MARKandLARRY,DXA,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5567014413143438,0.44329855868565615
+2394830,2026-06-17,Acend,Lavked,1,bo3,validation,ridge_C1_ratings_form_hnone,0.482893157757485,0.517106842242515
+2394831,2026-06-17,SPARTA,INOX Division,0,bo3,validation,ridge_C1_ratings_form_hnone,0.3423327204458743,0.6576672795541256
+2395136,2026-06-17,Nuclear TigeRES,K27,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5169414422285967,0.4830585577714033
+2395137,2026-06-17,TDK,Nemesis,0,bo3,validation,ridge_C1_ratings_form_hnone,0.4787477727989041,0.5212522272010959
+2395138,2026-06-17,Nuclear TigeRES,Nemesis,1,bo3,validation,ridge_C1_ratings_form_hnone,0.43772693286474035,0.5622730671352596
+2395197,2026-06-17,PsychoFace,Virtus.pro,0,bo3,validation,ridge_C1_ratings_form_hnone,0.23546072986580002,0.7645392701342
+2395199,2026-06-17,KOLESIE,illwill,1,bo3,validation,ridge_C1_ratings_form_hnone,0.45542714782940696,0.544572852170593
+2395240,2026-06-17,Rooster,DXA,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7408649042584177,0.25913509574158233
+2394832,2026-06-18,INFINITE,Oxuji,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5613357468209415,0.43866425317905855
+2394833,2026-06-18,TDK,Walczaki,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5515636913650267,0.4484363086349733
+2394996,2026-06-18,Aurora,BETBOOM,1,bo3,validation,ridge_C1_ratings_form_hnone,0.49112056228441014,0.5088794377155899
+2394997,2026-06-18,9z,FURIA,0,bo3,validation,ridge_C1_ratings_form_hnone,0.40166697586043193,0.5983330241395681
+2395200,2026-06-18,TDK,Ursa,1,bo3,validation,ridge_C1_ratings_form_hnone,0.8305692931531903,0.16943070684680972
+2395201,2026-06-18,Gentle Mates,KOLESIE,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6798041173934214,0.3201958826065786
+2395202,2026-06-18,HOTU,GenOne,0,bo3,validation,ridge_C1_ratings_form_hnone,0.6507488673386725,0.34925113266132746
+2395203,2026-06-18,100 Thieves,Leo,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7885449225195821,0.21145507748041792
+2395241,2026-06-18,Ground Zero,Rooster,0,bo3,validation,ridge_C1_ratings_form_hnone,0.6405130266091514,0.35948697339084856
+2395322,2026-06-18,FOKUS,Noir Verse,1,bo3,validation,ridge_C1_ratings_form_hnone,0.8751676198458482,0.12483238015415177
+2395323,2026-06-18,JiJieHao,Phantom,0,bo3,validation,ridge_C1_ratings_form_hnone,0.6875365480124556,0.31246345198754444
+2395324,2026-06-18,Echo,KOLESIE,1,bo3,validation,ridge_C1_ratings_form_hnone,0.1596540897248404,0.8403459102751596
+2395325,2026-06-18,Inner Circle,Spirit Academy,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6776350687937116,0.3223649312062884
+2394834,2026-06-19,Sashi,KOLESIE,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5395016893468442,0.46049831065315583
+2394835,2026-06-19,Acend,INOX Division,0,bo3,validation,ridge_C1_ratings_form_hnone,0.38727179916359766,0.6127282008364023
+2394998,2026-06-19,G2,Spirit,0,bo3,validation,ridge_C1_ratings_form_hnone,0.32790220159741573,0.6720977984025842
+2395205,2026-06-19,INFINITE,ex-RUBY,0,bo3,validation,ridge_C1_ratings_form_hnone,0.424841526158379,0.575158473841621
+2395206,2026-06-19,1win,INOX Division,1,bo3,validation,ridge_C1_ratings_form_hnone,0.4308900576209545,0.5691099423790456
+2395207,2026-06-19,K27,Virtus.pro,0,bo3,validation,ridge_C1_ratings_form_hnone,0.6006220657515565,0.3993779342484435
+2395326,2026-06-19,Walczaki,Oxuji,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7808492022124321,0.21915079778756785
+2395327,2026-06-19,K27,SHISHKA,1,bo3,validation,ridge_C1_ratings_form_hnone,0.8735315503848395,0.12646844961516046
+2395328,2026-06-19,WW,CYBERSHOKE,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5561624330943403,0.4438375669056597
+2395329,2026-06-19,Acend,BET-M,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5291969232091314,0.47080307679086864
+2395337,2026-06-19,ReThink,BAKS,1,bo3,validation,ridge_C1_ratings_form_hnone,0.42786707692711634,0.5721329230728837
+2395338,2026-06-19,Fire Flux,NAVI Junior,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6407347585714065,0.3592652414285935
+2395339,2026-06-19,Arch,WBT,0,bo3,validation,ridge_C1_ratings_form_hnone,0.6553998227404086,0.34460017725959136
+2394836,2026-06-20,INFINITE,Walczaki,0,bo3,validation,ridge_C1_ratings_form_hnone,0.2580699514971939,0.7419300485028061
+2394837,2026-06-20,KOLESIE,INOX Division,1,bo3,validation,ridge_C1_ratings_form_hnone,0.3673339183088574,0.6326660816911426
+2394999,2026-06-20,Falcons,Vitality,1,bo3,validation,ridge_C1_ratings_form_hnone,0.37402238912768393,0.6259776108723161
+2395000,2026-06-20,Aurora,FURIA,0,bo3,validation,ridge_C1_ratings_form_hnone,0.46287804666720994,0.53712195333279
+2395001,2026-06-20,Spirit,Falcons,0,bo3,validation,ridge_C1_ratings_form_hnone,0.6024170307753893,0.39758296922461067
+2395208,2026-06-20,Nemesis,TDK,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5083327212262306,0.49166727877376937
+2395209,2026-06-20,1win,Virtus.pro,0,bo3,validation,ridge_C1_ratings_form_hnone,0.43509053780789747,0.5649094621921025
+2395210,2026-06-20,Gentle Mates,ex-RUBY,0,bo3,validation,ridge_C1_ratings_form_hnone,0.6267636519392791,0.3732363480607209
+2395211,2026-06-20,GenOne,100 Thieves,0,bo3,validation,ridge_C1_ratings_form_hnone,0.3601207245518918,0.6398792754481082
+2395330,2026-06-20,FOKUS,CYBERSHOKE,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6559490882947466,0.34405091170525337
+2395331,2026-06-20,Echo,Inner Circle,1,bo3,validation,ridge_C1_ratings_form_hnone,0.19208832619900906,0.8079116738009909
+2395332,2026-06-20,K27,Acend,1,bo3,validation,ridge_C1_ratings_form_hnone,0.666548362002888,0.33345163799711197
+2395333,2026-06-20,Phantom,Walczaki,1,bo3,validation,ridge_C1_ratings_form_hnone,0.24534793196373916,0.7546520680362608
+2395340,2026-06-20,QUAZAR,ReThink,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6427881521865298,0.35721184781347015
+2395341,2026-06-20,Fire Flux,WBT,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5560041178454693,0.4439958821545307
+2395343,2026-06-20,Chicken Coop,dice,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7878229813167925,0.21217701868320749
+2395344,2026-06-20,Brahmas,Overtake Sector,0,bo3,validation,ridge_C1_ratings_form_hnone,0.4814155474021825,0.5185844525978175
+2395345,2026-06-20,Villainous,DETONATE,1,bo3,validation,ridge_C1_ratings_form_hnone,0.37609075242024514,0.6239092475797549
+2395346,2026-06-20,Club 333,Playing for fun,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6802379736694286,0.3197620263305714
+2394838,2026-06-21,INFINITE,INOX Division,1,bo3,validation,ridge_C1_ratings_form_hnone,0.3612606015873623,0.6387393984126377
+2395002,2026-06-21,FURIA,Falcons,0,bo5,validation,ridge_C1_ratings_form_hnone,0.4661221672038781,0.5338778327961219
+2395212,2026-06-21,Virtus.pro,ex-RUBY,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5127820133569203,0.4872179866430797
+2395213,2026-06-21,TDK,100 Thieves,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6193091457244366,0.3806908542755634
+2395214,2026-06-21,ex-RUBY,TDK,0,bo3,validation,ridge_C1_ratings_form_hnone,0.32442096550436916,0.6755790344956308
+2395334,2026-06-21,Echo,K27,0,bo3,validation,ridge_C1_ratings_form_hnone,0.23993608550472667,0.7600639144952733
+2395335,2026-06-21,FOKUS,Phantom,0,bo3,validation,ridge_C1_ratings_form_hnone,0.6874393741106893,0.31256062588931066
+2395342,2026-06-21,QUAZAR,Fire Flux,1,bo3,validation,ridge_C1_ratings_form_hnone,0.4203044525900569,0.5796955474099431
+2395347,2026-06-21,Chicken Coop,Overtake Sector,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7474069018683401,0.25259309813165987
+2395348,2026-06-21,Villainous,Club 333,0,bo3,validation,ridge_C1_ratings_form_hnone,0.44191027562426854,0.5580897243757315
+2395355,2026-06-21,Lilmix,ENERGYULTRA,0,bo3,validation,ridge_C1_ratings_form_hnone,0.512524099153823,0.487475900846177
+2395356,2026-06-21,ReThink,roamsfiest,0,bo3,validation,ridge_C1_ratings_form_hnone,0.6766957884926162,0.32330421150738375
+2395357,2026-06-21,ENERGYULTRA,roamsfiest,0,bo3,validation,ridge_C1_ratings_form_hnone,0.6580744082481423,0.34192559175185766
+2394839,2026-06-22,Walczaki,KOLESIE,1,bo5,validation,ridge_C1_ratings_form_hnone,0.6940296016441169,0.30597039835588313
+2395349,2026-06-22,Chicken Coop,Club 333,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6929264663756468,0.3070735336243532
+2395358,2026-06-22,Lilmix,ReThink,0,bo3,validation,ridge_C1_ratings_form_hnone,0.48131821659203655,0.5186817834079634
+2395359,2026-06-22,ENERGYULTRA,ReThink,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5748575273289437,0.4251424726710563
+2395360,2026-06-23,train launcher,LEO SE,1,bo3,validation,ridge_C1_ratings_form_hnone,0.4836452964146889,0.5163547035853111
+2395361,2026-06-23,Johnny Speeds,Venom,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6759931164254545,0.32400688357454555
+2395362,2026-06-23,train launcher,Johnny Speeds,0,bo3,validation,ridge_C1_ratings_form_hnone,0.11780198880430909,0.8821980111956909
+2395371,2026-06-23,Inner Circle,AM,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6386735808013526,0.3613264191986474
+2395372,2026-06-23,INFINITE,EAC,0,bo3,validation,ridge_C1_ratings_form_hnone,0.7657333342643026,0.23426666573569743
+2395373,2026-06-23,Sashi,9INE,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5040382484336403,0.4959617515663597
+2395374,2026-06-23,Echo,Betclic,1,bo3,validation,ridge_C1_ratings_form_hnone,0.4031002130969803,0.5968997869030197
+2395375,2026-06-23,Sharks,Eternal Fire,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6132755604094666,0.3867244395905334
+2395376,2026-06-23,FOKUS,OG,1,bo3,validation,ridge_C1_ratings_form_hnone,0.651601443438872,0.34839855656112795
+2395377,2026-06-23,GamerLegion,Acend,0,bo3,validation,ridge_C1_ratings_form_hnone,0.8151270393834635,0.18487296061653646
+2395351,2026-06-24,Atrix,Shimmer,0,bo3,validation,ridge_C1_ratings_form_hnone,0.3902301830380881,0.6097698169619119
+2395363,2026-06-24,LEO SE,Venom,0,bo3,validation,ridge_C1_ratings_form_hnone,0.17742355590498005,0.82257644409502
+2395364,2026-06-24,train launcher,Venom,1,bo3,validation,ridge_C1_ratings_form_hnone,0.26878050067418113,0.7312194993258189
+2395379,2026-06-24,Sashi,Acend,0,bo3,validation,ridge_C1_ratings_form_hnone,0.488279420646356,0.511720579353644
+2395380,2026-06-24,Echo,FOKUS,1,bo3,validation,ridge_C1_ratings_form_hnone,0.27266784397637234,0.7273321560236277
+2395381,2026-06-24,Inner Circle,Sharks,0,bo3,validation,ridge_C1_ratings_form_hnone,0.47683993325874396,0.523160066741256
+2395382,2026-06-24,EAC,Walczaki,0,bo3,validation,ridge_C1_ratings_form_hnone,0.16142095591942096,0.838579044080579
+2395383,2026-06-24,9INE,GamerLegion,1,bo3,validation,ridge_C1_ratings_form_hnone,0.22232440137771992,0.7776755986222801
+2395385,2026-06-24,AM,Eternal Fire,1,bo3,validation,ridge_C1_ratings_form_hnone,0.4584873733544612,0.5415126266455388
+2395415,2026-06-24,Isurus,MIBR Academy,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5831060996228912,0.41689390037710883
+2395416,2026-06-24,Keyd Stars,Yawara,1,bo3,validation,ridge_C1_ratings_form_hnone,0.4408345507320046,0.5591654492679954
+2395494,2026-06-24,ex-MANA,Honvéd,1,bo3,validation,ridge_C1_ratings_form_hnone,0.38040143820742356,0.6195985617925764
+2395384,2026-06-25,Betclic,OG,1,bo3,validation,ridge_C1_ratings_form_hnone,0.3957670113435976,0.6042329886564024
+2395387,2026-06-25,Inner Circle,9INE,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5462529508646174,0.45374704913538255
+2395388,2026-06-25,EAC,Betclic,0,bo3,validation,ridge_C1_ratings_form_hnone,0.3779576632610596,0.6220423367389404
+2395389,2026-06-25,Sashi,AM,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5065725730730233,0.4934274269269767
+2395390,2026-06-25,INFINITE,FOKUS,1,bo3,validation,ridge_C1_ratings_form_hnone,0.3226987314140923,0.6773012685859077
+2395391,2026-06-25,Acend,Sharks,0,bo3,validation,ridge_C1_ratings_form_hnone,0.37207437915813807,0.627925620841862
+2395392,2026-06-25,Echo,Walczaki,1,bo3,validation,ridge_C1_ratings_form_hnone,0.33693715567506244,0.6630628443249376
+2395394,2026-06-25,INFINITE,Betclic,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5592072629529985,0.4407927370470015
+2395401,2026-06-25,The Huns,Game Point,1,bo3,validation,ridge_C1_ratings_form_hnone,0.8797583557744608,0.12024164422553918
+2395402,2026-06-25,Rune Eaters,NOVAQ,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5484044130850251,0.4515955869149749
+2395403,2026-06-25,DEPO,PCIFIC,0,bo3,validation,ridge_C1_ratings_form_hnone,0.7220383603301261,0.27796163966987386
+2395404,2026-06-25,CYBERSHOKE Prospects,Dark Moon,1,bo3,validation,ridge_C1_ratings_form_hnone,0.797672623554527,0.20232737644547305
+2395405,2026-06-25,The Huns,NOVAQ,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7756593724907108,0.22434062750928918
+2395406,2026-06-25,PCIFIC,CYBERSHOKE Prospects,1,bo3,validation,ridge_C1_ratings_form_hnone,0.20675283868187994,0.79324716131812
+2395407,2026-06-25,Game Point,Rune Eaters,0,bo3,validation,ridge_C1_ratings_form_hnone,0.23260860528693,0.7673913947130699
+2395408,2026-06-25,DEPO,Dark Moon,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7284804619097086,0.2715195380902914
+2395409,2026-06-25,Rune Eaters,NOVAQ,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5484044130850251,0.4515955869149749
+2395410,2026-06-25,DEPO,CYBERSHOKE Prospects,0,bo3,validation,ridge_C1_ratings_form_hnone,0.40659186753843335,0.5934081324615667
+2395417,2026-06-25,UNO MILLE,GameHunters,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6141449708356763,0.3858550291643237
+2395418,2026-06-25,LP,MIBR Academy,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7065929313827816,0.29340706861721844
+2395419,2026-06-25,Keyd Stars,UNO MILLE,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5021696198710374,0.49783038012896264
+2395495,2026-06-25,OlyBet,Subtop De France,0,bo3,validation,ridge_C1_ratings_form_hnone,0.6182159564972746,0.38178404350272543
+2395496,2026-06-25,Enjoy,Julie&Cie,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7352022803269714,0.26479771967302856
+2395352,2026-06-26,Clutchain fe,MIBR fe,0,bo3,validation,ridge_C1_ratings_form_hnone,0.34828967265473804,0.651710327345262
+2395353,2026-06-26,Atrix,Clutchain fe,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5045271581455364,0.4954728418544636
+2395365,2026-06-26,Johnny Speeds,ReThink,0,bo3,validation,ridge_C1_ratings_form_hnone,0.8369624663992001,0.16303753360079987
+2395366,2026-06-26,roamsfiest,train launcher,0,bo3,validation,ridge_C1_ratings_form_hnone,0.44915643663374305,0.550843563366257
+2395367,2026-06-26,ReThink,train launcher,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5007148125724207,0.4992851874275793
+2395393,2026-06-26,Sashi,Inner Circle,0,bo3,validation,ridge_C1_ratings_form_hnone,0.36042705339994263,0.6395729466000574
+2395395,2026-06-26,Acend,INFINITE,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5562582040849597,0.44374179591504026
+2395396,2026-06-26,Walczaki,Inner Circle,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5690881422019647,0.4309118577980353
+2395411,2026-06-26,The Huns,CYBERSHOKE Prospects,0,bo3,validation,ridge_C1_ratings_form_hnone,0.6522339630967008,0.3477660369032992
+2395412,2026-06-26,PCIFIC,Rune Eaters,1,bo3,validation,ridge_C1_ratings_form_hnone,0.4101563473069547,0.5898436526930453
+2395413,2026-06-26,CYBERSHOKE Prospects,PCIFIC,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6536445945314339,0.34635540546856614
+2395421,2026-06-26,Yawara,GameHunters,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6193379431112339,0.3806620568887661
+2395422,2026-06-26,MIBR Academy,Isurus,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5051398343166108,0.4948601656833892
+2395497,2026-06-26,Sashi Academy,eternal premium,1,bo3,validation,ridge_C1_ratings_form_hnone,0.3691641633741495,0.6308358366258505
+2395498,2026-06-26,Entropy,DONSTU,1,bo3,validation,ridge_C1_ratings_form_hnone,0.4372594332692544,0.5627405667307456
+2395499,2026-06-26,Fortress,Endless Journey,0,bo3,validation,ridge_C1_ratings_form_hnone,0.28440213519069824,0.7155978648093018
+2395354,2026-06-27,Shimmer,MIBR fe,0,bo5,validation,ridge_C1_ratings_form_hnone,0.36046234849127795,0.6395376515087221
+2395368,2026-06-27,Johnny Speeds,roamsfiest,0,bo3,validation,ridge_C1_ratings_form_hnone,0.816134312436564,0.18386568756343602
+2395369,2026-06-27,train launcher,roamsfiest,0,bo3,validation,ridge_C1_ratings_form_hnone,0.6049647404839267,0.3950352595160733
+2395370,2026-06-27,ReThink,roamsfiest,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5972381515140504,0.40276184848594965
+2395397,2026-06-27,Sharks,Inner Circle,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5465748972839746,0.45342510271602543
+2395398,2026-06-27,Echo,Acend,0,bo3,validation,ridge_C1_ratings_form_hnone,0.47530819132780244,0.5246918086721976
+2395423,2026-06-27,Keyd Stars,Yawara,1,bo3,validation,ridge_C1_ratings_form_hnone,0.47081441851413397,0.529185581485866
+2395424,2026-06-27,ShindeN,MIBR Academy,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6773481145672725,0.3226518854327275
+2395425,2026-06-27,Bounty Hunters,UNO MILLE,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5680920176438783,0.4319079823561217
+2395426,2026-06-27,Fake do Biru,LP,0,bo3,validation,ridge_C1_ratings_form_hnone,0.4201759499266208,0.5798240500733792
+2395431,2026-06-27,NEW VISION,Julie&Cie,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5683409583834693,0.4316590416165307
+2395493,2026-06-27,BIG Academy,BERG,1,bo3,validation,ridge_C1_ratings_form_hnone,0.8067433684203793,0.1932566315796207
+2395500,2026-06-27,Inner Circle Academy,SAW,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6178783879482035,0.3821216120517965
+2395501,2026-06-27,Misa,WBT,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5092175707886658,0.4907824292113342
+2395555,2026-06-27,GameHunters,VEXA,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6789863856500806,0.3210136143499194
+2395556,2026-06-27,paiN Academy,ALKA,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5539558774744593,0.4460441225255407
+2395399,2026-06-28,Sharks,Echo,0,bo3,validation,ridge_C1_ratings_form_hnone,0.6170141492137173,0.38298585078628267
+2395427,2026-06-28,Fluxo,Keyd Stars,1,bo3,validation,ridge_C1_ratings_form_hnone,0.4899176653789311,0.5100823346210689
+2395428,2026-06-28,Fluxo,UNO MILLE,0,bo3,validation,ridge_C1_ratings_form_hnone,0.41578019308648345,0.5842198069135165
+2395435,2026-06-28,Atreides,DONSTU,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6754725869933893,0.3245274130066107
+2395436,2026-06-28,Entropy,SAW,1,bo3,validation,ridge_C1_ratings_form_hnone,0.49491560581619304,0.505084394183807
+2395437,2026-06-28,Lilmix,Subtop De France,0,bo3,validation,ridge_C1_ratings_form_hnone,0.6091458493724149,0.3908541506275851
+2395502,2026-06-28,Honvéd,OlyBet,1,bo3,validation,ridge_C1_ratings_form_hnone,0.4808721059530621,0.5191278940469379
+2395503,2026-06-28,ex-MANA,Subtop De France,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5612290027677284,0.43877099723227164
+2395559,2026-06-28,Yawara,Blitzkrieg,1,bo3,validation,ridge_C1_ratings_form_hnone,0.8833637796941748,0.11663622030582521
+2395560,2026-06-28,METANOIA Wolves,GUARA,0,bo3,validation,ridge_C1_ratings_form_hnone,0.6988215966842012,0.3011784033157988
+2395400,2026-06-29,Inner Circle,Acend,1,bo5,validation,ridge_C1_ratings_form_hnone,0.6026597968770395,0.3973402031229605
+2395429,2026-06-29,ShindeN,LP,1,bo3,validation,ridge_C1_ratings_form_hnone,0.523699472435633,0.476300527564367
+2395430,2026-06-29,UNO MILLE,ShindeN,0,bo3,validation,ridge_C1_ratings_form_hnone,0.42488994989027584,0.5751100501097242
+2395440,2026-06-29,OlyBet,DONSTU,0,bo3,validation,ridge_C1_ratings_form_hnone,0.3359384172091101,0.6640615827908899
+2395442,2026-06-29,Entropy,Mai Tai,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7088931877907416,0.2911068122092584
+2395504,2026-06-29,Julie&Cie,eternal premium,0,bo3,validation,ridge_C1_ratings_form_hnone,0.49220882172612346,0.5077911782738765
+2395505,2026-06-29,Enjoy,Sashi Academy,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7533100398842739,0.24668996011572608
+2395558,2026-06-29,MIBR Academy,Patins da Ferrari,0,bo3,validation,ridge_C1_ratings_form_hnone,0.7231439457008466,0.2768560542991534
+2395562,2026-06-29,paiN Academy,Blitzkrieg,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7458038264844962,0.25419617351550383
+2395614,2026-06-29,Coalesce,SINQU REHTI,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5418265363027236,0.4581734636972764
+2395615,2026-06-29,BERG,Aimhaus,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6536672450885284,0.34633275491147164
+2395616,2026-06-29,ASTRAL,SINQU REHTI,1,bo3,validation,ridge_C1_ratings_form_hnone,0.8634215802828173,0.13657841971718265
+2395617,2026-06-29,Leo,BERG,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7808731678599352,0.2191268321400648
+2395618,2026-06-29,BERG,SINQU REHTI,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6587318804549835,0.34126811954501646
+2395619,2026-06-29,Leo,ASTRAL,0,bo3,validation,ridge_C1_ratings_form_hnone,0.5041173050341806,0.4958826949658194
+2395629,2026-06-29,Phantom Academy,DH Premium,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6494004462239924,0.3505995537760076
+2395443,2026-06-30,Lilmix,NEW VISION,1,bo3,validation,ridge_C1_ratings_form_hnone,0.5052184201239758,0.4947815798760242
+2395446,2026-06-30,Subtop De France,Julie&Cie,1,bo3,validation,ridge_C1_ratings_form_hnone,0.4841193019461809,0.5158806980538191
+2395506,2026-06-30,DONSTU,Fortress,1,bo3,validation,ridge_C1_ratings_form_hnone,0.7249811297808756,0.2750188702191244
+2395507,2026-06-30,Entropy,Endless Journey,1,bo3,validation,ridge_C1_ratings_form_hnone,0.41409433281300323,0.5859056671869968
+2395565,2026-06-30,MIBR Academy,Procyon,1,bo3,validation,ridge_C1_ratings_form_hnone,0.707493926918229,0.292506073081771
+2395566,2026-06-30,Yawara,GameHunters,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6029071382123177,0.3970928617876823
+2395567,2026-06-30,ALKA,Red Feet,0,bo3,validation,ridge_C1_ratings_form_hnone,0.712122235950729,0.287877764049271
+2395568,2026-06-30,BESTIA Academy,MAGICOS,1,bo3,validation,ridge_C1_ratings_form_hnone,0.717073251986577,0.282926748013423
+2395620,2026-06-30,Beyond Limits,Club 333,0,bo3,validation,ridge_C1_ratings_form_hnone,0.24757541938520622,0.7524245806147938
+2395621,2026-06-30,regain,Villainous,1,bo3,validation,ridge_C1_ratings_form_hnone,0.6664967592729035,0.3335032407270965
+2395622,2026-06-30,Festina Lente,raisedbypixels,0,bo3,validation,ridge_C1_ratings_form_hnone,0.7365020708421148,0.26349792915788517
+2395630,2026-06-30,bullpeek,mXm,0,bo3,validation,ridge_C1_ratings_form_hnone,0.3228341720321451,0.677165827967855
+2395631,2026-06-30,DH Premium,mXm,1,bo3,validation,ridge_C1_ratings_form_hnone,0.3465409990070453,0.6534590009929546
