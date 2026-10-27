@@ -5,6 +5,8 @@ from src.models.c0_architecture import (
     CS2PlayerHistoryAttention,
     CS2TeamSetTransformer,
 )
+from src.models.c0_trainer import C0Trainer
+from src.models.c0_serving import CS2C0Predictor
 from src.models.c0_tokens import (
     CANONICAL_MAPS,
     CS2TokenConfig,
@@ -41,7 +43,9 @@ from src.models.c0_tokens import (
 
 __all__ = [
     "CS2C0Model",
+    "CS2C0Predictor",
     "CS2PlayerHistoryAttention",
+    "C0Trainer",
     "CS2TeamSetTransformer",
     "CANONICAL_MAPS",
     "CS2TokenConfig",

@@ -206,7 +206,7 @@ class CS2C0Model(nn.Module):
 
     def __init__(
         self,
-        token_dim: int = 18,
+        token_dim: int | CS2TokenConfig = 18,
         hidden_dim: int = 32,
         nhead: int = 4,
         transformer_layers: int = 1,
@@ -215,8 +215,17 @@ class CS2C0Model(nn.Module):
         head: nn.Module | None = None,
     ) -> None:
         super().__init__()
+        if isinstance(token_dim, CS2TokenConfig):
+            token_config = token_dim
+            token_dim = token_config.total_token_dim
+            hidden_dim = token_config.hidden_dim
+        elif token_config is not None:
+            token_dim = token_config.total_token_dim
+            hidden_dim = token_config.hidden_dim
+
         self.token_dim = token_dim
         self.hidden_dim = hidden_dim
+        self.token_config = token_config
         self.team_dim = hidden_dim * 2
 
         self.history_attention = CS2PlayerHistoryAttention(

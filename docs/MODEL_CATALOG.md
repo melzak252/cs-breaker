@@ -30,3 +30,10 @@
 - **Input Requirements**: Team names.
 - **Output Schema**: Win probability via logistic Elo formula $P = 1 / (1 + 10^{(R_2 - R_1)/400})$.
 - **Zero-Dependency**: Executes using Python standard library only.
+
+### CS2 C0 Neural Attention Model (`src/models/c0_architecture.py`)
+- **Architecture**: 16-map masked personal history attention + 5-player Team Set Transformer + Pairwise anti-symmetric win probability head ($19,617$ parameters).
+- **Training**: Trained via `scripts/train_c0_model.py` with AdamW, Cosine Annealing, and symmetric BCE loss on 1,609 chronological matches (best val loss: 0.6556).
+- **Checkpoint**: `data/06_models/c0_checkpoint_best.pt`.
+- **Inference**: Programmatic and CLI serving via `CS2C0Predictor` in `src/models/c0_serving.py`.
+- **Antisymmetry**: Guaranteed $P(A > B) + P(B > A) == 1.0$ to machine precision.
